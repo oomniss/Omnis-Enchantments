@@ -1,0 +1,19 @@
+{
+  id: "OmnisEnchantments",
+  version: 9,
+  capabilities: ["FileFilter", "DirFilter"],
+  conf: {
+    GeneralSettings: {
+      GlowParticles:  true,
+    },
+    GlowItems: {
+      Swords:         true,
+      Pickaxes:       true,
+      Totem:          true
+    },
+    Outlines: {
+      Swords:         true,
+      Pickaxes:       true
+    }
+  }
+}

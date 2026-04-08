@@ -1,0 +1,9 @@
+{
+  expansions: {
+    glowParticles:  "OmnisEnchantments.GeneralSettings.GlowParticles",
+
+    glowSwords:     "OmnisEnchantments.GlowItems.Swords",
+    glowPickaxes:   "OmnisEnchantments.GlowItems.Pickaxes",
+    glowTotem:      "OmnisEnchantments.GlowItems.Totem"
+  }
+}
