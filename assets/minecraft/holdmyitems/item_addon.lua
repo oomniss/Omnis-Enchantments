@@ -6,10 +6,7 @@ local particles                 = context.particles
 local itemName                  = I:getName(context.item):gsub("minecraft:", "")
 local isEnchanted               = I:isEnchanted(context.item)
 
-local purpleGlow                = Texture:of("minecraft", "textures/particle/purple_glow.png")
-local goldGlow                  = Texture:of("minecraft", "textures/particle/gold_glow.png")
-
--- === FUNCTIONS ===
+-- === MATCH ===
 local function matched(items, matches)
     local list = type(items) == "table" and items or {items}
 
@@ -62,104 +59,112 @@ local isCompass                 = matched({"compasses", "clock"})
 local isNetherStar              = matched("nether_star")
 local isTotem                   = matched("totem_of_undying") and ${glowTotem}
 
+-- === TEXTURE ===
+local function getItem()
+    if isPickaxe then return "pickaxe" end
+    if isTotem then return "gold" end
+end
+local texture = Texture:of("minecraft", "textures/particle/" .. getItem() .. "_glow.png")
+
+-- === PARTICLES ===
 if isEnchanted and glowParticles then
     if isPickaxe or isAxe or isHoe then
         particleManager:addParticle(
             particles,
             false,
             0.03 * l, 0.5, 0.05, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3.5,
-            purpleGlow, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 200
+            texture, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 200
         )
     elseif isShovel then
         particleManager:addParticle(
             particles,
             false,
             0, 0.4, 0.05, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3.5,
-            purpleGlow, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 200
+            texture, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 200
         )
     elseif isSword then
         particleManager:addParticle(
             particles,
             false,
             0 * l, 0.4, 0.05, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3.5,
-            purpleGlow, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 200
+            texture, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 200
         )
     elseif isSpear then
         particleManager:addParticle(
             particles,
             false,
             0.12 * l, 1.1, 0.15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5,
-            purpleGlow, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 200
+            texture, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 200
         )
     elseif isBook or isEnchantedGoldenApple or isArmor or isNautilusArmor or isShears or isCompass or isFlintSteel or isNetherStar then
         particleManager:addParticle(
             particles,
             false,
             0.03 * l, 0.2, 0.05, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3,
-            purpleGlow, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 200
+            texture, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 200
         )
     elseif isHorseArmor then
         particleManager:addParticle(
             particles,
             false,
             0.03 * l, 0.1, 0.05, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2.5,
-            purpleGlow, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 200
+            texture, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 200
         )
     elseif isWolfArmor then
         particleManager:addParticle(
             particles,
             false,
             0.08 * l, 0.2, 0.05, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2.5,
-            purpleGlow, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 200
+            texture, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 200
         )
     elseif isMace then
         particleManager:addParticle(
             particles,
             false,
             0.07 * l, 0.5, 0.05, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4,
-            purpleGlow, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 200
+            texture, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 200
         )
     elseif isFishingRod then
         particleManager:addParticle(
             particles,
             false,
             0.1 * l, 0.4, 0.05, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3.5,
-            purpleGlow, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 200
+            texture, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 200
         )
     elseif isBow or isSpyglass then
         particleManager:addParticle(
             particles,
             false,
             0.02 * l, 0, 0.05, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4,
-            purpleGlow, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 200
+            texture, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 200
         )
     elseif isCrossbow then
         particleManager:addParticle(
             particles,
             false,
             -0.02 * l, 0.05, -0.07, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3.5,
-            purpleGlow, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 200
+            texture, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 200
         )
     elseif isShield then -- não funciona por algum motivo
         particleManager:addParticle(
             particles,
             true,
             0 * l, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3.5,
-            purpleGlow, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 200
+            texture, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 200
         )
     elseif isTrident then -- não funciona por algum motivo
         particleManager:addParticle(
             particles,
             false,
             0 * l, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3.5,
-            purpleGlow, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 200
+            texture, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 200
         )
     elseif isBrush then -- não funciona por algum motivo
         particleManager:addParticle(
             particles,
             false,
             0.03 * l, 0.2, 0.05, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3,
-            purpleGlow, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 200
+            texture, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 200
         )
     end
 end
@@ -169,6 +174,6 @@ if isTotem then
         particles,
         false,
         0.03 * l, 0.2, 0.05, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4,
-        goldGlow, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 200
+        texture, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 200
     )
 end

@@ -5,8 +5,21 @@
         "component": "minecraft:enchantments",
         "ignore_default": true,
         "on_true": {
-            "type": "minecraft:model",
-            "model": "minecraft:item/diamond_pickaxe_enchanted"
+            "type": "minecraft:select",
+            "property": "minecraft:display_context",
+            "cases": [
+                {
+                    "when": "gui",
+                    "model": {
+                        "type": "minecraft:model",
+                        "model": "minecraft:item/diamond_pickaxe"
+                    }
+                }
+            ],
+            "fallback": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/diamond_pickaxe_enchanted"
+            }
         },
         "on_false": {
             "type": "minecraft:model",
