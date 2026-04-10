@@ -12,18 +12,18 @@
                     "when": "gui",
                     "model": {
                         "type": "minecraft:model",
-                        "model": "minecraft:item/netherite_pickaxe"
+                        "model": "minecraft:item/copper_pickaxe"
                     }
                 }
             ],
             "fallback": {
                 "type": "minecraft:model",
-                "model": "minecraft:item/pickaxes/e_netherite_pickaxe"
+                "model": "minecraft:item/pickaxes/e_copper_pickaxe"
             }
         },
         "on_false": {
             "type": "minecraft:model",
-            "model": "minecraft:item/netherite_pickaxe"
+            "model": "minecraft:item/copper_pickaxe"
         }
     }
 }

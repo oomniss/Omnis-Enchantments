@@ -18,7 +18,7 @@
             ],
             "fallback": {
                 "type": "minecraft:model",
-                "model": "minecraft:item/e_diamond_pickaxe"
+                "model": "minecraft:item/pickaxes/e_diamond_pickaxe"
             }
         },
         "on_false": {

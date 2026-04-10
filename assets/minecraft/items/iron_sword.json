@@ -12,18 +12,18 @@
                     "when": "gui",
                     "model": {
                         "type": "minecraft:model",
-                        "model": "minecraft:item/netherite_pickaxe"
+                        "model": "minecraft:item/iron_sword"
                     }
                 }
             ],
             "fallback": {
                 "type": "minecraft:model",
-                "model": "minecraft:item/pickaxes/e_netherite_pickaxe"
+                "model": "minecraft:item/swords/e_iron_sword"
             }
         },
         "on_false": {
             "type": "minecraft:model",
-            "model": "minecraft:item/netherite_pickaxe"
+            "model": "minecraft:item/iron_sword"
         }
     }
 }

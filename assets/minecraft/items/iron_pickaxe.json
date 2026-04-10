@@ -18,7 +18,7 @@
             ],
             "fallback": {
                 "type": "minecraft:model",
-                "model": "minecraft:item/e_iron_pickaxe"
+                "model": "minecraft:item/pickaxes/e_iron_pickaxe"
             }
         },
         "on_false": {

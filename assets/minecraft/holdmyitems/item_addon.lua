@@ -61,8 +61,8 @@ local isTotem                   = matched("totem_of_undying") and ${glowTotem}
 
 -- === TEXTURE ===
 local function getItem()
-    if isPickaxe then   return "pickaxe"    end
-    if isTotem then     return "gold"       end
+    if isPickaxe    then    return "pickaxe"    end
+    if isSword      then    return "purple"      end
 end
 
 local texture
@@ -75,7 +75,7 @@ if isEnchanted and glowParticles then
             particles,
             false,
             0.15 * l, 0.35, 0.05, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3,
-            texture, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 200
+            texture, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 150
         )
     elseif isShovel then
         particleManager:addParticle(
