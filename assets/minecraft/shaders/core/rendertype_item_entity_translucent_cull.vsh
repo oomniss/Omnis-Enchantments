@@ -7,6 +7,7 @@
 in vec3 Position;
 in vec4 Color;
 in vec2 UV0;
+in vec2 UV1;
 in ivec2 UV2;
 in vec3 Normal;
 
@@ -16,20 +17,12 @@ out float sphericalVertexDistance;
 out float cylindricalVertexDistance;
 out vec4 vertexColor;
 out vec2 texCoord0;
-out vec2 lightCoord;
-out vec3 vNormal;
 
 void main() {
-    // ProjMat e ModelViewMat vêm diretamente dos UBOs importados
     gl_Position = ProjMat * ModelViewMat * vec4(Position, 1.0);
-    
     sphericalVertexDistance = fog_spherical_distance(Position);
     cylindricalVertexDistance = fog_cylindrical_distance(Position);
-    
-    vertexColor = Color;
+    vertexColor = minecraft_mix_light(Light0_Direction, Light1_Direction, Normal, Color)
+                  * texelFetch(Sampler2, UV2 / 16, 0);
     texCoord0 = UV0;
-    
-    // Convertendo UV2 (ivec2) para vec2 mapeado entre 0.0 e 1.0 para o .fsh
-    lightCoord = vec2(UV2) / 256.0;
-    vNormal = Normal;
 }
