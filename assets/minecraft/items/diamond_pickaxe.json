@@ -18,7 +18,7 @@
             ],
             "fallback": {
                 "type": "minecraft:model",
-                "model": "minecraft:item/diamond_pickaxe_enchanted"
+                "model": "minecraft:item/e_diamond_pickaxe"
             }
         },
         "on_false": {
