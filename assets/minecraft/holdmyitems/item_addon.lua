@@ -62,7 +62,7 @@ local isTotem                   = matched("totem_of_undying") and ${glowTotem}
 -- === TEXTURE ===
 local function getItem()
     if isPickaxe    then    return "pickaxe"    end
-    if isSword      then    return "purple"      end
+    return "purple"
 end
 
 local texture
