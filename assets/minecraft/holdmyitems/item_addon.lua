@@ -1,10 +1,10 @@
 -- by omnis._.
 
-local l                         = context.mainHand and 1 or -1
-local hand                      = context.hand
-local particles                 = context.particles
-local itemName                  = I:getName(context.item):gsub("minecraft:", "")
-local isEnchanted               = I:isEnchanted(context.item)
+local l           = context.mainHand and 1 or -1
+local hand        = context.hand
+local particles   = context.particles
+local itemName    = I:getName(context.item):gsub("minecraft:", "")
+local isEnchanted = I:isEnchanted(context.item)
 
 -- === MATCH ===
 local function matched(items, matches)
