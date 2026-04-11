@@ -1,0 +1,82 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [64, 64],
+	"elements": [
+		{
+			"name": "outline_body",
+			"from": [12.2, 22.2, 1.2],
+			"to": [-0.2, -0.2, -0.2],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [1.6, -0.2, 6.1]},
+			"faces": {
+				"north": {"uv": [0, 0.375, 3, 5.875], "rotation": 180, "texture": "#outline"},
+				"east": {"uv": [0, 0.375, 0.25, 5.875], "rotation": 180, "texture": "#outline"},
+				"south": {"uv": [1, 0.375, 4, 5.875], "rotation": 180, "texture": "#outline"},
+				"west": {"uv": [0.25, 0.375, 0.5, 5.875], "rotation": 180, "texture": "#outline"},
+				"up": {"uv": [0, 0.25, 3, 0.5], "rotation": 180, "texture": "#outline"},
+				"down": {"uv": [0, 0, 3, 0.25], "rotation": 180, "texture": "#outline"}
+			}
+		},
+		{
+			"name": "outline_arm",
+			"from": [7.2, 14.2, 0.3],
+			"to": [4.8, 8.8, -6.1],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [6.6, 8.8, 0.2]},
+			"faces": {
+				"north": {"uv": [0, 4.625, 0.5, 5.875], "rotation": 180, "texture": "#outline"},
+				"east": {"uv": [0, 4.625, 1.5, 5.875], "rotation": 180, "texture": "#outline"},
+				"south": {"uv": [3.5, 4.625, 4, 5.875], "rotation": 180, "texture": "#outline"},
+				"west": {"uv": [0, 4.625, 1.5, 5.875], "rotation": 180, "texture": "#outline"},
+				"up": {"uv": [0, 0, 0.5, 1.5], "rotation": 180, "texture": "#outline"},
+				"down": {"uv": [0, 0, 0.5, 1.5], "rotation": 180, "texture": "#outline"}
+			}
+		}
+	],
+	"gui_light": "front",
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [45, 155, 0],
+			"translation": [2.75, 2.5, -9]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [45, 155, 0],
+			"translation": [11.51, 7, 2.5]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, -180, -5],
+			"translation": [-15, 3.25, -11],
+			"scale": [1.25, 1.25, 1.25]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, -180, -5],
+			"translation": [5, 5, -11],
+			"scale": [1.25, 1.25, 1.25]
+		},
+		"ground": {
+			"scale": [0, 0, 0]
+		},
+		"gui": {
+			"scale": [0, 0, 0]
+		},
+		"fixed": {
+			"scale": [0, 0, 0]
+		},
+		"on_shelf": {
+			"scale": [0, 0, 0]
+		}
+	},
+	"groups": [
+		{
+			"name": "shield_blocking",
+			"origin": [8, 8, 8],
+			"scope": 0,
+			"color": 0,
+			"children": []
+		},
+		0,
+		1
+	]
+}

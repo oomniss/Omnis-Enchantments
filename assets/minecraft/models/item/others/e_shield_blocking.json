@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/enchanted_shield_blocking",
+  "textures": {
+    "outline": "minecraft:item/outline"
+  }
+}
