@@ -147,14 +147,14 @@ if isEnchanted and glowParticles then
             -0.02 * l, 0.05, -0.07, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3.5,
             texture, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 200
         )
-    elseif isShield then -- não funciona por algum motivo
+    elseif isShield then -- não funciona por algum motivo - entity
         particleManager:addParticle(
             particles,
             true,
             0 * l, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3.5,
             texture, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 200
         )
-    elseif isTrident then -- não funciona por algum motivo
+    elseif isTrident then -- não funciona por algum motivo - entity
         particleManager:addParticle(
             particles,
             false,
@@ -176,6 +176,6 @@ if isTotem then
         particles,
         false,
         0.03 * l, 0.2, 0.05, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4,
-        texture, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 200
+        texture, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 200 
     )
 end

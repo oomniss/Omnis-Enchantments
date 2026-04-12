@@ -1,0 +1,29 @@
+{
+    "model": {
+        "type": "minecraft:condition",
+        "property": "minecraft:has_component",
+        "component": "minecraft:enchantments",
+        "ignore_default": true,
+        "on_true": {
+            "type": "minecraft:select",
+            "property": "minecraft:display_context",
+            "cases": [
+                {
+                    "when": "gui",
+                    "model": {
+                        "type": "minecraft:model",
+                        "model": "minecraft:item/copper_horse_armor"
+                    }
+                }
+            ],
+            "fallback": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/horse_armors/e_copper_horse_armor"
+            }
+        },
+        "on_false": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/copper_horse_armor"
+        }
+    }
+}
