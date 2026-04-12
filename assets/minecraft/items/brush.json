@@ -1,0 +1,113 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:display_context",
+    "cases": [
+      {
+        "when": "gui",
+        "model": {
+          "type": "minecraft:range_dispatch",
+          "property": "minecraft:use_cycle",
+          "period": 10.0,
+          "scale": 0.1,
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/brush"
+          },
+          "entries": [
+            {
+              "threshold": 0.25,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/brush_brushing_0"
+              }
+            },
+            {
+              "threshold": 0.5,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/brush_brushing_1"
+              }
+            },
+            {
+              "threshold": 0.75,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/brush_brushing_2"
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:range_dispatch",
+      "property": "minecraft:use_cycle",
+      "period": 10.0,
+      "scale": 0.1,
+      "fallback": {
+        "type": "minecraft:condition",
+        "property": "minecraft:has_component",
+        "component": "minecraft:enchantments",
+        "on_true": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/others/e_brush"
+        },
+        "on_false": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/brush"
+        }
+      },
+      "entries": [
+        {
+          "threshold": 0.25,
+          "model": {
+            "type": "minecraft:condition",
+            "property": "minecraft:has_component",
+            "component": "minecraft:enchantments",
+            "on_true": {
+              "type": "minecraft:model",
+              "model": "minecraft:item/others/e_brush_brushing_0"
+            },
+            "on_false": {
+              "type": "minecraft:model",
+              "model": "minecraft:item/brush_brushing_0"
+            }
+          }
+        },
+        {
+          "threshold": 0.5,
+          "model": {
+            "type": "minecraft:condition",
+            "property": "minecraft:has_component",
+            "component": "minecraft:enchantments",
+            "on_true": {
+              "type": "minecraft:model",
+              "model": "minecraft:item/others/e_brush_brushing_1"
+            },
+            "on_false": {
+              "type": "minecraft:model",
+              "model": "minecraft:item/brush_brushing_1"
+            }
+          }
+        },
+        {
+          "threshold": 0.75,
+          "model": {
+            "type": "minecraft:condition",
+            "property": "minecraft:has_component",
+            "component": "minecraft:enchantments",
+            "on_true": {
+              "type": "minecraft:model",
+              "model": "minecraft:item/others/e_brush_brushing_2"
+            },
+            "on_false": {
+              "type": "minecraft:model",
+              "model": "minecraft:item/brush_brushing_2"
+            }
+          }
+        }
+      ]
+    }
+  }
+}
