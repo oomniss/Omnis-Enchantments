@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/enchanted_leggings",
+  "textures": {
+    "leggings": "minecraft:item/netherite_leggings",
+    "outline": "minecraft:item/outline"
+  }
+}

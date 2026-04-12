@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/enchanted_chestplate",
+  "textures": {
+    "chestplate": "minecraft:item/copper_chestplate",
+    "outline": "minecraft:item/outline"
+  }
+}

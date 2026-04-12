@@ -4,7 +4,7 @@
 	"textures": {
 		"0": "item/leather_horse_armor",
 		"1": "item/leather_horse_armor_overlay",
-		"2": "item/outline",
+		"2": "item/outline"
 	},
 	"elements": [
 		{

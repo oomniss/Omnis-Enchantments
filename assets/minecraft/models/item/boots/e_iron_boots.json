@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/enchanted_boots",
+  "textures": {
+    "boots": "minecraft:item/iron_boots",
+    "outline": "minecraft:item/outline"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/enchanted_helmet",
+  "textures": {
+    "helmet": "minecraft:item/diamond_helmet",
+    "outline": "minecraft:item/outline"
+  }
+}
