@@ -1,0 +1,19 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:display_context",
+    "cases": [
+        {
+            "when": "gui",
+            "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/enchanted_golden_apple"
+            }
+        }
+    ],
+    "fallback": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/others/e_enchanted_golden_apple"
+        }
+    }
+}
