@@ -3,7 +3,7 @@
 	"parent": "minecraft:item/handheld_rod",
 	"textures": {
 		"0": "item/carrot_on_a_stick",
-		"1": "item/outline",
+		"1": "item/enchantment_outline",
 		"particle": "item/carrot_on_a_stick"
 	},
 	"elements": [

@@ -1,0 +1,53 @@
+{
+    "model": {
+        "type": "minecraft:condition",
+        "property": "minecraft:has_component",
+        "component": "minecraft:enchantments",
+        "ignore_default": true,
+        "on_true": {
+            "type": "minecraft:select",
+            "property": "minecraft:display_context",
+            "cases": [
+                {
+                    "when": "gui",
+                    "model": {
+                        "type": "minecraft:condition",
+                        "property": "minecraft:broken",
+                        "on_true": {
+                            "type": "minecraft:model",
+                            "model": "minecraft:item/elytra_broken"
+                        },
+                        "on_false": {
+                            "type": "minecraft:model",
+                            "model": "minecraft:item/elytra"
+                        }
+                    }
+                }
+            ],
+            "fallback": {
+                "type": "minecraft:condition",
+                "property": "minecraft:broken",
+                "on_true": {
+                    "type": "minecraft:model",
+                    "model": "minecraft:item/others/e_elytra_broken"
+                },
+                "on_false": {
+                    "type": "minecraft:model",
+                    "model": "minecraft:item/others/e_elytra"
+                }
+            }
+        },
+        "on_false": {
+            "type": "minecraft:condition",
+            "property": "minecraft:broken",
+            "on_true": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/elytra_broken"
+            },
+            "on_false": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/elytra"
+            }
+        }
+    }
+}

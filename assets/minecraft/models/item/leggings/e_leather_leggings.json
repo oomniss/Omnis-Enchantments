@@ -4,7 +4,7 @@
 	"textures": {
 		"0": "item/leather_leggings",
 		"1": "item/leather_leggings_overlay",
-		"2": "item/outline",
+		"2": "item/enchantment_outline",
 		"particle": "item/leather_leggings"
 	},
 	"elements": [

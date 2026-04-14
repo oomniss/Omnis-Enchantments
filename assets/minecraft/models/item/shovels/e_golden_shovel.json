@@ -2,6 +2,6 @@
   "parent": "minecraft:item/enchanted_shovel",
   "textures": {
     "shovel": "minecraft:item/golden_shovel",
-    "outline": "minecraft:item/outline"
+    "outline": "minecraft:item/enchantment_outline"
   }
 }

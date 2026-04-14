@@ -4,8 +4,8 @@
 	"textures": {
 		"0": "item/leather_boots",
 		"1": "item/leather_boots_overlay",
-		"2": "item/outline",
-		"particle": "item/outline"
+		"2": "item/enchantment_outline",
+		"particle": "item/enchantment_outline"
 	},
 	"elements": [
 		{

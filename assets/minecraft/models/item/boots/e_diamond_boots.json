@@ -2,6 +2,6 @@
   "parent": "minecraft:item/enchanted_boots",
   "textures": {
     "boots": "minecraft:item/diamond_boots",
-    "outline": "minecraft:item/outline"
+    "outline": "minecraft:item/enchantment_outline"
   }
 }

@@ -3,7 +3,7 @@
 	"parent": "minecraft:item/generated",
 	"textures": {
 		"chestplate": "item/leather_chestplate",
-		"outline": "item/outline"
+		"outline": "item/enchantment_outline"
 	},
 	"elements": [
 		{

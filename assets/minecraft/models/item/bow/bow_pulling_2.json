@@ -3,8 +3,7 @@
 	"parent": "minecraft:item/bow",
 	"textures": {
 		"1": "item/bow_pulling_2",
-		"2": "item/bow_arrow",
-		"particle": "item/outline"
+		"2": "item/bow_arrow"
 	},
 	"elements": [
 		{

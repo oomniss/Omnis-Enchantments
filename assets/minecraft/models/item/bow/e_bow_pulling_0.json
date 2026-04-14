@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"parent": "minecraft:item/bow",
 	"textures": {
-		"2": "item/outline",
+		"2": "item/enchantment_outline",
 		"3": "item/bow_arrow",
 		"4": "item/bow_pulling_0"
 	},

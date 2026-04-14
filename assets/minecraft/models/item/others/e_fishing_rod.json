@@ -3,7 +3,7 @@
 	"parent": "minecraft:item/handheld_rod",
 	"textures": {
 		"0": "item/fishing_rod",
-		"1": "item/outline"
+		"1": "item/enchantment_outline"
 	},
 	"elements": [
 		{

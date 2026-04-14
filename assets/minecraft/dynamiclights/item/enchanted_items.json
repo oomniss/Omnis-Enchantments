@@ -1,8 +1,0 @@
-{
-  "match": {
-    "predicates": {
-      "minecraft:enchantments": [{}]
-    }
-  },
-  "luminance": 8
-}

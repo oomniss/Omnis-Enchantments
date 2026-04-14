@@ -3,7 +3,7 @@
 	"credit": "Made with Blockbench",
 	"parent": "minecraft:item/generated",
 	"textures": {
-		"1": "item/outline",
+		"1": "item/enchantment_outline",
 		"2": "item/netherite_boots",
 		"particle": "item/netherite_boots"
 	},

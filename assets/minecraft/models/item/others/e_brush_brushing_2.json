@@ -3,7 +3,7 @@
 	"parent": "item/generated",
 	"textures": {
 		"0": "item/brush",
-		"1": "item/outline"
+		"1": "item/enchantment_outline"
 	},
 	"elements": [
 		{

@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"parent": "minecraft:item/generated",
 	"textures": {
-		"1": "item/outline",
+		"1": "item/enchantment_outline",
 		"layer0": "item/flint_and_steel"
 	},
 	"elements": [

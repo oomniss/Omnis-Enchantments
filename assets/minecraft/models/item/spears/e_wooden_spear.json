@@ -2,6 +2,6 @@
   "parent": "minecraft:item/enchanted_spear",
   "textures": {
     "spear": "minecraft:item/wooden_spear_in_hand",
-    "outline": "minecraft:item/outline"
+    "outline": "minecraft:item/enchantment_outline"
   }
 }

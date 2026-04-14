@@ -2,6 +2,6 @@
   "parent": "minecraft:item/enchanted_axe",
   "textures": {
     "axe": "minecraft:item/copper_axe",
-    "outline": "minecraft:item/outline"
+    "outline": "minecraft:item/enchantment_outline"
   }
 }

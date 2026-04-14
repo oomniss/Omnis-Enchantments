@@ -3,7 +3,7 @@
 	"parent": "minecraft:item/crossbow",
 	"textures": {
 		"0": "item/crossbow_pulling_0",
-		"1": "item/outline"
+		"1": "item/enchantment_outline"
 	},
 	"elements": [
 		{

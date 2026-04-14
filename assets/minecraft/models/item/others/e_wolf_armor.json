@@ -3,7 +3,7 @@
 	"parent": "minecraft:item/generated",
 	"textures": {
 		"0": "item/wolf_armor",
-		"1": "item/outline",
+		"1": "item/enchantment_outline",
 		"particle": "item/wolf_armor"
 	},
 	"elements": [

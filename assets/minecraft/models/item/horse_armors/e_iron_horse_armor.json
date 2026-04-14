@@ -2,6 +2,6 @@
   "parent": "minecraft:item/enchanted_horse_armor",
   "textures": {
     "horse_armor": "minecraft:item/iron_horse_armor",
-    "outline": "minecraft:item/outline"
+    "outline": "minecraft:item/enchantment_outline"
   }
 }

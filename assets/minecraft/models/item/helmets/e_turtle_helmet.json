@@ -4,7 +4,7 @@
 	"parent": "minecraft:item/generated",
 	"textures": {
 		"helmet": "item/turtle_helmet",
-		"outline": "item/outline"
+		"outline": "item/enchantment_outline"
 	},
 	"elements": [
 		{

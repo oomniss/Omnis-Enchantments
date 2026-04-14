@@ -1,12 +1,6 @@
 {
-	"format_version": "1.21.11",
 	"credit": "Made with Blockbench",
 	"parent": "minecraft:item/generated",
-	"textures": {
-		"particle": "item/written_book",
-		"book": "item/written_book",
-		"outline": "item/outline"
-	},
 	"elements": [
 		{
 			"name": "written_book_0",

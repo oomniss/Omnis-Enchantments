@@ -1,6 +1,10 @@
 {
 	"credit": "Made with Blockbench",
 	"parent": "minecraft:item/handheld_mace",
+	"textures": {
+		"outline": "item/enchantment_outline",
+		"mace": "item/mace"
+	},
 	"elements": [
 		{
 			"name": "mace_0",

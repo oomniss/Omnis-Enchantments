@@ -3,8 +3,8 @@
 	"parent": "minecraft:item/generated",
 	"textures": {
 		"0": "item/golden_apple",
-		"1": "item/outline",
-		"particle": "item/outline"
+		"1": "item/enchantment_outline",
+		"particle": "item/enchantment_outline"
 	},
 	"elements": [
 		{

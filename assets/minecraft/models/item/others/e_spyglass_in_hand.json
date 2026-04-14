@@ -3,7 +3,7 @@
 	"textures": {
 		"particle": "item/spyglass_model",
 		"spyglass": "item/spyglass_model",
-		"outline": "item/outline"
+		"outline": "item/enchantment_outline"
 	},
 	"elements": [
 		{

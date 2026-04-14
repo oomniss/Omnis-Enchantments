@@ -3,7 +3,7 @@
 	"parent": "minecraft:item/generated",
 	"texture_size": [32, 32],
 	"textures": {
-		"1": "item/outline"
+		"1": "item/enchantment_outline"
 	},
 	"elements": [
 		{

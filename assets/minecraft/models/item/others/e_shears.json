@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"parent": "minecraft:item/generated",
 	"textures": {
-		"1": "item/outline",
+		"1": "item/enchantment_outline",
 		"particle": "item/shears",
 		"layer0": "item/shears"
 	},

@@ -2,6 +2,6 @@
   "parent": "minecraft:item/enchanted_pickaxe",
   "textures": {
     "pickaxe": "minecraft:item/copper_pickaxe",
-    "outline": "minecraft:item/outline"
+    "outline": "minecraft:item/enchantment_outline"
   }
 }

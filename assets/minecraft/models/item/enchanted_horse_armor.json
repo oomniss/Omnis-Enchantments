@@ -1,12 +1,6 @@
 {
-	"format_version": "1.21.11",
 	"credit": "Made with Blockbench",
 	"parent": "minecraft:item/generated",
-	"textures": {
-		"particle": "item/horse_armor",
-		"horse_armor": "item/horse_armor",
-		"outline": "item/outline"
-	},
 	"elements": [
 		{
 			"name": "horse_armor_0",
