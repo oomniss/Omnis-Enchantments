@@ -1331,7 +1331,7 @@
 		},
 		{
 			"name": "fishing_rod_39",
-			"from": [13.875, 5.875, 8.65],
+			"from": [13.875, 6.175, 8.65],
 			"to": [15.175, 7.175, 7.35],
 			"shade": false,
 			"light_emission": 15,
@@ -1340,8 +1340,33 @@
 				"north": {"uv": [15, 9, 14, 10], "texture": "#1"},
 				"east": {"uv": [14, 9, 15, 10], "texture": "#1"},
 				"south": {"uv": [14, 9, 15, 10], "texture": "#1"},
-				"west": {"uv": [14, 9, 15, 10], "texture": "#1"},
+				"west": {"uv": [14, 9, 15, 10], "texture": "#1"}
+			}
+		},
+		{
+			"name": "fishing_rod_40",
+			"from": [14.175, 5.875, 8.65],
+			"to": [15.175, 6.175, 7.35],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.125, -0.125, 0]},
+			"faces": {
+				"north": {"uv": [15, 9, 14, 10], "texture": "#1"},
+				"east": {"uv": [14, 9, 15, 10], "texture": "#1"},
+				"south": {"uv": [14, 9, 15, 10], "texture": "#1"},
 				"down": {"uv": [14, 9, 15, 10], "texture": "#1"}
+			}
+		},
+		{
+			"name": "fishing_rod_41",
+			"from": [13.875, 5.875, 8.65],
+			"to": [14.175, 6.175, 7.35],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.125, -0.125, 0]},
+			"faces": {
+				"north": {"uv": [15, 9, 14, 10], "texture": "#1"},
+				"south": {"uv": [14, 9, 15, 10], "texture": "#1"}
 			}
 		},
 		{
@@ -1385,7 +1410,7 @@
 		{
 			"name": "fishing_rod_43",
 			"from": [12.875, 4.875, 8.65],
-			"to": [14.175, 6.175, 7.35],
+			"to": [14.175, 5.875, 7.35],
 			"shade": false,
 			"light_emission": 15,
 			"rotation": {"angle": 0, "axis": "y", "origin": [-0.125, -0.125, 0]},
@@ -1393,7 +1418,155 @@
 				"north": {"uv": [14, 10, 13, 11], "texture": "#1"},
 				"east": {"uv": [13, 10, 14, 11], "texture": "#1"},
 				"south": {"uv": [13, 10, 14, 11], "texture": "#1"},
+				"west": {"uv": [13, 10, 14, 11], "texture": "#1"}
+			}
+		},
+		{
+			"name": "fishing_rod_44",
+			"from": [12.875, 5.875, 8.65],
+			"to": [13.875, 6.175, 7.35],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.125, -0.125, 0]},
+			"faces": {
+				"north": {"uv": [14, 10, 13, 11], "texture": "#1"},
+				"south": {"uv": [13, 10, 14, 11], "texture": "#1"},
 				"west": {"uv": [13, 10, 14, 11], "texture": "#1"},
+				"up": {"uv": [13, 10, 14, 11], "texture": "#1"}
+			}
+		},
+		{
+			"name": "fishing_rod_45",
+			"from": [11.875, 3.875, 8.65],
+			"to": [12.875, 4.175, 7.35],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [-1.125, -2.125, 0]},
+			"faces": {
+				"north": {"uv": [14, 10, 13, 11], "texture": "#1"},
+				"south": {"uv": [13, 10, 14, 11], "texture": "#1"},
+				"west": {"uv": [13, 10, 14, 11], "texture": "#1"},
+				"up": {"uv": [13, 10, 14, 11], "texture": "#1"}
+			}
+		},
+		{
+			"name": "fishing_rod_40",
+			"from": [12.875, 4.175, 8.65],
+			"to": [14.175, 5.175, 7.35],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [-1.125, -2.125, 0]},
+			"faces": {
+				"north": {"uv": [15, 9, 14, 10], "texture": "#1"},
+				"east": {"uv": [14, 9, 15, 10], "texture": "#1"},
+				"south": {"uv": [14, 9, 15, 10], "texture": "#1"},
+				"west": {"uv": [14, 9, 15, 10], "texture": "#1"}
+			}
+		},
+		{
+			"name": "fishing_rod_42",
+			"from": [12.875, 3.875, 8.65],
+			"to": [13.175, 4.175, 7.35],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [-1.125, -2.125, 0]},
+			"faces": {
+				"north": {"uv": [15, 9, 14, 10], "texture": "#1"},
+				"south": {"uv": [14, 9, 15, 10], "texture": "#1"}
+			}
+		},
+		{
+			"name": "fishing_rod_41",
+			"from": [13.175, 3.875, 8.65],
+			"to": [14.175, 4.175, 7.35],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [-1.125, -2.125, 0]},
+			"faces": {
+				"north": {"uv": [15, 9, 14, 10], "texture": "#1"},
+				"east": {"uv": [14, 9, 15, 10], "texture": "#1"},
+				"south": {"uv": [14, 9, 15, 10], "texture": "#1"},
+				"down": {"uv": [14, 9, 15, 10], "texture": "#1"}
+			}
+		},
+		{
+			"name": "fishing_rod_44",
+			"from": [11.875, 2.875, 8.65],
+			"to": [13.175, 3.875, 7.35],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [-1.125, -2.125, 0]},
+			"faces": {
+				"north": {"uv": [14, 10, 13, 11], "texture": "#1"},
+				"east": {"uv": [13, 10, 14, 11], "texture": "#1"},
+				"south": {"uv": [13, 10, 14, 11], "texture": "#1"},
+				"west": {"uv": [13, 10, 14, 11], "texture": "#1"}
+			}
+		},
+		{
+			"name": "fishing_rod_45",
+			"from": [10.875, 0.875, 8.65],
+			"to": [12.175, 1.875, 7.35],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [-2.125, -4.125, 0]},
+			"faces": {
+				"north": {"uv": [14, 10, 13, 11], "texture": "#1"},
+				"east": {"uv": [13, 10, 14, 11], "texture": "#1"},
+				"south": {"uv": [13, 10, 14, 11], "texture": "#1"},
+				"down": {"uv": [0, 0, 0, 0], "texture": "#1"}
+			}
+		},
+		{
+			"name": "fishing_rod_42",
+			"from": [12.175, 1.875, 8.65],
+			"to": [13.175, 2.175, 7.35],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [-2.125, -4.125, 0]},
+			"faces": {
+				"north": {"uv": [15, 9, 14, 10], "texture": "#1"},
+				"east": {"uv": [14, 9, 15, 10], "texture": "#1"},
+				"south": {"uv": [14, 9, 15, 10], "texture": "#1"},
+				"down": {"uv": [14, 9, 15, 10], "texture": "#1"}
+			}
+		},
+		{
+			"name": "fishing_rod_43",
+			"from": [11.875, 1.875, 8.65],
+			"to": [12.175, 2.175, 7.35],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [-2.125, -4.125, 0]},
+			"faces": {
+				"north": {"uv": [15, 9, 14, 10], "texture": "#1"},
+				"south": {"uv": [14, 9, 15, 10], "texture": "#1"}
+			}
+		},
+		{
+			"name": "fishing_rod_41",
+			"from": [11.875, 2.175, 8.65],
+			"to": [13.175, 3.175, 7.35],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [-2.125, -4.125, 0]},
+			"faces": {
+				"north": {"uv": [15, 9, 14, 10], "texture": "#1"},
+				"east": {"uv": [14, 9, 15, 10], "texture": "#1"},
+				"south": {"uv": [14, 9, 15, 10], "texture": "#1"},
+				"west": {"uv": [14, 9, 15, 10], "texture": "#1"}
+			}
+		},
+		{
+			"name": "fishing_rod_46",
+			"from": [11.175, 1.875, 8.65],
+			"to": [11.875, 2.175, 7.35],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [-2.125, -4.125, 0]},
+			"faces": {
+				"north": {"uv": [14, 10, 13, 11], "texture": "#1"},
+				"south": {"uv": [13, 10, 14, 11], "texture": "#1"},
 				"up": {"uv": [13, 10, 14, 11], "texture": "#1"}
 			}
 		},
@@ -1459,21 +1632,6 @@
 				"east": {"uv": [8, 11, 9, 12], "texture": "#1"},
 				"south": {"uv": [8, 11, 9, 12], "texture": "#1"},
 				"up": {"uv": [8, 11, 9, 12], "texture": "#1"}
-			}
-		},
-		{
-			"name": "fishing_rod_49",
-			"from": [12.875, 3.875, 8.65],
-			"to": [14.175, 5.175, 7.35],
-			"shade": false,
-			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.125, -0.125, 0]},
-			"faces": {
-				"north": {"uv": [14, 11, 13, 12], "texture": "#1"},
-				"east": {"uv": [13, 11, 14, 12], "texture": "#1"},
-				"south": {"uv": [13, 11, 14, 12], "texture": "#1"},
-				"west": {"uv": [13, 11, 14, 12], "texture": "#1"},
-				"down": {"uv": [13, 11, 14, 12], "texture": "#1"}
 			}
 		},
 		{
@@ -1554,21 +1712,6 @@
 			}
 		},
 		{
-			"name": "fishing_rod_56",
-			"from": [11.875, 2.875, 8.65],
-			"to": [13.175, 4.175, 7.35],
-			"shade": false,
-			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.125, -0.125, 0]},
-			"faces": {
-				"north": {"uv": [13, 12, 12, 13], "texture": "#1"},
-				"east": {"uv": [12, 12, 13, 13], "texture": "#1"},
-				"south": {"uv": [12, 12, 13, 13], "texture": "#1"},
-				"west": {"uv": [12, 12, 13, 13], "texture": "#1"},
-				"up": {"uv": [12, 12, 13, 13], "texture": "#1"}
-			}
-		},
-		{
 			"name": "fishing_rod_57",
 			"from": [1.875, 1.875, 8.65],
 			"to": [2.875, 3.175, 7.35],
@@ -1638,7 +1781,7 @@
 		},
 		{
 			"name": "fishing_rod_62",
-			"from": [9.875, 1.875, 8.65],
+			"from": [9.875, 2.175, 8.65],
 			"to": [11.175, 3.175, 7.35],
 			"shade": false,
 			"light_emission": 15,
@@ -1649,21 +1792,6 @@
 				"south": {"uv": [10, 13, 11, 14], "texture": "#1"},
 				"west": {"uv": [10, 13, 11, 14], "texture": "#1"},
 				"up": {"uv": [10, 13, 11, 14], "texture": "#1"}
-			}
-		},
-		{
-			"name": "fishing_rod_63",
-			"from": [11.875, 1.875, 8.65],
-			"to": [13.175, 3.175, 7.35],
-			"shade": false,
-			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.125, -0.125, 0]},
-			"faces": {
-				"north": {"uv": [13, 13, 12, 14], "texture": "#1"},
-				"east": {"uv": [12, 13, 13, 14], "texture": "#1"},
-				"south": {"uv": [12, 13, 13, 14], "texture": "#1"},
-				"west": {"uv": [12, 13, 13, 14], "texture": "#1"},
-				"down": {"uv": [12, 13, 13, 14], "texture": "#1"}
 			}
 		},
 		{
@@ -1706,21 +1834,6 @@
 				"south": {"uv": [10, 14, 11, 15], "texture": "#1"},
 				"west": {"uv": [10, 14, 11, 15], "texture": "#1"},
 				"down": {"uv": [10, 14, 11, 15], "texture": "#1"}
-			}
-		},
-		{
-			"name": "fishing_rod_67",
-			"from": [10.875, 0.875, 8.65],
-			"to": [12.175, 2.175, 7.35],
-			"shade": false,
-			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.125, -0.125, 0]},
-			"faces": {
-				"north": {"uv": [12, 14, 11, 15], "texture": "#1"},
-				"east": {"uv": [11, 14, 12, 15], "texture": "#1"},
-				"south": {"uv": [11, 14, 12, 15], "texture": "#1"},
-				"up": {"uv": [11, 14, 12, 15], "texture": "#1"},
-				"down": {"uv": [11, 14, 12, 15], "texture": "#1"}
 			}
 		}
 	],
@@ -1879,7 +1992,16 @@
 				130,
 				131,
 				132,
-				133
+				133,
+				134,
+				135,
+				136,
+				137,
+				138,
+				139,
+				140,
+				141,
+				142
 			]
 		}
 	]
