@@ -3,25 +3,27 @@
     "type": "minecraft:select",
     "property": "minecraft:display_context",
     "cases": [
-      {
-        "when": ["gui", "ground", "fixed", "on_shelf"],
-        "model": {
-          "type": "minecraft:model",
-          "model": "minecraft:item/spyglass"
+        {
+            "when": ["gui", "ground", "fixed"],
+            "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/spyglass"
+            }
         }
-      },
-      {
-        "when": ["firstperson_righthand", "firstperson_lefthand",
-                 "thirdperson_righthand", "thirdperson_lefthand", "head"],
-        "model": {
-          "type": "minecraft:model",
-          "model": "minecraft:item/others/e_spyglass_in_hand"
-        }
-      }
     ],
     "fallback": {
-      "type": "minecraft:model",
-      "model": "minecraft:item/spyglass_in_hand"
+      "type": "minecraft:condition",
+      "property": "minecraft:has_component",
+      "component": "minecraft:enchantments",
+      "ignore_default": true,
+      "on_true": {
+        "type": "minecraft:model",
+        "model": "minecraft:item/others/e_spyglass_in_hand"
+      },
+      "on_false": {
+        "type": "minecraft:model",
+        "model": "minecraft:item/spyglass_in_hand"
+      }
     }
   }
 }

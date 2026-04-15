@@ -1,0 +1,1257 @@
+{
+	"format_version": "1.21.11",
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"0": "item/trident_in_hand",
+		"1": "item/enchantment_outline"
+	},
+	"elements": [
+		{
+			"name": "trident_in_hand_0",
+			"from": [7.5, 30, 9],
+			"to": [8.5, 31, 10],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 15, 9]},
+			"faces": {
+				"north": {"uv": [8, 0.5, 7.5, 1], "texture": "#0"},
+				"east": {"uv": [7.5, 0.5, 8, 1], "texture": "#0"},
+				"south": {"uv": [7.5, 0.5, 8, 1], "texture": "#0"},
+				"west": {"uv": [7.5, 0.5, 8, 1], "texture": "#0"},
+				"up": {"uv": [7.5, 0.5, 8, 1], "texture": "#0"}
+			}
+		},
+		{
+			"name": "trident_in_hand_1",
+			"from": [5.5, 29, 9],
+			"to": [6.5, 30, 10],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [-1, 14.5, 9]},
+			"faces": {
+				"north": {"uv": [7, 1, 6.5, 1.5], "texture": "#0"},
+				"east": {"uv": [6.5, 1, 7, 1.5], "texture": "#0"},
+				"south": {"uv": [6.5, 1, 7, 1.5], "texture": "#0"},
+				"west": {"uv": [6.5, 1, 7, 1.5], "texture": "#0"},
+				"up": {"uv": [6.5, 1, 7, 1.5], "texture": "#0"}
+			}
+		},
+		{
+			"name": "trident_in_hand_2",
+			"from": [7.5, 29, 9],
+			"to": [8.5, 30, 10],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 14.5, 9]},
+			"faces": {
+				"north": {"uv": [8, 1, 7.5, 1.5], "texture": "#0"},
+				"east": {"uv": [7.5, 1, 8, 1.5], "texture": "#0"},
+				"south": {"uv": [7.5, 1, 8, 1.5], "texture": "#0"},
+				"west": {"uv": [7.5, 1, 8, 1.5], "texture": "#0"}
+			}
+		},
+		{
+			"name": "trident_in_hand_3",
+			"from": [9.5, 29, 9],
+			"to": [10.5, 30, 10],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [1, 14.5, 9]},
+			"faces": {
+				"north": {"uv": [9, 1, 8.5, 1.5], "texture": "#0"},
+				"east": {"uv": [8.5, 1, 9, 1.5], "texture": "#0"},
+				"south": {"uv": [8.5, 1, 9, 1.5], "texture": "#0"},
+				"west": {"uv": [8.5, 1, 9, 1.5], "texture": "#0"},
+				"up": {"uv": [8.5, 1, 9, 1.5], "texture": "#0"}
+			}
+		},
+		{
+			"name": "trident_in_hand_4",
+			"from": [5.5, 28, 9],
+			"to": [6.5, 29, 10],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [-1, 14, 9]},
+			"faces": {
+				"north": {"uv": [7, 1.5, 6.5, 2], "texture": "#0"},
+				"east": {"uv": [6.5, 1.5, 7, 2], "texture": "#0"},
+				"south": {"uv": [6.5, 1.5, 7, 2], "texture": "#0"},
+				"west": {"uv": [6.5, 1.5, 7, 2], "texture": "#0"}
+			}
+		},
+		{
+			"name": "trident_in_hand_5",
+			"from": [7.5, 28, 9],
+			"to": [8.5, 29, 10],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 14, 9]},
+			"faces": {
+				"north": {"uv": [8, 1.5, 7.5, 2], "texture": "#0"},
+				"east": {"uv": [7.5, 1.5, 8, 2], "texture": "#0"},
+				"south": {"uv": [7.5, 1.5, 8, 2], "texture": "#0"},
+				"west": {"uv": [7.5, 1.5, 8, 2], "texture": "#0"}
+			}
+		},
+		{
+			"name": "trident_in_hand_6",
+			"from": [9.5, 28, 9],
+			"to": [10.5, 29, 10],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [1, 14, 9]},
+			"faces": {
+				"north": {"uv": [9, 1.5, 8.5, 2], "texture": "#0"},
+				"east": {"uv": [8.5, 1.5, 9, 2], "texture": "#0"},
+				"south": {"uv": [8.5, 1.5, 9, 2], "texture": "#0"},
+				"west": {"uv": [8.5, 1.5, 9, 2], "texture": "#0"}
+			}
+		},
+		{
+			"name": "trident_in_hand_7",
+			"from": [5.5, 27, 9],
+			"to": [6.5, 28, 10],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [-1, 13.5, 9]},
+			"faces": {
+				"north": {"uv": [7, 2, 6.5, 2.5], "texture": "#0"},
+				"east": {"uv": [6.5, 2, 7, 2.5], "texture": "#0"},
+				"south": {"uv": [6.5, 2, 7, 2.5], "texture": "#0"},
+				"west": {"uv": [6.5, 2, 7, 2.5], "texture": "#0"}
+			}
+		},
+		{
+			"name": "trident_in_hand_8",
+			"from": [7.5, 27, 9],
+			"to": [8.5, 28, 10],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 13.5, 9]},
+			"faces": {
+				"north": {"uv": [8, 2, 7.5, 2.5], "texture": "#0"},
+				"east": {"uv": [7.5, 2, 8, 2.5], "texture": "#0"},
+				"south": {"uv": [7.5, 2, 8, 2.5], "texture": "#0"},
+				"west": {"uv": [7.5, 2, 8, 2.5], "texture": "#0"}
+			}
+		},
+		{
+			"name": "trident_in_hand_9",
+			"from": [9.5, 27, 9],
+			"to": [10.5, 28, 10],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [1, 13.5, 9]},
+			"faces": {
+				"north": {"uv": [9, 2, 8.5, 2.5], "texture": "#0"},
+				"east": {"uv": [8.5, 2, 9, 2.5], "texture": "#0"},
+				"south": {"uv": [8.5, 2, 9, 2.5], "texture": "#0"},
+				"west": {"uv": [8.5, 2, 9, 2.5], "texture": "#0"}
+			}
+		},
+		{
+			"name": "trident_in_hand_10",
+			"from": [5.5, 26, 9],
+			"to": [6.5, 27, 10],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [-1, 13, 9]},
+			"faces": {
+				"north": {"uv": [7, 2.5, 6.5, 3], "texture": "#0"},
+				"south": {"uv": [6.5, 2.5, 7, 3], "texture": "#0"},
+				"west": {"uv": [6.5, 2.5, 7, 3], "texture": "#0"},
+				"down": {"uv": [6.5, 2.5, 7, 3], "texture": "#0"}
+			}
+		},
+		{
+			"name": "trident_in_hand_11",
+			"from": [6.5, 26, 9],
+			"to": [7.5, 27, 10],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.5, 13, 9]},
+			"faces": {
+				"north": {"uv": [7.5, 2.5, 7, 3], "texture": "#0"},
+				"south": {"uv": [7, 2.5, 7.5, 3], "texture": "#0"},
+				"up": {"uv": [7, 2.5, 7.5, 3], "texture": "#0"}
+			}
+		},
+		{
+			"name": "trident_in_hand_12",
+			"from": [7.5, 26, 9],
+			"to": [8.5, 27, 10],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 13, 9]},
+			"faces": {
+				"north": {"uv": [8, 2.5, 7.5, 3], "texture": "#0"},
+				"south": {"uv": [7.5, 2.5, 8, 3], "texture": "#0"}
+			}
+		},
+		{
+			"name": "trident_in_hand_13",
+			"from": [8.5, 26, 9],
+			"to": [9.5, 27, 10],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [0.5, 13, 9]},
+			"faces": {
+				"north": {"uv": [8.5, 2.5, 8, 3], "texture": "#0"},
+				"south": {"uv": [8, 2.5, 8.5, 3], "texture": "#0"},
+				"up": {"uv": [8, 2.5, 8.5, 3], "texture": "#0"}
+			}
+		},
+		{
+			"name": "trident_in_hand_14",
+			"from": [9.5, 26, 9],
+			"to": [10.5, 27, 10],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [1, 13, 9]},
+			"faces": {
+				"north": {"uv": [9, 2.5, 8.5, 3], "texture": "#0"},
+				"east": {"uv": [8.5, 2.5, 9, 3], "texture": "#0"},
+				"south": {"uv": [8.5, 2.5, 9, 3], "texture": "#0"},
+				"down": {"uv": [8.5, 2.5, 9, 3], "texture": "#0"}
+			}
+		},
+		{
+			"name": "trident_in_hand_15",
+			"from": [6.5, 25, 9],
+			"to": [7.5, 26, 10],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.5, 12.5, 9]},
+			"faces": {
+				"north": {"uv": [7.5, 3, 7, 3.5], "texture": "#0"},
+				"south": {"uv": [7, 3, 7.5, 3.5], "texture": "#0"},
+				"west": {"uv": [7, 3, 7.5, 3.5], "texture": "#0"},
+				"down": {"uv": [7, 3, 7.5, 3.5], "texture": "#0"}
+			}
+		},
+		{
+			"name": "trident_in_hand_16",
+			"from": [7.5, 25, 9],
+			"to": [8.5, 26, 10],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 12.5, 9]},
+			"faces": {
+				"north": {"uv": [8, 3, 7.5, 3.5], "texture": "#0"},
+				"south": {"uv": [7.5, 3, 8, 3.5], "texture": "#0"}
+			}
+		},
+		{
+			"name": "trident_in_hand_17",
+			"from": [8.5, 25, 9],
+			"to": [9.5, 26, 10],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [0.5, 12.5, 9]},
+			"faces": {
+				"north": {"uv": [8.5, 3, 8, 3.5], "texture": "#0"},
+				"east": {"uv": [8, 3, 8.5, 3.5], "texture": "#0"},
+				"south": {"uv": [8, 3, 8.5, 3.5], "texture": "#0"},
+				"down": {"uv": [8, 3, 8.5, 3.5], "texture": "#0"}
+			}
+		},
+		{
+			"name": "trident_in_hand_18",
+			"from": [7.5, 24, 9],
+			"to": [8.5, 25, 10],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 12, 9]},
+			"faces": {
+				"north": {"uv": [8, 3.5, 7.5, 4], "texture": "#0"},
+				"east": {"uv": [7.5, 3.5, 8, 4], "texture": "#0"},
+				"south": {"uv": [7.5, 3.5, 8, 4], "texture": "#0"},
+				"west": {"uv": [7.5, 3.5, 8, 4], "texture": "#0"}
+			}
+		},
+		{
+			"name": "trident_in_hand_19",
+			"from": [7.5, 23, 9],
+			"to": [8.5, 24, 10],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 11.5, 9]},
+			"faces": {
+				"north": {"uv": [8, 4, 7.5, 4.5], "texture": "#0"},
+				"east": {"uv": [7.5, 4, 8, 4.5], "texture": "#0"},
+				"south": {"uv": [7.5, 4, 8, 4.5], "texture": "#0"},
+				"west": {"uv": [7.5, 4, 8, 4.5], "texture": "#0"}
+			}
+		},
+		{
+			"name": "trident_in_hand_20",
+			"from": [7.5, 22, 9],
+			"to": [8.5, 23, 10],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 11, 9]},
+			"faces": {
+				"north": {"uv": [8, 4.5, 7.5, 5], "texture": "#0"},
+				"east": {"uv": [7.5, 4.5, 8, 5], "texture": "#0"},
+				"south": {"uv": [7.5, 4.5, 8, 5], "texture": "#0"},
+				"west": {"uv": [7.5, 4.5, 8, 5], "texture": "#0"}
+			}
+		},
+		{
+			"name": "trident_in_hand_21",
+			"from": [7.5, 21, 9],
+			"to": [8.5, 22, 10],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 10.5, 9]},
+			"faces": {
+				"north": {"uv": [8, 5, 7.5, 5.5], "texture": "#0"},
+				"east": {"uv": [7.5, 5, 8, 5.5], "texture": "#0"},
+				"south": {"uv": [7.5, 5, 8, 5.5], "texture": "#0"},
+				"west": {"uv": [7.5, 5, 8, 5.5], "texture": "#0"}
+			}
+		},
+		{
+			"name": "trident_in_hand_22",
+			"from": [7.5, 20, 9],
+			"to": [8.5, 21, 10],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 10, 9]},
+			"faces": {
+				"north": {"uv": [8, 5.5, 7.5, 6], "texture": "#0"},
+				"east": {"uv": [7.5, 5.5, 8, 6], "texture": "#0"},
+				"south": {"uv": [7.5, 5.5, 8, 6], "texture": "#0"},
+				"west": {"uv": [7.5, 5.5, 8, 6], "texture": "#0"}
+			}
+		},
+		{
+			"name": "trident_in_hand_23",
+			"from": [7.5, 19, 9],
+			"to": [8.5, 20, 10],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 9.5, 9]},
+			"faces": {
+				"north": {"uv": [8, 6, 7.5, 6.5], "texture": "#0"},
+				"east": {"uv": [7.5, 6, 8, 6.5], "texture": "#0"},
+				"south": {"uv": [7.5, 6, 8, 6.5], "texture": "#0"},
+				"west": {"uv": [7.5, 6, 8, 6.5], "texture": "#0"}
+			}
+		},
+		{
+			"name": "trident_in_hand_24",
+			"from": [7.5, 18, 9],
+			"to": [8.5, 19, 10],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 9, 9]},
+			"faces": {
+				"north": {"uv": [8, 6.5, 7.5, 7], "texture": "#0"},
+				"east": {"uv": [7.5, 6.5, 8, 7], "texture": "#0"},
+				"south": {"uv": [7.5, 6.5, 8, 7], "texture": "#0"},
+				"west": {"uv": [7.5, 6.5, 8, 7], "texture": "#0"}
+			}
+		},
+		{
+			"name": "trident_in_hand_25",
+			"from": [7.5, 17, 9],
+			"to": [8.5, 18, 10],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 8.5, 9]},
+			"faces": {
+				"north": {"uv": [8, 7, 7.5, 7.5], "texture": "#0"},
+				"east": {"uv": [7.5, 7, 8, 7.5], "texture": "#0"},
+				"south": {"uv": [7.5, 7, 8, 7.5], "texture": "#0"},
+				"west": {"uv": [7.5, 7, 8, 7.5], "texture": "#0"}
+			}
+		},
+		{
+			"name": "trident_in_hand_26",
+			"from": [7.5, 16, 9],
+			"to": [8.5, 17, 10],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 8, 9]},
+			"faces": {
+				"north": {"uv": [8, 7.5, 7.5, 8], "texture": "#0"},
+				"east": {"uv": [7.5, 7.5, 8, 8], "texture": "#0"},
+				"south": {"uv": [7.5, 7.5, 8, 8], "texture": "#0"},
+				"west": {"uv": [7.5, 7.5, 8, 8], "texture": "#0"}
+			}
+		},
+		{
+			"name": "trident_in_hand_27",
+			"from": [7.5, 15, 9],
+			"to": [8.5, 16, 10],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 7.5, 9]},
+			"faces": {
+				"north": {"uv": [8, 8, 7.5, 8.5], "texture": "#0"},
+				"east": {"uv": [7.5, 8, 8, 8.5], "texture": "#0"},
+				"south": {"uv": [7.5, 8, 8, 8.5], "texture": "#0"},
+				"west": {"uv": [7.5, 8, 8, 8.5], "texture": "#0"}
+			}
+		},
+		{
+			"name": "trident_in_hand_28",
+			"from": [7.5, 14, 9],
+			"to": [8.5, 15, 10],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 7, 9]},
+			"faces": {
+				"north": {"uv": [8, 8.5, 7.5, 9], "texture": "#0"},
+				"east": {"uv": [7.5, 8.5, 8, 9], "texture": "#0"},
+				"south": {"uv": [7.5, 8.5, 8, 9], "texture": "#0"},
+				"west": {"uv": [7.5, 8.5, 8, 9], "texture": "#0"}
+			}
+		},
+		{
+			"name": "trident_in_hand_29",
+			"from": [7.5, 13, 9],
+			"to": [8.5, 14, 10],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 6.5, 9]},
+			"faces": {
+				"north": {"uv": [8, 9, 7.5, 9.5], "texture": "#0"},
+				"east": {"uv": [7.5, 9, 8, 9.5], "texture": "#0"},
+				"south": {"uv": [7.5, 9, 8, 9.5], "texture": "#0"},
+				"west": {"uv": [7.5, 9, 8, 9.5], "texture": "#0"}
+			}
+		},
+		{
+			"name": "trident_in_hand_30",
+			"from": [7.5, 12, 9],
+			"to": [8.5, 13, 10],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 6, 9]},
+			"faces": {
+				"north": {"uv": [8, 9.5, 7.5, 10], "texture": "#0"},
+				"east": {"uv": [7.5, 9.5, 8, 10], "texture": "#0"},
+				"south": {"uv": [7.5, 9.5, 8, 10], "texture": "#0"},
+				"west": {"uv": [7.5, 9.5, 8, 10], "texture": "#0"}
+			}
+		},
+		{
+			"name": "trident_in_hand_31",
+			"from": [7.5, 11, 9],
+			"to": [8.5, 12, 10],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 5.5, 9]},
+			"faces": {
+				"north": {"uv": [8, 10, 7.5, 10.5], "texture": "#0"},
+				"east": {"uv": [7.5, 10, 8, 10.5], "texture": "#0"},
+				"south": {"uv": [7.5, 10, 8, 10.5], "texture": "#0"},
+				"west": {"uv": [7.5, 10, 8, 10.5], "texture": "#0"}
+			}
+		},
+		{
+			"name": "trident_in_hand_32",
+			"from": [7.5, 10, 9],
+			"to": [8.5, 11, 10],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 5, 9]},
+			"faces": {
+				"north": {"uv": [8, 10.5, 7.5, 11], "texture": "#0"},
+				"east": {"uv": [7.5, 10.5, 8, 11], "texture": "#0"},
+				"south": {"uv": [7.5, 10.5, 8, 11], "texture": "#0"},
+				"west": {"uv": [7.5, 10.5, 8, 11], "texture": "#0"}
+			}
+		},
+		{
+			"name": "trident_in_hand_33",
+			"from": [7.5, 9, 9],
+			"to": [8.5, 10, 10],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 4.5, 9]},
+			"faces": {
+				"north": {"uv": [8, 11, 7.5, 11.5], "texture": "#0"},
+				"east": {"uv": [7.5, 11, 8, 11.5], "texture": "#0"},
+				"south": {"uv": [7.5, 11, 8, 11.5], "texture": "#0"},
+				"west": {"uv": [7.5, 11, 8, 11.5], "texture": "#0"}
+			}
+		},
+		{
+			"name": "trident_in_hand_34",
+			"from": [7.5, 8, 9],
+			"to": [8.5, 9, 10],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 4, 9]},
+			"faces": {
+				"north": {"uv": [8, 11.5, 7.5, 12], "texture": "#0"},
+				"east": {"uv": [7.5, 11.5, 8, 12], "texture": "#0"},
+				"south": {"uv": [7.5, 11.5, 8, 12], "texture": "#0"},
+				"west": {"uv": [7.5, 11.5, 8, 12], "texture": "#0"}
+			}
+		},
+		{
+			"name": "trident_in_hand_35",
+			"from": [7.5, 7, 9],
+			"to": [8.5, 8, 10],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 3.5, 9]},
+			"faces": {
+				"north": {"uv": [8, 12, 7.5, 12.5], "texture": "#0"},
+				"east": {"uv": [7.5, 12, 8, 12.5], "texture": "#0"},
+				"south": {"uv": [7.5, 12, 8, 12.5], "texture": "#0"},
+				"west": {"uv": [7.5, 12, 8, 12.5], "texture": "#0"}
+			}
+		},
+		{
+			"name": "trident_in_hand_36",
+			"from": [7.5, 6, 9],
+			"to": [8.5, 7, 10],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 3, 9]},
+			"faces": {
+				"north": {"uv": [8, 12.5, 7.5, 13], "texture": "#0"},
+				"east": {"uv": [7.5, 12.5, 8, 13], "texture": "#0"},
+				"south": {"uv": [7.5, 12.5, 8, 13], "texture": "#0"},
+				"west": {"uv": [7.5, 12.5, 8, 13], "texture": "#0"}
+			}
+		},
+		{
+			"name": "trident_in_hand_37",
+			"from": [7.5, 5, 9],
+			"to": [8.5, 6, 10],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 2.5, 9]},
+			"faces": {
+				"north": {"uv": [8, 13, 7.5, 13.5], "texture": "#0"},
+				"east": {"uv": [7.5, 13, 8, 13.5], "texture": "#0"},
+				"south": {"uv": [7.5, 13, 8, 13.5], "texture": "#0"},
+				"west": {"uv": [7.5, 13, 8, 13.5], "texture": "#0"}
+			}
+		},
+		{
+			"name": "trident_in_hand_38",
+			"from": [7.5, 4, 9],
+			"to": [8.5, 5, 10],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 2, 9]},
+			"faces": {
+				"north": {"uv": [8, 13.5, 7.5, 14], "texture": "#0"},
+				"east": {"uv": [7.5, 13.5, 8, 14], "texture": "#0"},
+				"south": {"uv": [7.5, 13.5, 8, 14], "texture": "#0"},
+				"west": {"uv": [7.5, 13.5, 8, 14], "texture": "#0"}
+			}
+		},
+		{
+			"name": "trident_in_hand_39",
+			"from": [7.5, 3, 9],
+			"to": [8.5, 4, 10],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 1.5, 9]},
+			"faces": {
+				"north": {"uv": [8, 14, 7.5, 14.5], "texture": "#0"},
+				"east": {"uv": [7.5, 14, 8, 14.5], "texture": "#0"},
+				"south": {"uv": [7.5, 14, 8, 14.5], "texture": "#0"},
+				"west": {"uv": [7.5, 14, 8, 14.5], "texture": "#0"}
+			}
+		},
+		{
+			"name": "trident_in_hand_40",
+			"from": [7.5, 2, 9],
+			"to": [8.5, 3, 10],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 1, 9]},
+			"faces": {
+				"north": {"uv": [8, 14.5, 7.5, 15], "texture": "#0"},
+				"east": {"uv": [7.5, 14.5, 8, 15], "texture": "#0"},
+				"south": {"uv": [7.5, 14.5, 8, 15], "texture": "#0"},
+				"west": {"uv": [7.5, 14.5, 8, 15], "texture": "#0"}
+			}
+		},
+		{
+			"name": "trident_in_hand_41",
+			"from": [7.5, 1, 9],
+			"to": [8.5, 2, 10],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 0.5, 9]},
+			"faces": {
+				"north": {"uv": [8, 15, 7.5, 15.5], "texture": "#0"},
+				"east": {"uv": [7.5, 15, 8, 15.5], "texture": "#0"},
+				"south": {"uv": [7.5, 15, 8, 15.5], "texture": "#0"},
+				"west": {"uv": [7.5, 15, 8, 15.5], "texture": "#0"}
+			}
+		},
+		{
+			"name": "trident_in_hand_42",
+			"from": [7.5, 0, 9],
+			"to": [8.5, 1, 10],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 0, 9]},
+			"faces": {
+				"north": {"uv": [8, 15.5, 7.5, 16], "texture": "#0"},
+				"east": {"uv": [7.5, 15.5, 8, 16], "texture": "#0"},
+				"south": {"uv": [7.5, 15.5, 8, 16], "texture": "#0"},
+				"west": {"uv": [7.5, 15.5, 8, 16], "texture": "#0"},
+				"down": {"uv": [7.5, 15.5, 8, 16], "texture": "#0"}
+			}
+		},
+		{
+			"name": "trident_in_hand_1",
+			"from": [7.325, 29.825, 10.175],
+			"to": [8.625, 31.125, 8.875],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.175, 14.825, 10.175]},
+			"faces": {
+				"north": {"uv": [8, 0.5, 7.5, 1], "texture": "#1"},
+				"east": {"uv": [7.5, 0.5, 8, 1], "texture": "#1"},
+				"south": {"uv": [7.5, 0.5, 8, 1], "texture": "#1"},
+				"west": {"uv": [7.5, 0.5, 8, 1], "texture": "#1"},
+				"up": {"uv": [7.5, 0.5, 8, 1], "texture": "#1"}
+			}
+		},
+		{
+			"name": "trident_in_hand_2",
+			"from": [5.325, 28.825, 10.175],
+			"to": [6.625, 30.125, 8.875],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [-1.175, 14.325, 10.175]},
+			"faces": {
+				"north": {"uv": [7, 1, 6.5, 1.5], "texture": "#1"},
+				"east": {"uv": [6.5, 1, 7, 1.5], "texture": "#1"},
+				"south": {"uv": [6.5, 1, 7, 1.5], "texture": "#1"},
+				"west": {"uv": [6.5, 1, 7, 1.5], "texture": "#1"},
+				"up": {"uv": [6.5, 1, 7, 1.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "trident_in_hand_3",
+			"from": [7.325, 28.825, 10.175],
+			"to": [8.625, 30.125, 8.875],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.175, 14.325, 10.175]},
+			"faces": {
+				"north": {"uv": [8, 1, 7.5, 1.5], "texture": "#1"},
+				"east": {"uv": [7.5, 1, 8, 1.5], "texture": "#1"},
+				"south": {"uv": [7.5, 1, 8, 1.5], "texture": "#1"},
+				"west": {"uv": [7.5, 1, 8, 1.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "trident_in_hand_4",
+			"from": [9.325, 28.825, 10.175],
+			"to": [10.625, 30.125, 8.875],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [0.825, 14.325, 10.175]},
+			"faces": {
+				"north": {"uv": [9, 1, 8.5, 1.5], "texture": "#1"},
+				"east": {"uv": [8.5, 1, 9, 1.5], "texture": "#1"},
+				"south": {"uv": [8.5, 1, 9, 1.5], "texture": "#1"},
+				"west": {"uv": [8.5, 1, 9, 1.5], "texture": "#1"},
+				"up": {"uv": [8.5, 1, 9, 1.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "trident_in_hand_5",
+			"from": [5.325, 27.825, 10.175],
+			"to": [6.625, 29.125, 8.875],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [-1.175, 13.825, 10.175]},
+			"faces": {
+				"north": {"uv": [7, 1.5, 6.5, 2], "texture": "#1"},
+				"east": {"uv": [6.5, 1.5, 7, 2], "texture": "#1"},
+				"south": {"uv": [6.5, 1.5, 7, 2], "texture": "#1"},
+				"west": {"uv": [6.5, 1.5, 7, 2], "texture": "#1"}
+			}
+		},
+		{
+			"name": "trident_in_hand_6",
+			"from": [7.325, 27.825, 10.175],
+			"to": [8.625, 29.125, 8.875],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.175, 13.825, 10.175]},
+			"faces": {
+				"north": {"uv": [8, 1.5, 7.5, 2], "texture": "#1"},
+				"east": {"uv": [7.5, 1.5, 8, 2], "texture": "#1"},
+				"south": {"uv": [7.5, 1.5, 8, 2], "texture": "#1"},
+				"west": {"uv": [7.5, 1.5, 8, 2], "texture": "#1"}
+			}
+		},
+		{
+			"name": "trident_in_hand_7",
+			"from": [9.325, 27.825, 10.175],
+			"to": [10.625, 29.125, 8.875],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [0.825, 13.825, 10.175]},
+			"faces": {
+				"north": {"uv": [9, 1.5, 8.5, 2], "texture": "#1"},
+				"east": {"uv": [8.5, 1.5, 9, 2], "texture": "#1"},
+				"south": {"uv": [8.5, 1.5, 9, 2], "texture": "#1"},
+				"west": {"uv": [8.5, 1.5, 9, 2], "texture": "#1"}
+			}
+		},
+		{
+			"name": "trident_in_hand_8",
+			"from": [5.325, 27.125, 10.175],
+			"to": [6.625, 28.125, 8.875],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [-1.175, 13.325, 10.175]},
+			"faces": {
+				"north": {"uv": [7, 2, 6.5, 2.5], "texture": "#1"},
+				"east": {"uv": [6.5, 2, 7, 2.5], "texture": "#1"},
+				"south": {"uv": [6.5, 2, 7, 2.5], "texture": "#1"},
+				"west": {"uv": [6.5, 2, 7, 2.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "trident_in_hand_9",
+			"from": [7.325, 27.125, 10.175],
+			"to": [8.625, 28.125, 8.875],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.175, 13.325, 10.175]},
+			"faces": {
+				"north": {"uv": [8, 2, 7.5, 2.5], "texture": "#1"},
+				"east": {"uv": [7.5, 2, 8, 2.5], "texture": "#1"},
+				"south": {"uv": [7.5, 2, 8, 2.5], "texture": "#1"},
+				"west": {"uv": [7.5, 2, 8, 2.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "trident_in_hand_10",
+			"from": [9.325, 27.125, 10.175],
+			"to": [10.625, 28.125, 8.875],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [0.825, 13.325, 10.175]},
+			"faces": {
+				"north": {"uv": [9, 2, 8.5, 2.5], "texture": "#1"},
+				"east": {"uv": [8.5, 2, 9, 2.5], "texture": "#1"},
+				"south": {"uv": [8.5, 2, 9, 2.5], "texture": "#1"},
+				"west": {"uv": [8.5, 2, 9, 2.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "trident_in_hand_11",
+			"from": [9.325, 25.825, 10.175],
+			"to": [9.625, 27.125, 8.875],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [0.825, 13.325, 10.175]},
+			"faces": {
+				"north": {"uv": [9, 2, 8.5, 2.5], "texture": "#1"},
+				"south": {"uv": [8.5, 2, 9, 2.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "trident_in_hand_12",
+			"from": [6.325, 25.825, 10.175],
+			"to": [6.625, 27.125, 8.875],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [-2.175, 13.325, 10.175]},
+			"faces": {
+				"north": {"uv": [9, 2, 8.5, 2.5], "texture": "#1"},
+				"south": {"uv": [8.5, 2, 9, 2.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "trident_in_hand_11",
+			"from": [5.325, 25.825, 10.175],
+			"to": [6.325, 27.125, 8.875],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [-1.175, 12.825, 10.175]},
+			"faces": {
+				"north": {"uv": [7, 2.5, 6.5, 3], "texture": "#1"},
+				"south": {"uv": [6.5, 2.5, 7, 3], "texture": "#1"},
+				"west": {"uv": [6.5, 2.5, 7, 3], "texture": "#1"},
+				"down": {"uv": [6.5, 2.5, 7, 3], "texture": "#1"}
+			}
+		},
+		{
+			"name": "trident_in_hand_12",
+			"from": [6.625, 25.825, 10.175],
+			"to": [7.325, 27.125, 8.875],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.675, 12.825, 10.175]},
+			"faces": {
+				"north": {"uv": [7.5, 2.5, 7, 3], "texture": "#1"},
+				"south": {"uv": [7, 2.5, 7.5, 3], "texture": "#1"},
+				"up": {"uv": [7, 2.5, 7.5, 3], "texture": "#1"}
+			}
+		},
+		{
+			"name": "trident_in_hand_13",
+			"from": [7.325, 25.825, 10.175],
+			"to": [8.625, 27.125, 8.875],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.175, 12.825, 10.175]},
+			"faces": {
+				"north": {"uv": [8, 2.5, 7.5, 3], "texture": "#1"},
+				"south": {"uv": [7.5, 2.5, 8, 3], "texture": "#1"}
+			}
+		},
+		{
+			"name": "trident_in_hand_14",
+			"from": [8.625, 25.825, 10.175],
+			"to": [9.325, 27.125, 8.875],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [0.325, 12.825, 10.175]},
+			"faces": {
+				"north": {"uv": [8.5, 2.5, 8, 3], "texture": "#1"},
+				"south": {"uv": [8, 2.5, 8.5, 3], "texture": "#1"},
+				"up": {"uv": [8, 2.5, 8.5, 3], "texture": "#1"}
+			}
+		},
+		{
+			"name": "trident_in_hand_15",
+			"from": [9.625, 25.825, 10.175],
+			"to": [10.625, 27.125, 8.875],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [0.825, 12.825, 10.175]},
+			"faces": {
+				"north": {"uv": [9, 2.5, 8.5, 3], "texture": "#1"},
+				"east": {"uv": [8.5, 2.5, 9, 3], "texture": "#1"},
+				"south": {"uv": [8.5, 2.5, 9, 3], "texture": "#1"},
+				"down": {"uv": [8.5, 2.5, 9, 3], "texture": "#1"}
+			}
+		},
+		{
+			"name": "trident_in_hand_16",
+			"from": [6.325, 24.825, 10.175],
+			"to": [7.325, 25.825, 8.875],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.675, 12.325, 10.175]},
+			"faces": {
+				"north": {"uv": [7.5, 3, 7, 3.5], "texture": "#1"},
+				"south": {"uv": [7, 3, 7.5, 3.5], "texture": "#1"},
+				"west": {"uv": [7, 3, 7.5, 3.5], "texture": "#1"},
+				"down": {"uv": [7, 3, 7.5, 3.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "trident_in_hand_17",
+			"from": [7.325, 24.825, 10.175],
+			"to": [8.625, 26.125, 8.875],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.175, 12.325, 10.175]},
+			"faces": {
+				"north": {"uv": [8, 3, 7.5, 3.5], "texture": "#1"},
+				"south": {"uv": [7.5, 3, 8, 3.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "trident_in_hand_18",
+			"from": [8.625, 24.825, 10.175],
+			"to": [9.625, 25.825, 8.875],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [0.325, 12.325, 10.175]},
+			"faces": {
+				"north": {"uv": [8.5, 3, 8, 3.5], "texture": "#1"},
+				"east": {"uv": [8, 3, 8.5, 3.5], "texture": "#1"},
+				"south": {"uv": [8, 3, 8.5, 3.5], "texture": "#1"},
+				"down": {"uv": [8, 3, 8.5, 3.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "trident_in_hand_19",
+			"from": [7.325, 23.825, 10.175],
+			"to": [8.625, 24.825, 8.875],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.175, 11.825, 10.175]},
+			"faces": {
+				"north": {"uv": [8, 3.5, 7.5, 4], "texture": "#1"},
+				"east": {"uv": [7.5, 3.5, 8, 4], "texture": "#1"},
+				"south": {"uv": [7.5, 3.5, 8, 4], "texture": "#1"},
+				"west": {"uv": [7.5, 3.5, 8, 4], "texture": "#1"}
+			}
+		},
+		{
+			"name": "trident_in_hand_20",
+			"from": [7.325, 22.825, 10.175],
+			"to": [8.625, 24.125, 8.875],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.175, 11.325, 10.175]},
+			"faces": {
+				"north": {"uv": [8, 4, 7.5, 4.5], "texture": "#1"},
+				"east": {"uv": [7.5, 4, 8, 4.5], "texture": "#1"},
+				"south": {"uv": [7.5, 4, 8, 4.5], "texture": "#1"},
+				"west": {"uv": [7.5, 4, 8, 4.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "trident_in_hand_21",
+			"from": [7.325, 21.825, 10.175],
+			"to": [8.625, 23.125, 8.875],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.175, 10.825, 10.175]},
+			"faces": {
+				"north": {"uv": [8, 4.5, 7.5, 5], "texture": "#1"},
+				"east": {"uv": [7.5, 4.5, 8, 5], "texture": "#1"},
+				"south": {"uv": [7.5, 4.5, 8, 5], "texture": "#1"},
+				"west": {"uv": [7.5, 4.5, 8, 5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "trident_in_hand_22",
+			"from": [7.325, 20.825, 10.175],
+			"to": [8.625, 22.125, 8.875],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.175, 10.325, 10.175]},
+			"faces": {
+				"north": {"uv": [8, 5, 7.5, 5.5], "texture": "#1"},
+				"east": {"uv": [7.5, 5, 8, 5.5], "texture": "#1"},
+				"south": {"uv": [7.5, 5, 8, 5.5], "texture": "#1"},
+				"west": {"uv": [7.5, 5, 8, 5.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "trident_in_hand_23",
+			"from": [7.325, 19.825, 10.175],
+			"to": [8.625, 21.125, 8.875],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.175, 9.825, 10.175]},
+			"faces": {
+				"north": {"uv": [8, 5.5, 7.5, 6], "texture": "#1"},
+				"east": {"uv": [7.5, 5.5, 8, 6], "texture": "#1"},
+				"south": {"uv": [7.5, 5.5, 8, 6], "texture": "#1"},
+				"west": {"uv": [7.5, 5.5, 8, 6], "texture": "#1"}
+			}
+		},
+		{
+			"name": "trident_in_hand_24",
+			"from": [7.325, 18.825, 10.175],
+			"to": [8.625, 20.125, 8.875],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.175, 9.325, 10.175]},
+			"faces": {
+				"north": {"uv": [8, 6, 7.5, 6.5], "texture": "#1"},
+				"east": {"uv": [7.5, 6, 8, 6.5], "texture": "#1"},
+				"south": {"uv": [7.5, 6, 8, 6.5], "texture": "#1"},
+				"west": {"uv": [7.5, 6, 8, 6.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "trident_in_hand_25",
+			"from": [7.325, 17.825, 10.175],
+			"to": [8.625, 19.125, 8.875],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.175, 8.825, 10.175]},
+			"faces": {
+				"north": {"uv": [8, 6.5, 7.5, 7], "texture": "#1"},
+				"east": {"uv": [7.5, 6.5, 8, 7], "texture": "#1"},
+				"south": {"uv": [7.5, 6.5, 8, 7], "texture": "#1"},
+				"west": {"uv": [7.5, 6.5, 8, 7], "texture": "#1"}
+			}
+		},
+		{
+			"name": "trident_in_hand_26",
+			"from": [7.325, 16.825, 10.175],
+			"to": [8.625, 18.125, 8.875],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.175, 8.325, 10.175]},
+			"faces": {
+				"north": {"uv": [8, 7, 7.5, 7.5], "texture": "#1"},
+				"east": {"uv": [7.5, 7, 8, 7.5], "texture": "#1"},
+				"south": {"uv": [7.5, 7, 8, 7.5], "texture": "#1"},
+				"west": {"uv": [7.5, 7, 8, 7.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "trident_in_hand_27",
+			"from": [7.325, 15.825, 10.175],
+			"to": [8.625, 17.125, 8.875],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.175, 7.825, 10.175]},
+			"faces": {
+				"north": {"uv": [8, 7.5, 7.5, 8], "texture": "#1"},
+				"east": {"uv": [7.5, 7.5, 8, 8], "texture": "#1"},
+				"south": {"uv": [7.5, 7.5, 8, 8], "texture": "#1"},
+				"west": {"uv": [7.5, 7.5, 8, 8], "texture": "#1"}
+			}
+		},
+		{
+			"name": "trident_in_hand_28",
+			"from": [7.325, 14.825, 10.175],
+			"to": [8.625, 16.125, 8.875],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.175, 7.325, 10.175]},
+			"faces": {
+				"north": {"uv": [8, 8, 7.5, 8.5], "texture": "#1"},
+				"east": {"uv": [7.5, 8, 8, 8.5], "texture": "#1"},
+				"south": {"uv": [7.5, 8, 8, 8.5], "texture": "#1"},
+				"west": {"uv": [7.5, 8, 8, 8.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "trident_in_hand_29",
+			"from": [7.325, 13.825, 10.175],
+			"to": [8.625, 15.125, 8.875],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.175, 6.825, 10.175]},
+			"faces": {
+				"north": {"uv": [8, 8.5, 7.5, 9], "texture": "#1"},
+				"east": {"uv": [7.5, 8.5, 8, 9], "texture": "#1"},
+				"south": {"uv": [7.5, 8.5, 8, 9], "texture": "#1"},
+				"west": {"uv": [7.5, 8.5, 8, 9], "texture": "#1"}
+			}
+		},
+		{
+			"name": "trident_in_hand_30",
+			"from": [7.325, 12.825, 10.175],
+			"to": [8.625, 14.125, 8.875],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.175, 6.325, 10.175]},
+			"faces": {
+				"north": {"uv": [8, 9, 7.5, 9.5], "texture": "#1"},
+				"east": {"uv": [7.5, 9, 8, 9.5], "texture": "#1"},
+				"south": {"uv": [7.5, 9, 8, 9.5], "texture": "#1"},
+				"west": {"uv": [7.5, 9, 8, 9.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "trident_in_hand_31",
+			"from": [7.325, 11.825, 10.175],
+			"to": [8.625, 13.125, 8.875],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.175, 5.825, 10.175]},
+			"faces": {
+				"north": {"uv": [8, 9.5, 7.5, 10], "texture": "#1"},
+				"east": {"uv": [7.5, 9.5, 8, 10], "texture": "#1"},
+				"south": {"uv": [7.5, 9.5, 8, 10], "texture": "#1"},
+				"west": {"uv": [7.5, 9.5, 8, 10], "texture": "#1"}
+			}
+		},
+		{
+			"name": "trident_in_hand_32",
+			"from": [7.325, 10.825, 10.175],
+			"to": [8.625, 12.125, 8.875],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.175, 5.325, 10.175]},
+			"faces": {
+				"north": {"uv": [8, 10, 7.5, 10.5], "texture": "#1"},
+				"east": {"uv": [7.5, 10, 8, 10.5], "texture": "#1"},
+				"south": {"uv": [7.5, 10, 8, 10.5], "texture": "#1"},
+				"west": {"uv": [7.5, 10, 8, 10.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "trident_in_hand_33",
+			"from": [7.325, 9.825, 10.175],
+			"to": [8.625, 11.125, 8.875],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.175, 4.825, 10.175]},
+			"faces": {
+				"north": {"uv": [8, 10.5, 7.5, 11], "texture": "#1"},
+				"east": {"uv": [7.5, 10.5, 8, 11], "texture": "#1"},
+				"south": {"uv": [7.5, 10.5, 8, 11], "texture": "#1"},
+				"west": {"uv": [7.5, 10.5, 8, 11], "texture": "#1"}
+			}
+		},
+		{
+			"name": "trident_in_hand_34",
+			"from": [7.325, 8.825, 10.175],
+			"to": [8.625, 10.125, 8.875],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.175, 4.325, 10.175]},
+			"faces": {
+				"north": {"uv": [8, 11, 7.5, 11.5], "texture": "#1"},
+				"east": {"uv": [7.5, 11, 8, 11.5], "texture": "#1"},
+				"south": {"uv": [7.5, 11, 8, 11.5], "texture": "#1"},
+				"west": {"uv": [7.5, 11, 8, 11.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "trident_in_hand_35",
+			"from": [7.325, 7.825, 10.175],
+			"to": [8.625, 9.125, 8.875],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.175, 3.825, 10.175]},
+			"faces": {
+				"north": {"uv": [8, 11.5, 7.5, 12], "texture": "#1"},
+				"east": {"uv": [7.5, 11.5, 8, 12], "texture": "#1"},
+				"south": {"uv": [7.5, 11.5, 8, 12], "texture": "#1"},
+				"west": {"uv": [7.5, 11.5, 8, 12], "texture": "#1"}
+			}
+		},
+		{
+			"name": "trident_in_hand_36",
+			"from": [7.325, 6.825, 10.175],
+			"to": [8.625, 8.125, 8.875],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.175, 3.325, 10.175]},
+			"faces": {
+				"north": {"uv": [8, 12, 7.5, 12.5], "texture": "#1"},
+				"east": {"uv": [7.5, 12, 8, 12.5], "texture": "#1"},
+				"south": {"uv": [7.5, 12, 8, 12.5], "texture": "#1"},
+				"west": {"uv": [7.5, 12, 8, 12.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "trident_in_hand_37",
+			"from": [7.325, 5.825, 10.175],
+			"to": [8.625, 7.125, 8.875],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.175, 2.825, 10.175]},
+			"faces": {
+				"north": {"uv": [8, 12.5, 7.5, 13], "texture": "#1"},
+				"east": {"uv": [7.5, 12.5, 8, 13], "texture": "#1"},
+				"south": {"uv": [7.5, 12.5, 8, 13], "texture": "#1"},
+				"west": {"uv": [7.5, 12.5, 8, 13], "texture": "#1"}
+			}
+		},
+		{
+			"name": "trident_in_hand_38",
+			"from": [7.325, 4.825, 10.175],
+			"to": [8.625, 6.125, 8.875],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.175, 2.325, 10.175]},
+			"faces": {
+				"north": {"uv": [8, 13, 7.5, 13.5], "texture": "#1"},
+				"east": {"uv": [7.5, 13, 8, 13.5], "texture": "#1"},
+				"south": {"uv": [7.5, 13, 8, 13.5], "texture": "#1"},
+				"west": {"uv": [7.5, 13, 8, 13.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "trident_in_hand_39",
+			"from": [7.325, 3.825, 10.175],
+			"to": [8.625, 5.125, 8.875],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.175, 1.825, 10.175]},
+			"faces": {
+				"north": {"uv": [8, 13.5, 7.5, 14], "texture": "#1"},
+				"east": {"uv": [7.5, 13.5, 8, 14], "texture": "#1"},
+				"south": {"uv": [7.5, 13.5, 8, 14], "texture": "#1"},
+				"west": {"uv": [7.5, 13.5, 8, 14], "texture": "#1"}
+			}
+		},
+		{
+			"name": "trident_in_hand_40",
+			"from": [7.325, 2.825, 10.175],
+			"to": [8.625, 4.125, 8.875],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.175, 1.325, 10.175]},
+			"faces": {
+				"north": {"uv": [8, 14, 7.5, 14.5], "texture": "#1"},
+				"east": {"uv": [7.5, 14, 8, 14.5], "texture": "#1"},
+				"south": {"uv": [7.5, 14, 8, 14.5], "texture": "#1"},
+				"west": {"uv": [7.5, 14, 8, 14.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "trident_in_hand_41",
+			"from": [7.325, 1.825, 10.175],
+			"to": [8.625, 3.125, 8.875],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.175, 0.825, 10.175]},
+			"faces": {
+				"north": {"uv": [8, 14.5, 7.5, 15], "texture": "#1"},
+				"east": {"uv": [7.5, 14.5, 8, 15], "texture": "#1"},
+				"south": {"uv": [7.5, 14.5, 8, 15], "texture": "#1"},
+				"west": {"uv": [7.5, 14.5, 8, 15], "texture": "#1"}
+			}
+		},
+		{
+			"name": "trident_in_hand_42",
+			"from": [7.325, 0.825, 10.175],
+			"to": [8.625, 2.125, 8.875],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.175, 0.325, 10.175]},
+			"faces": {
+				"north": {"uv": [8, 15, 7.5, 15.5], "texture": "#1"},
+				"east": {"uv": [7.5, 15, 8, 15.5], "texture": "#1"},
+				"south": {"uv": [7.5, 15, 8, 15.5], "texture": "#1"},
+				"west": {"uv": [7.5, 15, 8, 15.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "trident_in_hand_43",
+			"from": [7.325, -0.175, 10.175],
+			"to": [8.625, 1.125, 8.875],
+			"shade": false,
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.175, -0.175, 10.175]},
+			"faces": {
+				"north": {"uv": [8, 15.5, 7.5, 16], "texture": "#1"},
+				"east": {"uv": [7.5, 15.5, 8, 16], "texture": "#1"},
+				"south": {"uv": [7.5, 15.5, 8, 16], "texture": "#1"},
+				"west": {"uv": [7.5, 15.5, 8, 16], "texture": "#1"},
+				"down": {"uv": [7.5, 15.5, 8, 16], "texture": "#1"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, 90, -180],
+			"translation": [-1.5, 6, 1]
+		}
+	},
+	"groups": [
+		{
+			"name": "trident_in_hand",
+			"origin": [8, 8, 8],
+			"scope": 0,
+			"color": 0,
+			"children": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42]
+		},
+		{
+			"name": "outline",
+			"origin": [8, 8, 8],
+			"scope": 0,
+			"color": 0,
+			"children": [43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87]
+		}
+	]
+}

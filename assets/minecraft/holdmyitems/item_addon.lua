@@ -206,7 +206,7 @@ if isTotem then
     particleManager:addParticle(
         particles,
         false,
-        0.03 * l, 0.2, 0.05, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4,
+        0.03 * l, 0.2, 0.05, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2.5,
         texture, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 255 
     )
 end
