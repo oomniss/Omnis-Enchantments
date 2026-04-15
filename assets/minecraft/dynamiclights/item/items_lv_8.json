@@ -1,0 +1,13 @@
+{
+  "match": {
+    "items": [
+      "enchanted_golden_apple",
+      "experience_bottle",
+      "enchanted_book",
+      "written_book",
+      "nether_star",
+      "end_crystal"
+    ]
+  },
+  "luminance": 8
+}

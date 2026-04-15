@@ -1,15 +1,19 @@
 -- by omnis._.
 
-global.enchantActive              = global.enchantActive or false
+global.enchantActive          = global.enchantActive or false
+global.lastEnchantSpawnTime   = global.lastEnchantSpawnTime or 0
+global.enchantParticleStates  = global.enchantParticleStates or {}
+global.activeEnchantParticles = global.activeEnchantParticles or 0
 
-local l                           = context.mainHand and 1 or -1
-local hand                        = context.hand
-local particles                   = context.particles
-local itemName                    = I:getName(context.item):gsub("minecraft:", "")
-local isEnchanted                 = I:isEnchanted(context.item)
-local isUsingItem                 = P:isUsingItem(context.player)
-local deltaTime                   = context.deltaTime
-local time                        = P:getAge(context.player)
+local l                       = context.mainHand and 1 or -1
+local hand                    = context.hand
+local particles               = context.particles
+local itemName                = I:getName(context.item):gsub("minecraft:", "")
+local isEnchanted             = I:isEnchanted(context.item)
+local isUsingItem             = P:isUsingItem(context.player)
+local deltaTime               = context.deltaTime
+local time                    = P:getAge(context.player)
+local SPAWN_INTERVAL          = 8
 
 -- === FUNCTIONS ===
 local function matched(items, matches)
@@ -21,9 +25,6 @@ local function matched(items, matches)
         if matches and itemName:match(i) then
             return true
         end
-        if i:find("[%^%$%(%)%%%.%[%]%*%+%-%?]") then
-            return false
-        end
         return I:isIn(context.item, Tags:getFabricTag(i))
             or I:isIn(context.item, Tags:getVanillaTag(i))
     end
@@ -33,28 +34,33 @@ local function matched(items, matches)
     return false
 end
 
-local function particleTickerEnchant(particle)
-    if not enchantActive then
+local function particleTickerEnchant(particle, particleID)
+    local state = global.enchantParticleStates[particleID]
+
+    if not global.enchantActive then
         particle.dead = true
+        if global.enchantParticleStates[particleID] then
+            global.enchantParticleStates[particleID] = nil
+            global.activeEnchantParticles = math.max(0, global.activeEnchantParticles - 1)
+        end
         return
     end
 
-    if not particle.enchantState then
-        particle.enchantState = {
+    if not state then
+        state = {
             age       = 0,
-            lifetime  = 100 + math.random(0, 100),
             phaseX    = math.random() * 6.283,
             phaseY    = math.random() * 6.283,
             phaseZ    = math.random() * 6.283,
-            speedX    = 0.03 + math.random() * 0.04,
-            speedY    = 0.02 + math.random() * 0.03,
-            speedZ    = 0.03 + math.random() * 0.04,
-            amplitude = math.random() * 0.003,
-            riseSpeed = 0.001 + math.random() * 0.002,
+            speedX    = 0.025 + math.random() * 0.035,
+            speedY    = 0.015 + math.random() * 0.025,
+            speedZ    = 0.025 + math.random() * 0.035,
+            amplitude = math.random() * 0.0025,
+            riseSpeed = 0.0008 + math.random() * 0.0015,
         }
+        global.enchantParticleStates[particleID] = state
     end
 
-    local state = particle.enchantState
     state.age = state.age + deltaTime * 30
 
     state.phaseX = state.phaseX + state.speedX * deltaTime * 30
@@ -64,9 +70,13 @@ local function particleTickerEnchant(particle)
     particle.dx = math.sin(state.phaseX) * state.amplitude
     particle.dy = state.riseSpeed + math.cos(state.phaseY) * state.amplitude * 0.5
     particle.dz = math.sin(state.phaseZ) * state.amplitude
+end
 
-    if state.age >= state.lifetime then
-        particle.dead = true
+-- Killinator 3000
+for id, state in pairs(global.enchantParticleStates) do
+    if not state or not global.enchantActive then
+        global.enchantParticleStates[id] = nil
+        global.activeEnchantParticles = math.max(0, global.activeEnchantParticles - 1)
     end
 end
 
@@ -102,6 +112,7 @@ local isTotem                   = matched("totem_of_undying") and ${glowTotem}
 local isShield                  = matched("shield")
 local isBrush                   = matched("brush")
 local isTrident                 = matched("trident")
+local isEndCrystal              = matched("end_crystal")
 
 local is2D =
     isBook
@@ -126,13 +137,14 @@ local function getTexture()
             return entry[2] .. "_glow.png"
         end
     end
-    return "purple" .. "_glow.png"
+    return "purple_glow.png"
 end
 local texture = Texture:of("minecraft", "textures/particle/" .. getTexture())
 
 -- === PARTICLES ===
 if isEnchanted then
-    enchantActive = true
+    global.enchantActive = true
+
     if glow then
         if isPickaxe then
             particleManager:addParticle(
@@ -225,21 +237,21 @@ if isEnchanted then
                 -0.02 * l, 0.05, 0.03, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3,
                 texture, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 200
             )
-        elseif isShield then -- não funciona por algum motivo - entity
+        elseif isShield then
             particleManager:addParticle(
                 particles,
                 true,
                 0 * l, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3.5,
                 texture, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 255
             )
-        elseif isTrident then -- não funciona por algum motivo - entity
+        elseif isTrident then
             particleManager:addParticle(
                 particles,
                 true,
                 0 * l, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3.5,
                 texture, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 255
             )
-        elseif isBrush then -- não funciona por algum motivo
+        elseif isBrush then
             particleManager:addParticle(
                 particles,
                 false,
@@ -250,44 +262,48 @@ if isEnchanted then
     end
 
     if enchantParticles then
-        local spawnInterval = 8
-        if time % spawnInterval == 0 then
-
+        if time - (global.lastEnchantSpawnTime or 0) >= SPAWN_INTERVAL then
             local letter = string.char(96 + math.random(1, 26))
             local sgaTex = Texture:of("minecraft", "textures/particle/sga_" .. letter .. ".png")
 
             local x, y, z = 0, 0, 0
             local posParticles = {
-                { isBow, {-0.05, -0.3, 0} },
-                { is2D,  {0.05, -0.25, 0} }
+                {isBow,        {-0.05, -0.3, 0}},
+                {is2D,         {0.05, -0.25, 0}},
+                {isSpear,      {0.1, 0.5, 0.1}},
+                {isEndCrystal, {0, -0.15, 0}}
             }
             for _, entry in ipairs(posParticles) do
-                if entry[1] then
+                if entry[1] then 
                     x = entry[2][1]
                     y = entry[2][2]
                     z = entry[2][3]
-                    break
+                    break 
                 end
             end
 
             local spawnX = ((math.random() * 0.5 - 0.3) + x) * l
             local spawnY = (math.random() * 0.7 + 0.05) + y
-            local spawnZ = (math.random() * 0.3 - 0.1)  + z
+            local spawnZ = (math.random() * 0.3 - 0.1) + z
+
+            local particleID = "ench_" .. time .. "_" .. math.random(1000, 9999)
 
             particleManager:addParticle(
-                particles,
-                false,
+                particles, false,
                 spawnX, spawnY, spawnZ,
                 0, 0, 0, 0, 0, 0, 0, 0, math.random(-8,8),
-                0.05 + math.random() * 0.14,
+                0.05 + math.random() * 0.12,
                 sgaTex, "ITEM", hand, "OPACITY", "ADDITIVE",
-                12, 180 + math.random(0, 75),
-                particleTickerEnchant
+                12, 160 + math.random(0, 60),
+                function(p) particleTickerEnchant(p, particleID) end
             )
+
+            global.lastEnchantSpawnTime = time
+            global.activeEnchantParticles = global.activeEnchantParticles + 1
         end
     end
 else
-    enchantActive = false
+    global.enchantActive = false
 end
 
 if isTotem then
