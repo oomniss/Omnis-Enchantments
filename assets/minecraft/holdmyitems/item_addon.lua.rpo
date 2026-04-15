@@ -1,9 +1,31 @@
 {
   expansions: {
-    glowParticles:  "OmnisEnchantments.GeneralSettings.GlowParticles",
+    glow:               "OmnisEnchantments.GeneralSettings.Glow",
+    enchantPart:        "OmnisEnchantments.GeneralSettings.EnchantmentParticles",
 
-    glowSwords:     "OmnisEnchantments.GlowItems.Swords",
-    glowPickaxes:   "OmnisEnchantments.GlowItems.Pickaxes",
-    glowTotem:      "OmnisEnchantments.GlowItems.Totem"
+    glowSwords:         "OmnisEnchantments.GlowPerItem.Swords",
+    glowPickaxes:       "OmnisEnchantments.GlowPerItem.Pickaxes",
+    glowAxes:           "OmnisEnchantments.GlowPerItem.Axes",
+    glowHoes:           "OmnisEnchantments.GlowPerItem.Hoes",
+    glowShovels:        "OmnisEnchantments.GlowPerItem.Shovels",
+    glowSpears:         "OmnisEnchantments.GlowPerItem.Spears",
+    glowBooks:          "OmnisEnchantments.GlowPerItem.Books",
+    glowRods:           "OmnisEnchantments.GlowPerItem.Rods",
+    glowShears:         "OmnisEnchantments.GlowPerItem.Shears",
+    glowEnchantApple:   "OmnisEnchantments.GlowPerItem.EnchantedGoldenApple",
+    glowArmors:         "OmnisEnchantments.GlowPerItem.Armors",
+    glowNautilusArmors: "OmnisEnchantments.GlowPerItem.NautilusArmors",
+    glowHorseArmors:    "OmnisEnchantments.GlowPerItem.HorseArmors",
+    glowWolfArmor:      "OmnisEnchantments.GlowPerItem.WolfArmor",
+    glowMace:           "OmnisEnchantments.GlowPerItem.Mace",
+    glowBow:            "OmnisEnchantments.GlowPerItem.Bow",
+    glowCrossbow:       "OmnisEnchantments.GlowPerItem.Crossbow",
+    glowFlintSteel:     "OmnisEnchantments.GlowPerItem.FlintAndSteel",
+    glowSpyglass:       "OmnisEnchantments.GlowPerItem.Spyglass",
+    glowCompasses:      "OmnisEnchantments.GlowPerItem.Compasses",
+    glowClock:          "OmnisEnchantments.GlowPerItem.Clock",
+    glowNetherStar:     "OmnisEnchantments.GlowPerItem.NetherStar",
+    glowExpBottle:      "OmnisEnchantments.GlowPerItem.ExperienceBottle",
+    glowTotem:          "OmnisEnchantments.GlowPerItem.Totem"
   }
 }

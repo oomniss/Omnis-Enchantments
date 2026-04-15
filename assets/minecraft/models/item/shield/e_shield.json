@@ -1,6 +1,4 @@
 {
-	"format_version": "1.21.11",
-	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "item/shield_base_nopattern",
 		"1": "item/enchantment_outline"

@@ -1,16 +1,19 @@
 -- by omnis._.
 
-local l           = context.mainHand and 1 or -1
-local hand        = context.hand
-local particles   = context.particles
-local itemName    = I:getName(context.item):gsub("minecraft:", "")
-local isEnchanted = I:isEnchanted(context.item)
-local isUsingItem = P:isUsingItem(context.player)
+global.enchantActive              = global.enchantActive or false
 
--- === MATCH ===
+local l                           = context.mainHand and 1 or -1
+local hand                        = context.hand
+local particles                   = context.particles
+local itemName                    = I:getName(context.item):gsub("minecraft:", "")
+local isEnchanted                 = I:isEnchanted(context.item)
+local isUsingItem                 = P:isUsingItem(context.player)
+local deltaTime                   = context.deltaTime
+local time                        = P:getAge(context.player)
+
+-- === FUNCTIONS ===
 local function matched(items, matches)
     local list = type(items) == "table" and items or {items}
-
     local function check(i)
         if itemName == i then
             return true
@@ -24,43 +27,93 @@ local function matched(items, matches)
         return I:isIn(context.item, Tags:getFabricTag(i))
             or I:isIn(context.item, Tags:getVanillaTag(i))
     end
-
     for _, i in ipairs(list) do
         if check(i) then return true end
     end
     return false
 end
 
--- === PARTICLES ===
-local glowParticles             = ${glowParticles}
-local enchantParticles          = true
+local function particleTickerEnchant(particle)
+    if not enchantActive then
+        particle.dead = true
+        return
+    end
+
+    if not particle.enchantState then
+        particle.enchantState = {
+            age       = 0,
+            lifetime  = 100 + math.random(0, 100),
+            phaseX    = math.random() * 6.283,
+            phaseY    = math.random() * 6.283,
+            phaseZ    = math.random() * 6.283,
+            speedX    = 0.03 + math.random() * 0.04,
+            speedY    = 0.02 + math.random() * 0.03,
+            speedZ    = 0.03 + math.random() * 0.04,
+            amplitude = math.random() * 0.003,
+            riseSpeed = 0.001 + math.random() * 0.002,
+        }
+    end
+
+    local state = particle.enchantState
+    state.age = state.age + deltaTime * 30
+
+    state.phaseX = state.phaseX + state.speedX * deltaTime * 30
+    state.phaseY = state.phaseY + state.speedY * deltaTime * 30
+    state.phaseZ = state.phaseZ + state.speedZ * deltaTime * 30
+
+    particle.dx = math.sin(state.phaseX) * state.amplitude
+    particle.dy = state.riseSpeed + math.cos(state.phaseY) * state.amplitude * 0.5
+    particle.dz = math.sin(state.phaseZ) * state.amplitude
+
+    if state.age >= state.lifetime then
+        particle.dead = true
+    end
+end
+
+-- === ITEMS ===
+local glow                      = ${glow}
+local enchantParticles          = ${enchantPart}
 
 local isPickaxe                 = matched("pickaxes") and ${glowPickaxes}
-local isAxe                     = matched("axes")
-local isHoe                     = matched("hoes")
-local isShovel                  = matched("shovels")
+local isAxe                     = matched("axes") and ${glowAxes}
+local isHoe                     = matched("hoes") and ${glowHoes}
+local isShovel                  = matched("shovels") and ${glowShovels}
 local isSword                   = matched("swords") and ${glowSwords}
-local isSpear                   = matched("spears")
-local isTrident                 = matched("trident")
-local isBook                    = matched({"enchanted_book", "written_book"})
-local isRod                     = matched({"fishing_rod", "carrot_on_a_stick", "warped_fungus_on_a_stick"})
-local isShears                  = matched("shears")
-local isEnchantedGoldenApple    = matched("enchanted_golden_apple")
-local isArmor                   = matched({"head_armor", "chest_armor", "leg_armor", "foot_armor", "elytra"})
-local isNautilusArmor           = matched("nautilus_armor", true)
-local isHorseArmor              = matched("horse_armor", true)
-local isWolfArmor               = matched("wolf_armor")
-local isMace                    = matched("mace")
-local isBow                     = matched("bow")
-local isCrossbow                = matched("crossbow")
-local isShield                  = matched("shield")
-local isFlintSteel              = matched("flint_and_steel")
-local isBrush                   = matched("brush")
-local isSpyglass                = matched("spyglass")
-local isCompass                 = matched({"compasses", "clock"})
-local isNetherStar              = matched("nether_star")
-local isExperienceBottle        = matched("experience_bottle")
+local isSpear                   = matched("spears") and ${glowSpears}
+local isBook                    = matched({"enchanted_book", "written_book"}) and ${glowBooks}
+local isRod                     = matched({"fishing_rod", "carrot_on_a_stick", "warped_fungus_on_a_stick"}) and ${glowRods}
+local isShears                  = matched("shears") and ${glowShears}
+local isEnchantedGoldenApple    = matched("enchanted_golden_apple") and ${glowEnchantApple}
+local isArmor                   = matched({"head_armor", "chest_armor", "leg_armor", "foot_armor", "elytra"}) and ${glowArmors}
+local isNautilusArmor           = matched("nautilus_armor", true) and ${glowNautilusArmors}
+local isHorseArmor              = matched("horse_armor", true) and ${glowHorseArmors}
+local isWolfArmor               = matched("wolf_armor") and ${glowWolfArmor}
+local isMace                    = matched("mace") and ${glowMace}
+local isBow                     = matched("bow") and ${glowBow}
+local isCrossbow                = matched("crossbow") and ${glowCrossbow}
+local isFlintSteel              = matched("flint_and_steel") and ${glowFlintSteel}
+local isSpyglass                = matched("spyglass") and ${glowSpyglass}
+local isCompass                 = matched({"compasses"}) and ${glowCompasses}
+local isClock                   = matched({"clock"}) and ${glowClock}
+local isNetherStar              = matched("nether_star") and ${glowNetherStar}
+local isExperienceBottle        = matched("experience_bottle") and ${glowExpBottle}
 local isTotem                   = matched("totem_of_undying") and ${glowTotem}
+
+local isShield                  = matched("shield")
+local isBrush                   = matched("brush")
+local isTrident                 = matched("trident")
+
+local is2D =
+    isBook
+    or isEnchantedGoldenApple
+    or isArmor
+    or isNautilusArmor
+    or isShears
+    or isCompass
+    or isClock
+    or isFlintSteel
+    or isNetherStar
+    or isExperienceBottle
 
 -- === TEXTURE ===
 local function getTexture()
@@ -68,7 +121,6 @@ local function getTexture()
         {isSword or isSpear,    "sword"},
         {isTotem,               "gold"}
     }
-
     for _, entry in ipairs(textureMap) do
         if entry[1] and not isUsingItem then
             return entry[2] .. "_glow.png"
@@ -76,12 +128,12 @@ local function getTexture()
     end
     return "purple" .. "_glow.png"
 end
-
 local texture = Texture:of("minecraft", "textures/particle/" .. getTexture())
 
 -- === PARTICLES ===
 if isEnchanted then
-    if glowParticles then
+    enchantActive = true
+    if glow then
         if isPickaxe then
             particleManager:addParticle(
                 particles,
@@ -117,7 +169,7 @@ if isEnchanted then
                 0.1 * l, 1.1, 0.15, 0, 0, 0, 0, 0, 0, 0, 0, 0, isUsingItem and 4 or 6,
                 texture, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 255
             )
-        elseif isBook or isEnchantedGoldenApple or isArmor or isNautilusArmor or isShears or isCompass or isFlintSteel or isNetherStar or isExperienceBottle then
+        elseif is2D then
             particleManager:addParticle(
                 particles,
                 false,
@@ -198,8 +250,44 @@ if isEnchanted then
     end
 
     if enchantParticles then
-        
+        local spawnInterval = 8
+        if time % spawnInterval == 0 then
+
+            local letter = string.char(96 + math.random(1, 26))
+            local sgaTex = Texture:of("minecraft", "textures/particle/sga_" .. letter .. ".png")
+
+            local x, y, z = 0, 0, 0
+            local posParticles = {
+                { isBow, {-0.05, -0.3, 0} },
+                { is2D,  {0.05, -0.25, 0} }
+            }
+            for _, entry in ipairs(posParticles) do
+                if entry[1] then
+                    x = entry[2][1]
+                    y = entry[2][2]
+                    z = entry[2][3]
+                    break
+                end
+            end
+
+            local spawnX = ((math.random() * 0.5 - 0.3) + x) * l
+            local spawnY = (math.random() * 0.7 + 0.05) + y
+            local spawnZ = (math.random() * 0.3 - 0.1)  + z
+
+            particleManager:addParticle(
+                particles,
+                false,
+                spawnX, spawnY, spawnZ,
+                0, 0, 0, 0, 0, 0, 0, 0, math.random(-8,8),
+                0.05 + math.random() * 0.14,
+                sgaTex, "ITEM", hand, "OPACITY", "ADDITIVE",
+                12, 180 + math.random(0, 75),
+                particleTickerEnchant
+            )
+        end
     end
+else
+    enchantActive = false
 end
 
 if isTotem then
@@ -207,6 +295,6 @@ if isTotem then
         particles,
         false,
         0.03 * l, 0.2, 0.05, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2.5,
-        texture, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 255 
+        texture, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 255
     )
 end
