@@ -1,20 +1,20 @@
 -- by omnis._.
 
-global.enchantActive          = global.enchantActive or false
-global.lastEnchantSpawnTime   = global.lastEnchantSpawnTime or 0
-global.enchantParticleStates  = global.enchantParticleStates or {}
-global.activeEnchantParticles = global.activeEnchantParticles or 0
+global.runeActive           = global.runeActive or false
+global.lastRuneSpawnTime    = global.lastRuneSpawnTime or 0
+global.RuneStates           = global.RuneStates or {}
+global.activeRunes          = global.activeRunes or 0
 
-local l                       = context.mainHand and 1 or -1
-local hand                    = context.hand
-local particles               = context.particles
-local itemName                = I:getName(context.item):gsub("minecraft:", "")
-local isEnchanted             = I:isEnchanted(context.item)
-local isUsingItem             = P:isUsingItem(context.player)
-local deltaTime               = context.deltaTime
-local time                    = P:getAge(context.player)
+local l                     = context.mainHand and 1 or -1
+local hand                  = context.hand
+local particles             = context.particles
+local itemName              = I:getName(context.item):gsub("minecraft:", "")
+local isEnchanted           = I:isEnchanted(context.item)
+local isUsingItem           = P:isUsingItem(context.player)
+local deltaTime             = context.deltaTime
+local time                  = P:getAge(context.player)
 
--- === FUNCTIONS ===
+-- === MATCH ===
 local function matched(items, matches)
     local list = type(items) == "table" and items or {items}
     local function check(i)
@@ -33,14 +33,15 @@ local function matched(items, matches)
     return false
 end
 
+-- === PARTICLE TICKER ===
 local function particleTickerEnchant(particle, particleID, amp)
-    local state = global.enchantParticleStates[particleID]
+    local state = global.RuneStates[particleID]
 
-    if not global.enchantActive then
+    if not global.runeActive then
         particle.dead = true
-        if global.enchantParticleStates[particleID] then
-            global.enchantParticleStates[particleID] = nil
-            global.activeEnchantParticles = math.max(0, global.activeEnchantParticles - 1)
+        if global.RuneStates[particleID] then
+            global.RuneStates[particleID] = nil
+            global.activeRunes = math.max(0, global.activeRunes - 1)
         end
         return
     end
@@ -57,7 +58,7 @@ local function particleTickerEnchant(particle, particleID, amp)
             amplitude = (math.random() * 0.0025) + amp,
             riseSpeed = 0.0008 + math.random() * 0.0015,
         }
-        global.enchantParticleStates[particleID] = state
+        global.RuneStates[particleID] = state
     end
 
     state.age = state.age + deltaTime * 30
@@ -71,68 +72,84 @@ local function particleTickerEnchant(particle, particleID, amp)
     particle.dz = math.sin(state.phaseZ) * state.amplitude
 end
 
-for id, state in pairs(global.enchantParticleStates) do
-    if not state or not global.enchantActive then
-        global.enchantParticleStates[id] = nil
-        global.activeEnchantParticles = math.max(0, global.activeEnchantParticles - 1)
+for id, state in pairs(global.RuneStates) do
+    if not state or not global.runeActive then
+        global.RuneStates[id] = nil
+        global.activeRunes = math.max(0, global.activeRunes - 1)
     end
 end
 
--- === ITEMS ===
-local glow                      = ${glow}
-local enchantParticles          = ${enchantPart} and not matched({"trident", "brush", "shield"})
+-- === SETTINGS ===
+local glowingEffect   = ${glow}
+local runes           = ${runes}
 
-local isPickaxe                 = matched("pickaxes") and ${glowPickaxes}
-local isAxe                     = matched("axes") and ${glowAxes}
-local isHoe                     = matched("hoes") and ${glowHoes}
-local isShovel                  = matched("shovels") and ${glowShovels}
-local isSword                   = matched("swords") and ${glowSwords}
-local isSpear                   = matched("spears") and ${glowSpears}
-local isBook                    = matched({"enchanted_book", "written_book"}) and ${glowBooks}
-local isRod                     = matched({"fishing_rod", "carrot_on_a_stick", "warped_fungus_on_a_stick"}) and ${glowRods}
-local isShears                  = matched("shears") and ${glowShears}
-local isEnchantedGoldenApple    = matched("enchanted_golden_apple") and ${glowEnchantApple}
-local isArmor                   = matched({"head_armor", "chest_armor", "leg_armor", "foot_armor", "elytra"}) and ${glowArmors}
-local isNautilusArmor           = matched("nautilus_armor", true) and ${glowNautilusArmors}
-local isHorseArmor              = matched("horse_armor", true) and ${glowHorseArmors}
-local isWolfArmor               = matched("wolf_armor") and ${glowWolfArmor}
-local isMace                    = matched("mace") and ${glowMace}
-local isBow                     = matched("bow") and ${glowBow}
-local isCrossbow                = matched("crossbow") and ${glowCrossbow}
-local isFlintSteel              = matched("flint_and_steel") and ${glowFlintSteel}
-local isSpyglass                = matched("spyglass") and ${glowSpyglass}
-local isCompass                 = matched({"compasses"}) and ${glowCompasses}
-local isClock                   = matched({"clock"}) and ${glowClock}
-local isNetherStar              = matched("nether_star") and ${glowNetherStar}
-local isExperienceBottle        = matched("experience_bottle") and ${glowExpBottle}
-local isTotem                   = matched("totem_of_undying") and ${glowTotem}
+local itemConfig = {
+    pickaxes                 = { glow = ${glowPickaxes},         rune = ${runePickaxes} },
+    axes                     = { glow = ${glowAxes},             rune = ${runeAxes} },
+    hoes                     = { glow = ${glowHoes},             rune = ${runeHoes} },
+    shovels                  = { glow = ${glowShovels},          rune = ${runeShovels} },
+    swords                   = { glow = ${glowSwords},           rune = ${runeSwords} },
+    spears                   = { glow = ${glowSpears},           rune = ${runeSpears} },
+    written_book             = { glow = ${glowBooks},            rune = ${runeBooks} },
+    enchanted_book           = { glow = ${glowBooks},            rune = ${runeBooks} },
+    rods                     = { glow = ${glowRods},             rune = ${runeRods} },
+    shears                   = { glow = ${glowShears},           rune = ${runeShears} },
+    enchanted_golden_apple   = { glow = ${glowEnchantApple},     rune = ${runeEnchantApple} },
+    armors                   = { glow = ${glowArmors},           rune = ${runeArmors} },
+    nautilus_armor           = { glow = ${glowNautilusArmors},   rune = ${runeNautilusArmors} },
+    horse_armor              = { glow = ${glowHorseArmors},      rune = ${runeHorseArmors} },
+    wolf_armor               = { glow = ${glowWolfArmor},        rune = ${runeWolfArmor} },
+    mace                     = { glow = ${glowMace},             rune = ${runeMace} },
+    bow                      = { glow = ${glowBow},              rune = ${runeBow} },
+    crossbow                 = { glow = ${glowCrossbow},         rune = ${runeCrossbow} },
+    flint_and_steel          = { glow = ${glowFlintSteel},       rune = ${runeFlintSteel} },
+    spyglass                 = { glow = ${glowSpyglass},         rune = ${runeSpyglass} },
+    compasses                = { glow = ${glowCompasses},        rune = ${runeCompasses} },
+    clock                    = { glow = ${glowClock},            rune = ${runeClock} },
+    nether_star              = { glow = ${glowNetherStar},       rune = ${runeNetherStar} },
+    experience_bottle        = { glow = ${glowExpBottle},        rune = ${runeExpBottle} },
+    totem_of_undying         = { glow = ${glowTotem} },
+    end_crystal              = { rune = ${runeEndCrystal} }
+}
 
-local isShield                  = matched("shield")
-local isBrush                   = matched("brush")
-local isTrident                 = matched("trident")
-local isEndCrystal              = matched("end_crystal")
+local function getType()
+    local typeMap = {
+        { types = {"pickaxes", "axes", "hoes", "shovels", "spears", "horse_armor", "nautilus_armor"} },
+        { types = {"head_armor", "chest_armor", "leg_armor", "foot_armor", "elytra"}, output = "armors" },
+        { types = {"fishing_rod", "on_a_stick"}, output = "rods" },
+    }
+    for _, list in ipairs(typeMap) do
+        for _, tag in ipairs(list.types) do
+            if matched(tag, true) then
+                return list.output or tag
+            end
+        end
+    end
+    return itemName
+end
 
-local is2D =
-    isBook
-    or isEnchantedGoldenApple
-    or isArmor
-    or isNautilusArmor
-    or isShears
-    or isCompass
-    or isClock
-    or isFlintSteel
-    or isNetherStar
-    or isExperienceBottle
+local function enableParticle(items, particle)
+    local list = type(items) == "table" and items or {items}
+    for _, item in ipairs(list) do
+        if matched(item, true) then
+            local config = itemConfig[getType()] or {}
+            return config[particle] == true
+        end
+    end
+    return false
+end
 
 -- === TEXTURE ===
 local function getTexture()
     local textureMap = {
-        {isSword or isSpear,    "sword"},
-        {isTotem,               "gold"}
+        { items = {"swords", "spears"}, texture = "sword_glow.png" },
+        { items = {"totem_of_undying"}, texture = "gold_glow.png" }
     }
     for _, entry in ipairs(textureMap) do
-        if entry[1] and not isUsingItem then
-            return entry[2] .. "_glow.png"
+        for _, item in ipairs(entry.items) do
+            if matched(item) then
+                return entry.texture
+            end
         end
     end
     return "purple_glow.png"
@@ -140,157 +157,87 @@ end
 local texture = Texture:of("minecraft", "textures/particle/" .. getTexture())
 
 -- === PARTICLES ===
-if isEnchanted then
-    global.enchantActive = true
+local sprites2D = {"written_book", "enchanted_book", "enchanted_golden_apple", "head_armor", "chest_armor", "leg_armor", "foot_armor",
+    "nautilus_armor", "shears", "compasses", "clock", "nether_star", "flint_and_steel", "experience_bottle"}
+local is2D = matched(sprites2D, true)
 
-    if glow then
-        if isPickaxe then
-            particleManager:addParticle(
-                particles,
-                false,
-                0.065 * l, 0.45, 0.1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2.5,
-                texture, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 255
-            )
-        elseif isAxe or isHoe then
-            particleManager:addParticle(
-                particles,
-                false,
-                0.05 * l, 0.35, 0.05, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2.5,
-                texture, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 255
-            )
-        elseif isShovel then
-            particleManager:addParticle(
-                particles,
-                false,
-                -0.05 * l, 0.5, 0.05, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2.5,
-                texture, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 255
-            )
-        elseif isSword then
-            particleManager:addParticle(
-                particles,
-                false,
-                0.025 * l, 0.5, 0.05, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4,
-                texture, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 255
-            )
-        elseif isSpear then
-            particleManager:addParticle(
-                particles,
-                false,
-                0.1 * l, 1.1, 0.15, 0, 0, 0, 0, 0, 0, 0, 0, 0, isUsingItem and 4 or 6,
-                texture, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 255
-            )
-        elseif is2D then
-            particleManager:addParticle(
-                particles,
-                false,
-                0.04 * l, 0.2, 0.05, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2.5,
-                texture, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 255
-            )
-        elseif isHorseArmor then
-            particleManager:addParticle(
-                particles,
-                false,
-                0.04 * l, 0.07, 0.05, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2.5,
-                texture, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 255
-            )
-        elseif isWolfArmor then
-            particleManager:addParticle(
-                particles,
-                false,
-                0.1 * l, 0.25, 0.05, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2.5,
-                texture, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 255
-            )
-        elseif isMace then
-            particleManager:addParticle(
-                particles,
-                false,
-                0.1 * l, 0.5, 0.05, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3.5,
-                texture, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 255
-            )
-        elseif isRod then
-            particleManager:addParticle(
-                particles,
-                false,
-                0.1 * l, 0.4, 0.05, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2.5,
-                texture, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 255
-            )
-        elseif isBow then
-            particleManager:addParticle(
-                particles,
-                false,
-                0.08 * l, 0, 0.05, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3,
-                texture, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 255
-            )
-        elseif isSpyglass then
-            particleManager:addParticle(
-                particles,
-                false,
-                0.02 * l, 0, 0.05, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2.5,
-                texture, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 255
-            )
-        elseif isCrossbow then
-            particleManager:addParticle(
-                particles,
-                false,
-                -0.02 * l, 0.05, 0.03, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3,
-                texture, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 200
-            )
-            elseif isShield then
-                particleManager:addParticle(
-                    particles,
-                    true,
-                    0 * l, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3.5,
-                    texture, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 255
-                )
-            elseif isTrident then
-                particleManager:addParticle(
-                    particles,
-                    false,
-                    0 * l, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3.5,
-                    texture, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 255
-                )
-            elseif isBrush then
-                particleManager:addParticle(
-                    particles,
-                    false,
-                    0.03 * l, 0.2, 0.05, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3,
-                    texture, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 255
-                )
-        end
+local glowPositions = {
+    pickaxes    = {x = 0.65,  y = 0.45, z = 0.1},
+    axes        = {x = 0.05,  y = 0.35, z = 0.05},
+    hoes        = {x = 0.05,  y = 0.35, z = 0.05},
+    shovels     = {x = -0.05, y = 0.5,  z = 0.05},
+    swords      = {x = 0.25,  y = 0.5,  z = 0.05, scale = 4},
+    spears      = {x = 0.1,   y = 1.1,  z = 0.15, scale = isUsingItem and 4 or 6},
+    horse_armor = {x = 0.04,  y = 0.07, z = 0.05},
+    wolf_armor  = {x = -0.01, y = 0.25, z = 0.05},
+    mace        = {x = 0.1,   y = 0.5,  z = 0.05, scale = 3.5},
+    rods        = {x = 0.1,   y = 0.4,  z = 0.05},
+    bow         = {x = 0.08,  y = 0,    z = 0.05, scale = 3},
+    crossbow    = {x = -0.02, y = 0.05, z = 0.03, scale = 3},
+    spyglass    = {x = 0.02,  y = 0,    z = 0.05},
+    is2D        = {x = 0.04,  y = 0.2,  z = 0.05},
+}
+local pos = (is2D and glowPositions["is2D"]) or glowPositions[getType()]
+
+if isEnchanted then
+    global.runeActive = true
+
+    if glowingEffect and enableParticle(itemName, "glow") then
+        particleManager:addParticle(
+            particles,
+            false,
+            pos.x * l, pos.y, pos.z,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, pos.scale or 2.5,
+            texture, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 255
+        )
+    end
+    if itemName == "trident" then
+        --particleManager:addParticle(
+            --particles,
+            --false,
+            --0.7 * l, 0.08, -0.74, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2,
+            --texture, "SCREEN", hand, "SPAWN", "ADDITIVE", 0, 255
+        --)
+        particleManager:addParticle(
+            particles,
+            false,
+            -1.56 * l, -0.12, 1.18, 0, 0, 0, 0, 0, 0, 0, 0, 0, -2.5,
+            texture, "ITEM", hand, "SPAWN", "CUTOUT_L", 0, 255
+        )
     end
 
-    if enchantParticles then
+    if runes and enableParticle(itemName, "rune") then
         local SPAWN_INTERVAL = 8
 
-        if time - (global.lastEnchantSpawnTime or 0) >= SPAWN_INTERVAL then
+        if time - (global.lastRuneSpawnTime or 0) >= SPAWN_INTERVAL then
             local letter = string.char(96 + math.random(1, 26))
             local sgaTex = Texture:of("minecraft", "textures/particle/sga_" .. letter .. ".png")
 
-            local x, y, z, amp = 0, 0, 0, 0
-            local adjustParticles = {
-                { isBow or isSpyglass,                  {-0.05, -0.3, 0} },
-                { isCrossbow,                           {-0.1, -0.4, 0} },
-                { is2D or isWolfArmor or isHorseArmor,  {0.05, -0.25, 0} },
-                { isSpear,                              {0.05, 0.3, 0.1} },
-                { isMace,                               {0, 0, 0, 0.05} },
-                { isRod,                                {0, -0.1, 0} },
-                { isEndCrystal,                         {0, -0.15, 0} }
+            local runesAdjust = {
+                { items = {"bow", "spyglass"},            pos = {x = -0.05, y = -0.3,  z = 0,   amp = 0} },
+                { items = {"crossbow"},                   pos = {x = -0.1,  y = -0.4,  z = 0,   amp = 0} },
+                { items = {"wolf_armor", "horse_armor"},  pos = {x = 0.05,  y = -0.25, z = 0,   amp = 0} },
+                { items = {"spears"},                     pos = {x = 0.05,  y = 0.3,   z = 0.1, amp = 0} },
+                { items = {"mace"},                       pos = {x = 0,     y = 0,     z = 0,   amp = 0.05} },
+                { items = {"fishing_rod", "_on_a_stick"}, pos = {x = 0,     y = -0.1,  z = 0,   amp = 0} },
+                { items = {"end_crystal"},                pos = {x = -0.05, y = -0.15, z = 0,   amp = 0} },
+                { items = sprites2D,                      pos = {x = 0,     y = -0.3,  z = 0,   amp = 0.005} }
             }
-            for _, entry in ipairs(adjustParticles) do
-                if entry[1] then 
-                    x = entry[2][1]
-                    y = entry[2][2]
-                    z = entry[2][3]
-                    if entry[4] then
-                        amp = entry[4]
+            local function getRuneAdjust()
+                for _, adjust in ipairs(runesAdjust) do
+                    for _, item in ipairs(adjust.items) do
+                        if matched(item, true) then
+                            return adjust.pos
+                        end
                     end
-                    break
                 end
+                return {x = 0, y = 0, z = 0, amp = 0}
             end
+            local runesPos = getRuneAdjust()
 
-            local spawnX = ((math.random() * 0.5 - 0.3) + x) * l
-            local spawnY = (math.random() * 0.7 + 0.05) + y
-            local spawnZ = (math.random() * 0.3 - 0.1) + z
+            local spawnX = ((math.random() * 0.5 - 0.3) + runesPos.x) * l
+            local spawnY = (math.random() * 0.7 + 0.05) + runesPos.y
+            local spawnZ = (math.random() * 0.3 - 0.1)  + runesPos.z
 
             local particleID = "ench_" .. time .. "_" .. math.random(1000, 9999)
 
@@ -301,18 +248,18 @@ if isEnchanted then
                 0.05 + math.random() * 0.12,
                 sgaTex, "ITEM", hand, "OPACITY", "ADDITIVE",
                 12, 160 + math.random(0, 60),
-                function(p) particleTickerEnchant(p, particleID, amp) end
+                function(p) particleTickerEnchant(p, particleID, runesPos.amp) end
             )
 
-            global.lastEnchantSpawnTime = time
-            global.activeEnchantParticles = global.activeEnchantParticles + 1
+            global.lastRuneSpawnTime = time
+            global.activeRunes = global.activeRunes + 1
         end
     end
 else
-    global.enchantActive = false
+    global.runeActive = false
 end
 
-if isTotem then
+if enableParticle("totem_of_undying", "glow") then
     particleManager:addParticle(
         particles,
         false,

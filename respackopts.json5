@@ -3,11 +3,12 @@
   version: 9,
   capabilities: ["FileFilter", "DirFilter"],
   conf: {
-    GeneralSettings: {
-      Glow:                 true,
-      EnchantmentParticles: true
+    General: {
+      GlowingEffect:        true,
+      RunesParticles:       true
     },
-    GlowPerItem: {
+
+    GlowByItemType: {
       Swords:               true,
       Pickaxes:             true,
       Axes:                 true,
@@ -33,8 +34,32 @@
       ExperienceBottle:     true,
       Totem:                true
     },
-    Outlines: {
-      Swords:               true
+
+    RunesByItemType: {
+      Swords:               true,
+      Pickaxes:             true,
+      Axes:                 true,
+      Hoes:                 true,
+      Shovels:              true,
+      Spears:               true,
+      Books:                true,
+      Rods:                 true,
+      Shears:               true,
+      EnchantedGoldenApple: true,
+      Armors:               true,
+      NautilusArmors:       true,
+      HorseArmors:          true,
+      WolfArmor:            true,
+      Mace:                 true,
+      Bow:                  true,
+      Crossbow:             true,
+      FlintAndSteel:        true,
+      Spyglass:             true,
+      Compasses:            true,
+      Clock:                true,
+      NetherStar:           true,
+      ExperienceBottle:     true,
+      EndCrystal:           true
     }
   }
 }
