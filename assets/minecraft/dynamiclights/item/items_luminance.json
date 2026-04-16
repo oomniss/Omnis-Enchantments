@@ -1,0 +1,13 @@
+{
+  "match": {
+    "items": [
+      "minecraft:experience_bottle",
+      "minecraft:enchanted_golden_apple",
+      "minecraft:enchanted_book",
+      "minecraft:written_book",
+      "minecraft:nether_star",
+      "minecraft:totem_of_undying"
+    ]
+  },
+  "luminance": 8
+}

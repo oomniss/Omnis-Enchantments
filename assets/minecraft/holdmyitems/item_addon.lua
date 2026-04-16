@@ -13,7 +13,6 @@ local isEnchanted             = I:isEnchanted(context.item)
 local isUsingItem             = P:isUsingItem(context.player)
 local deltaTime               = context.deltaTime
 local time                    = P:getAge(context.player)
-local SPAWN_INTERVAL          = 8
 
 -- === FUNCTIONS ===
 local function matched(items, matches)
@@ -34,7 +33,7 @@ local function matched(items, matches)
     return false
 end
 
-local function particleTickerEnchant(particle, particleID)
+local function particleTickerEnchant(particle, particleID, amp)
     local state = global.enchantParticleStates[particleID]
 
     if not global.enchantActive then
@@ -55,7 +54,7 @@ local function particleTickerEnchant(particle, particleID)
             speedX    = 0.025 + math.random() * 0.035,
             speedY    = 0.015 + math.random() * 0.025,
             speedZ    = 0.025 + math.random() * 0.035,
-            amplitude = math.random() * 0.0025,
+            amplitude = (math.random() * 0.0025) + amp,
             riseSpeed = 0.0008 + math.random() * 0.0015,
         }
         global.enchantParticleStates[particleID] = state
@@ -82,7 +81,7 @@ end
 
 -- === ITEMS ===
 local glow                      = ${glow}
-local enchantParticles          = ${enchantPart}
+local enchantParticles          = ${enchantPart} and not matched({"trident", "brush", "shield"})
 
 local isPickaxe                 = matched("pickaxes") and ${glowPickaxes}
 local isAxe                     = matched("axes") and ${glowAxes}
@@ -237,48 +236,56 @@ if isEnchanted then
                 -0.02 * l, 0.05, 0.03, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3,
                 texture, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 200
             )
-        elseif isShield then
-            particleManager:addParticle(
-                particles,
-                true,
-                0 * l, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3.5,
-                texture, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 255
-            )
-        elseif isTrident then
-            particleManager:addParticle(
-                particles,
-                true,
-                0 * l, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3.5,
-                texture, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 255
-            )
-        elseif isBrush then
-            particleManager:addParticle(
-                particles,
-                false,
-                0.03 * l, 0.2, 0.05, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3,
-                texture, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 255
-            )
+elseif isShield then
+    particleManager:addParticle(
+        particles,
+        true,
+        0 * l, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3.5,
+        texture, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 255
+    )
+elseif isTrident then
+    particleManager:addParticle(
+        particles,
+        true,
+        0 * l, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3.5,
+        texture, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 255
+    )
+elseif isBrush then
+    particleManager:addParticle(
+        particles,
+        false,
+        0.03 * l, 0.2, 0.05, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3,
+        texture, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 255
+    )
         end
     end
 
     if enchantParticles then
+        local SPAWN_INTERVAL = 8
+
         if time - (global.lastEnchantSpawnTime or 0) >= SPAWN_INTERVAL then
             local letter = string.char(96 + math.random(1, 26))
             local sgaTex = Texture:of("minecraft", "textures/particle/sga_" .. letter .. ".png")
 
-            local x, y, z = 0, 0, 0
-            local posParticles = {
-                {isBow,        {-0.05, -0.3, 0}},
-                {is2D,         {0.05, -0.25, 0}},
-                {isSpear,      {0.1, 0.5, 0.1}},
-                {isEndCrystal, {0, -0.15, 0}}
+            local x, y, z, amp = 0, 0, 0, 0
+            local adjustParticles = {
+                { isBow or isSpyglass,                  {-0.05, -0.3, 0} },
+                { isCrossbow,                           {-0.1, -0.4, 0} },
+                { is2D or isWolfArmor or isHorseArmor,  {0.05, -0.25, 0} },
+                { isSpear,                              {0.05, 0.3, 0.1} },
+                { isMace,                               {0, 0, 0, 0.05} },
+                { isRod,                                {0, -0.1, 0} },
+                { isEndCrystal,                         {0, -0.15, 0} }
             }
-            for _, entry in ipairs(posParticles) do
+            for _, entry in ipairs(adjustParticles) do
                 if entry[1] then 
                     x = entry[2][1]
                     y = entry[2][2]
                     z = entry[2][3]
-                    break 
+                    if entry[4] then
+                        amp = entry[4]
+                    end
+                    break
                 end
             end
 
@@ -295,7 +302,7 @@ if isEnchanted then
                 0.05 + math.random() * 0.12,
                 sgaTex, "ITEM", hand, "OPACITY", "ADDITIVE",
                 12, 160 + math.random(0, 60),
-                function(p) particleTickerEnchant(p, particleID) end
+                function(p) particleTickerEnchant(p, particleID, amp) end
             )
 
             global.lastEnchantSpawnTime = time

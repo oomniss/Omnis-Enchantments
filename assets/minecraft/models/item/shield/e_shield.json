@@ -1,4 +1,6 @@
 {
+	"format_version": "1.21.11",
+	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "item/shield_base_nopattern",
 		"1": "item/enchantment_outline"
@@ -6,8 +8,8 @@
 	"elements": [
 		{
 			"name": "arm",
-			"from": [7, 9, 8],
-			"to": [9, 14, 13],
+			"from": [7, 8, 8],
+			"to": [9, 14, 14],
 			"shade": false,
 			"light_emission": 15,
 			"rotation": {"angle": 0, "axis": "y", "origin": [7, 12, 8]},
@@ -38,9 +40,9 @@
 		},
 		{
 			"name": "arm",
-			"from": [6.8, 8.75, 13.25],
-			"to": [9.3, 14.25, 7.75],
-			"rotation": {"angle": 0, "axis": "y", "origin": [6.8, 11.75, 13.25]},
+			"from": [6.8, 7.75, 14.35],
+			"to": [9.3, 14.25, 7.85],
+			"rotation": {"angle": 0, "axis": "y", "origin": [6.8, 10.75, 14.35]},
 			"faces": {
 				"north": {"uv": [8, 0, 9, 1.5], "texture": "#1"},
 				"east": {"uv": [8.5, 1.5, 10, 3], "texture": "#1"},
@@ -69,11 +71,11 @@
 	"display": {
 		"thirdperson_righthand": {
 			"rotation": [0, -90, 0],
-			"translation": [2.5, -5.5, 3.5]
+			"translation": [3, -5, 4]
 		},
 		"thirdperson_lefthand": {
 			"rotation": [0, -90, 0],
-			"translation": [2.5, -5.5, 3.5]
+			"translation": [3, -5, 4]
 		},
 		"firstperson_righthand": {
 			"rotation": [0, -180, 5],
