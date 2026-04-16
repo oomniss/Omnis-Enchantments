@@ -33,6 +33,77 @@ local function matched(items, matches)
     return false
 end
 
+-- === GET ITEM TYPE ===
+local function getType()
+    local typeMap = {
+        { types = {"pickaxes", "axes", "hoes", "shovels", "spears", "horse_armor", "nautilus_armor"} },
+        { types = {"head_armor", "chest_armor", "leg_armor", "foot_armor", "elytra"}, output = "armors" },
+        { types = {"fishing_rod", "on_a_stick"}, output = "rods" },
+    }
+    for _, list in ipairs(typeMap) do
+        for _, tag in ipairs(list.types) do
+            if matched(tag, true) then
+                return list.output or tag
+            end
+        end
+    end
+    return itemName
+end
+
+-- === SETTINGS ===
+local glowingEffect   = ${glow}
+local runes           = ${runes}
+
+local itemConfig = {
+    pickaxes                 = { glow = ${glowPickaxes},         rune = ${runePickaxes} },
+    axes                     = { glow = ${glowAxes},             rune = ${runeAxes} },
+    hoes                     = { glow = ${glowHoes},             rune = ${runeHoes} },
+    shovels                  = { glow = ${glowShovels},          rune = ${runeShovels} },
+    swords                   = { glow = ${glowSwords},           rune = ${runeSwords} },
+    spears                   = { glow = ${glowSpears},           rune = ${runeSpears} },
+    written_book             = { glow = ${glowBooks},            rune = ${runeBooks} },
+    enchanted_book           = { glow = ${glowBooks},            rune = ${runeBooks} },
+    rods                     = { glow = ${glowRods},             rune = ${runeRods} },
+    shears                   = { glow = ${glowShears},           rune = ${runeShears} },
+    enchanted_golden_apple   = { glow = ${glowEnchantApple},     rune = ${runeEnchantApple} },
+    armors                   = { glow = ${glowArmors},           rune = ${runeArmors} },
+    nautilus_armor           = { glow = ${glowNautilusArmors},   rune = ${runeNautilusArmors} },
+    horse_armor              = { glow = ${glowHorseArmors},      rune = ${runeHorseArmors} },
+    wolf_armor               = { glow = ${glowWolfArmor},        rune = ${runeWolfArmor} },
+    mace                     = { glow = ${glowMace},             rune = ${runeMace} },
+    bow                      = { glow = ${glowBow},              rune = ${runeBow} },
+    crossbow                 = { glow = ${glowCrossbow},         rune = ${runeCrossbow} },
+    flint_and_steel          = { glow = ${glowFlintSteel},       rune = ${runeFlintSteel} },
+    spyglass                 = { glow = ${glowSpyglass},         rune = ${runeSpyglass} },
+    compasses                = { glow = ${glowCompasses},        rune = ${runeCompasses} },
+    clock                    = { glow = ${glowClock},            rune = ${runeClock} },
+    nether_star              = { glow = ${glowNetherStar},       rune = ${runeNetherStar} },
+    experience_bottle        = { glow = ${glowExpBottle},        rune = ${runeExpBottle} },
+    totem_of_undying         = { glow = ${glowTotem} },
+    end_crystal              = { rune = ${runeEndCrystal} }
+}
+
+local function enableParticle(items, particle)
+    local list = type(items) == "table" and items or {items}
+    for _, i in ipairs(list) do
+        if matched(i, true) then
+            local config = itemConfig[getType()] or {}
+            return config[particle] == true
+        end
+    end
+    return false
+end
+
+-- === TEXTURE ===
+local texture
+if itemName == "totem_of_undying" then
+    texture = Texture:of("minecraft", "textures/particle/gold_glow.png")
+elseif matched({"swords", "spears"}) then
+    texture = Texture:of("minecraft", "textures/particle/sword_glow.png")
+else
+    texture = Texture:of("minecraft", "textures/particle/purple_glow.png")
+end
+
 -- === PARTICLE TICKER ===
 local function particleTickerEnchant(particle, particleID, amp)
     local state = global.RuneStates[particleID]
@@ -78,83 +149,6 @@ for id, state in pairs(global.RuneStates) do
         global.activeRunes = math.max(0, global.activeRunes - 1)
     end
 end
-
--- === SETTINGS ===
-local glowingEffect   = ${glow}
-local runes           = ${runes}
-
-local itemConfig = {
-    pickaxes                 = { glow = ${glowPickaxes},         rune = ${runePickaxes} },
-    axes                     = { glow = ${glowAxes},             rune = ${runeAxes} },
-    hoes                     = { glow = ${glowHoes},             rune = ${runeHoes} },
-    shovels                  = { glow = ${glowShovels},          rune = ${runeShovels} },
-    swords                   = { glow = ${glowSwords},           rune = ${runeSwords} },
-    spears                   = { glow = ${glowSpears},           rune = ${runeSpears} },
-    written_book             = { glow = ${glowBooks},            rune = ${runeBooks} },
-    enchanted_book           = { glow = ${glowBooks},            rune = ${runeBooks} },
-    rods                     = { glow = ${glowRods},             rune = ${runeRods} },
-    shears                   = { glow = ${glowShears},           rune = ${runeShears} },
-    enchanted_golden_apple   = { glow = ${glowEnchantApple},     rune = ${runeEnchantApple} },
-    armors                   = { glow = ${glowArmors},           rune = ${runeArmors} },
-    nautilus_armor           = { glow = ${glowNautilusArmors},   rune = ${runeNautilusArmors} },
-    horse_armor              = { glow = ${glowHorseArmors},      rune = ${runeHorseArmors} },
-    wolf_armor               = { glow = ${glowWolfArmor},        rune = ${runeWolfArmor} },
-    mace                     = { glow = ${glowMace},             rune = ${runeMace} },
-    bow                      = { glow = ${glowBow},              rune = ${runeBow} },
-    crossbow                 = { glow = ${glowCrossbow},         rune = ${runeCrossbow} },
-    flint_and_steel          = { glow = ${glowFlintSteel},       rune = ${runeFlintSteel} },
-    spyglass                 = { glow = ${glowSpyglass},         rune = ${runeSpyglass} },
-    compasses                = { glow = ${glowCompasses},        rune = ${runeCompasses} },
-    clock                    = { glow = ${glowClock},            rune = ${runeClock} },
-    nether_star              = { glow = ${glowNetherStar},       rune = ${runeNetherStar} },
-    experience_bottle        = { glow = ${glowExpBottle},        rune = ${runeExpBottle} },
-    totem_of_undying         = { glow = ${glowTotem} },
-    end_crystal              = { rune = ${runeEndCrystal} }
-}
-
-local function getType()
-    local typeMap = {
-        { types = {"pickaxes", "axes", "hoes", "shovels", "spears", "horse_armor", "nautilus_armor"} },
-        { types = {"head_armor", "chest_armor", "leg_armor", "foot_armor", "elytra"}, output = "armors" },
-        { types = {"fishing_rod", "on_a_stick"}, output = "rods" },
-    }
-    for _, list in ipairs(typeMap) do
-        for _, tag in ipairs(list.types) do
-            if matched(tag, true) then
-                return list.output or tag
-            end
-        end
-    end
-    return itemName
-end
-
-local function enableParticle(items, particle)
-    local list = type(items) == "table" and items or {items}
-    for _, item in ipairs(list) do
-        if matched(item, true) then
-            local config = itemConfig[getType()] or {}
-            return config[particle] == true
-        end
-    end
-    return false
-end
-
--- === TEXTURE ===
-local function getTexture()
-    local textureMap = {
-        { items = {"swords", "spears"}, texture = "sword_glow.png" },
-        { items = {"totem_of_undying"}, texture = "gold_glow.png" }
-    }
-    for _, entry in ipairs(textureMap) do
-        for _, item in ipairs(entry.items) do
-            if matched(item) then
-                return entry.texture
-            end
-        end
-    end
-    return "purple_glow.png"
-end
-local texture = Texture:of("minecraft", "textures/particle/" .. getTexture())
 
 -- === PARTICLES ===
 local sprites2D = {"written_book", "enchanted_book", "enchanted_golden_apple", "head_armor", "chest_armor", "leg_armor", "foot_armor",
@@ -221,25 +215,25 @@ if isEnchanted then
                 { items = {"mace"},                       pos = {x = 0,     y = 0,     z = 0,   amp = 0.05} },
                 { items = {"fishing_rod", "_on_a_stick"}, pos = {x = 0,     y = -0.1,  z = 0,   amp = 0} },
                 { items = {"end_crystal"},                pos = {x = -0.05, y = -0.15, z = 0,   amp = 0} },
-                { items = sprites2D,                      pos = {x = 0,     y = -0.3,  z = 0,   amp = 0.005} }
+                { items = sprites2D,                      pos = {x = 0,     y = -0.3,  z = 0,   amp = 0} }
             }
             local function getRuneAdjust()
                 for _, adjust in ipairs(runesAdjust) do
-                    for _, item in ipairs(adjust.items) do
-                        if matched(item, true) then
+                    for _, i in ipairs(adjust.items) do
+                        if matched(i, true) then
                             return adjust.pos
                         end
                     end
                 end
                 return {x = 0, y = 0, z = 0, amp = 0}
             end
-            local runesPos = getRuneAdjust()
 
-            local spawnX = ((math.random() * 0.5 - 0.3) + runesPos.x) * l
-            local spawnY = (math.random() * 0.7 + 0.05) + runesPos.y
-            local spawnZ = (math.random() * 0.3 - 0.1)  + runesPos.z
+            local runesPos    = getRuneAdjust()
+            local spawnX      = ((math.random() * 0.5 - 0.3) + runesPos.x) * l
+            local spawnY      = (math.random() * 0.7 + 0.05) + runesPos.y
+            local spawnZ      = (math.random() * 0.3 - 0.1)  + runesPos.z
 
-            local particleID = "ench_" .. time .. "_" .. math.random(1000, 9999)
+            local particleID  = "ench_" .. time .. "_" .. math.random(1000, 9999)
 
             particleManager:addParticle(
                 particles, false,
