@@ -4,10 +4,17 @@
     "property": "minecraft:display_context",
     "cases": [
         {
-            "when": ["gui", "ground", "fixed"],
+            "when": ["gui"],
             "model": {
                 "type": "minecraft:model",
                 "model": "minecraft:item/trident"
+            }
+        },
+        {
+            "when": ["ground", "fixed", "on_shelf"],
+            "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/trident/e_trident_sprite"
             }
         }
     ],

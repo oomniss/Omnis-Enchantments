@@ -1,9 +1,9 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "item/shield_base_nopattern",
+		"1": "item/shield_base_pattern",
 		"3": "item/enchantment_outline",
-		"particle": "item/enchantment_outline"
+		"particle": "item/shield_base_pattern"
 	},
 	"elements": [
 		{
@@ -14,12 +14,12 @@
 			"light_emission": 15,
 			"rotation": {"angle": 0, "axis": "y", "origin": [7, 12, 8]},
 			"faces": {
-				"north": {"uv": [8, 0, 9, 1.5], "texture": "#0"},
-				"east": {"uv": [8.5, 1.5, 10, 3], "texture": "#0"},
-				"south": {"uv": [8, 1.5, 8.5, 3], "texture": "#0"},
-				"west": {"uv": [6.5, 1.5, 8, 3], "texture": "#0"},
-				"up": {"uv": [8, 0, 9, 1.5], "texture": "#0"},
-				"down": {"uv": [10, 1.5, 10.5, 3], "texture": "#0"}
+				"north": {"uv": [8, 0, 9, 1.5], "texture": "#1"},
+				"east": {"uv": [8.5, 1.5, 10, 3], "texture": "#1"},
+				"south": {"uv": [8, 1.5, 8.5, 3], "texture": "#1"},
+				"west": {"uv": [6.5, 1.5, 8, 3], "texture": "#1"},
+				"up": {"uv": [8, 0, 9, 1.5], "texture": "#1"},
+				"down": {"uv": [10, 1.5, 10.5, 3], "texture": "#1"}
 			}
 		},
 		{
@@ -30,12 +30,12 @@
 			"light_emission": 15,
 			"rotation": {"angle": 0, "axis": "y", "origin": [2, 0, 7]},
 			"faces": {
-				"north": {"uv": [0.25, 0.25, 3.25, 5.75], "texture": "#0"},
-				"east": {"uv": [0, 0.25, 0.25, 5.75], "texture": "#0"},
-				"south": {"uv": [3.5, 0.25, 6.5, 5.75], "texture": "#0"},
-				"west": {"uv": [0, 0.25, 0, 5.75], "texture": "#0"},
-				"up": {"uv": [0.5, 0, 3.5, 0], "texture": "#0"},
-				"down": {"uv": [0.25, 5.5, 3.25, 5.75], "texture": "#0"}
+				"north": {"uv": [0.25, 0.25, 3.25, 5.75], "texture": "#1"},
+				"east": {"uv": [0, 0.25, 0.25, 5.75], "texture": "#1"},
+				"south": {"uv": [3.5, 0.25, 6.5, 5.75], "texture": "#1"},
+				"west": {"uv": [0, 0.25, 0, 5.75], "texture": "#1"},
+				"up": {"uv": [0.5, 0, 3.5, 0], "texture": "#1"},
+				"down": {"uv": [0.25, 5.5, 3.25, 5.75], "texture": "#1"}
 			}
 		},
 		{
@@ -74,12 +74,12 @@
 	"gui_light": "front",
 	"display": {
 		"thirdperson_righthand": {
-			"rotation": [29.32, -20, 0.79],
-			"translation": [-0.25, -2.75, -1.25]
+			"rotation": [45, -25, 0],
+			"translation": [0.88, -3.5, -3]
 		},
 		"thirdperson_lefthand": {
-			"rotation": [29.32, -20, 0.79],
-			"translation": [-0.25, -2.75, -1.25]
+			"rotation": [45, -25, 0],
+			"translation": [1.1, -3.1, -3]
 		},
 		"firstperson_righthand": {
 			"rotation": [0, -180, 5],

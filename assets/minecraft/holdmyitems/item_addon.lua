@@ -71,7 +71,6 @@ local function particleTickerEnchant(particle, particleID, amp)
     particle.dz = math.sin(state.phaseZ) * state.amplitude
 end
 
--- Killinator 3000
 for id, state in pairs(global.enchantParticleStates) do
     if not state or not global.enchantActive then
         global.enchantParticleStates[id] = nil
@@ -236,27 +235,27 @@ if isEnchanted then
                 -0.02 * l, 0.05, 0.03, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3,
                 texture, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 200
             )
-elseif isShield then
-    particleManager:addParticle(
-        particles,
-        true,
-        0 * l, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3.5,
-        texture, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 255
-    )
-elseif isTrident then
-    particleManager:addParticle(
-        particles,
-        true,
-        0 * l, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3.5,
-        texture, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 255
-    )
-elseif isBrush then
-    particleManager:addParticle(
-        particles,
-        false,
-        0.03 * l, 0.2, 0.05, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3,
-        texture, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 255
-    )
+            elseif isShield then
+                particleManager:addParticle(
+                    particles,
+                    true,
+                    0 * l, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3.5,
+                    texture, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 255
+                )
+            elseif isTrident then
+                particleManager:addParticle(
+                    particles,
+                    false,
+                    0 * l, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3.5,
+                    texture, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 255
+                )
+            elseif isBrush then
+                particleManager:addParticle(
+                    particles,
+                    false,
+                    0.03 * l, 0.2, 0.05, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3,
+                    texture, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 255
+                )
         end
     end
 

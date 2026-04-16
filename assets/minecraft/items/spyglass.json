@@ -4,11 +4,18 @@
     "property": "minecraft:display_context",
     "cases": [
         {
-            "when": ["gui", "ground", "fixed"],
-            "model": {
-                "type": "minecraft:model",
-                "model": "minecraft:item/spyglass"
-            }
+          "when": ["gui"],
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/spyglass"
+          }
+        },
+        {
+          "when": ["ground", "fixed", "on_shelf"],
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/others/e_spyglass_sprite"
+          }
         }
     ],
     "fallback": {

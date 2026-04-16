@@ -1,13 +1,14 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "item/shield_base_nopattern"
+		"0": "item/shield_base_pattern",
+		"particle": "item/shield_base_pattern"
 	},
 	"elements": [
 		{
 			"name": "arm",
-			"from": [7, 8, 8],
-			"to": [9, 14, 14],
+			"from": [7, 9, 8],
+			"to": [9, 14, 13],
 			"rotation": {"angle": 0, "axis": "y", "origin": [7, 12, 8]},
 			"faces": {
 				"north": {"uv": [8, 0, 9, 1.5], "texture": "#0"},
@@ -36,40 +37,27 @@
 	"gui_light": "front",
 	"display": {
 		"thirdperson_righthand": {
-			"rotation": [0, -90, 0],
-			"translation": [3, -5, 4]
+			"rotation": [45, -25, 0],
+			"translation": [0.88, -3.5, -3]
 		},
 		"thirdperson_lefthand": {
-			"rotation": [0, -90, 0],
-			"translation": [3, -5, 4]
+			"rotation": [45, -25, 0],
+			"translation": [1.1, -3.1, -3]
 		},
 		"firstperson_righthand": {
-			"rotation": [0, -180, 5],
-			"translation": [-10, 1.75, -10],
+			"rotation": [0, -180, -5],
+			"translation": [-15, 3.25, -11],
 			"scale": [1.25, 1.25, 1.25]
 		},
 		"firstperson_lefthand": {
-			"rotation": [0, -180, 5],
-			"translation": [10, 0, -10],
+			"rotation": [0, -180, -5],
+			"translation": [5, 5, -11],
 			"scale": [1.25, 1.25, 1.25]
-		},
-		"ground": {
-			"translation": [2, 4, 2],
-			"scale": [0.25, 0.25, 0.25]
 		},
 		"gui": {
 			"rotation": [0, -180, 0],
 			"translation": [0, -2, 0],
 			"scale": [0.65, 0.65, 0.65]
-		},
-		"fixed": {
-			"translation": [0, -1.75, 0.25],
-			"scale": [0.55, 0.55, 0.55]
-		},
-		"on_shelf": {
-			"rotation": [0, -180, 0],
-			"translation": [0.5, 14.5, -4.05],
-			"scale": [1.4, 1.4, 1.4]
 		}
 	},
 	"groups": [

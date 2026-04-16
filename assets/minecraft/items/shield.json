@@ -8,12 +8,50 @@
       "component": "minecraft:enchantments",
       "ignore_default": true,
       "on_false": {
-        "type": "minecraft:model",
-        "model": "minecraft:item/shield/shield"
+        "type": "minecraft:condition",
+        "property": "minecraft:has_component",
+        "component": "minecraft:base_color",
+        "on_false": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/shield/shield"
+        },
+        "on_true": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:special",
+              "model": {"type": "minecraft:shield"},
+              "base": "minecraft:item/shield/shield_pattern"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "minecraft:item/shield/shield_frame"
+            }
+          ]
+        }
       },
       "on_true": {
-        "type": "minecraft:model",
-        "model": "minecraft:item/shield/e_shield"
+        "type": "minecraft:condition",
+        "property": "minecraft:has_component",
+        "component": "minecraft:base_color",
+        "on_false": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/shield/e_shield"
+        },
+        "on_true": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:special",
+              "model": {"type": "minecraft:shield"},
+              "base": "minecraft:item/shield/shield_pattern"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "minecraft:item/shield/e_shield_frame"
+            }
+          ]
+        }
       }
     },
     "on_true": {
@@ -22,12 +60,50 @@
       "component": "minecraft:enchantments",
       "ignore_default": true,
       "on_false": {
-        "type": "minecraft:model",
-        "model": "minecraft:item/shield/shield_blocking"
+        "type": "minecraft:condition",
+        "property": "minecraft:has_component",
+        "component": "minecraft:base_color",
+        "on_false": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/shield/shield_blocking"
+        },
+        "on_true": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:special",
+              "model": {"type": "minecraft:shield"},
+              "base": "minecraft:item/shield/shield_blocking_pattern"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "minecraft:item/shield/shield_blocking_frame"
+            }
+          ]
+        }
       },
       "on_true": {
-        "type": "minecraft:model",
-        "model": "minecraft:item/shield/e_shield_blocking"
+        "type": "minecraft:condition",
+        "property": "minecraft:has_component",
+        "component": "minecraft:base_color",
+        "on_false": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/shield/e_shield"
+        },
+        "on_true": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:special",
+              "model": {"type": "minecraft:shield"},
+              "base": "minecraft:item/shield/shield_blocking_pattern"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "minecraft:item/shield/e_shield_blocking_frame"
+            }
+          ]
+        }
       }
     }
   }
