@@ -10,9 +10,10 @@ local hand                  = context.hand
 local particles             = context.particles
 local itemName              = I:getName(context.item):gsub("minecraft:", "")
 local isEnchanted           = I:isEnchanted(context.item)
-local isUsingItem           = P:isUsingItem(context.player)
 local deltaTime             = context.deltaTime
 local time                  = P:getAge(context.player)
+local glowIntensity         = ${glowIntensity}
+local runesIntensity        = ${runesIntensity}
 
 -- === MATCH ===
 local function matched(items, matches)
@@ -36,7 +37,7 @@ end
 -- === GET ITEM TYPE ===
 local function getType()
     local typeMap = {
-        { types = {"pickaxes", "axes", "hoes", "shovels", "spears", "horse_armor", "nautilus_armor"} },
+        { types = {"pickaxes", "axes", "hoes", "shovels", "spears", "horse_armor", "nautilus_armor", "swords"} },
         { types = {"head_armor", "chest_armor", "leg_armor", "foot_armor", "elytra"}, output = "armors" },
         { types = {"fishing_rod", "on_a_stick"}, output = "rods" },
     }
@@ -94,16 +95,6 @@ local function enableParticle(items, particle)
     return false
 end
 
--- === TEXTURE ===
-local texture
-if itemName == "totem_of_undying" then
-    texture = Texture:of("minecraft", "textures/particle/gold_glow.png")
-elseif matched({"swords", "spears"}) then
-    texture = Texture:of("minecraft", "textures/particle/sword_glow.png")
-else
-    texture = Texture:of("minecraft", "textures/particle/purple_glow.png")
-end
-
 -- === PARTICLE TICKER ===
 local function particleTickerEnchant(particle, particleID, amp)
     local state = global.RuneStates[particleID]
@@ -126,7 +117,7 @@ local function particleTickerEnchant(particle, particleID, amp)
             speedX    = 0.025 + math.random() * 0.035,
             speedY    = 0.015 + math.random() * 0.025,
             speedZ    = 0.025 + math.random() * 0.035,
-            amplitude = (math.random() * 0.0025) + amp,
+            amplitude = (math.random() * 0.0025),
             riseSpeed = 0.0008 + math.random() * 0.0015,
         }
         global.RuneStates[particleID] = state
@@ -150,28 +141,43 @@ for id, state in pairs(global.RuneStates) do
     end
 end
 
+-- === TEXTURE ===
+local textureMap = {
+    general             = Texture:of("minecraft", "textures/particle/circle_purple_glow.png"),
+    swords              = Texture:of("minecraft", "textures/particle/oval_purple_glow.png"),
+    spears              = Texture:of("minecraft", "textures/particle/oval_purple_glow.png"),
+    rods                = Texture:of("minecraft", "textures/particle/oval_purple_glow.png"),
+    spyglass            = Texture:of("minecraft", "textures/particle/oval_purple_glow.png"),
+    totem_of_undying    = Texture:of("minecraft", "textures/particle/gold_glow.png"),
+}
+local texture = textureMap[getType()] or textureMap.general
+
 -- === PARTICLES ===
 local sprites2D = {"written_book", "enchanted_book", "enchanted_golden_apple", "head_armor", "chest_armor", "leg_armor", "foot_armor",
     "nautilus_armor", "shears", "compasses", "clock", "nether_star", "flint_and_steel", "experience_bottle"}
 local is2D = matched(sprites2D, true)
 
-local glowPositions = {
-    pickaxes    = {x = 0.65,  y = 0.45, z = 0.1},
-    axes        = {x = 0.05,  y = 0.35, z = 0.05},
-    hoes        = {x = 0.05,  y = 0.35, z = 0.05},
-    shovels     = {x = -0.05, y = 0.5,  z = 0.05},
-    swords      = {x = 0.25,  y = 0.5,  z = 0.05, scale = 4},
-    spears      = {x = 0.1,   y = 1.1,  z = 0.15, scale = isUsingItem and 4 or 6},
-    horse_armor = {x = 0.04,  y = 0.07, z = 0.05},
-    wolf_armor  = {x = -0.01, y = 0.25, z = 0.05},
-    mace        = {x = 0.1,   y = 0.5,  z = 0.05, scale = 3.5},
-    rods        = {x = 0.1,   y = 0.4,  z = 0.05},
-    bow         = {x = 0.08,  y = 0,    z = 0.05, scale = 3},
-    crossbow    = {x = -0.02, y = 0.05, z = 0.03, scale = 3},
-    spyglass    = {x = 0.02,  y = 0,    z = 0.05},
-    is2D        = {x = 0.04,  y = 0.2,  z = 0.05},
+local particlePosition = {
+    pickaxes    = { move = {x = -0.03,  y = 0.42,  z = 0.15} },
+    axes        = { move = {x = -0.05,  y = 0.4,   z = 0.11} },
+    hoes        = { move = {x = -0.05,  y = 0.4,   z = 0.11} },
+    shovels     = { move = {x = 0.02,   y = 0.4,   z = 0.05}, scale = 4 },
+    horse_armor = { move = {x = 0.01,   y = 0.05,  z = 0.05} },
+    wolf_armor  = { move = {x = 0.03,   y = 0.2,   z = 0.05} },
+    mace        = { move = {x = 0.05,   y = 0.4,   z = 0.05}, scale = 5 },
+    bow         = { move = {x = 0.02,   y = -0.13, z = 0.05}, scale = 4.5 },
+    crossbow    = { move = {x = -0.1,   y = 0.05 , z = 0} },
+    rods        = { move = {x = 0.1,    y = 0.25,  z = 0.05}, rotate = {x = 30, y = 0, z = 0},   scale = 3.7 },
+    swords      = { move = {x = 0,      y = 0.4,   z = 0.05}, rotate = {x = 5,  y = 0, z = -10}, scale = 3.2 },
+    spears      = { move = {x = 0.1,    y = 0.8,   z = 0.1},  rotate = {x = 30, y = 0, z = 20},  scale = 4.7 },
+    spyglass    = { move = {x = -0.02,  y = -0.1,  z = 0.05}, rotate = {x = 10, y = 0, z = -10} },
+    is2D        = { move = {x = -0.06,  y = 0.2,   z = 0.15}, scale = 3.5}
 }
-local pos = (is2D and glowPositions["is2D"]) or glowPositions[getType()]
+
+local posEntry    = (is2D and particlePosition["is2D"]) or particlePosition[getType()] or {}
+local move        = posEntry.move   or {x = 0, y = 0, z = 0}
+local rotate      = posEntry.rotate or {x = 0, y = 0, z = 0}
+local scale       = posEntry.scale  or 3
 
 if isEnchanted then
     global.runeActive = true
@@ -180,42 +186,29 @@ if isEnchanted then
         particleManager:addParticle(
             particles,
             false,
-            pos.x * l, pos.y, pos.z,
-            0, 0, 0, 0, 0, 0, 0, 0, 0, pos.scale or 2.5,
-            texture, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 255
-        )
-    end
-    if itemName == "trident" then
-        --particleManager:addParticle(
-            --particles,
-            --false,
-            --0.7 * l, 0.08, -0.74, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2,
-            --texture, "SCREEN", hand, "SPAWN", "ADDITIVE", 0, 255
-        --)
-        particleManager:addParticle(
-            particles,
-            false,
-            -1.56 * l, -0.12, 1.18, 0, 0, 0, 0, 0, 0, 0, 0, 0, -2.5,
-            texture, "ITEM", hand, "SPAWN", "CUTOUT_L", 0, 255
+            move.x * l, move.y, move.z,
+            0, 0, 0,
+            rotate.x, rotate.y * l, rotate.z * l,
+            0, 0, 0, scale,
+            texture, "ITEM", hand, "SPAWN", "ADDITIVE", 0, glowIntensity
         )
     end
 
     if runes and enableParticle(itemName, "rune") then
-        local SPAWN_INTERVAL = 8
+        local SPAWN_INTERVAL = 12 - ((runesIntensity - 1) * 1)
 
         if time - (global.lastRuneSpawnTime or 0) >= SPAWN_INTERVAL then
             local letter = string.char(96 + math.random(1, 26))
             local sgaTex = Texture:of("minecraft", "textures/particle/sga_" .. letter .. ".png")
 
             local runesAdjust = {
-                { items = {"bow", "spyglass"},            pos = {x = -0.05, y = -0.3,  z = 0,   amp = 0} },
-                { items = {"crossbow"},                   pos = {x = -0.1,  y = -0.4,  z = 0,   amp = 0} },
-                { items = {"wolf_armor", "horse_armor"},  pos = {x = 0.05,  y = -0.25, z = 0,   amp = 0} },
-                { items = {"spears"},                     pos = {x = 0.05,  y = 0.3,   z = 0.1, amp = 0} },
-                { items = {"mace"},                       pos = {x = 0,     y = 0,     z = 0,   amp = 0.05} },
-                { items = {"fishing_rod", "_on_a_stick"}, pos = {x = 0,     y = -0.1,  z = 0,   amp = 0} },
-                { items = {"end_crystal"},                pos = {x = -0.05, y = -0.15, z = 0,   amp = 0} },
-                { items = sprites2D,                      pos = {x = 0,     y = -0.3,  z = 0,   amp = 0} }
+                { items = {"bow", "spyglass"},            pos = {x = -0.05, y = -0.3,  z = 0} },
+                { items = {"crossbow"},                   pos = {x = -0.1,  y = -0.4,  z = 0} },
+                { items = {"wolf_armor", "horse_armor"},  pos = {x = 0.05,  y = -0.25, z = 0} },
+                { items = {"spears"},                     pos = {x = 0.05,  y = 0.3,   z = 0.1} },
+                { items = {"fishing_rod", "_on_a_stick"}, pos = {x = 0,     y = -0.1,  z = 0} },
+                { items = {"end_crystal"},                pos = {x = -0.05, y = -0.15, z = 0} },
+                { items = sprites2D,                      pos = {x = 0,     y = -0.3,  z = 0} }
             }
             local function getRuneAdjust()
                 for _, adjust in ipairs(runesAdjust) do
@@ -225,7 +218,7 @@ if isEnchanted then
                         end
                     end
                 end
-                return {x = 0, y = 0, z = 0, amp = 0}
+                return {x = 0, y = 0, z = 0}
             end
 
             local runesPos    = getRuneAdjust()
@@ -242,7 +235,7 @@ if isEnchanted then
                 0.05 + math.random() * 0.12,
                 sgaTex, "ITEM", hand, "OPACITY", "ADDITIVE",
                 12, 160 + math.random(0, 60),
-                function(p) particleTickerEnchant(p, particleID, runesPos.amp) end
+                function(p) particleTickerEnchant(p, particleID) end
             )
 
             global.lastRuneSpawnTime = time

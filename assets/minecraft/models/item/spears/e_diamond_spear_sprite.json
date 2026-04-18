@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/enchanted_spear_sprite",
+  "textures": {
+    "spear": "minecraft:item/diamond_spear",
+    "outline": "minecraft:item/enchantment_outline"
+  }
+}

@@ -9,10 +9,17 @@
             "property": "minecraft:display_context",
             "cases": [
                 {
-                    "when": ["gui", "ground", "fixed", "on_shelf"],
+                    "when": ["gui"],
                     "model": {
                         "type": "minecraft:model",
                         "model": "minecraft:item/diamond_spear"
+                    }
+                },
+                {
+                    "when": ["ground", "fixed", "on_shelf"],
+                    "model": {
+                        "type": "minecraft:model",
+                        "model": "minecraft:item/spears/e_diamond_spear_sprite"
                     }
                 }
             ],

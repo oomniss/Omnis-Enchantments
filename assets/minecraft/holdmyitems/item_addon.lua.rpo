@@ -1,7 +1,9 @@
 {
   expansions: {
     glow:               "OmnisEnchantments.General.GlowingEffect",
+    glowIntensity:      "OmnisEnchantments.General.GlowIntensity",
     runes:              "OmnisEnchantments.General.RunesParticles",
+    runesIntensity:     "OmnisEnchantments.General.RunesIntensity",
 
     glowSwords:         "OmnisEnchantments.GlowByItemType.Swords",
     glowPickaxes:       "OmnisEnchantments.GlowByItemType.Pickaxes",
