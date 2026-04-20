@@ -209,30 +209,19 @@ if isEnchanted then
             local letter = string.char(96 + math.random(1, 26))
             local sgaTex = Texture:of("minecraft", "textures/particle/sga_" .. letter .. ".png")
 
-            local runesAdjust = {
-                { items = {"bow", "spyglass"},            pos = {x = -0.05, y = -0.3,  z = 0} },
-                { items = {"crossbow"},                   pos = {x = -0.1,  y = -0.4,  z = 0} },
-                { items = {"wolf_armor", "horse_armor"},  pos = {x = 0.05,  y = -0.25, z = 0} },
-                { items = {"spears"},                     pos = {x = 0.05,  y = 0.3,   z = 0.1} },
-                { items = {"fishing_rod", "_on_a_stick"}, pos = {x = 0,     y = -0.1,  z = 0} },
-                { items = {"end_crystal"},                pos = {x = -0.05, y = -0.15, z = 0} },
-                { items = sprites2D,                      pos = {x = 0,     y = -0.3,  z = 0} }
-            }
-            local function getRuneAdjust()
-                for _, adjust in ipairs(runesAdjust) do
-                    for _, i in ipairs(adjust.items) do
-                        if matched(i, true) then
-                            return adjust.pos
-                        end
-                    end
-                end
-                return {x = 0, y = 0, z = 0}
-            end
+            -- Delimitadores de spawn para cada eixo (relativo ao centro do item)
+            local spreadX = {min = -0.25, max = 0.2}
+            local spreadY = {min = -0.2, max = 0.12}
+            local spreadZ = {min = -0.2, max = 0.15}
 
-            local runesPos    = getRuneAdjust()
-            local spawnX      = ((math.random() * 0.5 - 0.3) + runesPos.x) * l
-            local spawnY      = (math.random() * 0.7 + 0.05) + runesPos.y
-            local spawnZ      = (math.random() * 0.3 - 0.1)  + runesPos.z
+            -- Gera posição aleatória dentro dos limites de cada eixo
+            local randomX = math.random() * (spreadX.max - spreadX.min) + spreadX.min
+            local randomY = math.random() * (spreadY.max - spreadY.min) + spreadY.min
+            local randomZ = math.random() * (spreadZ.max - spreadZ.min) + spreadZ.min
+
+            local spawnX = (move.x + randomX) * l
+            local spawnY = move.y + randomY
+            local spawnZ = move.z + randomZ
 
             particleManager:addParticle(
                 particles, false,
