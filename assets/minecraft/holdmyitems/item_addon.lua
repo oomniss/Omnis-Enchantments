@@ -1,17 +1,16 @@
 -- by omnis._.
 
-global.runeActive           = global.runeActive or false
-global.lastRuneSpawnTime    = global.lastRuneSpawnTime or 0
-global.RuneStates           = global.RuneStates or {}
-global.activeRunes          = global.activeRunes or 0
+global.runeDebounceStart    = 0;
+global.runeID               = 0;
+global.runeStates           = {};
 
 local l                     = context.mainHand and 1 or -1
 local hand                  = context.hand
 local particles             = context.particles
-local itemName              = I:getName(context.item):gsub("minecraft:", "")
-local isEnchanted           = I:isEnchanted(context.item)
 local deltaTime             = context.deltaTime
+local itemName              = I:getName(context.item):gsub("minecraft:", "")
 local time                  = P:getAge(context.player)
+local isEnchanted           = I:isEnchanted(context.item)
 local glowIntensity         = ${glowIntensity}
 local runesIntensity        = ${runesIntensity}
 
@@ -38,6 +37,7 @@ end
 local function getType()
     local typeMap = {
         { types = {"pickaxes", "axes", "hoes", "shovels", "spears", "horse_armor", "nautilus_armor", "swords"} },
+        { types = {"enchanted_book", "written_book"}, output = "books" },
         { types = {"head_armor", "chest_armor", "leg_armor", "foot_armor", "elytra"}, output = "armors" },
         { types = {"fishing_rod", "on_a_stick"}, output = "rods" },
     }
@@ -62,8 +62,7 @@ local itemConfig = {
     shovels                  = { glow = ${glowShovels},          rune = ${runeShovels} },
     swords                   = { glow = ${glowSwords},           rune = ${runeSwords} },
     spears                   = { glow = ${glowSpears},           rune = ${runeSpears} },
-    written_book             = { glow = ${glowBooks},            rune = ${runeBooks} },
-    enchanted_book           = { glow = ${glowBooks},            rune = ${runeBooks} },
+    books                    = { glow = ${glowBooks},            rune = ${runeBooks} },
     rods                     = { glow = ${glowRods},             rune = ${runeRods} },
     shears                   = { glow = ${glowShears},           rune = ${runeShears} },
     enchanted_golden_apple   = { glow = ${glowEnchantApple},     rune = ${runeEnchantApple} },
@@ -96,17 +95,16 @@ local function enableParticle(items, particle)
 end
 
 -- === PARTICLE TICKER ===
-local function particleTickerEnchant(particle, particleID, amp)
-    local state = global.RuneStates[particleID]
-
-    if not global.runeActive then
+local function particleTicker(particle, particleID)
+    if not I:isEnchanted(context.item) then
         particle.dead = true
-        if global.RuneStates[particleID] then
-            global.RuneStates[particleID] = nil
-            global.activeRunes = math.max(0, global.activeRunes - 1)
+        if runeStates[particleID] then
+            runeStates[particleID] = nil
         end
         return
     end
+
+    local state = runeStates[particleID]
 
     if not state then
         state = {
@@ -119,8 +117,9 @@ local function particleTickerEnchant(particle, particleID, amp)
             speedZ    = 0.025 + math.random() * 0.035,
             amplitude = (math.random() * 0.0025),
             riseSpeed = 0.0008 + math.random() * 0.0015,
+            expirationDate = time + 250,
         }
-        global.RuneStates[particleID] = state
+        runeStates[particleID] = state
     end
 
     state.age = state.age + deltaTime * 30
@@ -134,10 +133,9 @@ local function particleTickerEnchant(particle, particleID, amp)
     particle.dz = math.sin(state.phaseZ) * state.amplitude
 end
 
-for id, state in pairs(global.RuneStates) do
-    if not state or not global.runeActive then
-        global.RuneStates[id] = nil
-        global.activeRunes = math.max(0, global.activeRunes - 1)
+for id, state in pairs(runeStates) do
+    if time >= state.expirationDate then
+        runeStates[id] = nil
     end
 end
 
@@ -180,8 +178,6 @@ local rotate      = posEntry.rotate or {x = 0, y = 0, z = 0}
 local scale       = posEntry.scale  or 3
 
 if isEnchanted then
-    global.runeActive = true
-
     if glowingEffect and enableParticle(itemName, "glow") then
         particleManager:addParticle(
             particles,
@@ -195,9 +191,21 @@ if isEnchanted then
     end
 
     if runes and enableParticle(itemName, "rune") then
-        local SPAWN_INTERVAL = 12 - ((runesIntensity - 1) * 1)
+        runeActive = true
+        local SPAWN_INTERVAL = 12 - (runesIntensity - 1)
 
-        if time - (global.lastRuneSpawnTime or 0) >= SPAWN_INTERVAL then
+        local aliveCount = 0
+        for id, state in pairs(runeStates) do
+            if state then aliveCount = aliveCount + 1 end
+        end
+        if runeDebounceStart > time then
+            runeDebounceStart = time
+        end
+
+        if (time - runeDebounceStart >= SPAWN_INTERVAL) and aliveCount < 50 then
+            runeDebounceStart = time
+            runeID = runeID + 1
+
             local letter = string.char(96 + math.random(1, 26))
             local sgaTex = Texture:of("minecraft", "textures/particle/sga_" .. letter .. ".png")
 
@@ -226,24 +234,21 @@ if isEnchanted then
             local spawnY      = (math.random() * 0.7 + 0.05) + runesPos.y
             local spawnZ      = (math.random() * 0.3 - 0.1)  + runesPos.z
 
-            local particleID  = "ench_" .. time .. "_" .. math.random(1000, 9999)
-
             particleManager:addParticle(
                 particles, false,
                 spawnX, spawnY, spawnZ,
                 0, 0, 0, 0, 0, 0, 0, 0, math.random(-8,8),
                 0.05 + math.random() * 0.12,
-                sgaTex, "ITEM", hand, "OPACITY", "ADDITIVE",
+                sgaTex, "ITEM", hand, "OPACITY", "CUTOUT_L",
                 12, 160 + math.random(0, 60),
-                function(p) particleTickerEnchant(p, particleID) end
+                function(p) particleTicker(p, runeID) end
             )
-
-            global.lastRuneSpawnTime = time
-            global.activeRunes = global.activeRunes + 1
         end
     end
 else
-    global.runeActive = false
+    for id in pairs(runeStates) do
+        runeStates[id] = nil
+    end
 end
 
 if enableParticle("totem_of_undying", "glow") then
