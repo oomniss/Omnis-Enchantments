@@ -1,5 +1,5 @@
 {
-  condition: "General.ArmorGlintStyle.Renewed",
+  condition: "General.ArmorGlintStyle.Reworked",
   fallback: [
     "assets/minecraft/textures/misc/glint_options/enchanted_glint_item_vanilla.png",
     "assets/minecraft/textures/misc/glint_options/enchanted_glint_item_minimal.png"

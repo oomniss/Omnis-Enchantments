@@ -12,7 +12,7 @@
                     "when": "gui",
                     "model": {
                         "type": "minecraft:model",
-                        "model": "minecraft:item/leather_horse_armor",
+                        "model": "minecraft:item/horse_armors/leather_horse_armor",
                         "tints": [
                             {
                                 "type": "minecraft:dye",
@@ -35,7 +35,7 @@
         },
         "on_false": {
             "type": "minecraft:model",
-            "model": "minecraft:item/leather_horse_armor",
+            "model": "minecraft:item/horse_armors/leather_horse_armor",
             "tints": [
                 {
                     "type": "minecraft:dye",

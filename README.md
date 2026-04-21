@@ -1,6 +1,6 @@
-![título](https://cdn.modrinth.com/data/cached_images/540261732d7d19ac0d400694b90088900dc2d633.png)
+![Tittle](https://cdn.modrinth.com/data/cached_images/540261732d7d19ac0d400694b90088900dc2d633.png)
 
-![descrição](https://cdn.modrinth.com/data/cached_images/a07a94650f5a9121dd94a2f365ca225aeefc8cf0.png)
+![Description](https://cdn.modrinth.com/data/cached_images/63708ae9e562dbcece2825b8815c2f0f1afe45f9.png)
 
 <div align="center">
   <a href="https://modrinth.com/mod/hold-my-items">

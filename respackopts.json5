@@ -23,13 +23,13 @@
       },
       ItemGlintStyle: {
         type: "enum",
-        default: "Renewed",
-        values: ["Renewed", "Vanilla", "Minimal"]
+        default: "Reworked",
+        values: ["Reworked", "Vanilla", "Minimal"]
       },
       ArmorGlintStyle: {
         type: "enum",
-        default: "Renewed",
-        values: ["Renewed", "Vanilla"]
+        default: "Reworked",
+        values: ["Reworked", "Vanilla"]
       }
     },
     GlowByItemType: {
@@ -50,6 +50,9 @@
       Mace: true,
       Bow: true,
       Crossbow: true,
+      Trident: true,
+      Shield: true,
+      Brush: true,
       FlintAndSteel: true,
       Spyglass: true,
       Compasses: true,
@@ -76,6 +79,7 @@
       Mace: true,
       Bow: true,
       Crossbow: true,
+      Trident: true,
       FlintAndSteel: true,
       Spyglass: true,
       Compasses: true,

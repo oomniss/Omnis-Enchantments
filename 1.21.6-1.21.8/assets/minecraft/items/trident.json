@@ -11,7 +11,7 @@
             }
         },
         {
-            "when": ["ground", "fixed", "on_shelf"],
+            "when": ["ground", "fixed"],
             "model": {
                 "type": "minecraft:model",
                 "model": "minecraft:item/trident/e_trident_sprite"

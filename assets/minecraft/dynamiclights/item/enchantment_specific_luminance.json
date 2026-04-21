@@ -1,0 +1,16 @@
+{
+  "match": {
+    "predicates": {
+      "minecraft:enchantments": [
+        {
+          "enchantments": [
+            "minecraft:fire_aspect",
+            "minecraft:channeling",
+            "minecraft:flame"
+          ]
+        }
+      ]
+    }
+  },
+  "luminance": 10
+}
