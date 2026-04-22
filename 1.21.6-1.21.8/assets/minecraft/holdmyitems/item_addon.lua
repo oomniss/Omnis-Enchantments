@@ -211,8 +211,8 @@ if isEnchanted then
 
             local letter    = string.char(96 + math.random(1, 26))
             local sgaTex    = Texture:of("minecraft", "textures/particle/sga_" .. letter .. ".png")
-            local spreadX   = {min = -0.25, max = 0.2}
-            local spreadY   = {min = -0.2, max = 0.12}
+            local spreadX   = {min = -0.25, max = 0.3}
+            local spreadY   = {min = -0.2, max = 0.2}
             local spreadZ   = {min = -0.2, max = 0.15}
             local randomX   = math.random() * (spreadX.max - spreadX.min) + spreadX.min
             local randomY   = math.random() * (spreadY.max - spreadY.min) + spreadY.min

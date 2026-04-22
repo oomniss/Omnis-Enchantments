@@ -49,6 +49,7 @@
         "type": "minecraft:condition",
         "property": "minecraft:has_component",
         "component": "minecraft:enchantments",
+        "ignore_default": true,
         "on_true": {
           "type": "minecraft:model",
           "model": "minecraft:item/others/e_brush"
@@ -65,6 +66,7 @@
             "type": "minecraft:condition",
             "property": "minecraft:has_component",
             "component": "minecraft:enchantments",
+            "ignore_default": true,
             "on_true": {
               "type": "minecraft:model",
               "model": "minecraft:item/others/e_brush_brushing_0"
@@ -81,6 +83,7 @@
             "type": "minecraft:condition",
             "property": "minecraft:has_component",
             "component": "minecraft:enchantments",
+            "ignore_default": true,
             "on_true": {
               "type": "minecraft:model",
               "model": "minecraft:item/others/e_brush_brushing_1"
@@ -97,6 +100,7 @@
             "type": "minecraft:condition",
             "property": "minecraft:has_component",
             "component": "minecraft:enchantments",
+            "ignore_default": true,
             "on_true": {
               "type": "minecraft:model",
               "model": "minecraft:item/others/e_brush_brushing_2"
