@@ -5,7 +5,6 @@ global.runeID               = 0;
 global.runeStates           = {};
 
 local l                     = mainHand and 1 or -1
-local hand                  = hand
 local itemName              = I:getName(item):gsub("minecraft:", "")
 local time                  = P:getAge(player)
 local isEnchanted           = I:isEnchanted(item)
@@ -49,6 +48,7 @@ local function getType()
     end
     return itemName
 end
+local itemType = getType()
 
 -- === SETTINGS ===
 local glowingEffect   = ${glow}
@@ -87,7 +87,7 @@ local function enableParticle(items, particle)
     local list = type(items) == "table" and items or {items}
     for _, i in ipairs(list) do
         if matched(i, true) then
-            local config = itemConfig[getType()] or {}
+            local config = itemConfig[itemType] or {}
             return config[particle] == true
         end
     end
@@ -122,11 +122,12 @@ local function particleTicker(particle, particleID)
         runeStates[particleID] = state
     end
 
-    state.age = state.age + deltaTime * 30
+    local dt = deltaTime or 0
+    state.age = state.age + dt * 30
 
-    state.phaseX = state.phaseX + state.speedX * deltaTime * 30
-    state.phaseY = state.phaseY + state.speedY * deltaTime * 30
-    state.phaseZ = state.phaseZ + state.speedZ * deltaTime * 30
+    state.phaseX = state.phaseX + state.speedX * dt * 30
+    state.phaseY = state.phaseY + state.speedY * dt * 30
+    state.phaseZ = state.phaseZ + state.speedZ * dt * 30
 
     particle.dx = math.sin(state.phaseX) * state.amplitude
     particle.dy = state.riseSpeed + math.cos(state.phaseY) * state.amplitude * 0.5
@@ -137,6 +138,11 @@ for id, state in pairs(runeStates) do
     if time >= state.expirationDate then
         runeStates[id] = nil
     end
+end
+
+if runeID > 999999 then
+    runeID = 0
+    runeStates = {}
 end
 
 -- === TEXTURE ===
@@ -175,7 +181,7 @@ local particlePosition = {
     trident     = { move = {x = 0.08,   y = isUsingItem and -0.5 or 0.4, z = 0.05}, rotate = {x = 20,  y = 0, z = isUsingItem and 90 or 10} }
 }
 
-local posEntry    = (is2D and particlePosition["is2D"]) or particlePosition[getType()] or {}
+local posEntry    = (is2D and particlePosition["is2D"]) or particlePosition[itemType] or {}
 local move        = posEntry.move   or {x = 0, y = 0, z = 0}
 local rotate      = posEntry.rotate or {x = 0, y = 0, z = 0}
 local scale       = posEntry.scale  or 3
@@ -209,25 +215,25 @@ if isEnchanted then
             runeDebounceStart = time
             runeID = runeID + 1
 
-            local letter    = string.char(96 + math.random(1, 26))
-            local sgaTex    = Texture:of("minecraft", "textures/particle/sga_" .. letter .. ".png")
-            local spreadX   = {min = -0.25, max = 0.3}
-            local spreadY   = {min = -0.2, max = 0.2}
-            local spreadZ   = {min = -0.2, max = 0.15}
-            local randomX   = math.random() * (spreadX.max - spreadX.min) + spreadX.min
-            local randomY   = math.random() * (spreadY.max - spreadY.min) + spreadY.min
-            local randomZ   = math.random() * (spreadZ.max - spreadZ.min) + spreadZ.min
-            local spawnX    = (move.x + randomX) * l
-            local spawnY    = move.y + randomY
-            local spawnZ    = move.z + randomZ
+            local letter        = string.char(96 + math.random(1, 26))
+            local sgaTex        = Texture:of("minecraft", "textures/particle/sga_" .. letter .. ".png")
+            local spreadX       = {min = -0.25, max = 0.2}
+            local spreadY       = {min = -0.2, max = 0.2}
+            local spreadZ       = {min = -0.2, max = 0.1}
+            local randomX       = math.random() * (spreadX.max - spreadX.min) + spreadX.min
+            local randomY       = math.random() * (spreadY.max - spreadY.min) + spreadY.min
+            local randomZ       = math.random() * (spreadZ.max - spreadZ.min) + spreadZ.min
+            local spawnX        = (move.x + randomX) * l
+            local spawnY        = move.y + randomY
+            local spawnZ        = move.z + randomZ
 
             particleManager:addParticle(
                 particles, false,
                 spawnX, spawnY, spawnZ,
-                0, 0, 0, 0, 0, 0, 0, 0, math.random(-8,8),
+                0, 0, 0, 0, 0, 0, 0, 0, 0,
                 0.05 + math.random() * 0.12,
                 sgaTex, "ITEM", hand, "OPACITY", "CUTOUT_L",
-                12, 160 + math.random(0, 60),
+                5, 160 + math.random(0, 60),
                 function(p) particleTicker(p, runeID) end
             )
         end

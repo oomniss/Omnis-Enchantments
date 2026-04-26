@@ -24,12 +24,16 @@
           "component": "minecraft:enchantments",
           "ignore_default": true,
           "on_true": {
-            "type": "minecraft:model",
-            "model": "minecraft:item/bow/e_bow_pulling_0"
+            "type": "minecraft:select",
+            "property": "minecraft:display_context",
+            "cases": [{ "when": ["firstperson_lefthand", "thirdperson_lefthand"], "model": { "type": "minecraft:model", "model": "minecraft:item/bow/e_bow_pulling_0_left" } }],
+            "fallback": { "type": "minecraft:model", "model": "minecraft:item/bow/e_bow_pulling_0_right" }
           },
           "on_false": {
-            "type": "minecraft:model",
-            "model": "minecraft:item/bow/bow_pulling_0"
+            "type": "minecraft:select",
+            "property": "minecraft:display_context",
+            "cases": [{ "when": ["firstperson_lefthand", "thirdperson_lefthand"], "model": { "type": "minecraft:model", "model": "minecraft:item/bow/bow_pulling_0_left" } }],
+            "fallback": { "type": "minecraft:model", "model": "minecraft:item/bow/bow_pulling_0_right" }
           }
         },
         "entries": [
@@ -41,12 +45,16 @@
               "component": "minecraft:enchantments",
               "ignore_default": true,
               "on_true": {
-                "type": "minecraft:model",
-                "model": "minecraft:item/bow/e_bow_pulling_1"
+                "type": "minecraft:select",
+                "property": "minecraft:display_context",
+                "cases": [{ "when": ["firstperson_lefthand", "thirdperson_lefthand"], "model": { "type": "minecraft:model", "model": "minecraft:item/bow/e_bow_pulling_1_left" } }],
+                "fallback": { "type": "minecraft:model", "model": "minecraft:item/bow/e_bow_pulling_1_right" }
               },
               "on_false": {
-                "type": "minecraft:model",
-                "model": "minecraft:item/bow/bow_pulling_1"
+                "type": "minecraft:select",
+                "property": "minecraft:display_context",
+                "cases": [{ "when": ["firstperson_lefthand", "thirdperson_lefthand"], "model": { "type": "minecraft:model", "model": "minecraft:item/bow/bow_pulling_1_left" } }],
+                "fallback": { "type": "minecraft:model", "model": "minecraft:item/bow/bow_pulling_1_right" }
               }
             }
           },
@@ -58,12 +66,16 @@
               "component": "minecraft:enchantments",
               "ignore_default": true,
               "on_true": {
-                "type": "minecraft:model",
-                "model": "minecraft:item/bow/e_bow_pulling_2"
+                "type": "minecraft:select",
+                "property": "minecraft:display_context",
+                "cases": [{ "when": ["firstperson_lefthand", "thirdperson_lefthand"], "model": { "type": "minecraft:model", "model": "minecraft:item/bow/e_bow_pulling_2_left" } }],
+                "fallback": { "type": "minecraft:model", "model": "minecraft:item/bow/e_bow_pulling_2_right" }
               },
               "on_false": {
-                "type": "minecraft:model",
-                "model": "minecraft:item/bow/bow_pulling_2"
+                "type": "minecraft:select",
+                "property": "minecraft:display_context",
+                "cases": [{ "when": ["firstperson_lefthand", "thirdperson_lefthand"], "model": { "type": "minecraft:model", "model": "minecraft:item/bow/bow_pulling_2_left" } }],
+                "fallback": { "type": "minecraft:model", "model": "minecraft:item/bow/bow_pulling_2_right" }
               }
             }
           }
