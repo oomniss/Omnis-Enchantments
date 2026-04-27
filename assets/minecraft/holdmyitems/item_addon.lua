@@ -108,16 +108,16 @@ local function particleTicker(particle, particleID)
 
     if not state then
         state = {
-            age       = 0,
-            phaseX    = math.random() * 6.283,
-            phaseY    = math.random() * 6.283,
-            phaseZ    = math.random() * 6.283,
-            speedX    = 0.025 + math.random() * 0.035,
-            speedY    = 0.015 + math.random() * 0.025,
-            speedZ    = 0.025 + math.random() * 0.035,
-            amplitude = (math.random() * 0.0025),
-            riseSpeed = 0.0008 + math.random() * 0.0015,
-            expirationDate = time + 250,
+            age               = 0,
+            phaseX            = math.random() * 6.283,
+            phaseY            = math.random() * 6.283,
+            phaseZ            = math.random() * 6.283,
+            speedX            = 0.025 + math.random() * 0.035,
+            speedY            = 0.015 + math.random() * 0.025,
+            speedZ            = 0.025 + math.random() * 0.035,
+            amplitude         = (math.random() * 0.0025),
+            riseSpeed         = 0.0008 + math.random() * 0.0015,
+            expirationDate    = time + 250,
         }
         runeStates[particleID] = state
     end
@@ -147,15 +147,16 @@ end
 
 -- === TEXTURE ===
 local textureMap = {
-    general             = Texture:of("minecraft", "textures/particle/circle_purple_glow.png"),
-    swords              = Texture:of("minecraft", "textures/particle/oval_purple_glow.png"),
-    spears              = Texture:of("minecraft", "textures/particle/oval_purple_glow.png"),
-    rods                = Texture:of("minecraft", "textures/particle/oval_purple_glow.png"),
-    spyglass            = Texture:of("minecraft", "textures/particle/oval_purple_glow.png"),
-    trident             = Texture:of("minecraft", "textures/particle/oval_purple_glow.png"),
-    totem_of_undying    = Texture:of("minecraft", "textures/particle/gold_glow.png"),
+    general             = "circle_purple_glow",
+    swords              = "oval_purple_glow",
+    spears              = "oval_purple_glow",
+    rods                = "oval_purple_glow",
+    spyglass            = "oval_purple_glow",
+    trident             = "oval_purple_glow",
+    totem_of_undying    = "gold_glow"
 }
-local texture = textureMap[getType()] or textureMap.general
+local textureName = textureMap[getType()] or textureMap.general
+local texture = Texture:of("minecraft", "textures/particle/" .. textureName .. ".png")
 
 -- === PARTICLES ===
 local sprites2D = {"written_book", "enchanted_book", "enchanted_golden_apple", "head_armor", "chest_armor", "leg_armor", "foot_armor",
@@ -173,8 +174,8 @@ local particlePosition = {
     bow         = { move = {x = 0.02,   y = -0.13, z = 0.05}, scale = 4.5 },
     crossbow    = { move = {x = -0.1,   y = 0.05 , z = 0} },
     rods        = { move = {x = 0.1,    y = 0.25,  z = 0.05}, rotate = {x = 30, y = 0, z = 0},   scale = 3.7 },
-    swords      = { move = {x = 0,      y = 0.4,   z = 0.05}, rotate = {x = 5,  y = 0, z = -10}, scale = 3.2 },
-    spears      = { move = {x = 0.1,    y = 0.8,   z = 0.1},  rotate = {x = 30, y = 0, z = 20},  scale = 4.7 },
+    swords      = { move = {x = 0.02,   y = 0.4,   z = 0.05}, rotate = {x = 0,  y = 0, z = 0},   scale = 3.2 },
+    spears      = { move = {x = 0.1,    y = 0.5,   z = 0.1},  rotate = {x = 30, y = 0, z = 20},  scale = 5.5, lumen = 120 },
     spyglass    = { move = {x = -0.02,  y = -0.1,  z = 0.05}, rotate = {x = 10, y = 0, z = -10} },
     is2D        = { move = {x = -0.06,  y = 0.2,   z = 0.15}, scale = 3.5},
     shield      = { move = {x = 0.05,   y = 0.4,   z = 0.05}, rotate = {x = 20,  y = 0, z = 10} },
@@ -186,11 +187,16 @@ local move        = posEntry.move   or {x = 0, y = 0, z = 0}
 local rotate      = posEntry.rotate or {x = 0, y = 0, z = 0}
 local scale       = posEntry.scale  or 3
 
+if posEntry.lumen then
+    local prop = posEntry.lumen/180
+    glowIntensity = glowIntensity * prop
+end
+
 if isEnchanted then
     if glowingEffect and enableParticle(itemName, "glow") then
         particleManager:addParticle(
             particles,
-            false,
+            true,
             move.x * l, move.y, move.z,
             0, 0, 0,
             rotate.x, rotate.y * l, rotate.z * l,
@@ -217,9 +223,23 @@ if isEnchanted then
 
             local letter        = string.char(96 + math.random(1, 26))
             local sgaTex        = Texture:of("minecraft", "textures/particle/sga_" .. letter .. ".png")
-            local spreadX       = {min = -0.25, max = 0.2}
-            local spreadY       = {min = -0.2, max = 0.2}
-            local spreadZ       = {min = -0.2, max = 0.1}
+
+            local spreads = {
+                circle = {
+                    x = {min = -0.25, max = 0.2},
+                    y = {min = -0.2,  max = 0.2},
+                    z = {min = -0.2,  max = 0.1}
+                },
+                oval = {
+                    x = {min = -0.2,  max = 0.15},
+                    y = {min = -0.4,  max = 0.4},
+                    z = {min = -0.2,  max = 0.1}
+                }
+            }
+            local textureType   = textureName:match("oval") or textureName:match("circle")
+            local spreadX       = spreads[textureType].x
+            local spreadY       = spreads[textureType].y
+            local spreadZ       = spreads[textureType].z
             local randomX       = math.random() * (spreadX.max - spreadX.min) + spreadX.min
             local randomY       = math.random() * (spreadY.max - spreadY.min) + spreadY.min
             local randomZ       = math.random() * (spreadZ.max - spreadZ.min) + spreadZ.min
