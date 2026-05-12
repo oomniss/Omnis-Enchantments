@@ -83,13 +83,10 @@ local itemConfig = {
     end_crystal              = { rune = ${runeEndCrystal} }
 }
 
-local function enableParticle(items, particle)
-    local list = type(items) == "table" and items or {items}
-    for _, i in ipairs(list) do
-        if matched(i, true) then
-            local config = itemConfig[itemType] or {}
-            return config[particle] == true
-        end
+local function enableParticle(item, particle)
+    if matched(item, true) then
+        local config = itemConfig[itemType] or {}
+        return config[particle] == true
     end
     return false
 end

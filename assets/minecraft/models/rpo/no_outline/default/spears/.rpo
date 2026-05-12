@@ -1,0 +1,4 @@
+{
+    condition: "Compatibility.Tools.Default",
+    fallback: "assets/minecraft/models/rpo/no_outline/classictoolsfusion/spears"
+}

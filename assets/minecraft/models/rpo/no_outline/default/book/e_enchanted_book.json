@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/outline_book",
+  "textures": {
+    "book": "minecraft:item/enchanted_book"
+  }
+}

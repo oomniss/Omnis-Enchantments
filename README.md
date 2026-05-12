@@ -19,7 +19,7 @@
 
 ---
 
-![Description](https://cdn.modrinth.com/data/cached_images/4c12e64b5aeb5ee40dc8f15d98c45dad6777e671.png)
+![Description](https://cdn.modrinth.com/data/cached_images/2f9eb98d277d7aea61946b39674134a486a88388.png)
 
 <details>
 <summary>Accessibility</summary>
@@ -36,7 +36,7 @@ Give your enchanted items an **aura of magical power!**
 # Features
 - **Outline** and **Glow Effect** for every enchanted item
 - **Runic Particles** around the item
-- **Dynamic Light:** enchanted items emit 8 levels of light; items enchanted with Fire Aspect, Conductivity or Flame emit 10
+- **Dynamic Light:** enchanted items emit 8 levels of light; items enchanted with Fire Aspect, Channeling or Flame emit 10
 - New **Glint** for items and armor
 - **3D Arrow** in bow and crossbow pulling animation
 
