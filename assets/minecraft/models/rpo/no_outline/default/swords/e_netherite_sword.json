@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/enchanted_sword",
   "textures": {
-    "sword": "minecraft:item/netherite_sword"
+    "sword": "minecraft:item/e_netherite_sword"
   }
 }

@@ -3,7 +3,7 @@
 	"credit": "Made with Blockbench",
 	"parent": "item/generated",
 	"textures": {
-		"0": "item/bow"
+		"0": "item/e_bow"
 	},
 	"elements": [
 		{

@@ -2,9 +2,8 @@
 	"credit": "Made with Blockbench",
 	"parent": "item/generated",
 	"textures": {
-		"0": "item/trident",
-		"1": "item/enchantment_outline",
-		"particle": "item/enchantment_outline"
+		"0": "item/e_trident",
+		"1": "item/enchantment_outline"
 	},
 	"elements": [
 		{

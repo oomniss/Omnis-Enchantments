@@ -3,7 +3,7 @@
 	"credit": "Made with Blockbench",
 	"parent": "minecraft:item/bow",
 	"textures": {
-		"1": "item/bow_pulling_2",
+		"1": "item/e_bow_pulling_2",
 		"2": "item/bow_arrow"
 	},
 	"elements": [

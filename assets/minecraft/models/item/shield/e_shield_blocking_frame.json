@@ -1,9 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"1": "item/shield_base_pattern",
-		"3": "item/enchantment_outline",
-		"particle": "item/shield_base_pattern"
+		"1": "item/e_shield_base_pattern",
+		"3": "item/enchantment_outline"
 	},
 	"elements": [
 		{

@@ -4,7 +4,7 @@
 	"parent": "minecraft:item/generated",
 	"texture_size": [32, 32],
 	"textures": {
-		"2": "item/trident_in_hand"
+		"2": "item/e_trident_in_hand"
 	},
 	"elements": [
 		{

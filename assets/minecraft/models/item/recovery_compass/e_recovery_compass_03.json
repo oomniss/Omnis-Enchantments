@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:item/enchanted_recovery_compass",
   "textures": {
-    "recovery_compass": "minecraft:item/recovery_compass_03",
+    "recovery_compass": "minecraft:item/e_recovery_compass_03",
     "outline": "minecraft:item/enchantment_outline"
   }
 }

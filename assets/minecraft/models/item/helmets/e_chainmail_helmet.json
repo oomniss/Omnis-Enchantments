@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:item/enchanted_chestplate",
   "textures": {
-    "chestplate": "minecraft:item/chainmail_chestplate",
+    "chestplate": "minecraft:item/e_chainmail_chestplate",
     "outline": "minecraft:item/enchantment_outline"
   }
 }

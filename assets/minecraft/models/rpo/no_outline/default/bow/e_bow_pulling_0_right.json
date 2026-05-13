@@ -4,7 +4,7 @@
 	"parent": "minecraft:item/bow",
 	"textures": {
 		"3": "item/bow_arrow",
-		"4": "item/bow_pulling_0"
+		"4": "item/e_bow_pulling_0"
 	},
 	"elements": [
 		{

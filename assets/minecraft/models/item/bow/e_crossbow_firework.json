@@ -3,10 +3,9 @@
 	"credit": "Made with Blockbench",
 	"parent": "minecraft:item/crossbow",
 	"textures": {
-		"0": "item/crossbow_pulling_2",
+		"0": "item/e_crossbow_pulling_2",
 		"1": "item/enchantment_outline",
-		"3": "item/firework_crossbow",
-		"particle": "item/bow_arrow"
+		"3": "item/firework_crossbow"
 	},
 	"elements": [
 		{

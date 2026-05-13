@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/enchanted_spear",
   "textures": {
-    "spear": "minecraft:item/netherite_spear_in_hand"
+    "spear": "minecraft:item/e_netherite_spear_in_hand"
   }
 }

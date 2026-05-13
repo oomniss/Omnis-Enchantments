@@ -2,10 +2,9 @@
 	"credit": "Made with Blockbench",
 	"parent": "minecraft:item/generated",
 	"textures": {
-		"0": "item/leather_leggings",
-		"1": "item/leather_leggings_overlay",
-		"2": "item/enchantment_outline",
-		"particle": "item/leather_leggings"
+		"0": "item/e_leather_leggings",
+		"1": "item/e_leather_leggings_overlay",
+		"2": "item/enchantment_outline"
 	},
 	"elements": [
 		{

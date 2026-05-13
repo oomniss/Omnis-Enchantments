@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"parent": "minecraft:item/crossbow",
 	"textures": {
-		"0": "item/crossbow_pulling_1",
+		"0": "item/e_crossbow_pulling_1",
 		"1": "item/enchantment_outline"
 	},
 	"elements": [

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/enchanted_helmet",
   "textures": {
-    "helmet": "minecraft:item/copper_helmet"
+    "helmet": "minecraft:item/e_copper_helmet"
   }
 }

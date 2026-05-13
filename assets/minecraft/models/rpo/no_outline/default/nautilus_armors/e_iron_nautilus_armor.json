@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/enchanted_nautilus_armor",
   "textures": {
-    "nautilus_armor": "minecraft:item/iron_nautilus_armor"
+    "nautilus_armor": "minecraft:item/e_iron_nautilus_armor"
   }
 }

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/enchanted_boots",
   "textures": {
-    "boots": "minecraft:item/copper_boots"
+    "boots": "minecraft:item/e_copper_boots"
   }
 }

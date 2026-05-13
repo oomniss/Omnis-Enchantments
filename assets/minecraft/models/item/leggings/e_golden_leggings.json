@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:item/enchanted_leggings",
   "textures": {
-    "leggings": "minecraft:item/golden_leggings",
+    "leggings": "minecraft:item/e_golden_leggings",
     "outline": "minecraft:item/enchantment_outline"
   }
 }

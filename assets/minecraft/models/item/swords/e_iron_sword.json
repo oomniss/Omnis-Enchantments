@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:item/enchanted_sword",
   "textures": {
-    "sword": "minecraft:item/iron_sword",
+    "sword": "minecraft:item/e_iron_sword",
     "outline": "minecraft:item/enchantment_outline"
   }
 }

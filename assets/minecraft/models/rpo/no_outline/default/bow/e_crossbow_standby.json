@@ -3,7 +3,7 @@
 	"credit": "Made with Blockbench",
 	"parent": "item/generated",
 	"textures": {
-		"0": "item/crossbow_standby"
+		"0": "item/e_crossbow_standby"
 	},
 	"elements": [
 		{

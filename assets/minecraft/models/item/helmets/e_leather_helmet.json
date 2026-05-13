@@ -2,10 +2,9 @@
 	"credit": "Made with Blockbench",
 	"parent": "minecraft:item/generated",
 	"textures": {
-		"0": "item/leather_helmet",
-		"1": "item/leather_helmet_overlay",
-		"2": "item/enchantment_outline",
-		"particle": "item/leather_helmet"
+		"0": "item/e_leather_helmet",
+		"1": "item/e_leather_helmet_overlay",
+		"2": "item/enchantment_outline"
 	},
 	"elements": [
 		{

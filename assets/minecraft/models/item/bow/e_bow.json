@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"parent": "item/generated",
 	"textures": {
-		"0": "item/bow",
+		"0": "item/e_bow",
 		"1": "item/enchantment_outline"
 	},
 	"elements": [

@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"parent": "minecraft:item/generated",
 	"textures": {
-		"chestplate": "item/leather_chestplate",
+		"chestplate": "item/e_leather_chestplate",
 		"outline": "item/enchantment_outline"
 	},
 	"elements": [

@@ -3,8 +3,8 @@
 	"credit": "Made with Blockbench",
 	"parent": "minecraft:item/generated",
 	"textures": {
-		"0": "item/leather_horse_armor",
-		"1": "item/leather_horse_armor_overlay",
+		"0": "item/e_leather_horse_armor",
+		"1": "item/e_leather_horse_armor_overlay",
 		"2": "item/enchantment_outline"
 	},
 	"elements": [

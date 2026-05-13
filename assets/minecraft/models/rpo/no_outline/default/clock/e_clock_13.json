@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/enchanted_clock",
   "textures": {
-    "clock": "minecraft:item/clock_13"
+    "clock": "minecraft:item/e_clock_13"
   }
 }

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/enchanted_shovel",
   "textures": {
-    "shovel": "minecraft:item/iron_shovel"
+    "shovel": "minecraft:item/e_iron_shovel"
   }
 }

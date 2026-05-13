@@ -1,8 +1,7 @@
 {
-	"format_version": "1.21.11",
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "item/shield_base_nopattern"
+		"0": "item/e_shield_base_nopattern"
 	},
 	"elements": [
 		{
@@ -91,6 +90,13 @@
 			"scope": 0,
 			"color": 0,
 			"children": [0, 1]
+		},
+		{
+			"name": "outline",
+			"origin": [2, 0, 7],
+			"scope": 0,
+			"color": 0,
+			"children": [2, 3]
 		}
 	]
 }

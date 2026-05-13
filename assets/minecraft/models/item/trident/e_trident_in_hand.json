@@ -5,7 +5,7 @@
 	"texture_size": [32, 32],
 	"textures": {
 		"1": "item/enchantment_outline",
-		"2": "item/trident_in_hand"
+		"2": "item/e_trident_in_hand"
 	},
 	"elements": [
 		{

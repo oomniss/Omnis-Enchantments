@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/enchanted_spear_sprite",
   "textures": {
-    "spear": "minecraft:item/wooden_spear"
+    "spear": "minecraft:item/e_wooden_spear"
   }
 }

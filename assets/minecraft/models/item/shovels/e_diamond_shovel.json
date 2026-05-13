@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:item/enchanted_shovel",
   "textures": {
-    "shovel": "minecraft:item/diamond_shovel",
+    "shovel": "minecraft:item/e_diamond_shovel",
     "outline": "minecraft:item/enchantment_outline"
   }
 }

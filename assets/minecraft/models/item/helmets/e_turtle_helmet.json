@@ -3,7 +3,7 @@
 	"credit": "Made with Blockbench",
 	"parent": "minecraft:item/generated",
 	"textures": {
-		"helmet": "item/turtle_helmet",
+		"helmet": "item/e_turtle_helmet",
 		"outline": "item/enchantment_outline"
 	},
 	"elements": [

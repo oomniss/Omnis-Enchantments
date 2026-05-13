@@ -9,14 +9,14 @@
     General: {
       GlowingEffect: true,
       GlowIntensity: {
-        type: "number",
-        default: 180,
+        type: "integer",
+        default: 130,
         min: 0,
         max: 255
       },
       RunesParticles: true,
       RunesIntensity: {
-        type: "number",
+        type: "integer",
         default: 5,
         min: 1,
         max: 9
@@ -32,7 +32,8 @@
         values: ["Reworked", "Vanilla"]
       },
       Outline: true,
-      CustomModel: true
+      CustomModel: true,
+      DirectionalLight: true
     },
     GlowByItemType: {
       Swords: true,

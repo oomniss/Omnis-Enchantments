@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:item/enchanted_hoe",
   "textures": {
-    "hoe": "minecraft:item/diamond_hoe",
+    "hoe": "minecraft:item/e_diamond_hoe",
     "outline": "minecraft:item/enchantment_outline"
   }
 }

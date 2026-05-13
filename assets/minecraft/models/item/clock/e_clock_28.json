@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:item/enchanted_clock",
   "textures": {
-    "clock": "minecraft:item/clock_28",
+    "clock": "minecraft:item/e_clock_28",
     "outline": "minecraft:item/enchantment_outline"
   }
 }
