@@ -3,7 +3,7 @@
   "credit": "Made with Blockbench",
   "parent": "minecraft:item/handheld",
   "textures": {
-    "0": "item/e_copper_sword",
+    "0": "item/copper_sword",
     "1": "item/enchantment_outline"
   },
   "elements": [

@@ -3,7 +3,7 @@
   "credit": "Made with Blockbench",
   "parent": "minecraft:item/handheld",
   "textures": {
-    "0": "item/e_golden_sword"
+    "0": "item/golden_sword"
   },
   "elements": [
     {

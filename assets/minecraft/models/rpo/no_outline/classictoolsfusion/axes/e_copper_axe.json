@@ -1,8 +1,9 @@
 {
   "format_version": "1.21.11",
   "credit": "Made with Blockbench",
+  "parent": "minecraft:item/handheld",
   "textures": {
-    "0": "item/e_copper_axe"
+    "0": "item/copper_axe"
   },
   "elements": [
     {

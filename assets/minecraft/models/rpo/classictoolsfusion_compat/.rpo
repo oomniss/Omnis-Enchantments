@@ -1,4 +1,0 @@
-{
-    condition: "General.Outline",
-    fallback: "assets/minecraft/models/rpo/no_outline/classictoolsfusion"
-}

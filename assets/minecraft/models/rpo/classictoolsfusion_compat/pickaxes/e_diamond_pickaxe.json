@@ -1,8 +1,9 @@
 {
   "format_version": "1.21.11",
   "credit": "Made with Blockbench",
+  "parent": "minecraft:item/handheld",
   "textures": {
-    "0": "item/e_diamond_pickaxe",
+    "0": "item/diamond_pickaxe",
     "1": "item/enchantment_outline"
   },
   "elements": [

@@ -3,7 +3,7 @@
   "credit": "Made with Blockbench",
   "parent": "minecraft:item/handheld",
   "textures": {
-    "0": "item/e_stone_sword"
+    "0": "item/stone_sword"
   },
   "elements": [
     {

@@ -3,7 +3,7 @@
   "credit": "Made with Blockbench",
   "parent": "minecraft:item/handheld",
   "textures": {
-    "0": "item/e_wooden_sword",
+    "0": "item/wooden_sword",
     "1": "item/enchantment_outline"
   },
   "elements": [

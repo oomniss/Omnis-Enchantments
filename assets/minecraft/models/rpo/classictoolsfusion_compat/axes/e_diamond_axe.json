@@ -1,9 +1,10 @@
 {
   "format_version": "1.21.11",
   "credit": "Made with Blockbench",
+  "parent": "minecraft:item/handheld",
   "textures": {
     "1": "item/enchantment_outline",
-    "2": "item/e_diamond_axe"
+    "2": "item/diamond_axe"
   },
   "elements": [
     {

@@ -1,8 +1,9 @@
 {
   "format_version": "1.21.11",
   "credit": "Made with Blockbench",
+  "parent": "minecraft:item/handheld",
   "textures": {
-    "1": "item/e_iron_axe",
+    "1": "item/iron_axe",
     "2": "item/enchantment_outline"
   },
   "elements": [

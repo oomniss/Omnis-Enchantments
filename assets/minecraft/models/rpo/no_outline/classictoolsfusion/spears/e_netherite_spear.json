@@ -1,13 +1,14 @@
 {
   "format_version": "1.21.11",
   "credit": "Made with Blockbench",
+  "parent": "minecraft:item/handheld",
   "texture_size": [
     32,
     32
   ],
   "parent": "minecraft:item/spear_in_hand",
   "textures": {
-    "0": "item/e_netherite_spear_in_hand"
+    "0": "item/netherite_spear_in_hand"
   },
   "elements": [
     {

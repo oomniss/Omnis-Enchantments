@@ -1,0 +1,4 @@
+{
+    condition: "General.CustomModel",
+    fallback: "assets/minecraft/no_customitems"
+}
