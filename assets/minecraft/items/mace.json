@@ -18,7 +18,7 @@
             ],
             "fallback": {
                 "type": "minecraft:model",
-                "model": "minecraft:item/others/e_mace"
+                "model": "minecraft:item/e_mace"
             }
         },
         "on_false": {

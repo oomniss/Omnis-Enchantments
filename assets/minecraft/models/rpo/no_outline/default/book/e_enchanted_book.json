@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/outline_book",
-  "textures": {
-    "book": "minecraft:item/e_enchanted_book"
-  }
-}

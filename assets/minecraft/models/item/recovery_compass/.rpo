@@ -1,0 +1,4 @@
+{
+    condition: "OutlineByItemType.Compasses",
+    fallback: "assets/minecraft/rpo/models/no_outline/default/recovery_compass"
+}

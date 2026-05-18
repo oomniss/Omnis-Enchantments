@@ -18,7 +18,7 @@
             ],
             "fallback": {
                 "type": "minecraft:model",
-                "model": "minecraft:item/others/e_carrot_on_a_stick"
+                "model": "minecraft:item/rods/e_carrot_on_a_stick"
             }
         },
         "on_false": {

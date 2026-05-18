@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:item/enchanted_compass",
+  "parent": "minecraft:item/compass/enchanted_compass",
   "textures": {
     "compass": "minecraft:item/e_compass_22",
     "outline": "minecraft:item/enchantment_outline"

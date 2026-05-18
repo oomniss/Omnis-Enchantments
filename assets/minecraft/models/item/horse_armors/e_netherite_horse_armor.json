@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:item/enchanted_horse_armor",
+  "parent": "minecraft:item/horse_armors/enchanted_horse_armor",
   "textures": {
     "horse_armor": "minecraft:item/e_netherite_horse_armor",
     "outline": "minecraft:item/enchantment_outline"

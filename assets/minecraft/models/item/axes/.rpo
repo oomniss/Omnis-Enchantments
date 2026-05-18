@@ -1,4 +1,4 @@
 {
-    condition: "Compatibility.Tools.Default",
-    fallback: "assets/minecraft/models/rpo/classictoolsfusion_compat/axes"
+    condition: "OutlineByItemType.Axes & Compatibility.Tools.Default",
+    fallback: "assets/minecraft/rpo/models/no_outline/default/axes"
 }

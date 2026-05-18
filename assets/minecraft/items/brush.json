@@ -52,7 +52,7 @@
         "ignore_default": true,
         "on_true": {
           "type": "minecraft:model",
-          "model": "minecraft:item/others/e_brush"
+          "model": "minecraft:item/brush/e_brush"
         },
         "on_false": {
           "type": "minecraft:model",
@@ -69,7 +69,7 @@
             "ignore_default": true,
             "on_true": {
               "type": "minecraft:model",
-              "model": "minecraft:item/others/e_brush_brushing_0"
+              "model": "minecraft:item/brush/e_brush_brushing_0"
             },
             "on_false": {
               "type": "minecraft:model",
@@ -86,7 +86,7 @@
             "ignore_default": true,
             "on_true": {
               "type": "minecraft:model",
-              "model": "minecraft:item/others/e_brush_brushing_1"
+              "model": "minecraft:item/brush/e_brush_brushing_1"
             },
             "on_false": {
               "type": "minecraft:model",
@@ -103,7 +103,7 @@
             "ignore_default": true,
             "on_true": {
               "type": "minecraft:model",
-              "model": "minecraft:item/others/e_brush_brushing_2"
+              "model": "minecraft:item/brush/e_brush_brushing_2"
             },
             "on_false": {
               "type": "minecraft:model",

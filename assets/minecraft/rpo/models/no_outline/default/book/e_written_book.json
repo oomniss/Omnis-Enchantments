@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/book/outline_book",
+  "textures": {
+    "book": "minecraft:item/e_written_book"
+  }
+}

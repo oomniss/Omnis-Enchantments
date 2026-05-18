@@ -24,11 +24,11 @@
             "ignore_default": true,
             "on_true": {
               "type": "minecraft:model",
-              "model": "minecraft:item/bow/e_crossbow_arrow"
+              "model": "minecraft:item/crossbow/e_crossbow_arrow"
             },
             "on_false": {
               "type": "minecraft:model",
-              "model": "minecraft:item/bow/crossbow_arrow"
+              "model": "minecraft:item/crossbow/crossbow_arrow"
             }
           }
         },
@@ -41,11 +41,11 @@
             "ignore_default": true,
             "on_true": {
               "type": "minecraft:model",
-              "model": "minecraft:item/bow/e_crossbow_firework"
+              "model": "minecraft:item/crossbow/e_crossbow_firework"
             },
             "on_false": {
               "type": "minecraft:model",
-              "model": "minecraft:item/bow/crossbow_firework"
+              "model": "minecraft:item/crossbow/crossbow_firework"
             }
           }
         }
@@ -63,7 +63,7 @@
             "ignore_default": true,
             "on_true": {
               "type": "minecraft:model",
-              "model": "minecraft:item/bow/e_crossbow_pulling_0"
+              "model": "minecraft:item/crossbow/e_crossbow_pulling_0"
             },
             "on_false": {
               "type": "minecraft:model",
@@ -80,7 +80,7 @@
                 "ignore_default": true,
                 "on_true": {
                   "type": "minecraft:model",
-                  "model": "minecraft:item/bow/e_crossbow_pulling_1"
+                  "model": "minecraft:item/crossbow/e_crossbow_pulling_1"
                 },
                 "on_false": {
                   "type": "minecraft:model",
@@ -97,7 +97,7 @@
                 "ignore_default": true,
                 "on_true": {
                   "type": "minecraft:model",
-                  "model": "minecraft:item/bow/e_crossbow_pulling_2"
+                  "model": "minecraft:item/crossbow/e_crossbow_pulling_2"
                 },
                 "on_false": {
                   "type": "minecraft:model",
@@ -114,7 +114,7 @@
           "ignore_default": true,
           "on_true": {
             "type": "minecraft:model",
-            "model": "minecraft:item/bow/e_crossbow_standby"
+            "model": "minecraft:item/crossbow/e_crossbow_standby"
           },
           "on_false": {
             "type": "minecraft:model",

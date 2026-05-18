@@ -1,0 +1,4 @@
+{
+    condition: "OutlineByItemType.Trident",
+    fallback: "assets/minecraft/rpo/models/no_outline/default/trident"
+}

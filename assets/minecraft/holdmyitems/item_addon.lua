@@ -79,7 +79,6 @@ local itemConfig = {
     nether_star              = { glow = ${glowNetherStar},       rune = ${runeNetherStar} },
     experience_bottle        = { glow = ${glowExpBottle},        rune = ${runeExpBottle} },
     trident                  = { glow = ${glowTrident},          rune = ${runeTrident} },
-    totem_of_undying         = { glow = ${glowTotem} },
     end_crystal              = { rune = ${runeEndCrystal} }
 }
 
@@ -149,8 +148,7 @@ local textureMap = {
     spears              = "oval_purple_glow",
     rods                = "oval_purple_glow",
     spyglass            = "oval_purple_glow",
-    trident             = "oval_purple_glow",
-    totem_of_undying    = "gold_glow"
+    trident             = "oval_purple_glow"
 }
 local textureName = textureMap[getType()] or textureMap.general
 local texture = Texture:of("minecraft", "textures/particle/" .. textureName .. ".png")
@@ -259,13 +257,4 @@ else
     for id in pairs(runeStates) do
         runeStates[id] = nil
     end
-end
-
-if enableParticle("totem_of_undying", "glow") then
-    particleManager:addParticle(
-        particles,
-        false,
-        0.03 * l, 0.2, 0.05, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2.5,
-        texture, "ITEM", hand, "SPAWN", "ADDITIVE", 0, 255
-    )
 end

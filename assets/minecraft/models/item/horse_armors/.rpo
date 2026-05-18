@@ -1,0 +1,4 @@
+{
+    condition: "OutlineByItemType.HorseArmors",
+    fallback: "assets/minecraft/rpo/models/no_outline/default/horse_armors"
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/helmets/enchanted_helmet",
+  "textures": {
+    "helmet": "minecraft:item/e_netherite_helmet"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/leggings/enchanted_leggings",
+  "textures": {
+    "leggings": "minecraft:item/e_diamond_leggings"
+  }
+}

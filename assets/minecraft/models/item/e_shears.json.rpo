@@ -1,0 +1,4 @@
+{
+    condition: "OutlineByItemType.Shears",
+    fallback: "assets/minecraft/rpo/models/no_outline/default/e_shears.json"
+}

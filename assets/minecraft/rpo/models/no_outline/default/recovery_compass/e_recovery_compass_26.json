@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/recovery_compass/enchanted_recovery_compass",
+  "textures": {
+    "recovery_compass": "minecraft:item/e_recovery_compass_26"
+  }
+}

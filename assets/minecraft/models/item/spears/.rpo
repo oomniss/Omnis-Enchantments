@@ -1,4 +1,4 @@
 {
-    condition: "Compatibility.Tools.Default",
-    fallback: "assets/minecraft/models/rpo/classictoolsfusion_compat/spears"
+    condition: "General.Outline & OutlineByItemType.Spears & Compatibility.Spears.Default",
+    fallback: "assets/minecraft/rpo/models/no_outline/default/spears"
 }

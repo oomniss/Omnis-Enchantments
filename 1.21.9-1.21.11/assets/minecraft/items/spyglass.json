@@ -14,7 +14,7 @@
           "when": ["ground", "fixed", "on_shelf"],
           "model": {
             "type": "minecraft:model",
-            "model": "minecraft:item/others/e_spyglass_sprite"
+            "model": "minecraft:item/spyglass/e_spyglass_sprite"
           }
         }
     ],
@@ -25,7 +25,7 @@
       "ignore_default": true,
       "on_true": {
         "type": "minecraft:model",
-        "model": "minecraft:item/others/e_spyglass_in_hand"
+        "model": "minecraft:item/spyglass/e_spyglass_in_hand"
       },
       "on_false": {
         "type": "minecraft:model",

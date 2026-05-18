@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/shovels/enchanted_shovel",
+  "textures": {
+    "shovel": "minecraft:item/e_wooden_shovel"
+  }
+}

@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/enchanted_compass",
-  "textures": {
-    "compass": "minecraft:item/e_compass_05"
-  }
-}

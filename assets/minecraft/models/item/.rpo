@@ -1,4 +1,4 @@
 {
     condition: "General.Outline",
-    fallback: "assets/minecraft/models/rpo/no_outline/default"
+    fallback: "assets/minecraft/rpo/models/no_outline/default"
 }

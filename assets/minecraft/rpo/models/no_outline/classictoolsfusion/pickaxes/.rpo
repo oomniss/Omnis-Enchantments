@@ -1,0 +1,4 @@
+{
+    condition: "(!General.Outline | !OutlineByItemType.Pickaxes) & Compatibility.Tools.ClassicToolsFusion",
+    fallback: "assets/minecraft/rpo/models/classictoolsfusion_compat/pickaxes"
+}

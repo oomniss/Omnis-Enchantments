@@ -18,7 +18,7 @@
             ],
             "fallback": {
                 "type": "minecraft:model",
-                "model": "minecraft:item/others/e_flint_and_steel"
+                "model": "minecraft:item/e_flint_and_steel"
             }
         },
         "on_false": {

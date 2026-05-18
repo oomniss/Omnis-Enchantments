@@ -29,7 +29,7 @@
         "ignore_default": true,
         "on_true": {
           "type": "minecraft:model",
-          "model": "minecraft:item/others/e_fishing_rod_cast"
+          "model": "minecraft:item/rods/e_fishing_rod_cast"
         },
         "on_false": {
           "type": "minecraft:model",
@@ -43,7 +43,7 @@
         "ignore_default": true,
         "on_true": {
           "type": "minecraft:model",
-          "model": "minecraft:item/others/e_fishing_rod"
+          "model": "minecraft:item/rods/e_fishing_rod"
         },
         "on_false": {
           "type": "minecraft:model",

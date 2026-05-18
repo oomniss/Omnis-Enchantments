@@ -1,0 +1,4 @@
+{
+    condition: "OutlineByItemType.Shield",
+    fallback: "assets/minecraft/rpo/models/no_outline/default/shield"
+}

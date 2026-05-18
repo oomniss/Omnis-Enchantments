@@ -1,0 +1,4 @@
+{
+    condition: "OutlineByItemType.FlintAndSteel",
+    fallback: "assets/minecraft/rpo/models/no_outline/default/e_flint_and_steel.json"
+}

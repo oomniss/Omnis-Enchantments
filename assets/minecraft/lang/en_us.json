@@ -1,3 +1,5 @@
 {
-    "rpo.OmnisEnchantments.General.RunesIntensity.tooltip": "This might impact performance"
+    "rpo.OmnisEnchantments.General.RunesIntensity.tooltip": "This might impact performance",
+    "rpo.OmnisEnchantments.General.DirectionalLight.tooltip": "This will only affect Vanilla items",
+    "rpo.OmnisEnchantments.Compatibility.Tools.tooltip": "Shovels, Pickaxes, Axes e Hoes"
 }

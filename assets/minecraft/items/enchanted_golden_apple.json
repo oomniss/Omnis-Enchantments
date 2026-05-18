@@ -13,7 +13,7 @@
     ],
     "fallback": {
             "type": "minecraft:model",
-            "model": "minecraft:item/others/e_enchanted_golden_apple"
+            "model": "minecraft:item/e_enchanted_golden_apple"
         }
     }
 }

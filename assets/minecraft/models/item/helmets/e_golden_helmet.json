@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:item/enchanted_helmet",
+  "parent": "minecraft:item/helmets/enchanted_helmet",
   "textures": {
     "helmet": "minecraft:item/e_golden_helmet",
     "outline": "minecraft:item/enchantment_outline"

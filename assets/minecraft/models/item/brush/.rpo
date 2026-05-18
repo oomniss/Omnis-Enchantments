@@ -1,0 +1,4 @@
+{
+    condition: "OutlineByItemType.Brush",
+    fallback: "assets/minecraft/rpo/models/no_outline/default/brush"
+}

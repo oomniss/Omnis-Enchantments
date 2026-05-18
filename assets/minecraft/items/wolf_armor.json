@@ -63,11 +63,11 @@
         "property": "minecraft:has_component",
         "on_false": {
           "type": "minecraft:model",
-          "model": "minecraft:item/others/e_wolf_armor"
+          "model": "minecraft:item/wolf_armor/e_wolf_armor"
         },
         "on_true": {
           "type": "minecraft:model",
-          "model": "minecraft:item/others/e_wolf_armor_dyed",
+          "model": "minecraft:item/wolf_armor/e_wolf_armor_dyed",
           "tints": [
             {
               "type": "minecraft:constant",

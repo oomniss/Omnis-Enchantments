@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/enchanted_chestplate",
-  "textures": {
-    "chestplate": "minecraft:item/e_iron_chestplate"
-  }
-}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/horse_armors/enchanted_horse_armor",
+  "textures": {
+    "horse_armor": "minecraft:item/e_copper_horse_armor"
+  }
+}
