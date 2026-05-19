@@ -3,6 +3,7 @@
     "type": "minecraft:condition",
     "component": "minecraft:enchantments",
     "property": "minecraft:has_component",
+    "ignore_default": true,
     "on_false": {
       "type": "minecraft:condition",
       "component": "minecraft:dyed_color",

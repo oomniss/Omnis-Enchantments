@@ -1,4 +1,5 @@
 {
+	"format_version": "1.21.11",
 	"credit": "Made with Blockbench",
 	"parent": "minecraft:item/spear_in_hand",
 	"texture_size": [32, 32],
@@ -1479,11 +1480,11 @@
 		},
 		{
 			"name": "spear_1",
-			"from": [-0.1, 15.3, 8.15],
-			"to": [0.7, 16.1, 7.35],
+			"from": [-0.1, 15.4, 8.1],
+			"to": [0.6, 16.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [0.5, 0, 0, 0.5], "texture": "#outline"},
 				"south": {"uv": [0, 0, 0.5, 0.5], "texture": "#outline"},
@@ -1493,11 +1494,11 @@
 		},
 		{
 			"name": "spear_2",
-			"from": [0.4, 15.3, 8.15],
-			"to": [1.2, 16.1, 7.35],
+			"from": [0.4, 15.4, 8.1],
+			"to": [1.1, 16.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [1, 0, 0.5, 0.5], "texture": "#outline"},
 				"south": {"uv": [0.5, 0, 1, 0.5], "texture": "#outline"},
@@ -1506,11 +1507,11 @@
 		},
 		{
 			"name": "spear_3",
-			"from": [0.9, 15.6, 8.15],
-			"to": [1.7, 16.1, 7.35],
+			"from": [0.9, 15.6, 8.1],
+			"to": [1.6, 16.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [1.5, 0, 1, 0.5], "texture": "#outline"},
 				"east": {"uv": [1, 0, 1.5, 0.5], "texture": "#outline"},
@@ -1520,11 +1521,11 @@
 		},
 		{
 			"name": "spear_4",
-			"from": [-0.1, 14.8, 8.15],
-			"to": [0.7, 15.6, 7.35],
+			"from": [-0.1, 14.9, 8.1],
+			"to": [0.6, 15.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [0.5, 0.5, 0, 1], "texture": "#outline"},
 				"south": {"uv": [0, 0.5, 0.5, 1], "texture": "#outline"},
@@ -1533,11 +1534,11 @@
 		},
 		{
 			"name": "spear_5",
-			"from": [0.4, 14.8, 8.15],
-			"to": [1.2, 15.6, 7.35],
+			"from": [0.4, 14.9, 8.1],
+			"to": [1.1, 15.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [1, 0.5, 0.5, 1], "texture": "#outline"},
 				"south": {"uv": [0.5, 0.5, 1, 1], "texture": "#outline"}
@@ -1545,11 +1546,11 @@
 		},
 		{
 			"name": "spear_6",
-			"from": [0.9, 14.8, 8.15],
-			"to": [1.7, 15.6, 7.35],
+			"from": [0.9, 14.9, 8.1],
+			"to": [1.6, 15.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [1.5, 0.5, 1, 1], "texture": "#outline"},
 				"south": {"uv": [1, 0.5, 1.5, 1], "texture": "#outline"}
@@ -1557,11 +1558,11 @@
 		},
 		{
 			"name": "spear_7",
-			"from": [1.7, 14.8, 8.15],
-			"to": [2.2, 15.6, 7.35],
+			"from": [1.6, 14.9, 8.1],
+			"to": [2.1, 15.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [2, 0.5, 1.5, 1], "texture": "#outline"},
 				"south": {"uv": [1.5, 0.5, 2, 1], "texture": "#outline"},
@@ -1570,11 +1571,11 @@
 		},
 		{
 			"name": "spear_8",
-			"from": [1.9, 15.1, 8.15],
-			"to": [2.7, 15.6, 7.35],
+			"from": [1.9, 15.1, 8.1],
+			"to": [2.6, 15.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [2.5, 0.5, 2, 1], "texture": "#outline"},
 				"east": {"uv": [2, 0.5, 2.5, 1], "texture": "#outline"},
@@ -1584,11 +1585,11 @@
 		},
 		{
 			"name": "spear_9",
-			"from": [-0.1, 14.3, 8.15],
-			"to": [0.4, 15.1, 7.35],
+			"from": [-0.1, 14.4, 8.1],
+			"to": [0.4, 14.9, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [0.5, 1, 0, 1.5], "texture": "#outline"},
 				"south": {"uv": [0, 1, 0.5, 1.5], "texture": "#outline"},
@@ -1598,11 +1599,11 @@
 		},
 		{
 			"name": "spear_10",
-			"from": [0.4, 14.3, 8.15],
-			"to": [1.2, 15.1, 7.35],
+			"from": [0.4, 14.4, 8.1],
+			"to": [1.1, 15.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [1, 1, 0.5, 1.5], "texture": "#outline"},
 				"south": {"uv": [0.5, 1, 1, 1.5], "texture": "#outline"}
@@ -1610,11 +1611,11 @@
 		},
 		{
 			"name": "spear_11",
-			"from": [0.9, 14.3, 8.15],
-			"to": [1.7, 15.1, 7.35],
+			"from": [0.9, 14.4, 8.1],
+			"to": [1.6, 15.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [1.5, 1, 1, 1.5], "texture": "#outline"},
 				"south": {"uv": [1, 1, 1.5, 1.5], "texture": "#outline"}
@@ -1622,11 +1623,11 @@
 		},
 		{
 			"name": "spear_12",
-			"from": [1.4, 14.3, 8.15],
-			"to": [2.2, 15.1, 7.35],
+			"from": [1.4, 14.4, 8.1],
+			"to": [2.1, 15.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [2, 1, 1.5, 1.5], "texture": "#outline"},
 				"south": {"uv": [1.5, 1, 2, 1.5], "texture": "#outline"}
@@ -1634,11 +1635,11 @@
 		},
 		{
 			"name": "spear_13",
-			"from": [1.9, 14.3, 8.15],
-			"to": [2.7, 15.1, 7.35],
+			"from": [1.9, 14.4, 8.1],
+			"to": [2.6, 15.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [2.5, 1, 2, 1.5], "texture": "#outline"},
 				"south": {"uv": [2, 1, 2.5, 1.5], "texture": "#outline"}
@@ -1646,11 +1647,11 @@
 		},
 		{
 			"name": "spear_14",
-			"from": [2.7, 14.3, 8.15],
-			"to": [3.2, 15.1, 7.35],
+			"from": [2.6, 14.4, 8.1],
+			"to": [3.1, 15.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [3, 1, 2.5, 1.5], "texture": "#outline"},
 				"south": {"uv": [2.5, 1, 3, 1.5], "texture": "#outline"},
@@ -1659,11 +1660,11 @@
 		},
 		{
 			"name": "spear_15",
-			"from": [2.9, 14.6, 8.15],
-			"to": [3.7, 15.1, 7.35],
+			"from": [2.9, 14.6, 8.1],
+			"to": [3.6, 15.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [3.5, 1, 3, 1.5], "texture": "#outline"},
 				"east": {"uv": [3, 1, 3.5, 1.5], "texture": "#outline"},
@@ -1673,11 +1674,11 @@
 		},
 		{
 			"name": "spear_16",
-			"from": [0.4, 13.8, 8.15],
-			"to": [1.2, 14.3, 7.35],
+			"from": [0.4, 13.9, 8.1],
+			"to": [0.9, 14.4, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [1, 1.5, 0.5, 2], "texture": "#outline"},
 				"south": {"uv": [0.5, 1.5, 1, 2], "texture": "#outline"},
@@ -1686,11 +1687,11 @@
 		},
 		{
 			"name": "spear_17",
-			"from": [0.9, 13.8, 8.15],
-			"to": [1.7, 14.6, 7.35],
+			"from": [0.9, 13.9, 8.1],
+			"to": [1.6, 14.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [1.5, 1.5, 1, 2], "texture": "#outline"},
 				"south": {"uv": [1, 1.5, 1.5, 2], "texture": "#outline"}
@@ -1698,11 +1699,11 @@
 		},
 		{
 			"name": "spear_18",
-			"from": [1.4, 13.8, 8.15],
-			"to": [2.2, 14.6, 7.35],
+			"from": [1.4, 13.9, 8.1],
+			"to": [2.1, 14.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [2, 1.5, 1.5, 2], "texture": "#outline"},
 				"south": {"uv": [1.5, 1.5, 2, 2], "texture": "#outline"}
@@ -1710,11 +1711,11 @@
 		},
 		{
 			"name": "spear_19",
-			"from": [1.9, 13.8, 8.15],
-			"to": [2.7, 14.6, 7.35],
+			"from": [1.9, 13.9, 8.1],
+			"to": [2.6, 14.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [2.5, 1.5, 2, 2], "texture": "#outline"},
 				"south": {"uv": [2, 1.5, 2.5, 2], "texture": "#outline"}
@@ -1722,11 +1723,11 @@
 		},
 		{
 			"name": "spear_20",
-			"from": [2.4, 13.8, 8.15],
-			"to": [3.2, 14.6, 7.35],
+			"from": [2.4, 13.9, 8.1],
+			"to": [3.1, 14.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [3, 1.5, 2.5, 2], "texture": "#outline"},
 				"south": {"uv": [2.5, 1.5, 3, 2], "texture": "#outline"}
@@ -1734,11 +1735,11 @@
 		},
 		{
 			"name": "spear_21",
-			"from": [2.9, 13.8, 8.15],
-			"to": [3.7, 14.6, 7.35],
+			"from": [2.9, 13.9, 8.1],
+			"to": [3.6, 14.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [3.5, 1.5, 3, 2], "texture": "#outline"},
 				"south": {"uv": [3, 1.5, 3.5, 2], "texture": "#outline"}
@@ -1746,11 +1747,11 @@
 		},
 		{
 			"name": "spear_22",
-			"from": [3.7, 13.8, 8.15],
-			"to": [4.2, 14.6, 7.35],
+			"from": [3.6, 13.9, 8.1],
+			"to": [4.1, 14.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [4, 1.5, 3.5, 2], "texture": "#outline"},
 				"south": {"uv": [3.5, 1.5, 4, 2], "texture": "#outline"},
@@ -1759,11 +1760,11 @@
 		},
 		{
 			"name": "spear_23",
-			"from": [3.9, 13.8, 8.15],
-			"to": [4.7, 14.6, 7.35],
+			"from": [4.1, 13.9, 8.1],
+			"to": [4.6, 14.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [4.5, 1.5, 4, 2], "texture": "#outline"},
 				"east": {"uv": [4, 1.5, 4.5, 2], "texture": "#outline"},
@@ -1773,11 +1774,11 @@
 		},
 		{
 			"name": "spear_24",
-			"from": [0.4, 13.3, 8.15],
-			"to": [0.9, 14.1, 7.35],
+			"from": [0.4, 13.4, 8.1],
+			"to": [0.9, 13.9, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [1, 2, 0.5, 2.5], "texture": "#outline"},
 				"south": {"uv": [0.5, 2, 1, 2.5], "texture": "#outline"},
@@ -1787,11 +1788,11 @@
 		},
 		{
 			"name": "spear_25",
-			"from": [0.9, 13.3, 8.15],
-			"to": [1.7, 14.1, 7.35],
+			"from": [0.9, 13.4, 8.1],
+			"to": [1.6, 14.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [1.5, 2, 1, 2.5], "texture": "#outline"},
 				"south": {"uv": [1, 2, 1.5, 2.5], "texture": "#outline"}
@@ -1799,11 +1800,11 @@
 		},
 		{
 			"name": "spear_26",
-			"from": [1.4, 13.3, 8.15],
-			"to": [2.2, 14.1, 7.35],
+			"from": [1.4, 13.4, 8.1],
+			"to": [2.1, 14.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [2, 2, 1.5, 2.5], "texture": "#outline"},
 				"south": {"uv": [1.5, 2, 2, 2.5], "texture": "#outline"}
@@ -1811,11 +1812,11 @@
 		},
 		{
 			"name": "spear_27",
-			"from": [1.9, 13.3, 8.15],
-			"to": [2.7, 14.1, 7.35],
+			"from": [1.9, 13.4, 8.1],
+			"to": [2.6, 14.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [2.5, 2, 2, 2.5], "texture": "#outline"},
 				"south": {"uv": [2, 2, 2.5, 2.5], "texture": "#outline"}
@@ -1823,11 +1824,11 @@
 		},
 		{
 			"name": "spear_28",
-			"from": [2.4, 13.3, 8.15],
-			"to": [3.2, 14.1, 7.35],
+			"from": [2.4, 13.4, 8.1],
+			"to": [3.1, 14.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [3, 2, 2.5, 2.5], "texture": "#outline"},
 				"south": {"uv": [2.5, 2, 3, 2.5], "texture": "#outline"}
@@ -1835,11 +1836,11 @@
 		},
 		{
 			"name": "spear_29",
-			"from": [2.9, 13.3, 8.15],
-			"to": [3.7, 14.1, 7.35],
+			"from": [2.9, 13.4, 8.1],
+			"to": [3.6, 14.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [3.5, 2, 3, 2.5], "texture": "#outline"},
 				"south": {"uv": [3, 2, 3.5, 2.5], "texture": "#outline"}
@@ -1847,11 +1848,11 @@
 		},
 		{
 			"name": "spear_30",
-			"from": [3.4, 13.3, 8.15],
-			"to": [4.2, 14.1, 7.35],
+			"from": [3.4, 13.4, 8.1],
+			"to": [4.1, 14.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [4, 2, 3.5, 2.5], "texture": "#outline"},
 				"south": {"uv": [3.5, 2, 4, 2.5], "texture": "#outline"}
@@ -1859,11 +1860,11 @@
 		},
 		{
 			"name": "spear_31",
-			"from": [4.2, 13.3, 8.15],
-			"to": [4.7, 14.1, 7.35],
+			"from": [4.1, 13.4, 8.1],
+			"to": [4.6, 14.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [4.5, 2, 4, 2.5], "texture": "#outline"},
 				"east": {"uv": [4, 2, 4.5, 2.5], "texture": "#outline"},
@@ -1873,11 +1874,11 @@
 		},
 		{
 			"name": "spear_32",
-			"from": [0.9, 12.8, 8.15],
-			"to": [1.7, 13.3, 7.35],
+			"from": [0.9, 12.9, 8.1],
+			"to": [1.6, 13.4, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [1.5, 2.5, 1, 3], "texture": "#outline"},
 				"south": {"uv": [1, 2.5, 1.5, 3], "texture": "#outline"},
@@ -1886,11 +1887,11 @@
 		},
 		{
 			"name": "spear_33",
-			"from": [1.4, 12.8, 8.15],
-			"to": [2.2, 13.6, 7.35],
+			"from": [1.4, 12.9, 8.1],
+			"to": [2.1, 13.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [2, 2.5, 1.5, 3], "texture": "#outline"},
 				"south": {"uv": [1.5, 2.5, 2, 3], "texture": "#outline"}
@@ -1898,11 +1899,11 @@
 		},
 		{
 			"name": "spear_34",
-			"from": [1.9, 12.8, 8.15],
-			"to": [2.7, 13.6, 7.35],
+			"from": [1.9, 12.9, 8.1],
+			"to": [2.6, 13.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [2.5, 2.5, 2, 3], "texture": "#outline"},
 				"south": {"uv": [2, 2.5, 2.5, 3], "texture": "#outline"}
@@ -1910,11 +1911,11 @@
 		},
 		{
 			"name": "spear_35",
-			"from": [2.4, 12.8, 8.15],
-			"to": [3.2, 13.6, 7.35],
+			"from": [2.4, 12.9, 8.1],
+			"to": [3.1, 13.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [3, 2.5, 2.5, 3], "texture": "#outline"},
 				"south": {"uv": [2.5, 2.5, 3, 3], "texture": "#outline"}
@@ -1922,11 +1923,11 @@
 		},
 		{
 			"name": "spear_36",
-			"from": [2.9, 12.8, 8.15],
-			"to": [3.7, 13.6, 7.35],
+			"from": [2.9, 12.9, 8.1],
+			"to": [3.6, 13.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [3.5, 2.5, 3, 3], "texture": "#outline"},
 				"south": {"uv": [3, 2.5, 3.5, 3], "texture": "#outline"}
@@ -1934,11 +1935,11 @@
 		},
 		{
 			"name": "spear_37",
-			"from": [3.4, 12.8, 8.15],
-			"to": [4.2, 13.3, 7.35],
+			"from": [3.4, 12.9, 8.1],
+			"to": [4.1, 13.4, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [4, 2.5, 3.5, 3], "texture": "#outline"},
 				"east": {"uv": [3.5, 2.5, 4, 3], "texture": "#outline"},
@@ -1947,11 +1948,11 @@
 		},
 		{
 			"name": "spear_38",
-			"from": [0.9, 12.3, 8.15],
-			"to": [1.4, 13.1, 7.35],
+			"from": [0.9, 12.4, 8.1],
+			"to": [1.4, 12.9, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [1.5, 3, 1, 3.5], "texture": "#outline"},
 				"south": {"uv": [1, 3, 1.5, 3.5], "texture": "#outline"},
@@ -1961,11 +1962,11 @@
 		},
 		{
 			"name": "spear_39",
-			"from": [1.4, 12.3, 8.15],
-			"to": [2.2, 13.1, 7.35],
+			"from": [1.4, 12.4, 8.1],
+			"to": [2.1, 13.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [2, 3, 1.5, 3.5], "texture": "#outline"},
 				"south": {"uv": [1.5, 3, 2, 3.5], "texture": "#outline"}
@@ -1973,11 +1974,11 @@
 		},
 		{
 			"name": "spear_40",
-			"from": [1.9, 12.3, 8.15],
-			"to": [2.7, 13.1, 7.35],
+			"from": [1.9, 12.4, 8.1],
+			"to": [2.6, 13.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [2.5, 3, 2, 3.5], "texture": "#outline"},
 				"south": {"uv": [2, 3, 2.5, 3.5], "texture": "#outline"}
@@ -1985,11 +1986,11 @@
 		},
 		{
 			"name": "spear_41",
-			"from": [2.4, 12.3, 8.15],
-			"to": [3.2, 13.1, 7.35],
+			"from": [2.4, 12.4, 8.1],
+			"to": [3.1, 13.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [3, 3, 2.5, 3.5], "texture": "#outline"},
 				"south": {"uv": [2.5, 3, 3, 3.5], "texture": "#outline"}
@@ -1997,11 +1998,11 @@
 		},
 		{
 			"name": "spear_42",
-			"from": [2.9, 12.3, 8.15],
-			"to": [3.7, 13.1, 7.35],
+			"from": [2.9, 12.4, 8.1],
+			"to": [3.6, 13.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [3.5, 3, 3, 3.5], "texture": "#outline"},
 				"south": {"uv": [3, 3, 3.5, 3.5], "texture": "#outline"}
@@ -2009,11 +2010,11 @@
 		},
 		{
 			"name": "spear_43",
-			"from": [3.4, 12.6, 8.15],
-			"to": [4.2, 13.1, 7.35],
+			"from": [3.4, 12.6, 8.1],
+			"to": [4.1, 13.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [4, 3, 3.5, 3.5], "texture": "#outline"},
 				"east": {"uv": [3.5, 3, 4, 3.5], "texture": "#outline"},
@@ -2022,11 +2023,11 @@
 		},
 		{
 			"name": "spear_44",
-			"from": [1.4, 11.8, 8.15],
-			"to": [2.2, 12.3, 7.35],
+			"from": [1.4, 11.9, 8.1],
+			"to": [2.1, 12.4, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [2, 3.5, 1.5, 4], "texture": "#outline"},
 				"south": {"uv": [1.5, 3.5, 2, 4], "texture": "#outline"},
@@ -2035,11 +2036,11 @@
 		},
 		{
 			"name": "spear_45",
-			"from": [1.9, 11.8, 8.15],
-			"to": [2.7, 12.6, 7.35],
+			"from": [1.9, 11.9, 8.1],
+			"to": [2.6, 12.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [2.5, 3.5, 2, 4], "texture": "#outline"},
 				"south": {"uv": [2, 3.5, 2.5, 4], "texture": "#outline"}
@@ -2047,11 +2048,11 @@
 		},
 		{
 			"name": "spear_46",
-			"from": [2.7, 11.8, 8.15],
-			"to": [3.2, 12.6, 7.35],
+			"from": [2.6, 11.9, 8.1],
+			"to": [3.1, 12.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [3, 3.5, 2.5, 4], "texture": "#outline"},
 				"south": {"uv": [2.5, 3.5, 3, 4], "texture": "#outline"},
@@ -2060,11 +2061,11 @@
 		},
 		{
 			"name": "spear_47",
-			"from": [2.9, 11.8, 8.15],
-			"to": [3.4, 12.6, 7.35],
+			"from": [2.9, 11.9, 8.1],
+			"to": [3.4, 12.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [3.5, 3.5, 3, 4], "texture": "#outline"},
 				"south": {"uv": [3, 3.5, 3.5, 4], "texture": "#outline"},
@@ -2073,11 +2074,11 @@
 		},
 		{
 			"name": "spear_48",
-			"from": [3.4, 11.8, 8.15],
-			"to": [4.2, 12.6, 7.35],
+			"from": [3.4, 11.9, 8.1],
+			"to": [4.1, 12.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [4, 3.5, 3.5, 4], "texture": "#outline"},
 				"south": {"uv": [3.5, 3.5, 4, 4], "texture": "#outline"}
@@ -2085,11 +2086,11 @@
 		},
 		{
 			"name": "spear_49",
-			"from": [4.2, 12.1, 8.15],
-			"to": [4.7, 12.6, 7.35],
+			"from": [4.1, 12.1, 8.1],
+			"to": [4.6, 12.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [4.5, 3.5, 4, 4], "texture": "#outline"},
 				"east": {"uv": [4, 3.5, 4.5, 4], "texture": "#outline"},
@@ -2099,11 +2100,11 @@
 		},
 		{
 			"name": "spear_50",
-			"from": [1.4, 11.3, 8.15],
-			"to": [2.2, 12.1, 7.35],
+			"from": [1.4, 11.4, 8.1],
+			"to": [2.1, 12.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [2, 4, 1.5, 4.5], "texture": "#outline"},
 				"south": {"uv": [1.5, 4, 2, 4.5], "texture": "#outline"},
@@ -2113,11 +2114,11 @@
 		},
 		{
 			"name": "spear_51",
-			"from": [2.2, 11.3, 8.15],
-			"to": [2.7, 11.8, 7.35],
+			"from": [1.9, 11.4, 8.1],
+			"to": [2.6, 11.9, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [2.5, 4, 2, 4.5], "texture": "#outline"},
 				"east": {"uv": [2, 4, 2.5, 4.5], "texture": "#outline"},
@@ -2127,11 +2128,11 @@
 		},
 		{
 			"name": "spear_52",
-			"from": [3.4, 11.3, 8.15],
-			"to": [3.9, 11.8, 7.35],
+			"from": [3.4, 11.4, 8.1],
+			"to": [3.9, 11.9, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [4, 4, 3.5, 4.5], "texture": "#outline"},
 				"south": {"uv": [3.5, 4, 4, 4.5], "texture": "#outline"},
@@ -2141,11 +2142,11 @@
 		},
 		{
 			"name": "spear_53",
-			"from": [3.9, 11.3, 8.15],
-			"to": [4.7, 12.1, 7.35],
+			"from": [3.9, 11.4, 8.1],
+			"to": [4.6, 12.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [4.5, 4, 4, 4.5], "texture": "#outline"},
 				"south": {"uv": [4, 4, 4.5, 4.5], "texture": "#outline"}
@@ -2153,11 +2154,11 @@
 		},
 		{
 			"name": "spear_54",
-			"from": [4.7, 11.6, 8.15],
-			"to": [5.2, 12.1, 7.35],
+			"from": [4.6, 11.6, 8.1],
+			"to": [5.1, 12.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [5, 4, 4.5, 4.5], "texture": "#outline"},
 				"east": {"uv": [4.5, 4, 5, 4.5], "texture": "#outline"},
@@ -2167,11 +2168,11 @@
 		},
 		{
 			"name": "spear_55",
-			"from": [3.9, 10.8, 8.15],
-			"to": [4.4, 11.3, 7.35],
+			"from": [3.9, 10.9, 8.1],
+			"to": [4.4, 11.4, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [4.5, 4.5, 4, 5], "texture": "#outline"},
 				"south": {"uv": [4, 4.5, 4.5, 5], "texture": "#outline"},
@@ -2181,11 +2182,11 @@
 		},
 		{
 			"name": "spear_56",
-			"from": [4.4, 10.8, 8.15],
-			"to": [5.2, 11.6, 7.35],
+			"from": [4.4, 10.9, 8.1],
+			"to": [5.1, 11.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [5, 4.5, 4.5, 5], "texture": "#outline"},
 				"south": {"uv": [4.5, 4.5, 5, 5], "texture": "#outline"}
@@ -2193,11 +2194,11 @@
 		},
 		{
 			"name": "spear_57",
-			"from": [5.2, 11.1, 8.15],
-			"to": [5.7, 11.6, 7.35],
+			"from": [5.1, 11.1, 8.1],
+			"to": [5.6, 11.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [5.5, 4.5, 5, 5], "texture": "#outline"},
 				"east": {"uv": [5, 4.5, 5.5, 5], "texture": "#outline"},
@@ -2207,11 +2208,11 @@
 		},
 		{
 			"name": "spear_58",
-			"from": [4.4, 10.3, 8.15],
-			"to": [4.9, 10.8, 7.35],
+			"from": [4.4, 10.4, 8.1],
+			"to": [4.9, 10.9, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [5, 5, 4.5, 5.5], "texture": "#outline"},
 				"south": {"uv": [4.5, 5, 5, 5.5], "texture": "#outline"},
@@ -2221,11 +2222,11 @@
 		},
 		{
 			"name": "spear_59",
-			"from": [4.9, 10.3, 8.15],
-			"to": [5.7, 11.1, 7.35],
+			"from": [4.9, 10.4, 8.1],
+			"to": [5.6, 11.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [5.5, 5, 5, 5.5], "texture": "#outline"},
 				"south": {"uv": [5, 5, 5.5, 5.5], "texture": "#outline"}
@@ -2233,11 +2234,11 @@
 		},
 		{
 			"name": "spear_60",
-			"from": [5.7, 10.6, 8.15],
-			"to": [6.2, 11.1, 7.35],
+			"from": [5.6, 10.6, 8.1],
+			"to": [6.1, 11.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [6, 5, 5.5, 5.5], "texture": "#outline"},
 				"east": {"uv": [5.5, 5, 6, 5.5], "texture": "#outline"},
@@ -2247,11 +2248,11 @@
 		},
 		{
 			"name": "spear_61",
-			"from": [4.9, 9.8, 8.15],
-			"to": [5.4, 10.3, 7.35],
+			"from": [4.9, 9.9, 8.1],
+			"to": [5.4, 10.4, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [5.5, 5.5, 5, 6], "texture": "#outline"},
 				"south": {"uv": [5, 5.5, 5.5, 6], "texture": "#outline"},
@@ -2261,11 +2262,11 @@
 		},
 		{
 			"name": "spear_62",
-			"from": [5.4, 9.8, 8.15],
-			"to": [6.2, 10.6, 7.35],
+			"from": [5.4, 9.9, 8.1],
+			"to": [6.1, 10.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [6, 5.5, 5.5, 6], "texture": "#outline"},
 				"south": {"uv": [5.5, 5.5, 6, 6], "texture": "#outline"}
@@ -2273,11 +2274,11 @@
 		},
 		{
 			"name": "spear_63",
-			"from": [6.2, 10.1, 8.15],
-			"to": [6.7, 10.6, 7.35],
+			"from": [6.1, 10.1, 8.1],
+			"to": [6.6, 10.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [6.5, 5.5, 6, 6], "texture": "#outline"},
 				"east": {"uv": [6, 5.5, 6.5, 6], "texture": "#outline"},
@@ -2287,11 +2288,11 @@
 		},
 		{
 			"name": "spear_64",
-			"from": [5.4, 9.3, 8.15],
-			"to": [5.9, 9.8, 7.35],
+			"from": [5.4, 9.4, 8.1],
+			"to": [5.9, 9.9, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [6, 6, 5.5, 6.5], "texture": "#outline"},
 				"south": {"uv": [5.5, 6, 6, 6.5], "texture": "#outline"},
@@ -2301,11 +2302,11 @@
 		},
 		{
 			"name": "spear_65",
-			"from": [5.9, 9.3, 8.15],
-			"to": [6.7, 10.1, 7.35],
+			"from": [5.9, 9.4, 8.1],
+			"to": [6.6, 10.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [6.5, 6, 6, 6.5], "texture": "#outline"},
 				"south": {"uv": [6, 6, 6.5, 6.5], "texture": "#outline"}
@@ -2313,11 +2314,11 @@
 		},
 		{
 			"name": "spear_66",
-			"from": [6.7, 9.6, 8.15],
-			"to": [7.2, 10.1, 7.35],
+			"from": [6.6, 9.6, 8.1],
+			"to": [7.1, 10.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [7, 6, 6.5, 6.5], "texture": "#outline"},
 				"east": {"uv": [6.5, 6, 7, 6.5], "texture": "#outline"},
@@ -2327,11 +2328,11 @@
 		},
 		{
 			"name": "spear_67",
-			"from": [5.9, 8.8, 8.15],
-			"to": [6.4, 9.3, 7.35],
+			"from": [5.9, 8.9, 8.1],
+			"to": [6.4, 9.4, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [6.5, 6.5, 6, 7], "texture": "#outline"},
 				"south": {"uv": [6, 6.5, 6.5, 7], "texture": "#outline"},
@@ -2341,11 +2342,11 @@
 		},
 		{
 			"name": "spear_68",
-			"from": [6.4, 8.8, 8.15],
-			"to": [7.2, 9.6, 7.35],
+			"from": [6.4, 8.9, 8.1],
+			"to": [7.1, 9.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [7, 6.5, 6.5, 7], "texture": "#outline"},
 				"south": {"uv": [6.5, 6.5, 7, 7], "texture": "#outline"}
@@ -2353,11 +2354,11 @@
 		},
 		{
 			"name": "spear_69",
-			"from": [7.2, 9.1, 8.15],
-			"to": [7.7, 9.6, 7.35],
+			"from": [7.1, 9.1, 8.1],
+			"to": [7.6, 9.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [7.5, 6.5, 7, 7], "texture": "#outline"},
 				"east": {"uv": [7, 6.5, 7.5, 7], "texture": "#outline"},
@@ -2367,11 +2368,11 @@
 		},
 		{
 			"name": "spear_70",
-			"from": [6.4, 8.3, 8.15],
-			"to": [6.9, 8.8, 7.35],
+			"from": [6.4, 8.4, 8.1],
+			"to": [6.9, 8.9, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [7, 7, 6.5, 7.5], "texture": "#outline"},
 				"south": {"uv": [6.5, 7, 7, 7.5], "texture": "#outline"},
@@ -2381,11 +2382,11 @@
 		},
 		{
 			"name": "spear_71",
-			"from": [6.9, 8.3, 8.15],
-			"to": [7.7, 9.1, 7.35],
+			"from": [6.9, 8.4, 8.1],
+			"to": [7.6, 9.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [7.5, 7, 7, 7.5], "texture": "#outline"},
 				"south": {"uv": [7, 7, 7.5, 7.5], "texture": "#outline"}
@@ -2393,11 +2394,11 @@
 		},
 		{
 			"name": "spear_72",
-			"from": [7.7, 8.6, 8.15],
-			"to": [8.2, 9.1, 7.35],
+			"from": [7.6, 8.6, 8.1],
+			"to": [8.1, 9.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [8, 7, 7.5, 7.5], "texture": "#outline"},
 				"east": {"uv": [7.5, 7, 8, 7.5], "texture": "#outline"},
@@ -2407,11 +2408,11 @@
 		},
 		{
 			"name": "spear_73",
-			"from": [6.9, 7.8, 8.15],
-			"to": [7.4, 8.3, 7.35],
+			"from": [6.9, 7.9, 8.1],
+			"to": [7.4, 8.4, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [7.5, 7.5, 7, 8], "texture": "#outline"},
 				"south": {"uv": [7, 7.5, 7.5, 8], "texture": "#outline"},
@@ -2421,11 +2422,11 @@
 		},
 		{
 			"name": "spear_74",
-			"from": [7.4, 7.8, 8.15],
-			"to": [8.2, 8.6, 7.35],
+			"from": [7.4, 7.9, 8.1],
+			"to": [8.1, 8.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [8, 7.5, 7.5, 8], "texture": "#outline"},
 				"south": {"uv": [7.5, 7.5, 8, 8], "texture": "#outline"}
@@ -2433,11 +2434,11 @@
 		},
 		{
 			"name": "spear_75",
-			"from": [8.2, 8.1, 8.15],
-			"to": [8.7, 8.6, 7.35],
+			"from": [8.1, 8.1, 8.1],
+			"to": [8.6, 8.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [8.5, 7.5, 8, 8], "texture": "#outline"},
 				"east": {"uv": [8, 7.5, 8.5, 8], "texture": "#outline"},
@@ -2447,11 +2448,11 @@
 		},
 		{
 			"name": "spear_76",
-			"from": [7.4, 7.3, 8.15],
-			"to": [7.9, 7.8, 7.35],
+			"from": [7.4, 7.4, 8.1],
+			"to": [7.9, 7.9, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [8, 8, 7.5, 8.5], "texture": "#outline"},
 				"south": {"uv": [7.5, 8, 8, 8.5], "texture": "#outline"},
@@ -2461,11 +2462,11 @@
 		},
 		{
 			"name": "spear_77",
-			"from": [7.9, 7.3, 8.15],
-			"to": [8.7, 8.1, 7.35],
+			"from": [7.9, 7.4, 8.1],
+			"to": [8.6, 8.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [8.5, 8, 8, 8.5], "texture": "#outline"},
 				"south": {"uv": [8, 8, 8.5, 8.5], "texture": "#outline"}
@@ -2473,11 +2474,11 @@
 		},
 		{
 			"name": "spear_78",
-			"from": [8.7, 7.6, 8.15],
-			"to": [9.2, 8.1, 7.35],
+			"from": [8.6, 7.6, 8.1],
+			"to": [9.1, 8.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [9, 8, 8.5, 8.5], "texture": "#outline"},
 				"east": {"uv": [8.5, 8, 9, 8.5], "texture": "#outline"},
@@ -2487,11 +2488,11 @@
 		},
 		{
 			"name": "spear_79",
-			"from": [7.9, 6.8, 8.15],
-			"to": [8.4, 7.3, 7.35],
+			"from": [7.9, 6.9, 8.1],
+			"to": [8.4, 7.4, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [8.5, 8.5, 8, 9], "texture": "#outline"},
 				"south": {"uv": [8, 8.5, 8.5, 9], "texture": "#outline"},
@@ -2501,11 +2502,11 @@
 		},
 		{
 			"name": "spear_80",
-			"from": [8.4, 6.8, 8.15],
-			"to": [9.2, 7.6, 7.35],
+			"from": [8.4, 6.9, 8.1],
+			"to": [9.1, 7.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [9, 8.5, 8.5, 9], "texture": "#outline"},
 				"south": {"uv": [8.5, 8.5, 9, 9], "texture": "#outline"}
@@ -2513,11 +2514,11 @@
 		},
 		{
 			"name": "spear_81",
-			"from": [9.2, 7.1, 8.15],
-			"to": [9.7, 7.6, 7.35],
+			"from": [9.1, 7.1, 8.1],
+			"to": [9.6, 7.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [9.5, 8.5, 9, 9], "texture": "#outline"},
 				"east": {"uv": [9, 8.5, 9.5, 9], "texture": "#outline"},
@@ -2527,11 +2528,11 @@
 		},
 		{
 			"name": "spear_82",
-			"from": [8.4, 6.3, 8.15],
-			"to": [8.9, 6.8, 7.35],
+			"from": [8.4, 6.4, 8.1],
+			"to": [8.9, 6.9, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [9, 9, 8.5, 9.5], "texture": "#outline"},
 				"south": {"uv": [8.5, 9, 9, 9.5], "texture": "#outline"},
@@ -2541,11 +2542,11 @@
 		},
 		{
 			"name": "spear_83",
-			"from": [8.9, 6.3, 8.15],
-			"to": [9.7, 7.1, 7.35],
+			"from": [8.9, 6.4, 8.1],
+			"to": [9.6, 7.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [9.5, 9, 9, 9.5], "texture": "#outline"},
 				"south": {"uv": [9, 9, 9.5, 9.5], "texture": "#outline"}
@@ -2553,11 +2554,11 @@
 		},
 		{
 			"name": "spear_84",
-			"from": [9.7, 6.6, 8.15],
-			"to": [10.2, 7.1, 7.35],
+			"from": [9.6, 6.6, 8.1],
+			"to": [10.1, 7.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [10, 9, 9.5, 9.5], "texture": "#outline"},
 				"east": {"uv": [9.5, 9, 10, 9.5], "texture": "#outline"},
@@ -2567,11 +2568,11 @@
 		},
 		{
 			"name": "spear_85",
-			"from": [8.9, 5.8, 8.15],
-			"to": [9.4, 6.3, 7.35],
+			"from": [8.9, 5.9, 8.1],
+			"to": [9.4, 6.4, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [9.5, 9.5, 9, 10], "texture": "#outline"},
 				"south": {"uv": [9, 9.5, 9.5, 10], "texture": "#outline"},
@@ -2581,11 +2582,11 @@
 		},
 		{
 			"name": "spear_86",
-			"from": [9.4, 5.8, 8.15],
-			"to": [10.2, 6.6, 7.35],
+			"from": [9.4, 5.9, 8.1],
+			"to": [10.1, 6.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [10, 9.5, 9.5, 10], "texture": "#outline"},
 				"south": {"uv": [9.5, 9.5, 10, 10], "texture": "#outline"}
@@ -2593,11 +2594,11 @@
 		},
 		{
 			"name": "spear_87",
-			"from": [10.2, 6.1, 8.15],
-			"to": [10.7, 6.6, 7.35],
+			"from": [10.1, 6.1, 8.1],
+			"to": [10.6, 6.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [10.5, 9.5, 10, 10], "texture": "#outline"},
 				"east": {"uv": [10, 9.5, 10.5, 10], "texture": "#outline"},
@@ -2607,11 +2608,11 @@
 		},
 		{
 			"name": "spear_88",
-			"from": [9.4, 5.3, 8.15],
-			"to": [9.9, 5.8, 7.35],
+			"from": [9.4, 5.4, 8.1],
+			"to": [9.9, 5.9, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [10, 10, 9.5, 10.5], "texture": "#outline"},
 				"south": {"uv": [9.5, 10, 10, 10.5], "texture": "#outline"},
@@ -2621,11 +2622,11 @@
 		},
 		{
 			"name": "spear_89",
-			"from": [9.9, 5.3, 8.15],
-			"to": [10.7, 6.1, 7.35],
+			"from": [9.9, 5.4, 8.1],
+			"to": [10.6, 6.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [10.5, 10, 10, 10.5], "texture": "#outline"},
 				"south": {"uv": [10, 10, 10.5, 10.5], "texture": "#outline"}
@@ -2633,11 +2634,11 @@
 		},
 		{
 			"name": "spear_90",
-			"from": [10.7, 5.6, 8.15],
-			"to": [11.2, 6.1, 7.35],
+			"from": [10.6, 5.6, 8.1],
+			"to": [11.1, 6.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [11, 10, 10.5, 10.5], "texture": "#outline"},
 				"east": {"uv": [10.5, 10, 11, 10.5], "texture": "#outline"},
@@ -2647,11 +2648,11 @@
 		},
 		{
 			"name": "spear_91",
-			"from": [9.9, 4.8, 8.15],
-			"to": [10.4, 5.3, 7.35],
+			"from": [9.9, 4.9, 8.1],
+			"to": [10.4, 5.4, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [10.5, 10.5, 10, 11], "texture": "#outline"},
 				"south": {"uv": [10, 10.5, 10.5, 11], "texture": "#outline"},
@@ -2661,11 +2662,11 @@
 		},
 		{
 			"name": "spear_92",
-			"from": [10.4, 4.8, 8.15],
-			"to": [11.2, 5.6, 7.35],
+			"from": [10.4, 4.9, 8.1],
+			"to": [11.1, 5.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [11, 10.5, 10.5, 11], "texture": "#outline"},
 				"south": {"uv": [10.5, 10.5, 11, 11], "texture": "#outline"}
@@ -2673,11 +2674,11 @@
 		},
 		{
 			"name": "spear_93",
-			"from": [11.2, 5.1, 8.15],
-			"to": [11.7, 5.6, 7.35],
+			"from": [11.1, 5.1, 8.1],
+			"to": [11.6, 5.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [11.5, 10.5, 11, 11], "texture": "#outline"},
 				"east": {"uv": [11, 10.5, 11.5, 11], "texture": "#outline"},
@@ -2687,11 +2688,11 @@
 		},
 		{
 			"name": "spear_94",
-			"from": [10.4, 4.3, 8.15],
-			"to": [10.9, 4.8, 7.35],
+			"from": [10.4, 4.4, 8.1],
+			"to": [10.9, 4.9, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [11, 11, 10.5, 11.5], "texture": "#outline"},
 				"south": {"uv": [10.5, 11, 11, 11.5], "texture": "#outline"},
@@ -2701,11 +2702,11 @@
 		},
 		{
 			"name": "spear_95",
-			"from": [10.9, 4.3, 8.15],
-			"to": [11.7, 5.1, 7.35],
+			"from": [10.9, 4.4, 8.1],
+			"to": [11.6, 5.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [11.5, 11, 11, 11.5], "texture": "#outline"},
 				"south": {"uv": [11, 11, 11.5, 11.5], "texture": "#outline"}
@@ -2713,11 +2714,11 @@
 		},
 		{
 			"name": "spear_96",
-			"from": [11.7, 4.6, 8.15],
-			"to": [12.2, 5.1, 7.35],
+			"from": [11.6, 4.6, 8.1],
+			"to": [12.1, 5.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [12, 11, 11.5, 11.5], "texture": "#outline"},
 				"east": {"uv": [11.5, 11, 12, 11.5], "texture": "#outline"},
@@ -2727,11 +2728,11 @@
 		},
 		{
 			"name": "spear_97",
-			"from": [10.9, 3.8, 8.15],
-			"to": [11.4, 4.3, 7.35],
+			"from": [10.9, 3.9, 8.1],
+			"to": [11.4, 4.4, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [11.5, 11.5, 11, 12], "texture": "#outline"},
 				"south": {"uv": [11, 11.5, 11.5, 12], "texture": "#outline"},
@@ -2741,11 +2742,11 @@
 		},
 		{
 			"name": "spear_98",
-			"from": [11.4, 3.8, 8.15],
-			"to": [12.2, 4.6, 7.35],
+			"from": [11.4, 3.9, 8.1],
+			"to": [12.1, 4.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [12, 11.5, 11.5, 12], "texture": "#outline"},
 				"south": {"uv": [11.5, 11.5, 12, 12], "texture": "#outline"}
@@ -2753,11 +2754,11 @@
 		},
 		{
 			"name": "spear_99",
-			"from": [12.2, 4.1, 8.15],
-			"to": [12.7, 4.6, 7.35],
+			"from": [12.1, 4.1, 8.1],
+			"to": [12.6, 4.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [12.5, 11.5, 12, 12], "texture": "#outline"},
 				"east": {"uv": [12, 11.5, 12.5, 12], "texture": "#outline"},
@@ -2767,11 +2768,11 @@
 		},
 		{
 			"name": "spear_100",
-			"from": [11.4, 3.3, 8.15],
-			"to": [11.9, 3.8, 7.35],
+			"from": [11.4, 3.4, 8.1],
+			"to": [11.9, 3.9, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [12, 12, 11.5, 12.5], "texture": "#outline"},
 				"south": {"uv": [11.5, 12, 12, 12.5], "texture": "#outline"},
@@ -2781,11 +2782,11 @@
 		},
 		{
 			"name": "spear_101",
-			"from": [11.9, 3.3, 8.15],
-			"to": [12.7, 4.1, 7.35],
+			"from": [11.9, 3.4, 8.1],
+			"to": [12.6, 4.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [12.5, 12, 12, 12.5], "texture": "#outline"},
 				"south": {"uv": [12, 12, 12.5, 12.5], "texture": "#outline"}
@@ -2793,11 +2794,11 @@
 		},
 		{
 			"name": "spear_102",
-			"from": [12.7, 3.6, 8.15],
-			"to": [13.2, 4.1, 7.35],
+			"from": [12.6, 3.6, 8.1],
+			"to": [13.1, 4.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [13, 12, 12.5, 12.5], "texture": "#outline"},
 				"east": {"uv": [12.5, 12, 13, 12.5], "texture": "#outline"},
@@ -2807,11 +2808,11 @@
 		},
 		{
 			"name": "spear_103",
-			"from": [11.9, 2.8, 8.15],
-			"to": [12.4, 3.3, 7.35],
+			"from": [11.9, 2.9, 8.1],
+			"to": [12.4, 3.4, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [12.5, 12.5, 12, 13], "texture": "#outline"},
 				"south": {"uv": [12, 12.5, 12.5, 13], "texture": "#outline"},
@@ -2821,11 +2822,11 @@
 		},
 		{
 			"name": "spear_104",
-			"from": [12.4, 2.8, 8.15],
-			"to": [13.2, 3.6, 7.35],
+			"from": [12.4, 2.9, 8.1],
+			"to": [13.1, 3.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [13, 12.5, 12.5, 13], "texture": "#outline"},
 				"south": {"uv": [12.5, 12.5, 13, 13], "texture": "#outline"}
@@ -2833,11 +2834,11 @@
 		},
 		{
 			"name": "spear_105",
-			"from": [13.2, 3.1, 8.15],
-			"to": [13.7, 3.6, 7.35],
+			"from": [13.1, 3.1, 8.1],
+			"to": [13.6, 3.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [13.5, 12.5, 13, 13], "texture": "#outline"},
 				"east": {"uv": [13, 12.5, 13.5, 13], "texture": "#outline"},
@@ -2847,11 +2848,11 @@
 		},
 		{
 			"name": "spear_106",
-			"from": [12.4, 2.3, 8.15],
-			"to": [12.9, 2.8, 7.35],
+			"from": [12.4, 2.4, 8.1],
+			"to": [12.9, 2.9, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [13, 13, 12.5, 13.5], "texture": "#outline"},
 				"south": {"uv": [12.5, 13, 13, 13.5], "texture": "#outline"},
@@ -2861,11 +2862,11 @@
 		},
 		{
 			"name": "spear_107",
-			"from": [12.9, 2.3, 8.15],
-			"to": [13.7, 3.1, 7.35],
+			"from": [12.9, 2.4, 8.1],
+			"to": [13.6, 3.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [13.5, 13, 13, 13.5], "texture": "#outline"},
 				"south": {"uv": [13, 13, 13.5, 13.5], "texture": "#outline"}
@@ -2873,11 +2874,11 @@
 		},
 		{
 			"name": "spear_108",
-			"from": [13.7, 2.6, 8.15],
-			"to": [14.2, 3.1, 7.35],
+			"from": [13.6, 2.6, 8.1],
+			"to": [14.1, 3.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [14, 13, 13.5, 13.5], "texture": "#outline"},
 				"east": {"uv": [13.5, 13, 14, 13.5], "texture": "#outline"},
@@ -2887,11 +2888,11 @@
 		},
 		{
 			"name": "spear_109",
-			"from": [12.9, 1.8, 8.15],
-			"to": [13.4, 2.3, 7.35],
+			"from": [12.9, 1.9, 8.1],
+			"to": [13.4, 2.4, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [13.5, 13.5, 13, 14], "texture": "#outline"},
 				"south": {"uv": [13, 13.5, 13.5, 14], "texture": "#outline"},
@@ -2901,11 +2902,11 @@
 		},
 		{
 			"name": "spear_110",
-			"from": [13.4, 1.8, 8.15],
-			"to": [14.2, 2.6, 7.35],
+			"from": [13.4, 1.9, 8.1],
+			"to": [14.1, 2.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [14, 13.5, 13.5, 14], "texture": "#outline"},
 				"south": {"uv": [13.5, 13.5, 14, 14], "texture": "#outline"}
@@ -2913,11 +2914,11 @@
 		},
 		{
 			"name": "spear_111",
-			"from": [14.2, 2.1, 8.15],
-			"to": [14.7, 2.6, 7.35],
+			"from": [14.1, 2.1, 8.1],
+			"to": [14.6, 2.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [14.5, 13.5, 14, 14], "texture": "#outline"},
 				"east": {"uv": [14, 13.5, 14.5, 14], "texture": "#outline"},
@@ -2927,11 +2928,11 @@
 		},
 		{
 			"name": "spear_112",
-			"from": [13.4, 1.3, 8.15],
-			"to": [13.9, 1.8, 7.35],
+			"from": [13.4, 1.4, 8.1],
+			"to": [13.9, 1.9, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [14, 14, 13.5, 14.5], "texture": "#outline"},
 				"south": {"uv": [13.5, 14, 14, 14.5], "texture": "#outline"},
@@ -2941,11 +2942,11 @@
 		},
 		{
 			"name": "spear_113",
-			"from": [13.9, 1.3, 8.15],
-			"to": [14.7, 2.1, 7.35],
+			"from": [13.9, 1.4, 8.1],
+			"to": [14.6, 2.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [14.5, 14, 14, 14.5], "texture": "#outline"},
 				"south": {"uv": [14, 14, 14.5, 14.5], "texture": "#outline"}
@@ -2953,11 +2954,11 @@
 		},
 		{
 			"name": "spear_114",
-			"from": [14.7, 1.6, 8.15],
-			"to": [15.2, 2.1, 7.35],
+			"from": [14.6, 1.6, 8.1],
+			"to": [15.1, 2.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [15, 14, 14.5, 14.5], "texture": "#outline"},
 				"east": {"uv": [14.5, 14, 15, 14.5], "texture": "#outline"},
@@ -2967,11 +2968,11 @@
 		},
 		{
 			"name": "spear_115",
-			"from": [13.9, 0.8, 8.15],
-			"to": [14.4, 1.3, 7.35],
+			"from": [13.9, 0.9, 8.1],
+			"to": [14.4, 1.4, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [14.5, 14.5, 14, 15], "texture": "#outline"},
 				"south": {"uv": [14, 14.5, 14.5, 15], "texture": "#outline"},
@@ -2981,11 +2982,11 @@
 		},
 		{
 			"name": "spear_116",
-			"from": [14.4, 0.8, 8.15],
-			"to": [15.2, 1.6, 7.35],
+			"from": [14.4, 0.9, 8.1],
+			"to": [15.1, 1.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [15, 14.5, 14.5, 15], "texture": "#outline"},
 				"south": {"uv": [14.5, 14.5, 15, 15], "texture": "#outline"}
@@ -2993,11 +2994,11 @@
 		},
 		{
 			"name": "spear_117",
-			"from": [15.2, 1.1, 8.15],
-			"to": [15.7, 1.6, 7.35],
+			"from": [15.1, 1.1, 8.1],
+			"to": [15.6, 1.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [15.5, 14.5, 15, 15], "texture": "#outline"},
 				"east": {"uv": [15, 14.5, 15.5, 15], "texture": "#outline"},
@@ -3007,11 +3008,11 @@
 		},
 		{
 			"name": "spear_118",
-			"from": [14.4, 0.3, 8.15],
-			"to": [14.9, 0.8, 7.35],
+			"from": [14.4, 0.4, 8.1],
+			"to": [14.9, 0.9, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [15, 15, 14.5, 15.5], "texture": "#outline"},
 				"south": {"uv": [14.5, 15, 15, 15.5], "texture": "#outline"},
@@ -3021,11 +3022,11 @@
 		},
 		{
 			"name": "spear_119",
-			"from": [14.9, 0.3, 8.15],
-			"to": [15.7, 1.1, 7.35],
+			"from": [14.9, 0.4, 8.1],
+			"to": [15.6, 1.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [15.5, 15, 15, 15.5], "texture": "#outline"},
 				"south": {"uv": [15, 15, 15.5, 15.5], "texture": "#outline"}
@@ -3033,11 +3034,11 @@
 		},
 		{
 			"name": "spear_120",
-			"from": [15.7, 0.3, 8.15],
-			"to": [16.2, 1.1, 7.35],
+			"from": [15.6, 0.6, 8.1],
+			"to": [16.1, 1.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [16, 15, 15.5, 15.5], "texture": "#outline"},
 				"east": {"uv": [15.5, 15, 16, 15.5], "texture": "#outline"},
@@ -3047,11 +3048,11 @@
 		},
 		{
 			"name": "spear_121",
-			"from": [14.9, -0.2, 8.15],
-			"to": [15.7, 0.3, 7.35],
+			"from": [14.9, -0.1, 8.1],
+			"to": [15.4, 0.4, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [15.5, 15.5, 15, 16], "texture": "#outline"},
 				"south": {"uv": [15, 15.5, 15.5, 16], "texture": "#outline"},
@@ -3061,11 +3062,11 @@
 		},
 		{
 			"name": "spear_122",
-			"from": [15.4, -0.2, 8.15],
-			"to": [16.2, 0.6, 7.35],
+			"from": [15.4, -0.1, 8.1],
+			"to": [16.1, 0.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.2, 0.7]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [16, 15.5, 15.5, 16], "texture": "#outline"},
 				"east": {"uv": [15.5, 15.5, 16, 16], "texture": "#outline"},

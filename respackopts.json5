@@ -34,7 +34,8 @@
       },
       Outline: true,
       CustomModel: true,
-      DirectionalLight: true
+      DirectionalLight: false,
+      DynamicLight: true
     },
     GlowByItemType: {
       Swords: true,

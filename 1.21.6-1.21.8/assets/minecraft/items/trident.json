@@ -3,52 +3,67 @@
     "type": "minecraft:select",
     "property": "minecraft:display_context",
     "cases": [
-        {
-            "when": ["gui"],
-            "model": {
-                "type": "minecraft:model",
-                "model": "minecraft:item/trident"
-            }
-        },
-        {
-            "when": ["ground", "fixed"],
-            "model": {
-                "type": "minecraft:model",
-                "model": "minecraft:item/trident/e_trident_sprite"
-            }
+      {
+        "when": [
+          "gui"
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/trident"
         }
+      },
+      {
+        "when": [
+          "ground",
+          "fixed"
+        ],
+        "model": {
+          "type": "minecraft:condition",
+          "property": "minecraft:has_component",
+          "component": "minecraft:enchantments",
+          "ignore_default": true,
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/trident/e_trident_sprite"
+          },
+          "on_false": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/trident"
+          }
+        }
+      }
     ],
     "fallback": {
       "type": "minecraft:condition",
       "property": "minecraft:using_item",
+      "on_true": {
+        "type": "minecraft:condition",
+        "property": "minecraft:has_component",
+        "component": "minecraft:enchantments",
+        "ignore_default": true,
         "on_true": {
-          "type": "minecraft:condition",
-          "property": "minecraft:has_component",
-          "component": "minecraft:enchantments",
-          "ignore_default": true,
-          "on_true": {
-            "type": "minecraft:model",
-            "model": "minecraft:item/trident/e_trident_throwing"
-          },
-          "on_false": {
-            "type": "minecraft:model",
-            "model": "minecraft:item/trident/trident_throwing"
-          }
+          "type": "minecraft:model",
+          "model": "minecraft:item/trident/e_trident_throwing"
         },
         "on_false": {
-          "type": "minecraft:condition",
-          "property": "minecraft:has_component",
-          "component": "minecraft:enchantments",
-          "ignore_default": true,
-          "on_true": {
-            "type": "minecraft:model",
-            "model": "minecraft:item/trident/e_trident_in_hand"
-          },
-          "on_false": {
-            "type": "minecraft:model",
-            "model": "minecraft:item/trident/trident_in_hand"
-          }
+          "type": "minecraft:model",
+          "model": "minecraft:item/trident/trident_throwing"
+        }
+      },
+      "on_false": {
+        "type": "minecraft:condition",
+        "property": "minecraft:has_component",
+        "component": "minecraft:enchantments",
+        "ignore_default": true,
+        "on_true": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/trident/e_trident_in_hand"
+        },
+        "on_false": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/trident/trident_in_hand"
         }
       }
     }
+  }
 }

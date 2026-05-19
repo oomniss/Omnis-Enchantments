@@ -2011,11 +2011,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_1",
-			"from": [-0.15, 15.35, 8.15],
-			"to": [0.65, 16.15, 7.35],
+			"from": [-0.1, 15.4, 8.1],
+			"to": [0.6, 16.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [0.5, 0, 0, 0.5], "texture": "#1"},
 				"south": {"uv": [0, 0, 0.5, 0.5], "texture": "#1"},
@@ -2025,11 +2025,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_2",
-			"from": [0.35, 15.35, 8.15],
-			"to": [1.15, 16.15, 7.35],
+			"from": [0.4, 15.4, 8.1],
+			"to": [1.1, 16.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [1, 0, 0.5, 0.5], "texture": "#1"},
 				"south": {"uv": [0.5, 0, 1, 0.5], "texture": "#1"},
@@ -2038,11 +2038,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_3",
-			"from": [0.85, 15.35, 8.15],
-			"to": [1.65, 16.15, 7.35],
+			"from": [0.9, 15.4, 8.1],
+			"to": [1.6, 16.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [1.5, 0, 1, 0.5], "texture": "#1"},
 				"south": {"uv": [1, 0, 1.5, 0.5], "texture": "#1"},
@@ -2051,11 +2051,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_4",
-			"from": [1.65, 15.65, 8.15],
-			"to": [2.15, 16.15, 7.35],
+			"from": [1.6, 15.6, 8.1],
+			"to": [2.1, 16.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [2, 0, 1.5, 0.5], "texture": "#1"},
 				"east": {"uv": [1.5, 0, 2, 0.5], "texture": "#1"},
@@ -2065,11 +2065,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_5",
-			"from": [-0.15, 14.85, 8.15],
-			"to": [0.65, 15.65, 7.35],
+			"from": [-0.1, 14.9, 8.1],
+			"to": [0.6, 15.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [0.5, 0.5, 0, 1], "texture": "#1"},
 				"south": {"uv": [0, 0.5, 0.5, 1], "texture": "#1"},
@@ -2078,11 +2078,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_6",
-			"from": [0.35, 14.85, 8.15],
-			"to": [1.15, 15.65, 7.35],
+			"from": [0.4, 14.9, 8.1],
+			"to": [1.1, 15.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [1, 0.5, 0.5, 1], "texture": "#1"},
 				"south": {"uv": [0.5, 0.5, 1, 1], "texture": "#1"}
@@ -2090,11 +2090,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_7",
-			"from": [0.85, 14.85, 8.15],
-			"to": [1.65, 15.65, 7.35],
+			"from": [0.9, 14.9, 8.1],
+			"to": [1.6, 15.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [1.5, 0.5, 1, 1], "texture": "#1"},
 				"south": {"uv": [1, 0.5, 1.5, 1], "texture": "#1"}
@@ -2102,11 +2102,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_8",
-			"from": [1.35, 14.85, 8.15],
-			"to": [2.15, 15.65, 7.35],
+			"from": [1.4, 14.9, 8.1],
+			"to": [2.1, 15.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [2, 0.5, 1.5, 1], "texture": "#1"},
 				"south": {"uv": [1.5, 0.5, 2, 1], "texture": "#1"}
@@ -2114,11 +2114,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_9",
-			"from": [2.15, 15.15, 8.15],
-			"to": [2.65, 15.65, 7.35],
+			"from": [2.1, 15.1, 8.1],
+			"to": [2.6, 15.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [2.5, 0.5, 2, 1], "texture": "#1"},
 				"south": {"uv": [2, 0.5, 2.5, 1], "texture": "#1"},
@@ -2127,11 +2127,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_10",
-			"from": [2.65, 15.15, 8.15],
-			"to": [3.15, 15.65, 7.35],
+			"from": [2.6, 15.1, 8.1],
+			"to": [3.1, 15.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [3, 0.5, 2.5, 1], "texture": "#1"},
 				"east": {"uv": [2.5, 0.5, 3, 1], "texture": "#1"},
@@ -2141,11 +2141,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_11",
-			"from": [-0.15, 14.35, 8.15],
-			"to": [0.65, 15.15, 7.35],
+			"from": [-0.1, 14.4, 8.1],
+			"to": [0.6, 15.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [0.5, 1, 0, 1.5], "texture": "#1"},
 				"south": {"uv": [0, 1, 0.5, 1.5], "texture": "#1"},
@@ -2154,11 +2154,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_12",
-			"from": [0.35, 14.35, 8.15],
-			"to": [1.15, 15.15, 7.35],
+			"from": [0.4, 14.4, 8.1],
+			"to": [1.1, 15.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [1, 1, 0.5, 1.5], "texture": "#1"},
 				"south": {"uv": [0.5, 1, 1, 1.5], "texture": "#1"}
@@ -2166,11 +2166,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_13",
-			"from": [0.85, 14.35, 8.15],
-			"to": [1.65, 15.15, 7.35],
+			"from": [0.9, 14.4, 8.1],
+			"to": [1.6, 15.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [1.5, 1, 1, 1.5], "texture": "#1"},
 				"south": {"uv": [1, 1, 1.5, 1.5], "texture": "#1"}
@@ -2178,11 +2178,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_14",
-			"from": [1.35, 14.35, 8.15],
-			"to": [2.15, 15.15, 7.35],
+			"from": [1.4, 14.4, 8.1],
+			"to": [2.1, 15.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [2, 1, 1.5, 1.5], "texture": "#1"},
 				"south": {"uv": [1.5, 1, 2, 1.5], "texture": "#1"}
@@ -2190,11 +2190,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_15",
-			"from": [1.85, 14.35, 8.15],
-			"to": [2.65, 15.15, 7.35],
+			"from": [1.9, 14.4, 8.1],
+			"to": [2.6, 15.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [2.5, 1, 2, 1.5], "texture": "#1"},
 				"south": {"uv": [2, 1, 2.5, 1.5], "texture": "#1"}
@@ -2202,11 +2202,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_16",
-			"from": [2.35, 14.35, 8.15],
-			"to": [3.15, 15.15, 7.35],
+			"from": [2.4, 14.4, 8.1],
+			"to": [3.1, 15.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [3, 1, 2.5, 1.5], "texture": "#1"},
 				"south": {"uv": [2.5, 1, 3, 1.5], "texture": "#1"}
@@ -2214,11 +2214,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_17",
-			"from": [3.15, 14.65, 8.15],
-			"to": [3.65, 15.15, 7.35],
+			"from": [3.1, 14.6, 8.1],
+			"to": [3.6, 15.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [3.5, 1, 3, 1.5], "texture": "#1"},
 				"south": {"uv": [3, 1, 3.5, 1.5], "texture": "#1"},
@@ -2227,11 +2227,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_18",
-			"from": [3.65, 14.65, 8.15],
-			"to": [4.15, 15.15, 7.35],
+			"from": [3.6, 14.6, 8.1],
+			"to": [4.1, 15.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [4, 1, 3.5, 1.5], "texture": "#1"},
 				"east": {"uv": [3.5, 1, 4, 1.5], "texture": "#1"},
@@ -2241,11 +2241,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_19",
-			"from": [-0.15, 13.85, 8.15],
-			"to": [0.35, 14.35, 7.35],
+			"from": [-0.1, 13.9, 8.1],
+			"to": [0.4, 14.4, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [0.5, 1.5, 0, 2], "texture": "#1"},
 				"south": {"uv": [0, 1.5, 0.5, 2], "texture": "#1"},
@@ -2255,11 +2255,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_20",
-			"from": [0.35, 13.85, 8.15],
-			"to": [1.15, 14.65, 7.35],
+			"from": [0.4, 13.9, 8.1],
+			"to": [1.1, 14.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [1, 1.5, 0.5, 2], "texture": "#1"},
 				"south": {"uv": [0.5, 1.5, 1, 2], "texture": "#1"}
@@ -2267,11 +2267,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_21",
-			"from": [0.85, 13.85, 8.15],
-			"to": [1.65, 14.65, 7.35],
+			"from": [0.9, 13.9, 8.1],
+			"to": [1.6, 14.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [1.5, 1.5, 1, 2], "texture": "#1"},
 				"south": {"uv": [1, 1.5, 1.5, 2], "texture": "#1"}
@@ -2279,11 +2279,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_22",
-			"from": [1.35, 13.85, 8.15],
-			"to": [2.15, 14.65, 7.35],
+			"from": [1.4, 13.9, 8.1],
+			"to": [2.1, 14.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [2, 1.5, 1.5, 2], "texture": "#1"},
 				"south": {"uv": [1.5, 1.5, 2, 2], "texture": "#1"}
@@ -2291,11 +2291,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_23",
-			"from": [1.85, 13.85, 8.15],
-			"to": [2.65, 14.65, 7.35],
+			"from": [1.9, 13.9, 8.1],
+			"to": [2.6, 14.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [2.5, 1.5, 2, 2], "texture": "#1"},
 				"south": {"uv": [2, 1.5, 2.5, 2], "texture": "#1"}
@@ -2303,11 +2303,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_24",
-			"from": [2.35, 13.85, 8.15],
-			"to": [3.15, 14.65, 7.35],
+			"from": [2.4, 13.9, 8.1],
+			"to": [3.1, 14.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [3, 1.5, 2.5, 2], "texture": "#1"},
 				"south": {"uv": [2.5, 1.5, 3, 2], "texture": "#1"}
@@ -2315,11 +2315,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_25",
-			"from": [2.85, 13.85, 8.15],
-			"to": [3.65, 14.65, 7.35],
+			"from": [2.9, 13.9, 8.1],
+			"to": [3.6, 14.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [3.5, 1.5, 3, 2], "texture": "#1"},
 				"south": {"uv": [3, 1.5, 3.5, 2], "texture": "#1"}
@@ -2327,11 +2327,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_26",
-			"from": [3.35, 13.85, 8.15],
-			"to": [4.15, 14.65, 7.35],
+			"from": [3.4, 13.9, 8.1],
+			"to": [4.1, 14.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [4, 1.5, 3.5, 2], "texture": "#1"},
 				"south": {"uv": [3.5, 1.5, 4, 2], "texture": "#1"}
@@ -2339,11 +2339,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_27",
-			"from": [4.15, 13.85, 8.15],
-			"to": [4.65, 14.65, 7.35],
+			"from": [4.1, 14.1, 8.1],
+			"to": [4.6, 14.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [4.5, 1.5, 4, 2], "texture": "#1"},
 				"east": {"uv": [4, 1.5, 4.5, 2], "texture": "#1"},
@@ -2353,11 +2353,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_28",
-			"from": [0.35, 13.35, 8.15],
-			"to": [0.85, 13.85, 7.35],
+			"from": [0.4, 13.4, 8.1],
+			"to": [0.9, 13.9, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [1, 2, 0.5, 2.5], "texture": "#1"},
 				"south": {"uv": [0.5, 2, 1, 2.5], "texture": "#1"},
@@ -2366,11 +2366,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_29",
-			"from": [0.85, 13.35, 8.15],
-			"to": [1.65, 14.15, 7.35],
+			"from": [0.9, 13.4, 8.1],
+			"to": [1.6, 14.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [1.5, 2, 1, 2.5], "texture": "#1"},
 				"south": {"uv": [1, 2, 1.5, 2.5], "texture": "#1"}
@@ -2378,11 +2378,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_30",
-			"from": [1.35, 13.35, 8.15],
-			"to": [2.15, 14.15, 7.35],
+			"from": [1.4, 13.4, 8.1],
+			"to": [2.1, 14.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [2, 2, 1.5, 2.5], "texture": "#1"},
 				"south": {"uv": [1.5, 2, 2, 2.5], "texture": "#1"}
@@ -2390,11 +2390,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_31",
-			"from": [1.85, 13.35, 8.15],
-			"to": [2.65, 14.15, 7.35],
+			"from": [1.9, 13.4, 8.1],
+			"to": [2.6, 14.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [2.5, 2, 2, 2.5], "texture": "#1"},
 				"south": {"uv": [2, 2, 2.5, 2.5], "texture": "#1"}
@@ -2402,11 +2402,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_32",
-			"from": [2.35, 13.35, 8.15],
-			"to": [3.15, 14.15, 7.35],
+			"from": [2.4, 13.4, 8.1],
+			"to": [3.1, 14.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [3, 2, 2.5, 2.5], "texture": "#1"},
 				"south": {"uv": [2.5, 2, 3, 2.5], "texture": "#1"}
@@ -2414,11 +2414,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_33",
-			"from": [2.85, 13.35, 8.15],
-			"to": [3.65, 14.15, 7.35],
+			"from": [2.9, 13.4, 8.1],
+			"to": [3.6, 14.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [3.5, 2, 3, 2.5], "texture": "#1"},
 				"south": {"uv": [3, 2, 3.5, 2.5], "texture": "#1"}
@@ -2426,11 +2426,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_34",
-			"from": [3.35, 13.35, 8.15],
-			"to": [4.15, 14.15, 7.35],
+			"from": [3.4, 13.4, 8.1],
+			"to": [4.1, 14.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [4, 2, 3.5, 2.5], "texture": "#1"},
 				"south": {"uv": [3.5, 2, 4, 2.5], "texture": "#1"}
@@ -2438,11 +2438,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_35",
-			"from": [4.15, 13.35, 8.15],
-			"to": [4.65, 14.15, 7.35],
+			"from": [4.1, 13.4, 8.1],
+			"to": [4.6, 14.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [4.5, 2, 4, 2.5], "texture": "#1"},
 				"east": {"uv": [4, 2, 4.5, 2.5], "texture": "#1"},
@@ -2452,11 +2452,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_36",
-			"from": [0.35, 12.85, 8.15],
-			"to": [0.85, 13.35, 7.35],
+			"from": [0.4, 12.9, 8.1],
+			"to": [0.9, 13.4, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [1, 2.5, 0.5, 3], "texture": "#1"},
 				"south": {"uv": [0.5, 2.5, 1, 3], "texture": "#1"},
@@ -2466,11 +2466,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_37",
-			"from": [0.85, 12.85, 8.15],
-			"to": [1.65, 13.65, 7.35],
+			"from": [0.9, 12.9, 8.1],
+			"to": [1.6, 13.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [1.5, 2.5, 1, 3], "texture": "#1"},
 				"south": {"uv": [1, 2.5, 1.5, 3], "texture": "#1"}
@@ -2478,11 +2478,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_38",
-			"from": [1.35, 12.85, 8.15],
-			"to": [2.15, 13.65, 7.35],
+			"from": [1.4, 12.9, 8.1],
+			"to": [2.1, 13.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [2, 2.5, 1.5, 3], "texture": "#1"},
 				"south": {"uv": [1.5, 2.5, 2, 3], "texture": "#1"}
@@ -2490,11 +2490,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_39",
-			"from": [1.85, 12.85, 8.15],
-			"to": [2.65, 13.65, 7.35],
+			"from": [1.9, 12.9, 8.1],
+			"to": [2.6, 13.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [2.5, 2.5, 2, 3], "texture": "#1"},
 				"south": {"uv": [2, 2.5, 2.5, 3], "texture": "#1"}
@@ -2502,11 +2502,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_40",
-			"from": [2.35, 12.85, 8.15],
-			"to": [3.15, 13.65, 7.35],
+			"from": [2.4, 12.9, 8.1],
+			"to": [3.1, 13.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [3, 2.5, 2.5, 3], "texture": "#1"},
 				"south": {"uv": [2.5, 2.5, 3, 3], "texture": "#1"}
@@ -2514,11 +2514,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_41",
-			"from": [2.85, 12.85, 8.15],
-			"to": [3.65, 13.65, 7.35],
+			"from": [2.9, 12.9, 8.1],
+			"to": [3.6, 13.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [3.5, 2.5, 3, 3], "texture": "#1"},
 				"south": {"uv": [3, 2.5, 3.5, 3], "texture": "#1"}
@@ -2526,11 +2526,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_42",
-			"from": [3.35, 13.15, 8.15],
-			"to": [4.15, 13.35, 7.35],
+			"from": [3.4, 13.1, 8.1],
+			"to": [4.1, 13.4, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [4, 2.5, 3.5, 3], "texture": "#1"},
 				"east": {"uv": [3.5, 2.5, 4, 3], "texture": "#1"},
@@ -2539,11 +2539,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_43",
-			"from": [0.85, 12.35, 8.15],
-			"to": [1.35, 12.85, 7.35],
+			"from": [0.9, 12.4, 8.1],
+			"to": [1.4, 12.9, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [1.5, 3, 1, 3.5], "texture": "#1"},
 				"south": {"uv": [1, 3, 1.5, 3.5], "texture": "#1"},
@@ -2552,11 +2552,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_44",
-			"from": [1.35, 12.35, 8.15],
-			"to": [2.15, 13.15, 7.35],
+			"from": [1.4, 12.4, 8.1],
+			"to": [2.1, 13.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [2, 3, 1.5, 3.5], "texture": "#1"},
 				"south": {"uv": [1.5, 3, 2, 3.5], "texture": "#1"}
@@ -2564,11 +2564,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_45",
-			"from": [1.85, 12.35, 8.15],
-			"to": [2.65, 13.15, 7.35],
+			"from": [1.9, 12.4, 8.1],
+			"to": [2.6, 13.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [2.5, 3, 2, 3.5], "texture": "#1"},
 				"south": {"uv": [2, 3, 2.5, 3.5], "texture": "#1"}
@@ -2576,11 +2576,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_46",
-			"from": [2.35, 12.35, 8.15],
-			"to": [3.15, 13.15, 7.35],
+			"from": [2.4, 12.4, 8.1],
+			"to": [3.1, 13.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [3, 3, 2.5, 3.5], "texture": "#1"},
 				"south": {"uv": [2.5, 3, 3, 3.5], "texture": "#1"}
@@ -2588,11 +2588,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_47",
-			"from": [2.85, 12.35, 8.15],
-			"to": [3.65, 13.15, 7.35],
+			"from": [2.9, 12.4, 8.1],
+			"to": [3.6, 13.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [3.5, 3, 3, 3.5], "texture": "#1"},
 				"south": {"uv": [3, 3, 3.5, 3.5], "texture": "#1"}
@@ -2600,11 +2600,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_48",
-			"from": [3.35, 12.35, 8.15],
-			"to": [4.15, 13.15, 7.35],
+			"from": [3.4, 12.4, 8.1],
+			"to": [4.1, 13.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [4, 3, 3.5, 3.5], "texture": "#1"},
 				"south": {"uv": [3.5, 3, 4, 3.5], "texture": "#1"}
@@ -2612,11 +2612,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_49",
-			"from": [4.15, 12.65, 8.15],
-			"to": [4.65, 13.15, 7.35],
+			"from": [4.1, 12.6, 8.1],
+			"to": [4.6, 13.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [4.5, 3, 4, 3.5], "texture": "#1"},
 				"east": {"uv": [4, 3, 4.5, 3.5], "texture": "#1"},
@@ -2626,11 +2626,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_50",
-			"from": [0.85, 11.85, 8.15],
-			"to": [1.35, 12.35, 7.35],
+			"from": [0.9, 11.9, 8.1],
+			"to": [1.4, 12.4, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [1.5, 3.5, 1, 4], "texture": "#1"},
 				"south": {"uv": [1, 3.5, 1.5, 4], "texture": "#1"},
@@ -2640,11 +2640,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_51",
-			"from": [1.35, 11.85, 8.15],
-			"to": [2.15, 12.65, 7.35],
+			"from": [1.4, 11.9, 8.1],
+			"to": [2.1, 12.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [2, 3.5, 1.5, 4], "texture": "#1"},
 				"south": {"uv": [1.5, 3.5, 2, 4], "texture": "#1"}
@@ -2652,11 +2652,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_52",
-			"from": [1.85, 11.85, 8.15],
-			"to": [2.65, 12.65, 7.35],
+			"from": [1.9, 11.9, 8.1],
+			"to": [2.6, 12.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [2.5, 3.5, 2, 4], "texture": "#1"},
 				"south": {"uv": [2, 3.5, 2.5, 4], "texture": "#1"}
@@ -2664,11 +2664,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_53",
-			"from": [2.65, 11.85, 8.15],
-			"to": [2.85, 12.65, 7.35],
+			"from": [2.6, 11.9, 8.1],
+			"to": [2.9, 12.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [3, 3.5, 2.5, 4], "texture": "#1"},
 				"south": {"uv": [2.5, 3.5, 3, 4], "texture": "#1"},
@@ -2677,11 +2677,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_54",
-			"from": [2.85, 11.85, 8.15],
-			"to": [3.65, 12.65, 7.35],
+			"from": [2.9, 11.9, 8.1],
+			"to": [3.6, 12.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [3.5, 3.5, 3, 4], "texture": "#1"},
 				"south": {"uv": [3, 3.5, 3.5, 4], "texture": "#1"}
@@ -2689,11 +2689,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_55",
-			"from": [3.35, 11.85, 8.15],
-			"to": [4.15, 12.65, 7.35],
+			"from": [3.4, 11.9, 8.1],
+			"to": [4.1, 12.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [4, 3.5, 3.5, 4], "texture": "#1"},
 				"south": {"uv": [3.5, 3.5, 4, 4], "texture": "#1"}
@@ -2701,11 +2701,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_56",
-			"from": [3.85, 11.85, 8.15],
-			"to": [4.65, 12.65, 7.35],
+			"from": [3.9, 11.9, 8.1],
+			"to": [4.6, 12.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [4.5, 3.5, 4, 4], "texture": "#1"},
 				"south": {"uv": [4, 3.5, 4.5, 4], "texture": "#1"}
@@ -2713,11 +2713,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_57",
-			"from": [4.65, 12.15, 8.15],
-			"to": [5.15, 12.65, 7.35],
+			"from": [4.6, 12.1, 8.1],
+			"to": [5.1, 12.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [5, 3.5, 4.5, 4], "texture": "#1"},
 				"east": {"uv": [4.5, 3.5, 5, 4], "texture": "#1"},
@@ -2727,11 +2727,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_58",
-			"from": [1.35, 11.35, 8.15],
-			"to": [1.85, 11.85, 7.35],
+			"from": [1.4, 11.4, 8.1],
+			"to": [1.9, 11.9, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [2, 4, 1.5, 4.5], "texture": "#1"},
 				"south": {"uv": [1.5, 4, 2, 4.5], "texture": "#1"},
@@ -2741,11 +2741,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_59",
-			"from": [1.85, 11.35, 8.15],
-			"to": [2.65, 11.85, 7.35],
+			"from": [1.9, 11.4, 8.1],
+			"to": [2.6, 11.9, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [2.5, 4, 2, 4.5], "texture": "#1"},
 				"east": {"uv": [2, 4, 2.5, 4.5], "texture": "#1"},
@@ -2755,11 +2755,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_60",
-			"from": [2.85, 11.35, 8.15],
-			"to": [3.65, 11.85, 7.35],
+			"from": [2.9, 11.4, 8.1],
+			"to": [3.6, 11.9, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [3.5, 4, 3, 4.5], "texture": "#1"},
 				"south": {"uv": [3, 4, 3.5, 4.5], "texture": "#1"},
@@ -2769,11 +2769,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_61",
-			"from": [3.35, 11.35, 8.15],
-			"to": [3.85, 11.85, 7.35],
+			"from": [3.4, 11.4, 8.1],
+			"to": [3.9, 11.9, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [4, 4, 3.5, 4.5], "texture": "#1"},
 				"south": {"uv": [3.5, 4, 4, 4.5], "texture": "#1"},
@@ -2782,11 +2782,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_62",
-			"from": [3.85, 11.35, 8.15],
-			"to": [4.65, 12.15, 7.35],
+			"from": [3.9, 11.4, 8.1],
+			"to": [4.6, 12.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [4.5, 4, 4, 4.5], "texture": "#1"},
 				"south": {"uv": [4, 4, 4.5, 4.5], "texture": "#1"}
@@ -2794,11 +2794,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_63",
-			"from": [4.35, 11.35, 8.15],
-			"to": [5.15, 12.15, 7.35],
+			"from": [4.4, 11.4, 8.1],
+			"to": [5.1, 12.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [5, 4, 4.5, 4.5], "texture": "#1"},
 				"south": {"uv": [4.5, 4, 5, 4.5], "texture": "#1"}
@@ -2806,11 +2806,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_64",
-			"from": [5.15, 11.65, 8.15],
-			"to": [5.65, 12.15, 7.35],
+			"from": [5.1, 11.6, 8.1],
+			"to": [5.6, 12.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [5.5, 4, 5, 4.5], "texture": "#1"},
 				"east": {"uv": [5, 4, 5.5, 4.5], "texture": "#1"},
@@ -2820,11 +2820,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_65",
-			"from": [3.85, 10.85, 8.15],
-			"to": [4.35, 11.35, 7.35],
+			"from": [3.9, 10.9, 8.1],
+			"to": [4.4, 11.4, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [4.5, 4.5, 4, 5], "texture": "#1"},
 				"south": {"uv": [4, 4.5, 4.5, 5], "texture": "#1"},
@@ -2834,11 +2834,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_66",
-			"from": [4.35, 10.85, 8.15],
-			"to": [5.15, 11.65, 7.35],
+			"from": [4.4, 10.9, 8.1],
+			"to": [5.1, 11.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [5, 4.5, 4.5, 5], "texture": "#1"},
 				"south": {"uv": [4.5, 4.5, 5, 5], "texture": "#1"}
@@ -2846,11 +2846,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_67",
-			"from": [4.85, 10.85, 8.15],
-			"to": [5.65, 11.65, 7.35],
+			"from": [4.9, 10.9, 8.1],
+			"to": [5.6, 11.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [5.5, 4.5, 5, 5], "texture": "#1"},
 				"south": {"uv": [5, 4.5, 5.5, 5], "texture": "#1"}
@@ -2858,11 +2858,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_68",
-			"from": [5.65, 11.15, 8.15],
-			"to": [6.15, 11.65, 7.35],
+			"from": [5.6, 11.1, 8.1],
+			"to": [6.1, 11.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [6, 4.5, 5.5, 5], "texture": "#1"},
 				"east": {"uv": [5.5, 4.5, 6, 5], "texture": "#1"},
@@ -2872,11 +2872,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_69",
-			"from": [4.35, 10.35, 8.15],
-			"to": [4.85, 10.85, 7.35],
+			"from": [4.4, 10.4, 8.1],
+			"to": [4.9, 10.9, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [5, 5, 4.5, 5.5], "texture": "#1"},
 				"south": {"uv": [4.5, 5, 5, 5.5], "texture": "#1"},
@@ -2886,11 +2886,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_70",
-			"from": [4.85, 10.35, 8.15],
-			"to": [5.65, 11.15, 7.35],
+			"from": [4.9, 10.4, 8.1],
+			"to": [5.6, 11.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [5.5, 5, 5, 5.5], "texture": "#1"},
 				"south": {"uv": [5, 5, 5.5, 5.5], "texture": "#1"}
@@ -2898,11 +2898,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_71",
-			"from": [5.35, 10.35, 8.15],
-			"to": [6.15, 11.15, 7.35],
+			"from": [5.4, 10.4, 8.1],
+			"to": [6.1, 11.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [6, 5, 5.5, 5.5], "texture": "#1"},
 				"south": {"uv": [5.5, 5, 6, 5.5], "texture": "#1"}
@@ -2910,11 +2910,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_72",
-			"from": [6.15, 10.65, 8.15],
-			"to": [6.65, 11.15, 7.35],
+			"from": [6.1, 10.6, 8.1],
+			"to": [6.6, 11.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [6.5, 5, 6, 5.5], "texture": "#1"},
 				"east": {"uv": [6, 5, 6.5, 5.5], "texture": "#1"},
@@ -2924,11 +2924,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_73",
-			"from": [4.85, 9.85, 8.15],
-			"to": [5.35, 10.35, 7.35],
+			"from": [4.9, 9.9, 8.1],
+			"to": [5.4, 10.4, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [5.5, 5.5, 5, 6], "texture": "#1"},
 				"south": {"uv": [5, 5.5, 5.5, 6], "texture": "#1"},
@@ -2938,11 +2938,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_74",
-			"from": [5.35, 9.85, 8.15],
-			"to": [6.15, 10.65, 7.35],
+			"from": [5.4, 9.9, 8.1],
+			"to": [6.1, 10.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [6, 5.5, 5.5, 6], "texture": "#1"},
 				"south": {"uv": [5.5, 5.5, 6, 6], "texture": "#1"}
@@ -2950,11 +2950,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_75",
-			"from": [5.85, 9.85, 8.15],
-			"to": [6.65, 10.65, 7.35],
+			"from": [5.9, 9.9, 8.1],
+			"to": [6.6, 10.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [6.5, 5.5, 6, 6], "texture": "#1"},
 				"south": {"uv": [6, 5.5, 6.5, 6], "texture": "#1"}
@@ -2962,11 +2962,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_76",
-			"from": [6.65, 10.15, 8.15],
-			"to": [7.15, 10.65, 7.35],
+			"from": [6.6, 10.1, 8.1],
+			"to": [7.1, 10.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [7, 5.5, 6.5, 6], "texture": "#1"},
 				"east": {"uv": [6.5, 5.5, 7, 6], "texture": "#1"},
@@ -2976,11 +2976,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_77",
-			"from": [5.35, 9.35, 8.15],
-			"to": [5.85, 9.85, 7.35],
+			"from": [5.4, 9.4, 8.1],
+			"to": [5.9, 9.9, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [6, 6, 5.5, 6.5], "texture": "#1"},
 				"south": {"uv": [5.5, 6, 6, 6.5], "texture": "#1"},
@@ -2990,11 +2990,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_78",
-			"from": [5.85, 9.35, 8.15],
-			"to": [6.65, 10.15, 7.35],
+			"from": [5.9, 9.4, 8.1],
+			"to": [6.6, 10.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [6.5, 6, 6, 6.5], "texture": "#1"},
 				"south": {"uv": [6, 6, 6.5, 6.5], "texture": "#1"}
@@ -3002,11 +3002,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_79",
-			"from": [6.35, 9.35, 8.15],
-			"to": [7.15, 10.15, 7.35],
+			"from": [6.4, 9.4, 8.1],
+			"to": [7.1, 10.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [7, 6, 6.5, 6.5], "texture": "#1"},
 				"south": {"uv": [6.5, 6, 7, 6.5], "texture": "#1"}
@@ -3014,11 +3014,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_80",
-			"from": [7.15, 9.65, 8.15],
-			"to": [7.65, 10.15, 7.35],
+			"from": [7.1, 9.6, 8.1],
+			"to": [7.6, 10.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [7.5, 6, 7, 6.5], "texture": "#1"},
 				"east": {"uv": [7, 6, 7.5, 6.5], "texture": "#1"},
@@ -3028,11 +3028,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_81",
-			"from": [8.35, 9.65, 8.15],
-			"to": [9.15, 10.15, 7.35],
+			"from": [8.4, 9.6, 8.1],
+			"to": [9.1, 10.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [9, 6, 8.5, 6.5], "texture": "#1"},
 				"south": {"uv": [8.5, 6, 9, 6.5], "texture": "#1"},
@@ -3042,11 +3042,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_82",
-			"from": [8.85, 9.35, 8.15],
-			"to": [9.65, 10.15, 7.35],
+			"from": [8.9, 9.4, 8.1],
+			"to": [9.6, 10.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [9.5, 6, 9, 6.5], "texture": "#1"},
 				"east": {"uv": [9, 6, 9.5, 6.5], "texture": "#1"},
@@ -3056,11 +3056,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_83",
-			"from": [5.85, 8.85, 8.15],
-			"to": [6.35, 9.35, 7.35],
+			"from": [5.9, 8.9, 8.1],
+			"to": [6.4, 9.4, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [6.5, 6.5, 6, 7], "texture": "#1"},
 				"south": {"uv": [6, 6.5, 6.5, 7], "texture": "#1"},
@@ -3070,11 +3070,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_84",
-			"from": [6.35, 8.85, 8.15],
-			"to": [7.15, 9.65, 7.35],
+			"from": [6.4, 8.9, 8.1],
+			"to": [7.1, 9.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [7, 6.5, 6.5, 7], "texture": "#1"},
 				"south": {"uv": [6.5, 6.5, 7, 7], "texture": "#1"}
@@ -3082,11 +3082,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_85",
-			"from": [6.85, 8.85, 8.15],
-			"to": [7.65, 9.65, 7.35],
+			"from": [6.9, 8.9, 8.1],
+			"to": [7.6, 9.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [7.5, 6.5, 7, 7], "texture": "#1"},
 				"south": {"uv": [7, 6.5, 7.5, 7], "texture": "#1"}
@@ -3094,11 +3094,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_86",
-			"from": [7.65, 8.85, 8.15],
-			"to": [8.15, 9.65, 7.35],
+			"from": [7.6, 8.9, 8.1],
+			"to": [8.1, 9.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [8, 6.5, 7.5, 7], "texture": "#1"},
 				"south": {"uv": [7.5, 6.5, 8, 7], "texture": "#1"},
@@ -3107,11 +3107,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_87",
-			"from": [7.85, 8.85, 8.15],
-			"to": [8.35, 9.65, 7.35],
+			"from": [7.9, 8.9, 8.1],
+			"to": [8.4, 9.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [8.5, 6.5, 8, 7], "texture": "#1"},
 				"south": {"uv": [8, 6.5, 8.5, 7], "texture": "#1"},
@@ -3120,11 +3120,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_88",
-			"from": [8.35, 8.85, 8.15],
-			"to": [9.15, 9.65, 7.35],
+			"from": [8.4, 8.9, 8.1],
+			"to": [9.1, 9.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [9, 6.5, 8.5, 7], "texture": "#1"},
 				"south": {"uv": [8.5, 6.5, 9, 7], "texture": "#1"}
@@ -3132,11 +3132,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_89",
-			"from": [9.15, 8.85, 8.15],
-			"to": [9.65, 9.65, 7.35],
+			"from": [9.1, 8.9, 8.1],
+			"to": [9.6, 9.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [9.5, 6.5, 9, 7], "texture": "#1"},
 				"east": {"uv": [9, 6.5, 9.5, 7], "texture": "#1"},
@@ -3146,11 +3146,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_90",
-			"from": [6.35, 8.35, 8.15],
-			"to": [6.85, 8.85, 7.35],
+			"from": [6.4, 8.4, 8.1],
+			"to": [6.9, 8.9, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [7, 7, 6.5, 7.5], "texture": "#1"},
 				"south": {"uv": [6.5, 7, 7, 7.5], "texture": "#1"},
@@ -3160,11 +3160,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_91",
-			"from": [6.85, 8.35, 8.15],
-			"to": [7.65, 9.15, 7.35],
+			"from": [6.9, 8.4, 8.1],
+			"to": [7.6, 9.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [7.5, 7, 7, 7.5], "texture": "#1"},
 				"south": {"uv": [7, 7, 7.5, 7.5], "texture": "#1"}
@@ -3172,11 +3172,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_92",
-			"from": [7.35, 8.35, 8.15],
-			"to": [8.15, 9.15, 7.35],
+			"from": [7.4, 8.4, 8.1],
+			"to": [8.1, 9.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [8, 7, 7.5, 7.5], "texture": "#1"},
 				"south": {"uv": [7.5, 7, 8, 7.5], "texture": "#1"}
@@ -3184,11 +3184,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_93",
-			"from": [7.85, 8.35, 8.15],
-			"to": [8.65, 9.15, 7.35],
+			"from": [7.9, 8.4, 8.1],
+			"to": [8.6, 9.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [8.5, 7, 8, 7.5], "texture": "#1"},
 				"south": {"uv": [8, 7, 8.5, 7.5], "texture": "#1"}
@@ -3196,11 +3196,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_94",
-			"from": [8.65, 8.35, 8.15],
-			"to": [9.15, 8.85, 7.35],
+			"from": [8.6, 8.4, 8.1],
+			"to": [9.1, 8.9, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [9, 7, 8.5, 7.5], "texture": "#1"},
 				"east": {"uv": [8.5, 7, 9, 7.5], "texture": "#1"},
@@ -3210,11 +3210,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_95",
-			"from": [6.85, 7.85, 8.15],
-			"to": [7.35, 8.35, 7.35],
+			"from": [6.9, 7.9, 8.1],
+			"to": [7.4, 8.4, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [7.5, 7.5, 7, 8], "texture": "#1"},
 				"south": {"uv": [7, 7.5, 7.5, 8], "texture": "#1"},
@@ -3223,11 +3223,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_96",
-			"from": [7.35, 7.85, 8.15],
-			"to": [8.15, 8.65, 7.35],
+			"from": [7.4, 7.9, 8.1],
+			"to": [8.1, 8.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [8, 7.5, 7.5, 8], "texture": "#1"},
 				"south": {"uv": [7.5, 7.5, 8, 8], "texture": "#1"}
@@ -3235,11 +3235,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_97",
-			"from": [8.15, 8.15, 8.15],
-			"to": [8.65, 8.35, 7.35],
+			"from": [7.9, 8.1, 8.1],
+			"to": [8.6, 8.4, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [8.5, 7.5, 8, 8], "texture": "#1"},
 				"east": {"uv": [8, 7.5, 8.5, 8], "texture": "#1"},
@@ -3248,11 +3248,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_98",
-			"from": [6.85, 7.35, 8.15],
-			"to": [7.35, 7.85, 7.35],
+			"from": [6.9, 7.4, 8.1],
+			"to": [7.4, 7.9, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [7.5, 8, 7, 8.5], "texture": "#1"},
 				"south": {"uv": [7, 8, 7.5, 8.5], "texture": "#1"},
@@ -3262,11 +3262,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_99",
-			"from": [7.35, 7.35, 8.15],
-			"to": [8.15, 8.15, 7.35],
+			"from": [7.4, 7.4, 8.1],
+			"to": [8.1, 8.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [8, 8, 7.5, 8.5], "texture": "#1"},
 				"south": {"uv": [7.5, 8, 8, 8.5], "texture": "#1"}
@@ -3274,11 +3274,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_100",
-			"from": [7.85, 7.35, 8.15],
-			"to": [8.65, 8.15, 7.35],
+			"from": [7.9, 7.4, 8.1],
+			"to": [8.6, 8.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [8.5, 8, 8, 8.5], "texture": "#1"},
 				"south": {"uv": [8, 8, 8.5, 8.5], "texture": "#1"}
@@ -3286,11 +3286,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_101",
-			"from": [8.65, 7.65, 8.15],
-			"to": [9.15, 8.15, 7.35],
+			"from": [8.6, 7.6, 8.1],
+			"to": [9.1, 8.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [9, 8, 8.5, 8.5], "texture": "#1"},
 				"east": {"uv": [8.5, 8, 9, 8.5], "texture": "#1"},
@@ -3300,11 +3300,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_102",
-			"from": [7.35, 6.85, 8.15],
-			"to": [7.85, 7.35, 7.35],
+			"from": [7.4, 6.9, 8.1],
+			"to": [7.9, 7.4, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [8, 8.5, 7.5, 9], "texture": "#1"},
 				"south": {"uv": [7.5, 8.5, 8, 9], "texture": "#1"},
@@ -3314,11 +3314,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_103",
-			"from": [7.85, 6.85, 8.15],
-			"to": [8.65, 7.65, 7.35],
+			"from": [7.9, 6.9, 8.1],
+			"to": [8.6, 7.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [8.5, 8.5, 8, 9], "texture": "#1"},
 				"south": {"uv": [8, 8.5, 8.5, 9], "texture": "#1"}
@@ -3326,11 +3326,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_104",
-			"from": [8.35, 6.85, 8.15],
-			"to": [9.15, 7.65, 7.35],
+			"from": [8.4, 6.9, 8.1],
+			"to": [9.1, 7.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [9, 8.5, 8.5, 9], "texture": "#1"},
 				"south": {"uv": [8.5, 8.5, 9, 9], "texture": "#1"}
@@ -3338,11 +3338,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_105",
-			"from": [9.15, 7.15, 8.15],
-			"to": [9.65, 7.65, 7.35],
+			"from": [9.1, 7.1, 8.1],
+			"to": [9.6, 7.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [9.5, 8.5, 9, 9], "texture": "#1"},
 				"east": {"uv": [9, 8.5, 9.5, 9], "texture": "#1"},
@@ -3352,11 +3352,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_106",
-			"from": [7.85, 6.35, 8.15],
-			"to": [8.35, 6.85, 7.35],
+			"from": [7.9, 6.4, 8.1],
+			"to": [8.4, 6.9, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [8.5, 9, 8, 9.5], "texture": "#1"},
 				"south": {"uv": [8, 9, 8.5, 9.5], "texture": "#1"},
@@ -3366,11 +3366,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_107",
-			"from": [8.35, 6.35, 8.15],
-			"to": [9.15, 7.15, 7.35],
+			"from": [8.4, 6.4, 8.1],
+			"to": [9.1, 7.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [9, 9, 8.5, 9.5], "texture": "#1"},
 				"south": {"uv": [8.5, 9, 9, 9.5], "texture": "#1"}
@@ -3378,11 +3378,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_108",
-			"from": [8.85, 6.35, 8.15],
-			"to": [9.65, 7.15, 7.35],
+			"from": [8.9, 6.4, 8.1],
+			"to": [9.6, 7.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [9.5, 9, 9, 9.5], "texture": "#1"},
 				"south": {"uv": [9, 9, 9.5, 9.5], "texture": "#1"}
@@ -3390,11 +3390,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_109",
-			"from": [9.65, 6.65, 8.15],
-			"to": [10.15, 7.15, 7.35],
+			"from": [9.6, 6.6, 8.1],
+			"to": [10.1, 7.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [10, 9, 9.5, 9.5], "texture": "#1"},
 				"east": {"uv": [9.5, 9, 10, 9.5], "texture": "#1"},
@@ -3404,11 +3404,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_110",
-			"from": [8.35, 5.85, 8.15],
-			"to": [8.85, 6.35, 7.35],
+			"from": [8.4, 5.9, 8.1],
+			"to": [8.9, 6.4, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [9, 9.5, 8.5, 10], "texture": "#1"},
 				"south": {"uv": [8.5, 9.5, 9, 10], "texture": "#1"},
@@ -3418,11 +3418,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_111",
-			"from": [8.85, 5.85, 8.15],
-			"to": [9.65, 6.65, 7.35],
+			"from": [8.9, 5.9, 8.1],
+			"to": [9.6, 6.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [9.5, 9.5, 9, 10], "texture": "#1"},
 				"south": {"uv": [9, 9.5, 9.5, 10], "texture": "#1"}
@@ -3430,11 +3430,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_112",
-			"from": [9.35, 5.85, 8.15],
-			"to": [10.15, 6.65, 7.35],
+			"from": [9.4, 5.9, 8.1],
+			"to": [10.1, 6.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [10, 9.5, 9.5, 10], "texture": "#1"},
 				"south": {"uv": [9.5, 9.5, 10, 10], "texture": "#1"}
@@ -3442,11 +3442,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_113",
-			"from": [10.15, 6.15, 8.15],
-			"to": [10.65, 6.65, 7.35],
+			"from": [10.1, 6.1, 8.1],
+			"to": [10.6, 6.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [10.5, 9.5, 10, 10], "texture": "#1"},
 				"east": {"uv": [10, 9.5, 10.5, 10], "texture": "#1"},
@@ -3456,11 +3456,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_114",
-			"from": [8.85, 5.35, 8.15],
-			"to": [9.35, 5.85, 7.35],
+			"from": [8.9, 5.4, 8.1],
+			"to": [9.4, 5.9, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [9.5, 10, 9, 10.5], "texture": "#1"},
 				"south": {"uv": [9, 10, 9.5, 10.5], "texture": "#1"},
@@ -3470,11 +3470,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_115",
-			"from": [9.35, 5.35, 8.15],
-			"to": [10.15, 6.15, 7.35],
+			"from": [9.4, 5.4, 8.1],
+			"to": [10.1, 6.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [10, 10, 9.5, 10.5], "texture": "#1"},
 				"south": {"uv": [9.5, 10, 10, 10.5], "texture": "#1"}
@@ -3482,11 +3482,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_116",
-			"from": [9.85, 5.35, 8.15],
-			"to": [10.65, 6.15, 7.35],
+			"from": [9.9, 5.4, 8.1],
+			"to": [10.6, 6.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [10.5, 10, 10, 10.5], "texture": "#1"},
 				"south": {"uv": [10, 10, 10.5, 10.5], "texture": "#1"}
@@ -3494,11 +3494,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_117",
-			"from": [10.65, 5.65, 8.15],
-			"to": [11.15, 6.15, 7.35],
+			"from": [10.6, 5.6, 8.1],
+			"to": [11.1, 6.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [11, 10, 10.5, 10.5], "texture": "#1"},
 				"east": {"uv": [10.5, 10, 11, 10.5], "texture": "#1"},
@@ -3508,11 +3508,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_118",
-			"from": [9.35, 4.85, 8.15],
-			"to": [9.85, 5.35, 7.35],
+			"from": [9.4, 4.9, 8.1],
+			"to": [9.9, 5.4, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [10, 10.5, 9.5, 11], "texture": "#1"},
 				"south": {"uv": [9.5, 10.5, 10, 11], "texture": "#1"},
@@ -3522,11 +3522,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_119",
-			"from": [9.85, 4.85, 8.15],
-			"to": [10.65, 5.65, 7.35],
+			"from": [9.9, 4.9, 8.1],
+			"to": [10.6, 5.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [10.5, 10.5, 10, 11], "texture": "#1"},
 				"south": {"uv": [10, 10.5, 10.5, 11], "texture": "#1"}
@@ -3534,11 +3534,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_120",
-			"from": [10.35, 4.85, 8.15],
-			"to": [11.15, 5.65, 7.35],
+			"from": [10.4, 4.9, 8.1],
+			"to": [11.1, 5.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [11, 10.5, 10.5, 11], "texture": "#1"},
 				"south": {"uv": [10.5, 10.5, 11, 11], "texture": "#1"}
@@ -3546,11 +3546,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_121",
-			"from": [11.15, 5.15, 8.15],
-			"to": [11.65, 5.65, 7.35],
+			"from": [11.1, 5.1, 8.1],
+			"to": [11.6, 5.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [11.5, 10.5, 11, 11], "texture": "#1"},
 				"south": {"uv": [11, 10.5, 11.5, 11], "texture": "#1"},
@@ -3559,11 +3559,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_122",
-			"from": [11.65, 5.15, 8.15],
-			"to": [12.15, 5.65, 7.35],
+			"from": [11.6, 5.1, 8.1],
+			"to": [12.1, 5.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [12, 10.5, 11.5, 11], "texture": "#1"},
 				"east": {"uv": [11.5, 10.5, 12, 11], "texture": "#1"},
@@ -3573,11 +3573,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_123",
-			"from": [9.85, 4.35, 8.15],
-			"to": [10.35, 4.85, 7.35],
+			"from": [9.9, 4.4, 8.1],
+			"to": [10.4, 4.9, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [10.5, 11, 10, 11.5], "texture": "#1"},
 				"south": {"uv": [10, 11, 10.5, 11.5], "texture": "#1"},
@@ -3587,11 +3587,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_124",
-			"from": [10.35, 4.35, 8.15],
-			"to": [11.15, 5.15, 7.35],
+			"from": [10.4, 4.4, 8.1],
+			"to": [11.1, 5.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [11, 11, 10.5, 11.5], "texture": "#1"},
 				"south": {"uv": [10.5, 11, 11, 11.5], "texture": "#1"}
@@ -3599,11 +3599,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_125",
-			"from": [10.85, 4.35, 8.15],
-			"to": [11.65, 5.15, 7.35],
+			"from": [10.9, 4.4, 8.1],
+			"to": [11.6, 5.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [11.5, 11, 11, 11.5], "texture": "#1"},
 				"south": {"uv": [11, 11, 11.5, 11.5], "texture": "#1"}
@@ -3611,11 +3611,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_126",
-			"from": [11.35, 4.35, 8.15],
-			"to": [12.15, 5.15, 7.35],
+			"from": [11.4, 4.4, 8.1],
+			"to": [12.1, 5.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [12, 11, 11.5, 11.5], "texture": "#1"},
 				"south": {"uv": [11.5, 11, 12, 11.5], "texture": "#1"}
@@ -3623,11 +3623,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_127",
-			"from": [12.15, 4.65, 8.15],
-			"to": [12.65, 5.15, 7.35],
+			"from": [12.1, 4.6, 8.1],
+			"to": [12.6, 5.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [12.5, 11, 12, 11.5], "texture": "#1"},
 				"east": {"uv": [12, 11, 12.5, 11.5], "texture": "#1"},
@@ -3637,11 +3637,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_128",
-			"from": [10.35, 3.85, 8.15],
-			"to": [10.85, 4.35, 7.35],
+			"from": [10.4, 3.9, 8.1],
+			"to": [10.9, 4.4, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [11, 11.5, 10.5, 12], "texture": "#1"},
 				"south": {"uv": [10.5, 11.5, 11, 12], "texture": "#1"},
@@ -3651,11 +3651,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_129",
-			"from": [10.85, 3.85, 8.15],
-			"to": [11.35, 4.35, 7.35],
+			"from": [10.9, 3.9, 8.1],
+			"to": [11.4, 4.4, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [11.5, 11.5, 11, 12], "texture": "#1"},
 				"south": {"uv": [11, 11.5, 11.5, 12], "texture": "#1"},
@@ -3664,11 +3664,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_130",
-			"from": [11.35, 3.85, 8.15],
-			"to": [12.15, 4.65, 7.35],
+			"from": [11.4, 3.9, 8.1],
+			"to": [12.1, 4.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [12, 11.5, 11.5, 12], "texture": "#1"},
 				"south": {"uv": [11.5, 11.5, 12, 12], "texture": "#1"}
@@ -3676,11 +3676,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_131",
-			"from": [11.85, 3.85, 8.15],
-			"to": [12.65, 4.65, 7.35],
+			"from": [11.9, 3.9, 8.1],
+			"to": [12.6, 4.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [12.5, 11.5, 12, 12], "texture": "#1"},
 				"south": {"uv": [12, 11.5, 12.5, 12], "texture": "#1"}
@@ -3688,11 +3688,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_132",
-			"from": [12.65, 4.15, 8.15],
-			"to": [13.15, 4.65, 7.35],
+			"from": [12.6, 4.1, 8.1],
+			"to": [13.1, 4.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [13, 11.5, 12.5, 12], "texture": "#1"},
 				"east": {"uv": [12.5, 11.5, 13, 12], "texture": "#1"},
@@ -3702,11 +3702,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_133",
-			"from": [11.35, 3.35, 8.15],
-			"to": [11.85, 3.85, 7.35],
+			"from": [11.4, 3.4, 8.1],
+			"to": [11.9, 3.9, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [12, 12, 11.5, 12.5], "texture": "#1"},
 				"south": {"uv": [11.5, 12, 12, 12.5], "texture": "#1"},
@@ -3716,11 +3716,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_134",
-			"from": [11.85, 3.35, 8.15],
-			"to": [12.65, 4.15, 7.35],
+			"from": [11.9, 3.4, 8.1],
+			"to": [12.6, 4.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [12.5, 12, 12, 12.5], "texture": "#1"},
 				"south": {"uv": [12, 12, 12.5, 12.5], "texture": "#1"}
@@ -3728,11 +3728,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_135",
-			"from": [12.35, 3.35, 8.15],
-			"to": [13.15, 4.15, 7.35],
+			"from": [12.4, 3.4, 8.1],
+			"to": [13.1, 4.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [13, 12, 12.5, 12.5], "texture": "#1"},
 				"south": {"uv": [12.5, 12, 13, 12.5], "texture": "#1"}
@@ -3740,11 +3740,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_136",
-			"from": [13.15, 3.65, 8.15],
-			"to": [13.65, 4.15, 7.35],
+			"from": [13.1, 3.6, 8.1],
+			"to": [13.6, 4.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [13.5, 12, 13, 12.5], "texture": "#1"},
 				"east": {"uv": [13, 12, 13.5, 12.5], "texture": "#1"},
@@ -3754,11 +3754,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_137",
-			"from": [11.85, 2.85, 8.15],
-			"to": [12.65, 3.35, 7.35],
+			"from": [11.9, 2.9, 8.1],
+			"to": [12.4, 3.4, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [12.5, 12.5, 12, 13], "texture": "#1"},
 				"south": {"uv": [12, 12.5, 12.5, 13], "texture": "#1"},
@@ -3767,11 +3767,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_138",
-			"from": [12.35, 2.85, 8.15],
-			"to": [13.15, 3.65, 7.35],
+			"from": [12.4, 2.9, 8.1],
+			"to": [13.1, 3.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [13, 12.5, 12.5, 13], "texture": "#1"},
 				"south": {"uv": [12.5, 12.5, 13, 13], "texture": "#1"}
@@ -3779,11 +3779,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_139",
-			"from": [12.85, 2.85, 8.15],
-			"to": [13.65, 3.65, 7.35],
+			"from": [12.9, 2.9, 8.1],
+			"to": [13.6, 3.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [13.5, 12.5, 13, 13], "texture": "#1"},
 				"south": {"uv": [13, 12.5, 13.5, 13], "texture": "#1"}
@@ -3791,11 +3791,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_140",
-			"from": [13.65, 3.15, 8.15],
-			"to": [14.15, 3.65, 7.35],
+			"from": [13.6, 3.1, 8.1],
+			"to": [14.1, 3.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [14, 12.5, 13.5, 13], "texture": "#1"},
 				"east": {"uv": [13.5, 12.5, 14, 13], "texture": "#1"},
@@ -3805,11 +3805,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_141",
-			"from": [11.85, 2.65, 8.15],
-			"to": [12.65, 3.15, 7.35],
+			"from": [11.9, 2.6, 8.1],
+			"to": [12.6, 3.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [12.5, 13, 12, 13.5], "texture": "#1"},
 				"south": {"uv": [12, 13, 12.5, 13.5], "texture": "#1"},
@@ -3818,11 +3818,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_142",
-			"from": [12.35, 2.35, 8.15],
-			"to": [13.15, 3.15, 7.35],
+			"from": [12.4, 2.4, 8.1],
+			"to": [13.1, 3.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [13, 13, 12.5, 13.5], "texture": "#1"},
 				"south": {"uv": [12.5, 13, 13, 13.5], "texture": "#1"}
@@ -3830,11 +3830,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_143",
-			"from": [12.85, 2.35, 8.15],
-			"to": [13.65, 3.15, 7.35],
+			"from": [12.9, 2.4, 8.1],
+			"to": [13.6, 3.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [13.5, 13, 13, 13.5], "texture": "#1"},
 				"south": {"uv": [13, 13, 13.5, 13.5], "texture": "#1"}
@@ -3842,11 +3842,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_144",
-			"from": [13.35, 2.35, 8.15],
-			"to": [14.15, 3.15, 7.35],
+			"from": [13.4, 2.4, 8.1],
+			"to": [14.1, 3.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [14, 13, 13.5, 13.5], "texture": "#1"},
 				"south": {"uv": [13.5, 13, 14, 13.5], "texture": "#1"}
@@ -3854,11 +3854,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_145",
-			"from": [14.15, 2.65, 8.15],
-			"to": [14.65, 3.15, 7.35],
+			"from": [14.1, 2.6, 8.1],
+			"to": [14.6, 3.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [14.5, 13, 14, 13.5], "texture": "#1"},
 				"east": {"uv": [14, 13, 14.5, 13.5], "texture": "#1"},
@@ -3868,11 +3868,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_146",
-			"from": [11.35, 1.85, 8.15],
-			"to": [11.85, 2.65, 7.35],
+			"from": [11.4, 1.9, 8.1],
+			"to": [11.9, 2.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [12, 13.5, 11.5, 14], "texture": "#1"},
 				"south": {"uv": [11.5, 13.5, 12, 14], "texture": "#1"},
@@ -3882,11 +3882,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_147",
-			"from": [11.85, 1.85, 8.15],
-			"to": [12.65, 2.65, 7.35],
+			"from": [11.9, 1.9, 8.1],
+			"to": [12.6, 2.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [12.5, 13.5, 12, 14], "texture": "#1"},
 				"south": {"uv": [12, 13.5, 12.5, 14], "texture": "#1"}
@@ -3894,11 +3894,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_148",
-			"from": [12.35, 1.85, 8.15],
-			"to": [13.15, 2.65, 7.35],
+			"from": [12.4, 1.9, 8.1],
+			"to": [13.1, 2.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [13, 13.5, 12.5, 14], "texture": "#1"},
 				"south": {"uv": [12.5, 13.5, 13, 14], "texture": "#1"}
@@ -3906,11 +3906,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_149",
-			"from": [13.15, 1.85, 8.15],
-			"to": [13.35, 2.35, 7.35],
+			"from": [13.1, 1.9, 8.1],
+			"to": [13.4, 2.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [13.5, 13.5, 13, 14], "texture": "#1"},
 				"south": {"uv": [13, 13.5, 13.5, 14], "texture": "#1"},
@@ -3919,11 +3919,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_150",
-			"from": [13.35, 1.85, 8.15],
-			"to": [14.15, 2.65, 7.35],
+			"from": [13.4, 1.9, 8.1],
+			"to": [14.1, 2.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [14, 13.5, 13.5, 14], "texture": "#1"},
 				"south": {"uv": [13.5, 13.5, 14, 14], "texture": "#1"}
@@ -3931,11 +3931,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_151",
-			"from": [13.85, 1.85, 8.15],
-			"to": [14.65, 2.65, 7.35],
+			"from": [13.9, 1.9, 8.1],
+			"to": [14.6, 2.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [14.5, 13.5, 14, 14], "texture": "#1"},
 				"south": {"uv": [14, 13.5, 14.5, 14], "texture": "#1"}
@@ -3943,11 +3943,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_152",
-			"from": [14.65, 2.15, 8.15],
-			"to": [15.15, 2.65, 7.35],
+			"from": [14.6, 2.1, 8.1],
+			"to": [15.1, 2.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [15, 13.5, 14.5, 14], "texture": "#1"},
 				"east": {"uv": [14.5, 13.5, 15, 14], "texture": "#1"},
@@ -3957,11 +3957,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_153",
-			"from": [11.35, 1.35, 8.15],
-			"to": [12.15, 2.15, 7.35],
+			"from": [11.4, 1.4, 8.1],
+			"to": [12.1, 2.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [12, 14, 11.5, 14.5], "texture": "#1"},
 				"south": {"uv": [11.5, 14, 12, 14.5], "texture": "#1"},
@@ -3971,11 +3971,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_154",
-			"from": [11.85, 1.35, 8.15],
-			"to": [12.65, 2.15, 7.35],
+			"from": [11.9, 1.4, 8.1],
+			"to": [12.6, 2.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [12.5, 14, 12, 14.5], "texture": "#1"},
 				"south": {"uv": [12, 14, 12.5, 14.5], "texture": "#1"},
@@ -3984,11 +3984,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_155",
-			"from": [12.35, 1.35, 8.15],
-			"to": [13.15, 1.85, 7.35],
+			"from": [12.4, 1.4, 8.1],
+			"to": [13.1, 1.9, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [13, 14, 12.5, 14.5], "texture": "#1"},
 				"east": {"uv": [12.5, 14, 13, 14.5], "texture": "#1"},
@@ -3998,11 +3998,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_156",
-			"from": [13.35, 1.35, 8.15],
-			"to": [13.85, 1.85, 7.35],
+			"from": [13.4, 1.4, 8.1],
+			"to": [13.9, 1.9, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [14, 14, 13.5, 14.5], "texture": "#1"},
 				"south": {"uv": [13.5, 14, 14, 14.5], "texture": "#1"},
@@ -4012,11 +4012,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_157",
-			"from": [13.85, 1.35, 8.15],
-			"to": [14.65, 2.15, 7.35],
+			"from": [13.9, 1.4, 8.1],
+			"to": [14.6, 2.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [14.5, 14, 14, 14.5], "texture": "#1"},
 				"south": {"uv": [14, 14, 14.5, 14.5], "texture": "#1"}
@@ -4024,11 +4024,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_158",
-			"from": [14.35, 1.35, 8.15],
-			"to": [15.15, 2.15, 7.35],
+			"from": [14.4, 1.4, 8.1],
+			"to": [15.1, 2.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [15, 14, 14.5, 14.5], "texture": "#1"},
 				"south": {"uv": [14.5, 14, 15, 14.5], "texture": "#1"}
@@ -4036,11 +4036,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_159",
-			"from": [15.15, 1.65, 8.15],
-			"to": [15.65, 2.15, 7.35],
+			"from": [15.1, 1.6, 8.1],
+			"to": [15.6, 2.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [15.5, 14, 15, 14.5], "texture": "#1"},
 				"east": {"uv": [15, 14, 15.5, 14.5], "texture": "#1"},
@@ -4050,11 +4050,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_160",
-			"from": [13.85, 0.85, 8.15],
-			"to": [14.35, 1.35, 7.35],
+			"from": [13.9, 0.9, 8.1],
+			"to": [14.4, 1.4, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [14.5, 14.5, 14, 15], "texture": "#1"},
 				"south": {"uv": [14, 14.5, 14.5, 15], "texture": "#1"},
@@ -4064,11 +4064,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_161",
-			"from": [14.35, 0.85, 8.15],
-			"to": [15.15, 1.65, 7.35],
+			"from": [14.4, 0.9, 8.1],
+			"to": [15.1, 1.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [15, 14.5, 14.5, 15], "texture": "#1"},
 				"south": {"uv": [14.5, 14.5, 15, 15], "texture": "#1"}
@@ -4076,11 +4076,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_162",
-			"from": [14.85, 0.85, 8.15],
-			"to": [15.65, 1.65, 7.35],
+			"from": [14.9, 0.9, 8.1],
+			"to": [15.6, 1.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [15.5, 14.5, 15, 15], "texture": "#1"},
 				"south": {"uv": [15, 14.5, 15.5, 15], "texture": "#1"}
@@ -4088,11 +4088,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_163",
-			"from": [15.65, 1.15, 8.15],
-			"to": [16.15, 1.65, 7.35],
+			"from": [15.6, 1.1, 8.1],
+			"to": [16.1, 1.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [16, 14.5, 15.5, 15], "texture": "#1"},
 				"east": {"uv": [15.5, 14.5, 16, 15], "texture": "#1"},
@@ -4102,11 +4102,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_164",
-			"from": [14.35, 0.35, 8.15],
-			"to": [14.85, 0.85, 7.35],
+			"from": [14.4, 0.4, 8.1],
+			"to": [15.1, 0.9, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [15, 15, 14.5, 15.5], "texture": "#1"},
 				"south": {"uv": [14.5, 15, 15, 15.5], "texture": "#1"},
@@ -4115,11 +4115,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_165",
-			"from": [14.85, 0.35, 8.15],
-			"to": [15.65, 1.15, 7.35],
+			"from": [14.9, 0.4, 8.1],
+			"to": [15.6, 1.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [15.5, 15, 15, 15.5], "texture": "#1"},
 				"south": {"uv": [15, 15, 15.5, 15.5], "texture": "#1"}
@@ -4127,11 +4127,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_166",
-			"from": [15.35, 0.35, 8.15],
-			"to": [16.15, 1.15, 7.35],
+			"from": [15.4, 0.4, 8.1],
+			"to": [16.1, 1.1, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [16, 15, 15.5, 15.5], "texture": "#1"},
 				"east": {"uv": [15.5, 15, 16, 15.5], "texture": "#1"},
@@ -4140,11 +4140,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_167",
-			"from": [14.35, -0.15, 8.15],
-			"to": [15.15, 0.65, 7.35],
+			"from": [14.4, -0.1, 8.1],
+			"to": [15.1, 0.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [15, 15.5, 14.5, 16], "texture": "#1"},
 				"south": {"uv": [14.5, 15.5, 15, 16], "texture": "#1"},
@@ -4154,11 +4154,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_168",
-			"from": [14.85, -0.15, 8.15],
-			"to": [15.65, 0.65, 7.35],
+			"from": [14.9, -0.1, 8.1],
+			"to": [15.6, 0.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [15.5, 15.5, 15, 16], "texture": "#1"},
 				"south": {"uv": [15, 15.5, 15.5, 16], "texture": "#1"},
@@ -4167,11 +4167,11 @@
 		},
 		{
 			"name": "stone_spear_in_hand_169",
-			"from": [15.35, -0.15, 8.15],
-			"to": [16.15, 0.65, 7.35],
+			"from": [15.4, -0.1, 8.1],
+			"to": [16.1, 0.6, 7.4],
 			"shade": false,
 			"light_emission": 15,
-			"rotation": {"angle": 0, "axis": "y", "origin": [-0.15, -0.15, -0.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.1, -0.1, 0.6]},
 			"faces": {
 				"north": {"uv": [16, 15.5, 15.5, 16], "texture": "#1"},
 				"east": {"uv": [15.5, 15.5, 16, 16], "texture": "#1"},
@@ -4180,7 +4180,6 @@
 			}
 		}
 	],
-	"display": {},
 	"groups": [
 		{
 			"name": "stone_spear_in_hand",
