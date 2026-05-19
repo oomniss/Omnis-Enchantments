@@ -1,0 +1,4 @@
+{
+    condition: "CustomModelByItemType.Swords",
+    fallback: "assets/minecraft/rpo/items/copper_sword.json"
+}

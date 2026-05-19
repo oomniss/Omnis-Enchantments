@@ -1,0 +1,4 @@
+{
+    condition: "CustomModelByItemType.Hoes",
+    fallback: "assets/minecraft/rpo/items/diamond_hoe.json"
+}

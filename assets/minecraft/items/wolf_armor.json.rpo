@@ -1,0 +1,4 @@
+{
+    condition: "CustomModelByItemType.WolfArmor",
+    fallback: "assets/minecraft/rpo/items/wolf_armor.json"
+}

@@ -1,0 +1,4 @@
+{
+    condition: "CustomModelByItemType.Rods",
+    fallback: "assets/minecraft/rpo/items/fishing_rod.json"
+}

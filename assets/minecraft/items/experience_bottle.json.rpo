@@ -1,0 +1,4 @@
+{
+    condition: "CustomModelByItemType.ExperienceBottle",
+    fallback: "assets/minecraft/rpo/items/experience_bottle.json"
+}

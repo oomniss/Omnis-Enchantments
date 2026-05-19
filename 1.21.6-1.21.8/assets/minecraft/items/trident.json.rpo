@@ -1,0 +1,4 @@
+{
+    condition: "CustomModelByItemType.Trident | General.CustomModel",
+    fallback: "assets/minecraft/rpo/items/trident.json"
+}

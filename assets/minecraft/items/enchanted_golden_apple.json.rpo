@@ -1,0 +1,4 @@
+{
+    condition: "CustomModelByItemType.EnchantedGoldenApple",
+    fallback: "assets/minecraft/rpo/items/enchanted_golden_apple.json"
+}

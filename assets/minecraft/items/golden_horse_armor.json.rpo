@@ -1,0 +1,4 @@
+{
+    condition: "CustomModelByItemType.HorseArmors",
+    fallback: "assets/minecraft/rpo/items/golden_horse_armor.json"
+}

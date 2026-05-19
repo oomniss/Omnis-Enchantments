@@ -1,0 +1,4 @@
+{
+    condition: "CustomModelByItemType.Shears",
+    fallback: "assets/minecraft/rpo/items/shears.json"
+}

@@ -1,0 +1,4 @@
+{
+    condition: "CustomModelByItemType.Spears",
+    fallback: "assets/minecraft/rpo/items/netherite_spear.json"
+}

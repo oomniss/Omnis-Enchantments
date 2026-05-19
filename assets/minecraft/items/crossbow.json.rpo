@@ -1,0 +1,4 @@
+{
+    condition: "CustomModelByItemType.Crossbow",
+    fallback: "assets/minecraft/rpo/items/crossbow.json"
+}

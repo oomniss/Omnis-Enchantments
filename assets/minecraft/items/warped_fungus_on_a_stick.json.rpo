@@ -1,0 +1,4 @@
+{
+    condition: "CustomModelByItemType.Rods",
+    fallback: "assets/minecraft/rpo/items/warped_fungus_on_a_stick.json"
+}

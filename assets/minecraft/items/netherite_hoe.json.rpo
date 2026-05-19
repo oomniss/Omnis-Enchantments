@@ -1,0 +1,4 @@
+{
+    condition: "CustomModelByItemType.Hoes",
+    fallback: "assets/minecraft/rpo/items/netherite_hoe.json"
+}

@@ -1,0 +1,4 @@
+{
+    condition: "CustomModelByItemType.NautilusArmors",
+    fallback: "assets/minecraft/rpo/items/copper_nautilus_armor.json"
+}

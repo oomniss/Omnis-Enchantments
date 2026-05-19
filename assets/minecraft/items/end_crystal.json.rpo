@@ -1,0 +1,4 @@
+{
+    condition: "CustomModelByItemType.EndCrystal",
+    fallback: "assets/minecraft/rpo/items/end_crystal.json"
+}

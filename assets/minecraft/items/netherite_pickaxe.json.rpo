@@ -1,0 +1,4 @@
+{
+    condition: "CustomModelByItemType.Pickaxes",
+    fallback: "assets/minecraft/rpo/items/netherite_pickaxe.json"
+}

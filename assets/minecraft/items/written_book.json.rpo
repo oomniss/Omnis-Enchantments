@@ -1,0 +1,4 @@
+{
+    condition: "CustomModelByItemType.Books",
+    fallback: "assets/minecraft/rpo/items/written_book.json"
+}

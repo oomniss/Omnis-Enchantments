@@ -1,0 +1,4 @@
+{
+    condition: "CustomModelByItemType.Clock",
+    fallback: "assets/minecraft/rpo/items/clock.json"
+}

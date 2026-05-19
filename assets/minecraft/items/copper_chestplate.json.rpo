@@ -1,0 +1,4 @@
+{
+    condition: "CustomModelByItemType.Armors",
+    fallback: "assets/minecraft/rpo/items/copper_chestplate.json"
+}

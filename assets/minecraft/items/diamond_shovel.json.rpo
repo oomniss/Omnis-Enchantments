@@ -1,0 +1,4 @@
+{
+    condition: "CustomModelByItemType.Shovels",
+    fallback: "assets/minecraft/rpo/items/diamond_shovel.json"
+}
