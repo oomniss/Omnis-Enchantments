@@ -1,4 +1,3 @@
 {
-    condition: "CustomModelByItemType.Mace",
-    fallback: "assets/minecraft/rpo/items/mace.json"
+    condition: "CustomModelByItemType.Mace"
 }

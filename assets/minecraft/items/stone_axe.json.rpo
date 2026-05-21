@@ -1,4 +1,3 @@
 {
-    condition: "CustomModelByItemType.Axes",
-    fallback: "assets/minecraft/rpo/items/stone_axe.json"
+    condition: "CustomModelByItemType.Axes"
 }

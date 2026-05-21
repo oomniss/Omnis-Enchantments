@@ -19,17 +19,12 @@ void main() {
     ivec4 ich = ivec4(texelFetch(Sampler0, texelCoord, 0) * 255.0 + 0.5);
 
     bool isOutline      = ich.a == 254;
-    bool isEmissiveFlag = texelFetch(Sampler1, ivec2(0, 0), 0).a > 0.5;
-    bool isEmissive     = isEmissiveFlag && (ich.a == 253);
 
     if (texColor.a < 0.1 && !isOutline) discard;
 
     vec4 color;
     if (isOutline) {
         color = vec4(texColor.rgb * ColorModulator.rgb, 1.0);
-    } else if (isEmissive) {
-        color = vec4(texColor.rgb * vertexColor.rgb * ColorModulator.rgb, texColor.a * ColorModulator.a);
-        if (color.a < 0.1) discard;
     } else {
         color = texColor * vertexColor * ColorModulator;
         if (color.a < 0.1) discard;

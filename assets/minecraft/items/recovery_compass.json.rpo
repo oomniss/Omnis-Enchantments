@@ -1,4 +1,3 @@
 {
-    condition: "CustomModelByItemType.Compasses",
-    fallback: "assets/minecraft/rpo/items/recovery_compass.json"
+    condition: "CustomModelByItemType.Compasses"
 }

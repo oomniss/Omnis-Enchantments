@@ -1,4 +1,3 @@
 {
-    condition: "CustomModelByItemType.Brush",
-    fallback: "assets/minecraft/rpo/items/brush.json"
+    condition: "CustomModelByItemType.Brush"
 }

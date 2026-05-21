@@ -11,6 +11,7 @@ local isEnchanted           = I:isEnchanted(item)
 local isUsingItem           = P:isUsingItem(player)
 local glowIntensity         = ${glowIntensity}
 local runesIntensity        = ${runesIntensity}
+local hmiVersion            = hmiVersion or "5.0"
 
 -- === MATCH ===
 local function matched(items, matches)
@@ -82,8 +83,8 @@ local itemConfig = {
     end_crystal              = { rune = ${runeEndCrystal} }
 }
 
-local function enableParticle(item, particle)
-    if matched(item, true) then
+local function enableParticle(item, particle, condition)
+    if matched(item, true) and condition then
         local config = itemConfig[itemType] or {}
         return config[particle] == true
     end
@@ -187,8 +188,16 @@ if posEntry.lumen then
     glowIntensity = glowIntensity * prop
 end
 
+local cond = true
+if
+    (hmiVersion == "5.1+" and itemName == "trident") or
+    (itemName == "brush" or itemName == "shield")
+then
+    cond = false
+end
+
 if isEnchanted then
-    if glowingEffect and enableParticle(itemName, "glow") then
+    if glowingEffect and enableParticle(itemName, "glow", cond) then
         particleManager:addParticle(
             particles,
             true,
@@ -200,7 +209,7 @@ if isEnchanted then
         )
     end
 
-    if runes and enableParticle(itemName, "rune") then
+    if runes and enableParticle(itemName, "rune", cond) then
         runeActive = true
         local SPAWN_INTERVAL = 12 - (runesIntensity - 1)
 

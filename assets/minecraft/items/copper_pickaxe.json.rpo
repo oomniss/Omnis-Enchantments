@@ -1,4 +1,3 @@
 {
-    condition: "CustomModelByItemType.Pickaxes",
-    fallback: "assets/minecraft/rpo/items/copper_pickaxe.json"
+    condition: "CustomModelByItemType.Pickaxes"
 }

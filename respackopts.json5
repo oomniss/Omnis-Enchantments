@@ -25,13 +25,14 @@
       ItemGlintStyle: {
         type: "enum",
         default: "Reworked",
-        values: ["Reworked", "Vanilla", "Minimal"]
+        values: ["Reworked", "Vanilla", "Minimal", "NoGlint"]
       },
       ArmorGlintStyle: {
         type: "enum",
         default: "Reworked",
-        values: ["Reworked", "Vanilla"]
+        values: ["Reworked", "Vanilla", "NoGlint"]
       },
+      VibrantGlint: true,
       Outline: true,
       CustomModel: true,
       DirectionalLight: false,
@@ -147,7 +148,8 @@
       NetherStar: true,
       ExperienceBottle: true,
       Shield: true,
-      Brush: true
+      Brush: true,
+      EndCrystal: true
   },
     Compatibility: {
       Tools: {
