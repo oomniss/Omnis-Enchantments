@@ -1,4 +1,4 @@
 {
     condition: "OutlineByItemType.ExperienceBottle",
-    fallback: "assets/minecraft/rpo/models/no_outline/default/e_experience_bottle.json"
+    fallback: "assets/rpo/models/no_outline/default/e_experience_bottle.json"
 }

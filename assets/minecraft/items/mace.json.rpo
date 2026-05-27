@@ -1,3 +1,4 @@
 {
-    condition: "CustomModelByItemType.Mace"
+    condition: "CustomModelByItemType.Mace & Compatibility.Mace.Default",
+    fallback: "assets/rpo/items/macefusion_compat/mace.json"
 }

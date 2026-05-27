@@ -1,0 +1,52 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:display_context",
+    "cases": [
+      {
+        "when": [
+          "gui"
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/mace"
+        }
+      },
+      {
+        "when": [
+          "ground",
+          "fixed",
+          "on_shelf"
+        ],
+        "model": {
+          "type": "minecraft:condition",
+          "property": "minecraft:has_component",
+          "component": "minecraft:enchantments",
+          "ignore_default": true,
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "rpo:no_outline/macefusion/e_mace_sprite"
+          },
+          "on_false": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/mace"
+          }
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:condition",
+      "property": "minecraft:has_component",
+      "component": "minecraft:enchantments",
+      "ignore_default": true,
+      "on_true": {
+        "type": "minecraft:model",
+        "model": "rpo:no_outline/macefusion/e_mace"
+      },
+      "on_false": {
+        "type": "minecraft:model",
+        "model": "minecraft:item/mace"
+      }
+    }
+  }
+}

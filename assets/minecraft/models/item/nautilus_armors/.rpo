@@ -1,4 +1,4 @@
 {
     condition: "OutlineByItemType.NautilusArmors",
-    fallback: "assets/minecraft/rpo/models/no_outline/default/nautilus_armors"
+    fallback: "assets/rpo/models/no_outline/default/nautilus_armors"
 }

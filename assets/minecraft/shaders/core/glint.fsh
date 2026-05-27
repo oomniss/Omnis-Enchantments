@@ -27,7 +27,7 @@ const float BRIGHTNESS = 1.1;
 const float PULSE_AMP  = 0.1;
 
 // Pulsação: frequência (ciclos por unidade de TextureMat time)
-const float PULSE_FREQ = 7.0;
+const float PULSE_FREQ = 4.0;
 
 // ───────────────────────────────────────────────────────────────────────────
 

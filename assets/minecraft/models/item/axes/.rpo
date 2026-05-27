@@ -1,4 +1,4 @@
 {
     condition: "OutlineByItemType.Axes & Compatibility.Tools.Default",
-    fallback: "assets/minecraft/rpo/models/no_outline/default/axes"
+    fallback: "assets/rpo/models/no_outline/default/axes"
 }

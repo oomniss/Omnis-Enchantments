@@ -1,4 +1,4 @@
 {
     condition: "OutlineByItemType.Bow",
-    fallback: "assets/minecraft/rpo/models/no_outline/default/bow"
+    fallback: "assets/rpo/models/no_outline/default/bow"
 }

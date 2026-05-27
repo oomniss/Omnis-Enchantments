@@ -1,4 +1,4 @@
 {
     condition: "OutlineByItemType.Clock",
-    fallback: "assets/minecraft/rpo/models/no_outline/default/clock"
+    fallback: "assets/rpo/models/no_outline/default/clock"
 }

@@ -1,4 +1,4 @@
 {
     condition: "OutlineByItemType.WolfArmor",
-    fallback: "assets/minecraft/rpo/models/no_outline/default/wolf_armor"
+    fallback: "assets/rpo/models/no_outline/default/wolf_armor"
 }

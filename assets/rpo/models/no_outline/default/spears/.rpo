@@ -1,0 +1,4 @@
+{
+    condition: "(!General.Outline | !OutlineByItemType.Spears) & Compatibility.Spears.Default",
+    fallback: "assets/rpo/models/no_outline/classictoolsfusion/spears"
+}

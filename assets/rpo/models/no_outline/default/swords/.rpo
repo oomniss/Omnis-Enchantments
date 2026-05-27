@@ -1,0 +1,4 @@
+{
+    condition: "(!General.Outline | !OutlineByItemType.Swords) & Compatibility.Swords.Default",
+    fallback: "assets/rpo/models/no_outline/classictoolsfusion/swords"
+}

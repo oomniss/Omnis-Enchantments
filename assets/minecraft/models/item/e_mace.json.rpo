@@ -1,4 +1,4 @@
 {
     condition: "OutlineByItemType.Mace",
-    fallback: "assets/minecraft/rpo/models/no_outline/default/e_mace.json"
+    fallback: "assets/rpo/models/no_outline/default/e_mace.json"
 }

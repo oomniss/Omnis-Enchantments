@@ -144,12 +144,12 @@ end
 
 -- === TEXTURE ===
 local textureMap = {
-    general             = "circle_purple_glow",
-    swords              = "oval_purple_glow",
-    spears              = "oval_purple_glow",
-    rods                = "oval_purple_glow",
-    spyglass            = "oval_purple_glow",
-    trident             = "oval_purple_glow"
+    general   = "circle_purple_glow",
+    swords    = "oval_purple_glow",
+    spears    = "oval_purple_glow",
+    rods      = "oval_purple_glow",
+    spyglass  = "oval_purple_glow",
+    trident   = "oval_purple_glow"
 }
 local textureName = textureMap[getType()] or textureMap.general
 local texture = Texture:of("minecraft", "textures/particle/" .. textureName .. ".png")
@@ -184,7 +184,7 @@ local rotate      = posEntry.rotate or {x = 0, y = 0, z = 0}
 local scale       = posEntry.scale  or 3
 
 if posEntry.lumen then
-    local prop = posEntry.lumen/180
+    local prop = posEntry.lumen/130
     glowIntensity = glowIntensity * prop
 end
 

@@ -1,4 +1,4 @@
 {
     condition: "OutlineByItemType.Spyglass",
-    fallback: "assets/minecraft/rpo/models/no_outline/default/spyglass"
+    fallback: "assets/rpo/models/no_outline/default/spyglass"
 }

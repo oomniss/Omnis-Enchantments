@@ -1,4 +1,4 @@
 {
     condition: "General.Outline & OutlineByItemType.Books",
-    fallback: "assets/minecraft/rpo/models/no_outline/default/book"
+    fallback: "assets/rpo/models/no_outline/default/book"
 }

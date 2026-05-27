@@ -35,8 +35,8 @@
       VibrantGlint: true,
       Outline: true,
       CustomModel: true,
-      DirectionalLight: false,
-      DynamicLight: true
+      DynamicLight: true,
+      DirectionalLight: false
     },
     GlowByItemType: {
       Swords: true,
@@ -166,6 +166,16 @@
         type: "enum",
         default: "Default",
         values: ["Default", "ClassicToolsFusion"]
+      },
+      Mace: {
+        type: "enum",
+        default: "Default",
+        values: ["Default", "MaceFusion"]
+      },
+      Trident: {
+        type: "enum",
+        default: "Default",
+        values: ["Default", "TridentFusion"]
       }
     }
   }

@@ -1,4 +1,4 @@
 {
     condition: "OutlineByItemType.Armors",
-    fallback: "assets/minecraft/rpo/models/no_outline/default/chestplates"
+    fallback: "assets/rpo/models/no_outline/default/chestplates"
 }

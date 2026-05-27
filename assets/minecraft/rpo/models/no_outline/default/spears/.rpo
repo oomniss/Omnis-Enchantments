@@ -1,4 +1,0 @@
-{
-    condition: "(!General.Outline | !OutlineByItemType.Spears) & Compatibility.Spears.Default",
-    fallback: "assets/minecraft/rpo/models/no_outline/classictoolsfusion/spears"
-}
