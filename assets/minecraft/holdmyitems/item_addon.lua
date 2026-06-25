@@ -170,7 +170,7 @@ local particlePosition = {
     bow         = { move = {x = 0.02,   y = -0.13, z = 0.05}, scale = 4.5 },
     crossbow    = { move = {x = -0.1,   y = 0.05 , z = 0} },
     rods        = { move = {x = 0.05,   y = 0.25,  z = 0.05}, rotate = {x = 25, y = 0, z = 0},   scale = 3.7 },
-    swords      = { move = {x = 0.02,   y = 0.4,   z = 0.05}, rotate = {x = 0,  y = 0, z = 0},   scale = 3.2 },
+    swords      = { move = {x = 0.02,   y = 0.4,   z = 0.05}, scale = 3.2 },
     spears      = { move = {x = 0.2,    y = 0.5,   z = 0.1},  rotate = {x = 30, y = 0, z = 20},  scale = 5.5, lumen = 120 },
     spyglass    = { move = {x = -0.02,  y = -0.1,  z = 0.05}, rotate = {x = 10, y = 0, z = -10} },
     is2D        = { move = {x = -0.06,  y = 0.2,   z = 0.15}, scale = 3.5},

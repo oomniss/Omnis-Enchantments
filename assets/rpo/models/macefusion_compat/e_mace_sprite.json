@@ -1,6 +1,7 @@
 {
 	"format_version": "1.21.11",
 	"credit": "Made with Blockbench",
+	"parent": "minecraft:item/handheld_mace",
 	"textures": {
 		"0": "item/mace",
 		"1": "item/enchantment_outline"

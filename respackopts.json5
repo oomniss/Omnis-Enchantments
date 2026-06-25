@@ -1,6 +1,6 @@
 {
   id: "OmnisEnchantments",
-  version: 14,
+  version: 13,
   capabilities: [
     "FileFilter",
     "DirFilter",
