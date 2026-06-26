@@ -55,6 +55,8 @@
     runeNetherStar:     "OmnisEnchantments.RunesByItemType.NetherStar",
     runeExpBottle:      "OmnisEnchantments.RunesByItemType.ExperienceBottle",
     runeEndCrystal:     "OmnisEnchantments.RunesByItemType.EndCrystal",
-    runeTrident:        "OmnisEnchantments.RunesByItemType.Trident"
+    runeTrident:        "OmnisEnchantments.RunesByItemType.Trident",
+
+    compatMacefusion:   "OmnisEnchantments.Compatibility.Mace.value == OmnisEnchantments.Compatibility.Mace.MaceFusion"
   }
 }

@@ -1,4 +1,4 @@
 {
-    condition: "(!General.Outline | !OutlineByItemType.Mace) & Compatibility.Tools.MaceFusion",
+    condition: "(!General.Outline | !OutlineByItemType.Mace) & Compatibility.Mace.MaceFusion",
     fallback: "assets/rpo/models/macefusion_compat/e_mace.json"
 }

@@ -4,14 +4,24 @@ global.runeDebounceStart    = 0;
 global.runeID               = 0;
 global.runeStates           = {};
 
-local l                     = mainHand and 1 or -1
-local itemName              = I:getName(item):gsub("minecraft:", "")
-local time                  = P:getAge(player)
-local isEnchanted           = I:isEnchanted(item)
-local isUsingItem           = P:isUsingItem(player)
-local glowIntensity         = ${glowIntensity}
-local runesIntensity        = ${runesIntensity}
-local hmiVersion            = hmiVersion or "5.0"
+local HMIversion = context == nil and "5.0" or "5.1+"
+
+mainHand    = HMIversion == "5.1+" and context.mainHand or mainHand
+hand        = HMIversion == "5.1+" and context.hand or hand
+particles   = HMIversion == "5.1+" and context.particles or particles
+player      = HMIversion == "5.1+" and context.player or player
+item        = HMIversion == "5.1+" and context.item or item
+deltaTime   = HMIversion == "5.1+" and context.deltaTime or deltaTime
+
+local l               = mainHand and 1 or -1
+local itemName        = I:getName(item):gsub("minecraft:", "")
+local time            = P:getAge(player)
+local isEnchanted     = I:isEnchanted(item)
+local isUsingItem     = P:isUsingItem(player)
+local glowIntensity   = ${glowIntensity}
+local runesIntensity  = ${runesIntensity}
+
+local maceFusion      = ${compatMacefusion}
 
 -- === MATCH ===
 local function matched(items, matches)
@@ -35,15 +45,15 @@ end
 -- === GET ITEM TYPE ===
 local function getType()
     local typeMap = {
-        { types = {"pickaxes", "axes", "hoes", "shovels", "spears", "horse_armor", "nautilus_armor", "swords"} },
-        { types = {"enchanted_book", "written_book"}, output = "books" },
-        { types = {"head_armor", "chest_armor", "leg_armor", "foot_armor", "elytra"}, output = "armors" },
-        { types = {"fishing_rod", "on_a_stick"}, output = "rods" },
+        { items = {"pickaxes", "axes", "hoes", "shovels", "spears", "horse_armor", "nautilus_armor", "swords"} },
+        { items = {"enchanted_book", "written_book"}, type = "books" },
+        { items = {"head_armor", "chest_armor", "leg_armor", "foot_armor", "elytra"}, type = "armors" },
+        { items = {"fishing_rod", "on_a_stick"}, type = "rods" },
     }
     for _, list in ipairs(typeMap) do
-        for _, tag in ipairs(list.types) do
+        for _, tag in ipairs(list.items) do
             if matched(tag, true) then
-                return list.output or tag
+                return list.type or tag
             end
         end
     end
@@ -160,44 +170,37 @@ local sprites2D = {"written_book", "enchanted_book", "enchanted_golden_apple", "
 local is2D = matched(sprites2D, true)
 
 local particlePosition = {
-    pickaxes    = { move = {x = -0.03,  y = 0.42,  z = 0.15} },
-    axes        = { move = {x = -0.05,  y = 0.4,   z = 0.11} },
-    hoes        = { move = {x = -0.05,  y = 0.4,   z = 0.11} },
-    shovels     = { move = {x = 0.02,   y = 0.4,   z = 0.05}, scale = 4 },
-    horse_armor = { move = {x = 0.01,   y = 0.05,  z = 0.05} },
-    wolf_armor  = { move = {x = 0.03,   y = 0.2,   z = 0.05} },
-    mace        = { move = {x = 0.05,   y = 0.4,   z = 0.05}, scale = 5 },
-    bow         = { move = {x = 0.02,   y = -0.13, z = 0.05}, scale = 4.5 },
-    crossbow    = { move = {x = -0.1,   y = 0.05 , z = 0} },
-    rods        = { move = {x = 0.05,   y = 0.25,  z = 0.05}, rotate = {x = 25, y = 0, z = 0},   scale = 3.7 },
-    swords      = { move = {x = 0.02,   y = 0.4,   z = 0.05}, scale = 3.2 },
-    spears      = { move = {x = 0.2,    y = 0.5,   z = 0.1},  rotate = {x = 30, y = 0, z = 20},  scale = 5.5, lumen = 120 },
-    spyglass    = { move = {x = -0.02,  y = -0.1,  z = 0.05}, rotate = {x = 10, y = 0, z = -10} },
-    is2D        = { move = {x = -0.06,  y = 0.2,   z = 0.15}, scale = 3.5},
-    shield      = { move = {x = 0.05,   y = 0.4,   z = 0.05}, rotate = {x = 20,  y = 0, z = 10} },
-    trident     = { move = {x = 0.08,   y = isUsingItem and -0.5 or 0.4, z = 0.05}, rotate = {x = 20,  y = 0, z = isUsingItem and 90 or 10} }
+    pickaxes          = { move = {x = -0.03,  y = 0.42,  z = 0.15} },
+    axes              = { move = {x = -0.05,  y = 0.4,   z = 0.11} },
+    hoes              = { move = {x = -0.05,  y = 0.4,   z = 0.11} },
+    shovels           = { move = {x = 0.02,   y = 0.4,   z = 0.05}, scale = 4 },
+    horse_armor       = { move = {x = 0.01,   y = 0.05,  z = 0.05} },
+    wolf_armor        = { move = {x = 0.03,   y = 0.2,   z = 0.05} },
+    mace              = { move = {x = 0.05,   y = 0.4,   z = 0.05}, scale = 5 },
+    bow               = { move = {x = 0.02,   y = -0.13, z = 0.05}, scale = 4.5 },
+    crossbow          = { move = {x = -0.1,   y = 0.05 , z = 0} },
+    rods              = { move = {x = 0.05,   y = 0.25,  z = 0.05}, rotate = {x = 25, y = 0, z = 0},   scale = 3.7 },
+    swords            = { move = {x = 0.02,   y = 0.4,   z = 0.05}, scale = 3.2 },
+    spears            = { move = {x = 0.2,    y = 0.5,   z = 0.1},  rotate = {x = 30, y = 0, z = 20},  scale = 5.5, lumen = 120 },
+    spyglass          = { move = {x = -0.02,  y = -0.1,  z = 0.05}, rotate = {x = 10, y = 0, z = -10} },
+    is2D              = { move = {x = -0.06,  y = 0.2,   z = 0.15}, scale = 3.5},
+    shield            = { move = {x = 0.05,   y = 0.4,   z = 0.05}, rotate = {x = 20,  y = 0, z = 10} },
+    trident           = { move = {x = 0.08,   y = isUsingItem and -0.5 or 0.4, z = 0.05}, rotate = {x = 20,  y = 0, z = isUsingItem and 90 or 10} }
 }
 
-local posEntry    = (is2D and particlePosition["is2D"]) or particlePosition[itemType] or {}
-local move        = posEntry.move   or {x = 0, y = 0, z = 0}
-local rotate      = posEntry.rotate or {x = 0, y = 0, z = 0}
-local scale       = posEntry.scale  or 3
+local posEntry        = (is2D and particlePosition["is2D"]) or particlePosition[itemType] or {}
+local move            = posEntry.move   or {x = 0, y = 0, z = 0}
+local rotate          = posEntry.rotate or {x = 0, y = 0, z = 0}
+local scale           = posEntry.scale  or 3
 
-if posEntry.lumen then
-    local prop = posEntry.lumen/130
-    glowIntensity = glowIntensity * prop
-end
+local defaultLumen    = 130
+local prop            = (posEntry.lumen or defaultLumen) / defaultLumen
+glowIntensity         = glowIntensity * prop
 
-local cond = true
-if
-    (hmiVersion == "5.1+" and itemName == "trident") or
-    (itemName == "brush" or itemName == "shield")
-then
-    cond = false
-end
+local apply           = itemName ~= "brush" and itemName ~= "shield" and (HMIversion ~= "5.1+" or itemName ~= "trident")
 
 if isEnchanted then
-    if glowingEffect and enableParticle(itemName, "glow", cond) then
+    if glowingEffect and enableParticle(itemName, "glow", apply) then
         particleManager:addParticle(
             particles,
             true,
@@ -209,7 +212,7 @@ if isEnchanted then
         )
     end
 
-    if runes and enableParticle(itemName, "rune", cond) then
+    if runes and enableParticle(itemName, "rune", apply) then
         runeActive = true
         local SPAWN_INTERVAL = 12 - (runesIntensity - 1)
 
@@ -244,6 +247,33 @@ if isEnchanted then
             local spreadX       = spreads[textureType].x
             local spreadY       = spreads[textureType].y
             local spreadZ       = spreads[textureType].z
+
+            local compatibility = {
+                {
+                    maceFusion,
+                    items = {"mace"},
+                    x = {min = -0.3,  max = 0.25},
+                    y = {min = -0.4,   max = 0.4},
+                    z = {min = -0.25,  max = 0.15}
+                }
+            }
+            local target = false
+            for _, entry in ipairs(compatibility) do
+                if entry[1] then
+                    for _, item in ipairs(entry.items) do
+                        if item == itemType then
+                            spreadX = entry.x
+                            spreadY = entry.y
+                            spreadZ = entry.z
+
+                            target = true
+                            break
+                        end
+                    end
+                    if target then break end
+                end
+            end
+
             local randomX       = math.random() * (spreadX.max - spreadX.min) + spreadX.min
             local randomY       = math.random() * (spreadY.max - spreadY.min) + spreadY.min
             local randomZ       = math.random() * (spreadZ.max - spreadZ.min) + spreadZ.min
