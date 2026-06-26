@@ -5,21 +5,5 @@
     "min_format": 63,
     "max_format": 75,
     "description": "Magic and aura for your enchantments."
-  },
-  "overlays": {
-    "entries": [
-      {
-        "formats": { "min_inclusive": 63, "max_inclusive": 64 },
-        "min_format": 63,
-        "max_format": 64,
-        "directory": "1.21.6-1.21.8"
-      },
-      {
-        "formats": { "min_inclusive": 69, "max_inclusive": 75 },
-        "min_format": 69,
-        "max_format": 75,
-        "directory": "1.21.9-1.21.11"
-      }
-    ]
   }
 }

@@ -14,9 +14,10 @@
       },
       {
         "when": [
-          "ground",
-          "fixed",
-          "on_shelf"
+          "firstperson_righthand",
+          "firstperson_lefthand",
+          "thirdperson_righthand",
+          "thirdperson_lefthand"
         ],
         "model": {
           "type": "minecraft:condition",
@@ -25,11 +26,11 @@
           "ignore_default": true,
           "on_true": {
             "type": "minecraft:model",
-            "model": "minecraft:item/spyglass/e_spyglass_sprite"
+            "model": "minecraft:item/spyglass/e_spyglass_in_hand"
           },
           "on_false": {
             "type": "minecraft:model",
-            "model": "minecraft:item/spyglass"
+            "model": "minecraft:item/spyglass_in_hand"
           }
         }
       }
@@ -41,11 +42,11 @@
       "ignore_default": true,
       "on_true": {
         "type": "minecraft:model",
-        "model": "minecraft:item/spyglass/e_spyglass_in_hand"
+        "model": "minecraft:item/spyglass/e_spyglass_sprite"
       },
       "on_false": {
         "type": "minecraft:model",
-        "model": "minecraft:item/spyglass_in_hand"
+        "model": "minecraft:item/spyglass"
       }
     }
   }

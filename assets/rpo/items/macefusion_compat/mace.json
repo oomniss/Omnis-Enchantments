@@ -4,9 +4,7 @@
     "property": "minecraft:display_context",
     "cases": [
       {
-        "when": [
-          "gui"
-        ],
+        "when": ["gui"],
         "model": {
           "type": "minecraft:model",
           "model": "minecraft:item/mace"
@@ -14,9 +12,10 @@
       },
       {
         "when": [
-          "ground",
-          "fixed",
-          "on_shelf"
+          "firstperson_righthand",
+          "firstperson_lefthand",
+          "thirdperson_righthand",
+          "thirdperson_lefthand"
         ],
         "model": {
           "type": "minecraft:condition",
@@ -25,11 +24,11 @@
           "ignore_default": true,
           "on_true": {
             "type": "minecraft:model",
-            "model": "rpo:no_outline/macefusion/e_mace_sprite"
+            "model": "rpo:no_outline/macefusion/e_mace"
           },
           "on_false": {
             "type": "minecraft:model",
-            "model": "minecraft:item/mace"
+            "model": "minecraft:item/mace_in_hand"
           }
         }
       }
@@ -41,7 +40,7 @@
       "ignore_default": true,
       "on_true": {
         "type": "minecraft:model",
-        "model": "rpo:no_outline/macefusion/e_mace"
+        "model": "rpo:no_outline/macefusion/e_mace_sprite"
       },
       "on_false": {
         "type": "minecraft:model",
