@@ -1,0 +1,4 @@
+{
+    condition: "OutlineByItemType.Crossbow",
+    fallback: "assets/real_arrow_tip/models/no_outline/e_crossbow_standby.json"
+}

@@ -15,11 +15,11 @@
 
 ---
 
-![Tittle](https://cdn.modrinth.com/data/cached_images/5932468387cb4975f5bb41b37fd7e0e115f0fa61.png)
+![Tittle](https://cdn.modrinth.com/data/cached_images/416830e8f26c2fc446b34e8f0b2810a6a083dde4.png)
 
 ---
 
-![Description](https://cdn.modrinth.com/data/cached_images/2f9eb98d277d7aea61946b39674134a486a88388.png)
+![Description](https://cdn.modrinth.com/data/cached_images/1a18ec7c4cb182fe1254c515ace7c02fc9bde664.png)
 
 <details>
 <summary>Accessibility</summary>
@@ -39,13 +39,18 @@ Give your enchanted items an **aura of magical power!**
 - **Dynamic Light:** enchanted items emit 8 levels of light; items enchanted with Fire Aspect, Channeling or Flame emit 10
 - New **Glint** for items and armor
 - **3D Arrow** in bow and crossbow pulling animation
+- Compatible with **Classic Tools Fusion**
 
 # Customization
-- Enable/disable Glow Effect **per item type**
-- Enable/disable Runic Particles **per item type**
+- **Toggle** Glow Effect per item type
+- **Toggle** Runic Particles per item type
+- **Toggle** Outline per item type
+- **Toggle** Custom Model per item type
+- **Toggle** Dynamic Light
+- **Toggle** Directional Light
 - Adjust **Glow Intensity**
 - Adjust **Runic Particles Intensity**
-- 3 Glint options for items: **Reworked**, **Vanilla**, and **Minimal**
-- 2 Glint options for armor: **Reworked**, **Vanilla**
+- 4 Glint options for items: **Reworked**, **Vanilla**, **Minimal**, and **No Glint**
+- 3 Glint options for armor: **Reworked**, **Vanilla**, and **No Glint**
 
 </details>

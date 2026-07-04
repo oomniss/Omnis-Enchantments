@@ -18,10 +18,11 @@ local itemName        = I:getName(item):gsub("minecraft:", "")
 local time            = P:getAge(player)
 local isEnchanted     = I:isEnchanted(item)
 local isUsingItem     = P:isUsingItem(player)
-local glowIntensity   = ${glowIntensity}
-local runesIntensity  = ${runesIntensity}
 
-local maceFusion      = ${compatMacefusion}
+local glowIntensity           = ${glowIntensity}
+local runesIntensity          = ${runesIntensity}
+local rotateRunicParticles    = ${rotateRunicParticles} and math.random(-8,8) or 0
+local maceFusion              = ${compatMacefusion}
 
 -- === MATCH ===
 local function matched(items, matches)
@@ -284,7 +285,7 @@ if isEnchanted then
             particleManager:addParticle(
                 particles, false,
                 spawnX, spawnY, spawnZ,
-                0, 0, 0, 0, 0, 0, 0, 0, 0,
+                0, 0, 0, 0, 0, 0, 0, 0, rotateRunicParticles,
                 0.05 + math.random() * 0.12,
                 sgaTex, "ITEM", hand, "OPACITY", "CUTOUT_L",
                 5, 160 + math.random(0, 60),

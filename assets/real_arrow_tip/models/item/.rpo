@@ -1,0 +1,4 @@
+{
+    condition: "General.Outline",
+    fallback: "assets/real_arrow_tip/models/no_outline"
+}

@@ -1,0 +1,4 @@
+{
+    condition: "OutlineByItemType.Bow",
+    fallback: "assets/real_arrow_tip/models/no_outline/bow_tipped"
+}

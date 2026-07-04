@@ -22,6 +22,7 @@
         min: 1,
         max: 9
       },
+      RotateRunicParticles: false,
       ItemGlintStyle: {
         type: "enum",
         default: "Reworked",
@@ -171,11 +172,6 @@
         type: "enum",
         default: "Default",
         values: ["Default", "MaceFusion"]
-      },
-      Trident: {
-        type: "enum",
-        default: "Default",
-        values: ["Default", "TridentFusion"]
       }
     }
   }

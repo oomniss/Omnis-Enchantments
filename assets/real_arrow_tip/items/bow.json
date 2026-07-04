@@ -1,0 +1,322 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:display_context",
+    "cases": [
+      {
+        "when": "gui",
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/bow"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:condition",
+      "property": "minecraft:using_item",
+      "on_true": {
+        "type": "minecraft:range_dispatch",
+        "property": "minecraft:use_duration",
+        "scale": 0.05,
+        "fallback": {
+          "type": "minecraft:condition",
+          "property": "minecraft:has_component",
+          "component": "minecraft:enchantments",
+          "ignore_default": true,
+          "on_true": {
+            "type": "minecraft:select",
+            "property": "real_arrow_tip:charge_type",
+            "cases": [
+              {
+                "when": "minecraft:spectral_arrow",
+                "model": {
+                  "type": "minecraft:select",
+                  "property": "minecraft:display_context",
+                  "cases": [{ "when": ["firstperson_lefthand", "thirdperson_lefthand"], "model": { "type": "minecraft:model", "model": "real_arrow_tip:item/bow_spectral/e_bow_pulling_0_left" } }],
+                  "fallback": { "type": "minecraft:model", "model": "real_arrow_tip:item/bow_spectral/e_bow_pulling_0_right" }
+                }
+              },
+              {
+                "when": "minecraft:tipped_arrow",
+                "model": {
+                  "type": "minecraft:select",
+                  "property": "minecraft:display_context",
+                  "cases": [
+                    {
+                      "when": ["firstperson_lefthand", "thirdperson_lefthand"],
+                      "model": {
+                        "type": "minecraft:model",
+                        "model": "real_arrow_tip:item/bow_tipped/e_bow_pulling_0_left",
+                        "tints": [{ "type": "real_arrow_tip:projectile", "default": -13083194 }]
+                      }
+                    }
+                  ],
+                  "fallback": {
+                    "type": "minecraft:model",
+                    "model": "real_arrow_tip:item/bow_tipped/e_bow_pulling_0_right",
+                    "tints": [{ "type": "real_arrow_tip:projectile", "default": -13083194 }]
+                  }
+                }
+              }
+            ],
+            "fallback": {
+              "type": "minecraft:select",
+              "property": "minecraft:display_context",
+              "cases": [{ "when": ["firstperson_lefthand", "thirdperson_lefthand"], "model": { "type": "minecraft:model", "model": "real_arrow_tip:item/bow_normal/e_bow_pulling_0_left" } }],
+              "fallback": { "type": "minecraft:model", "model": "real_arrow_tip:item/bow_normal/e_bow_pulling_0_right" }
+            }
+          },
+          "on_false": {
+            "type": "minecraft:select",
+            "property": "real_arrow_tip:charge_type",
+            "cases": [
+              {
+                "when": "minecraft:spectral_arrow",
+                "model": {
+                  "type": "minecraft:select",
+                  "property": "minecraft:display_context",
+                  "cases": [{ "when": ["firstperson_lefthand", "thirdperson_lefthand"], "model": { "type": "minecraft:model", "model": "real_arrow_tip:item/bow_spectral/bow_pulling_0_left" } }],
+                  "fallback": { "type": "minecraft:model", "model": "real_arrow_tip:item/bow_spectral/bow_pulling_0_right" }
+                }
+              },
+              {
+                "when": "minecraft:tipped_arrow",
+                "model": {
+                  "type": "minecraft:select",
+                  "property": "minecraft:display_context",
+                  "cases": [
+                    {
+                      "when": ["firstperson_lefthand", "thirdperson_lefthand"],
+                      "model": {
+                        "type": "minecraft:model",
+                        "model": "real_arrow_tip:item/bow_tipped/bow_pulling_0_left",
+                        "tints": [{ "type": "real_arrow_tip:projectile", "default": -13083194 }]
+                      }
+                    }
+                  ],
+                  "fallback": {
+                    "type": "minecraft:model",
+                    "model": "real_arrow_tip:item/bow_tipped/bow_pulling_0_right",
+                    "tints": [{ "type": "real_arrow_tip:projectile", "default": -13083194 }]
+                  }
+                }
+              }
+            ],
+            "fallback": {
+              "type": "minecraft:select",
+              "property": "minecraft:display_context",
+              "cases": [{ "when": ["firstperson_lefthand", "thirdperson_lefthand"], "model": { "type": "minecraft:model", "model": "real_arrow_tip:item/bow_normal/bow_pulling_0_left" } }],
+              "fallback": { "type": "minecraft:model", "model": "real_arrow_tip:item/bow_normal/bow_pulling_0_right" }
+            }
+          }
+        },
+        "entries": [
+          {
+            "threshold": 0.65,
+            "model": {
+              "type": "minecraft:condition",
+              "property": "minecraft:has_component",
+              "component": "minecraft:enchantments",
+              "ignore_default": true,
+              "on_true": {
+                "type": "minecraft:select",
+                "property": "real_arrow_tip:charge_type",
+                "cases": [
+                  {
+                    "when": "minecraft:spectral_arrow",
+                    "model": {
+                      "type": "minecraft:select",
+                      "property": "minecraft:display_context",
+                      "cases": [{ "when": ["firstperson_lefthand", "thirdperson_lefthand"], "model": { "type": "minecraft:model", "model": "real_arrow_tip:item/bow_spectral/e_bow_pulling_1_left" } }],
+                      "fallback": { "type": "minecraft:model", "model": "real_arrow_tip:item/bow_spectral/e_bow_pulling_1_right" }
+                    }
+                  },
+                  {
+                    "when": "minecraft:tipped_arrow",
+                    "model": {
+                      "type": "minecraft:select",
+                      "property": "minecraft:display_context",
+                      "cases": [
+                        {
+                          "when": ["firstperson_lefthand", "thirdperson_lefthand"],
+                          "model": {
+                            "type": "minecraft:model",
+                            "model": "real_arrow_tip:item/bow_tipped/e_bow_pulling_1_left",
+                            "tints": [{ "type": "real_arrow_tip:projectile", "default": -13083194 }]
+                          }
+                        }
+                      ],
+                      "fallback": {
+                        "type": "minecraft:model",
+                        "model": "real_arrow_tip:item/bow_tipped/e_bow_pulling_1_right",
+                        "tints": [{ "type": "real_arrow_tip:projectile", "default": -13083194 }]
+                      }
+                    }
+                  }
+                ],
+                "fallback": {
+                  "type": "minecraft:select",
+                  "property": "minecraft:display_context",
+                  "cases": [{ "when": ["firstperson_lefthand", "thirdperson_lefthand"], "model": { "type": "minecraft:model", "model": "real_arrow_tip:item/bow_normal/e_bow_pulling_1_left" } }],
+                  "fallback": { "type": "minecraft:model", "model": "real_arrow_tip:item/bow_normal/e_bow_pulling_1_right" }
+                }
+              },
+              "on_false": {
+                "type": "minecraft:select",
+                "property": "real_arrow_tip:charge_type",
+                "cases": [
+                  {
+                    "when": "minecraft:spectral_arrow",
+                    "model": {
+                      "type": "minecraft:select",
+                      "property": "minecraft:display_context",
+                      "cases": [{ "when": ["firstperson_lefthand", "thirdperson_lefthand"], "model": { "type": "minecraft:model", "model": "real_arrow_tip:item/bow_spectral/bow_pulling_1_left" } }],
+                      "fallback": { "type": "minecraft:model", "model": "real_arrow_tip:item/bow_spectral/bow_pulling_1_right" }
+                    }
+                  },
+                  {
+                    "when": "minecraft:tipped_arrow",
+                    "model": {
+                      "type": "minecraft:select",
+                      "property": "minecraft:display_context",
+                      "cases": [
+                        {
+                          "when": ["firstperson_lefthand", "thirdperson_lefthand"],
+                          "model": {
+                            "type": "minecraft:model",
+                            "model": "real_arrow_tip:item/bow_tipped/bow_pulling_1_left",
+                            "tints": [{ "type": "real_arrow_tip:projectile", "default": -13083194 }]
+                          }
+                        }
+                      ],
+                      "fallback": {
+                        "type": "minecraft:model",
+                        "model": "real_arrow_tip:item/bow_tipped/bow_pulling_1_right",
+                        "tints": [{ "type": "real_arrow_tip:projectile", "default": -13083194 }]
+                      }
+                    }
+                  }
+                ],
+                "fallback": {
+                  "type": "minecraft:select",
+                  "property": "minecraft:display_context",
+                  "cases": [{ "when": ["firstperson_lefthand", "thirdperson_lefthand"], "model": { "type": "minecraft:model", "model": "real_arrow_tip:item/bow_normal/bow_pulling_1_left" } }],
+                  "fallback": { "type": "minecraft:model", "model": "real_arrow_tip:item/bow_normal/bow_pulling_1_right" }
+                }
+              }
+            }
+          },
+          {
+            "threshold": 0.9,
+            "model": {
+              "type": "minecraft:condition",
+              "property": "minecraft:has_component",
+              "component": "minecraft:enchantments",
+              "ignore_default": true,
+              "on_true": {
+                "type": "minecraft:select",
+                "property": "real_arrow_tip:charge_type",
+                "cases": [
+                  {
+                    "when": "minecraft:spectral_arrow",
+                    "model": {
+                      "type": "minecraft:select",
+                      "property": "minecraft:display_context",
+                      "cases": [{ "when": ["firstperson_lefthand", "thirdperson_lefthand"], "model": { "type": "minecraft:model", "model": "real_arrow_tip:item/bow_spectral/e_bow_pulling_2_left" } }],
+                      "fallback": { "type": "minecraft:model", "model": "real_arrow_tip:item/bow_spectral/e_bow_pulling_2_right" }
+                    }
+                  },
+                  {
+                    "when": "minecraft:tipped_arrow",
+                    "model": {
+                      "type": "minecraft:select",
+                      "property": "minecraft:display_context",
+                      "cases": [
+                        {
+                          "when": ["firstperson_lefthand", "thirdperson_lefthand"],
+                          "model": {
+                            "type": "minecraft:model",
+                            "model": "real_arrow_tip:item/bow_tipped/e_bow_pulling_2_left",
+                            "tints": [{ "type": "real_arrow_tip:projectile", "default": -13083194 }]
+                          }
+                        }
+                      ],
+                      "fallback": {
+                        "type": "minecraft:model",
+                        "model": "real_arrow_tip:item/bow_tipped/e_bow_pulling_2_right",
+                        "tints": [{ "type": "real_arrow_tip:projectile", "default": -13083194 }]
+                      }
+                    }
+                  }
+                ],
+                "fallback": {
+                  "type": "minecraft:select",
+                  "property": "minecraft:display_context",
+                  "cases": [{ "when": ["firstperson_lefthand", "thirdperson_lefthand"], "model": { "type": "minecraft:model", "model": "real_arrow_tip:item/bow_normal/e_bow_pulling_2_left" } }],
+                  "fallback": { "type": "minecraft:model", "model": "real_arrow_tip:item/bow_normal/e_bow_pulling_2_right" }
+                }
+              },
+              "on_false": {
+                "type": "minecraft:select",
+                "property": "real_arrow_tip:charge_type",
+                "cases": [
+                  {
+                    "when": "minecraft:spectral_arrow",
+                    "model": {
+                      "type": "minecraft:select",
+                      "property": "minecraft:display_context",
+                      "cases": [{ "when": ["firstperson_lefthand", "thirdperson_lefthand"], "model": { "type": "minecraft:model", "model": "real_arrow_tip:item/bow_spectral/bow_pulling_2_left" } }],
+                      "fallback": { "type": "minecraft:model", "model": "real_arrow_tip:item/bow_spectral/bow_pulling_2_right" }
+                    }
+                  },
+                  {
+                    "when": "minecraft:tipped_arrow",
+                    "model": {
+                      "type": "minecraft:select",
+                      "property": "minecraft:display_context",
+                      "cases": [
+                        {
+                          "when": ["firstperson_lefthand", "thirdperson_lefthand"],
+                          "model": {
+                            "type": "minecraft:model",
+                            "model": "real_arrow_tip:item/bow_tipped/bow_pulling_2_left",
+                            "tints": [{ "type": "real_arrow_tip:projectile", "default": -13083194 }]
+                          }
+                        }
+                      ],
+                      "fallback": {
+                        "type": "minecraft:model",
+                        "model": "real_arrow_tip:item/bow_tipped/bow_pulling_2_right",
+                        "tints": [{ "type": "real_arrow_tip:projectile", "default": -13083194 }]
+                      }
+                    }
+                  }
+                ],
+                "fallback": {
+                  "type": "minecraft:select",
+                  "property": "minecraft:display_context",
+                  "cases": [{ "when": ["firstperson_lefthand", "thirdperson_lefthand"], "model": { "type": "minecraft:model", "model": "real_arrow_tip:item/bow_normal/bow_pulling_2_left" } }],
+                  "fallback": { "type": "minecraft:model", "model": "real_arrow_tip:item/bow_normal/bow_pulling_2_right" }
+                }
+              }
+            }
+          }
+        ]
+      },
+      "on_false": {
+        "type": "minecraft:condition",
+        "property": "minecraft:has_component",
+        "component": "minecraft:enchantments",
+        "ignore_default": true,
+        "on_true": {
+          "type": "minecraft:model",
+          "model": "real_arrow_tip:item/e_bow"
+        },
+        "on_false": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/bow"
+        }
+      }
+    }
+  }
+}
