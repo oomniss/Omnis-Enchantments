@@ -1,9 +1,34 @@
 {
   "pack": {
-    "pack_format": 63,
-    "supported_formats": { "min_inclusive": 63, "max_inclusive": 64 },
-    "min_format": 63,
-    "max_format": 75,
-    "description": "Magic and aura for your enchantments."
+    "description": "Omnis Enchantments",
+    "pack_format": 55,
+    "supported_formats": {
+      "min_inclusive": 55,
+      "max_inclusive": 88
+    },
+    "min_format": 55,
+    "max_format": 88
+  },
+  "overlays": {
+    "entries": [
+      {
+        "directory": "1.21.5-1.21.11",
+        "formats": {
+          "min_inclusive": 55,
+          "max_inclusive": 75
+        },
+        "min_format": 55,
+        "max_format": 75
+      },
+      {
+        "directory": "26.x",
+        "formats": {
+          "min_inclusive": 84,
+          "max_inclusive": 88
+        },
+        "min_format": 84,
+        "max_format": 88
+      }
+    ]
   }
 }

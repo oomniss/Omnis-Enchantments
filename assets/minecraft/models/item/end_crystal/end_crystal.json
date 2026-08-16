@@ -8,8 +8,7 @@
   "textures": {
     "2": "item/e_end_crystal_glass_3d",
     "3": "item/e_end_crystal_inner_3d",
-    "4": "item/e_end_crystal_3d",
-    "particle": "item/e_end_crystal_3d"
+    "4": "item/e_end_crystal_3d"
   },
   "elements": [
     {

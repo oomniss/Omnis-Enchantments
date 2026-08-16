@@ -11,7 +11,7 @@
         ],
         "model": {
           "type": "minecraft:model",
-          "model": "minecraft:item/end_crystal_2d"
+          "model": "minecraft:item/end_crystal/end_crystal_2d"
         }
       }
     ],

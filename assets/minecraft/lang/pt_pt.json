@@ -1,11 +1,15 @@
 {
     "rpo.OmnisEnchantments.General": "Geral",
     "rpo.OmnisEnchantments.General.GlowingEffect": "Efeito de Brilho",
+    "rpo.OmnisEnchantments.General.GlowingEffect.tooltip": "Exclusivo HMI",
     "rpo.OmnisEnchantments.General.GlowIntensity": "Intensidade do Brilho",
-    "rpo.OmnisEnchantments.General.RunesParticles": "Partículas de Runas",
+    "rpo.OmnisEnchantments.General.GlowIntensity.tooltip": "Exclusivo HMI",
+    "rpo.OmnisEnchantments.General.RunesParticles": "Partículas Rûnicas",
+    "rpo.OmnisEnchantments.General.RunesParticles.tooltip": "Exclusivo HMI",
     "rpo.OmnisEnchantments.General.RunesIntensity": "Intensidade das Runas",
-    "rpo.OmnisEnchantments.General.RunesIntensity.tooltip": "Isso pode impactar a performance",
+    "rpo.OmnisEnchantments.General.RunesIntensity.tooltip": "Exclusivo HMI. Isso pode impactar a performance.",
     "rpo.OmnisEnchantments.General.RotateRunicParticles": "Rotacionar Partículas Rûnicas",
+    "rpo.OmnisEnchantments.General.RotateRunicParticles.tooltip": "Exclusivo HMI",
     "rpo.OmnisEnchantments.General.ItemGlintStyle": "Estilo do Glint em Itens",
     "rpo.OmnisEnchantments.General.ItemGlintStyle.Reworked": "Reformulado",
     "rpo.OmnisEnchantments.General.ItemGlintStyle.Vanilla": "Vanilla",
@@ -20,6 +24,7 @@
     "rpo.OmnisEnchantments.General.DirectionalLight.tooltip": "Somente terá efeito em itens Vanilla",
 
     "rpo.OmnisEnchantments.GlowByItemType": "Brilho por Tipo de Item",
+    "rpo.OmnisEnchantments.GlowByItemType.tooltip": "Exclusivo HMI",
     "rpo.OmnisEnchantments.GlowByItemType.Swords": "Espadas",
     "rpo.OmnisEnchantments.GlowByItemType.Pickaxes": "Picaretas",
     "rpo.OmnisEnchantments.GlowByItemType.Axes": "Machados",
@@ -48,6 +53,7 @@
     "rpo.OmnisEnchantments.GlowByItemType.ExperienceBottle": "Frasco de Experiência",
 
     "rpo.OmnisEnchantments.RunesByItemType": "Runas por Tipo de Item",
+    "rpo.OmnisEnchantments.RunesByItemType.tooltip": "Exclusivo HMI",
     "rpo.OmnisEnchantments.RunesByItemType.Swords": "Espadas",
     "rpo.OmnisEnchantments.RunesByItemType.Pickaxes": "Picaretas",
     "rpo.OmnisEnchantments.RunesByItemType.Axes": "Machados",

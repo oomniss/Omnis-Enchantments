@@ -1,5 +1,12 @@
 {
-    "rpo.OmnisEnchantments.General.RunesIntensity.tooltip": "This might impact performance",
     "rpo.OmnisEnchantments.General.DirectionalLight.tooltip": "This will only affect Vanilla items",
-    "rpo.OmnisEnchantments.Compatibility.Tools.tooltip": "Shovels, Pickaxes, Axes e Hoes"
+    "rpo.OmnisEnchantments.Compatibility.Tools.tooltip": "Shovels, Pickaxes, Axes e Hoes",
+
+    "rpo.OmnisEnchantments.General.GlowingEffect.tooltip": "HMI Exclusive",
+    "rpo.OmnisEnchantments.General.GlowIntensity.tooltip": "HMI Exclusive",
+    "rpo.OmnisEnchantments.General.RunesParticles.tooltip": "HMI Exclusive",
+    "rpo.OmnisEnchantments.General.RunesIntensity.tooltip": "HMI Exclusive. This might impact performance.",
+    "rpo.OmnisEnchantments.General.RotateRunicParticles.tooltip": "HMI Exclusive",
+    "rpo.OmnisEnchantments.GlowByItemType.tooltip": "HMI Exclusive",
+    "rpo.OmnisEnchantments.RunesByItemType.tooltip": "HMI Exclusive"
 }

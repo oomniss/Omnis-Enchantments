@@ -5,7 +5,8 @@
       "minecraft:enchanted_golden_apple",
       "minecraft:enchanted_book",
       "minecraft:written_book",
-      "minecraft:nether_star"
+      "minecraft:nether_star",
+      "minecraft:end_crystal"
     ]
   },
   "luminance": 8
