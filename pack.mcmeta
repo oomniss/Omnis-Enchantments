@@ -12,13 +12,22 @@
   "overlays": {
     "entries": [
       {
-        "directory": "1.21.5-1.21.11",
+        "directory": "1.21.6-1.21.11",
         "formats": {
-          "min_inclusive": 55,
+          "min_inclusive": 63,
           "max_inclusive": 75
         },
-        "min_format": 55,
+        "min_format": 63,
         "max_format": 75
+      },
+      {
+        "directory": "1.21.5",
+        "formats": {
+          "min_inclusive": 55,
+          "max_inclusive": 55
+        },
+        "min_format": 55,
+        "max_format": 55
       },
       {
         "directory": "26.x",

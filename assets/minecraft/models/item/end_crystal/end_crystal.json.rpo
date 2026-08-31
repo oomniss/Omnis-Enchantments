@@ -1,4 +1,4 @@
 {
-    condition: "version('holdmyitems', '>=5.0')",
+    condition: "version('holdmyitems', '')",
     fallback: "assets/minecraft/models/item/end_crystal/end_crystal_2d.json"
 }

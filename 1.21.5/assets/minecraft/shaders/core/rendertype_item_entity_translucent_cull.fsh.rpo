@@ -1,0 +1,4 @@
+{
+    condition: "!General.DirectionalLight",
+    fallback: "assets/minecraft/shaders/core/no_directionallight/rendertype_item_entity_translucent_cull.fsh"
+}
